@@ -113,21 +113,23 @@
                             <div class="row">
                                 @for ($i = 1; $i <= 20; $i++)
                                     <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                                        <div class="single-program-box-style1">
-                                            <div class="img-holder">
-                                                <img src="assets/images/programs/program-1.jpg" class="img-fluid"
-                                                    alt="">
-                                                <div class="overlay-content">
-                                                    <div class="inner">
-                                                        <p>UG / PG</p>
+                                        <a href="/programs-details">
+                                            <div class="single-program-box-style1">
+                                                <div class="img-holder">
+                                                    <img src="assets/images/programs/program-1.jpg" class="img-fluid"
+                                                        alt="">
+                                                    <div class="overlay-content">
+                                                        <div class="inner">
+                                                            <p>UG / PG</p>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                                <div class="text-holder text-center">
+                                                    <h3>Animation</h3>
+                                                    <p>Arts & Performance</p>
+                                                </div>
                                             </div>
-                                            <div class="text-holder text-center">
-                                                <h3>Animation</h3>
-                                                <p>Arts & Performance</p>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
                                 @endfor
                             </div>

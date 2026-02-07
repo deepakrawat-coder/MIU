@@ -108,7 +108,7 @@
                              <div class="footer-widget-links">
                                  <ul>
                                      <li>
-                                         <a href="about.html">
+                                         <a href="#">
                                              <span class="icon-right-arrow-2"></span>Student portal
                                          </a>
                                      </li>
@@ -169,11 +169,11 @@ India - 795001</p>
              <div class="container">
                  <div class="bottom-inner">
                      <div class="copyright">
-                         <p>Copyright &copy; 2022 <a href="#">Educamb.</a> All Rights Reserved.</p>
+                         <p>Copyright &copy; 2022 <a href="#">Manipur International University (MIU).</a> All Rights Reserved.</p>
                      </div>
                      <div class="footer-logo-style1">
-                         <a href="#">
-                             <img src="/public/assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
+                         <a href="/">
+                             <img src="{{ asset('/assets/images/web-image/miu-white') }}"  width="150" height="150"  alt="Awesome Logo" title="">
                          </a>
                      </div>
                      <div class="footer-menu">

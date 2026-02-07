@@ -74,7 +74,7 @@
                  <!--Start Header Left-->
                  <div class="header-middle  w-100">
                      <div class="main-logo-box">
-                         <a href="index.html">
+                         <a href="/">
                             <p></p>
                              <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
                          </a>
@@ -220,7 +220,7 @@
              <div class="sticky-header__inner clearfix">
                  <!--Logo-->
                  <div class="logo float-left">
-                     <a href="index.html" class="img-responsive">
+                     <a href="/" class="img-responsive">
                          <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="50" height="50" alt="" title="">
                         {{-- <p class="font-weight-bold h2 text-dark">MIU</p> --}}
 
@@ -244,8 +244,8 @@
          <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
          <nav class="menu-box">
              <div class="nav-logo">
-                 <a href="index.html">
-                     <img src="assets/images/resources/mobilemenu-logo.png" alt="" title="">
+                 <a href="/">
+                     <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="50" height="50" alt="" title="">
                  </a>
              </div>
              <div class="menu-outer">

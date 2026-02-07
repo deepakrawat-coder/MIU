@@ -94,7 +94,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -156,7 +156,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -218,7 +218,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -281,7 +281,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -342,7 +342,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -402,7 +402,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -464,7 +464,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -524,7 +524,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
@@ -585,7 +585,7 @@
                                     </li>
                                 </ul>
                                 <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
+                                    <a class="btn-one btn-one--style2" href="/programs">
                                         <span class="txt">Read More</span>
                                     </a>
                                 </div>
