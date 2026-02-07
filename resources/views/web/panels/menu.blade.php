@@ -54,7 +54,7 @@
                              <ul>
                                  <li><a href="#">Staff Login</a></li>
                                  <li><a href="#">Student Login</a></li>
-                                 
+
                              </ul>
                          </div>
                      </div>
@@ -68,15 +68,16 @@
      <!--Start Header-->
      <div class="header w-100">
          <div class="auto-container w-100">
-             <div class="outer-box w-100">               
+             <div class="outer-box w-100">
                  <!--End Header Left-->
 
                  <!--Start Header Left-->
                  <div class="header-middle  w-100">
                      <div class="main-logo-box">
                          <a href="index.html">
-                            <p></p>
-                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
+                             <p></p>
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150"
+                                 height="150" alt="Awesome Logo" title="">
                          </a>
                      </div>
 
@@ -103,7 +104,7 @@
                                              <li>
                                                  <a href="#">Events Gallery</a>
                                              </li>
-
+                                             
                                          </ul>
                                      </li>
                                      <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
@@ -111,7 +112,17 @@
                                      <li class="blank-box"></li>
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
-                                             <li><a href="#">Administration & Academician</a></li>
+                                            <li class="dropdown mr-3"><a href="#">Administration & Academician</a>
+                                                 <ul>
+                                                     <li><a href="/chancellor"> Chancellor </a></li>
+                                                     <li><a href="/vice-chancellor"> Vice Chancellor </a></li>
+                                                     <li><a href="/pro-vice-chancellor"> Pro Vice Chancellor </a></li>
+                                                     <li><a href="/director"> Director </a></li>
+                                                     <li><a href="/registrar"> Registrar </a></li>
+                                                     <li><a href="/academic-leadership-team"> Academic Leadership Team </a></li>
+                                                     <li><a href="/coe"> COE </a></li>
+                                                 </ul>
+                                             </li>
                                              <li>
                                                  <a href="#">Academic Collaborations</a>
                                              </li>
@@ -173,11 +184,11 @@
                                              <li><a href="#">Project Development Cell</a></li>
                                              <li><a href="#">SEDG Cell</a></li>
                                              <li><a href="#">IQAC</a></li>
-                                             <li><a href="#">Telephone Directories</a></li>                                             
+                                             <li><a href="#">Telephone Directories</a></li>
                                          </ul>
                                      </li>
                                      <li class=" mr-3"><a href="#">School and Departments</a></li>
-                                     <li class=" mr-3"><a href="#">Contact</a></li>                                   
+                                     <li class=" mr-3"><a href="/contact-us">Contact</a></li>
                                  </ul>
                              </div>
 
@@ -221,8 +232,9 @@
                  <!--Logo-->
                  <div class="logo float-left">
                      <a href="index.html" class="img-responsive">
-                         <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="100" height="100" alt="" title="">
-                        {{-- <p class="font-weight-bold h2 text-dark">MIU</p> --}}
+                         <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="100" height="100"
+                             alt="" title="">
+                         {{-- <p class="font-weight-bold h2 text-dark">MIU</p> --}}
 
                      </a>
                  </div>
