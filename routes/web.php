@@ -11,6 +11,7 @@ Route::view('dashboard', 'dashboard')
     ->name('dashboard');
 
 Route::view('/', 'web.pages.index');
+Route::view('/about-us', 'web.pages.about-us');
 
 
 require __DIR__.'/settings.php';
