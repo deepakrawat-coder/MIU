@@ -52,7 +52,7 @@
                              <div class="footer-widget-links">
                                  <ul>
                                      <li>
-                                         <a href="#">
+                                         <a href="/about-us">
                                              <span class="icon-right-arrow-2"></span>About Us
                                          </a>
                                      </li>
@@ -173,7 +173,7 @@ India - 795001</p>
                      </div>
                      <div class="footer-logo-style1">
                          <a href="#">
-                             <img src="assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
+                             <img src="/public/assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
                          </a>
                      </div>
                      <div class="footer-menu">

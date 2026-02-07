@@ -1,3 +1,75 @@
-.main-menu .navigation>li>a {
-    font-size: 15px ;
+.main-menu .navigation > li > a {
+    font-size: 13px;
+}
+.sticky-header .logo {
+    padding: 27px 0 20px;
+}
+.custom-textarea {
+    background: #f2efee;
+    border-bottom: 2px solid var(--thm-base);
+}
+.custom-image {
+    background-position: center;
+}
+
+.about-style1__inner:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 0px !important;
+    background: #ede8e6;
+}
+
+.wrapper_years .single-blog-style4 .blog-title {
+    font-size: 30px !important;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+@media (min-width: 991px) {
+    .page-contains-area.stricky-fixed {
+        position: fixed;
+        top: 99px;
+    }
+}
+.program-details-tab-content__inner {
+    position: relative;
+    display: flex;
+    background-color: var(--thm-base);
+    padding: 25px 25px 25px;
+}
+.single-categories-box .icon {
+    flex: none;
+    width: 57px;
+    height: 56px;
+}
+.single-career-opportunities.image-card {
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.single-career-opportunities.image-card:hover {
+    transform: translateY(-5px);
+}
+
+.career-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.career-text {
+    padding: 15px;
+}
+
+.career-text a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #222;
 }

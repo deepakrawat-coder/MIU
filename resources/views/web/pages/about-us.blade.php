@@ -2,29 +2,7 @@
 @section('title', '| About Us')
 @section('description', 'About')
 
-@section('styles')
-    <style>
-        .custom-image {
-            background-position: center;
-        }
-
-        .about-style1__inner:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            bottom: 0;
-            width: 0px !important;
-            background: #ede8e6;
-        }
-
-        .wrapper_years .single-blog-style4 .blog-title {
-            font-size: 30px !important;
-            line-height: 30px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
+@section('styles')    
 @endsection
 @section('content')
 

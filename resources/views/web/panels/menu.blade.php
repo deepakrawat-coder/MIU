@@ -107,7 +107,7 @@
                                          </ul>
                                      </li>
                                      <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
-                                     <li class="mr-3"><a href="#">About MIU</a></li>
+                                     <li class="mr-3"><a href="/about-us">About MIU</a></li>
                                      <li class="blank-box"></li>
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
@@ -216,12 +216,12 @@
 
      <!--Sticky Header-->
      <div class="sticky-header">
-         <div class="container-fluid px-md-5 py-0">
+         <div class="container">
              <div class="sticky-header__inner clearfix">
                  <!--Logo-->
                  <div class="logo float-left">
                      <a href="index.html" class="img-responsive">
-                         <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="100" height="100" alt="" title="">
+                         <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="50" height="50" alt="" title="">
                         {{-- <p class="font-weight-bold h2 text-dark">MIU</p> --}}
 
                      </a>
