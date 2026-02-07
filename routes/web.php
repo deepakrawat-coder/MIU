@@ -16,6 +16,14 @@ Route::view('/departments', 'web.pages.departments');
 Route::view('/programs', 'web.pages.deparments-programs');
 Route::view('/programs-details', 'web.pages.programs-details');
 Route::view('/specialization-details', 'web.pages.specialization-details');
+Route::view('/contact-us', 'web.pages.contact-us');
+Route::view('/chancellor', 'web.pages.chancellor');
+Route::view('/vice-chancellor', 'web.pages.vice-chancellor');
+Route::view('/pro-vice-chancellor', 'web.pages.pro-vice-chancellor');
+Route::view('/registrar', 'web.pages.registrar');
+Route::view('/director', 'web.pages.director');
+Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
+Route::view('/coe', 'web.pages.coe');
 
 
 require __DIR__.'/settings.php';
