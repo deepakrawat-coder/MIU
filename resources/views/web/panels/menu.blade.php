@@ -108,7 +108,7 @@
                                          </ul>
                                      </li>
                                      <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
-                                     <li class="mr-3"><a href="#">About MIU</a></li>
+                                     <li class="mr-3"><a href="/about-us">About MIU</a></li>
                                      <li class="blank-box"></li>
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
