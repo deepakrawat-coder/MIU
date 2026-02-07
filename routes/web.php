@@ -12,6 +12,14 @@ Route::view('dashboard', 'dashboard')
 
 Route::view('/', 'web.pages.index');
 Route::view('/about-us', 'web.pages.about-us');
+Route::view('/contact-us', 'web.pages.contact-us');
+Route::view('/chancellor', 'web.pages.chancellor');
+Route::view('/vice-chancellor', 'web.pages.vice-chancellor');
+Route::view('/pro-vice-chancellor', 'web.pages.pro-vice-chancellor');
+Route::view('/registrar', 'web.pages.registrar');
+Route::view('/director', 'web.pages.director');
+Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
+Route::view('/coe', 'web.pages.coe');
 
 
 require __DIR__.'/settings.php';
