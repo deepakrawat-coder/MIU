@@ -173,7 +173,7 @@ India - 795001</p>
                      </div>
                      <div class="footer-logo-style1">
                          <a href="/">
-                             <img src="{{ asset('/assets/images/web-image/miu-white') }}"  width="150" height="150"  alt="Awesome Logo" title="">
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}"  width="150" height="150"  alt="Awesome Logo" title="">
                          </a>
                      </div>
                      <div class="footer-menu">
