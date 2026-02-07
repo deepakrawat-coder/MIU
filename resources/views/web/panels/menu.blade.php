@@ -52,11 +52,9 @@
                          </div>
                          <div class="link-box">
                              <ul>
-                                 <li><a href="#">Calendars</a></li>
-                                 <li><a href="#">Directory</a></li>
-                                 <li><a href="#">Visit</a></li>
-                                 <li><a href="#">Careers</a></li>
-                                 <li><a href="#">Give</a></li>
+                                 <li><a href="#">Staff Login</a></li>
+                                 <li><a href="#">Student Login</a></li>
+                                 
                              </ul>
                          </div>
                      </div>
@@ -68,39 +66,17 @@
      <!--End Header Top-->
 
      <!--Start Header-->
-     <div class="header">
-         <div class="auto-container">
-             <div class="outer-box">
-
-                 <!--Start Header Left-->
-                 <div class="header-left">
-                     <div class="language-select-box">
-                         <div class="icon">
-                             <span class="icon-web"></span>
-                         </div>
-                         <form action="#" class="language-switcher">
-                             <select class="selectpicker">
-                                 <option value="1">Eng</option>
-                                 <option value="2">Fre</option>
-                                 <option value="3">Ita</option>
-                                 <option value="4">Spa</option>
-                             </select>
-                         </form>
-                     </div>
-                     <div class="serach-button-style1 marleft30">
-                         <button type="button" class="search-toggler">
-                             <i class="icon-zoom"></i>
-                             Search
-                         </button>
-                     </div>
-                 </div>
+     <div class="header w-100">
+         <div class="auto-container w-100">
+             <div class="outer-box w-100">               
                  <!--End Header Left-->
 
                  <!--Start Header Left-->
-                 <div class="header-middle">
+                 <div class="header-middle  w-100">
                      <div class="main-logo-box">
                          <a href="index.html">
-                             <img src="assets/images/resources/logo.png" alt="Awesome Logo" title="">
+                            <p></p>
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
                          </a>
                      </div>
 
@@ -115,161 +91,93 @@
                              </div>
                          </div>
                          <!-- Main Menu -->
-                         <nav class="main-menu style1 navbar-expand-md navbar-light">
+                         <nav class="main-menu style1 navbar-expand-md navbar-light w-100">
 
                              <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                  <ul class="navigation clearfix">
-                                     <li class="dropdown megamenu current"><a href="#">Home</a>
-                                         <ul class="mega_menuv2">
-                                             <div class="row">
-                                                 <div class="col">
-                                                     <a href="index.html" class="mfbox">
-                                                         <img src="assets/images/home/1/home-1.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">University Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-2.html" class="mfbox">
-                                                         <img src="assets/images/home/2/home-4.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Kindergarten Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-3.html" class="mfbox">
-                                                         <img src="assets/images/home/3/home-2.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Academy Demo <i class="fa fa-angle-right"></i>
-                                                     </div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-4.html" class="mfbox">
-                                                         <img src="assets/images/home/4/home-3.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Instructor Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-5.html" class="mfbox">
-                                                         <img src="assets/images/home/5/home-10.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Marketplace Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                             </div>
-                                             <div class="row">
-                                                 <div class="col">
-                                                     <a href="index-6.html" class="mfbox">
-                                                         <img src="assets/images/home/6/home-9.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Single Course Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-7.html" class="mfbox">
-                                                         <img src="assets/images/home/7/home-6.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Cooking Course Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-8.html" class="mfbox">
-                                                         <img src="assets/images/home/8/home-7.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">Quiz Learning Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-9.html" class="mfbox">
-                                                         <img src="assets/images/home/9/home-5.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">College Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                                 <div class="col">
-                                                     <a href="index-10.html" class="mfbox">
-                                                         <img src="assets/images/home/10/home-8.jpg" class="img-fluid"
-                                                             alt="img" />
-                                                     </a>
-                                                     <div class="arrow">High School Demo <i
-                                                             class="fa fa-angle-right"></i></div>
-                                                 </div>
-                                             </div>
-                                         </ul>
-                                     </li>
-                                     <li class="dropdown"><a href="#">Pages</a>
+                                     <li class=" current mr-3"><a href="/">Home</a></li>
+                                     <li class=" mr-3"><a href="#">Admission</a></li>
+                                     <li class="dropdown mr-3"><a href="#">News & Events</a>
                                          <ul>
-                                             <li><a href="about.html">About University</a></li>
+                                             <li><a href="#">News</a></li>
                                              <li>
-                                                 <a href="events.html">Events Style 01</a>
+                                                 <a href="#">Events Gallery</a>
                                              </li>
-                                             <li>
-                                                 <a href="events-2.html">Events Style 02</a>
-                                             </li>
-                                             <li>
-                                                 <a href="events-3.html">Events Style 03</a>
-                                             </li>
-                                             <li>
-                                                 <a href="events-details.html">Events Details</a>
-                                             </li>
-                                             <li>
-                                                 <a href="faq.html">Faq’s Page</a>
-                                             </li>
-                                             <li>
-                                                 <a href="error.html">Error Page</a>
-                                             </li>
+
                                          </ul>
                                      </li>
-                                     <li class="dropdown"><a href="#">Academics</a>
-                                         <ul>
-                                             <li>
-                                                 <a href="academics-overview.html">
-                                                     University Overview
-                                                 </a>
-                                             </li>
-                                             <li>
-                                                 <a href="campus-life.html">
-                                                     University Campus Life
-                                                 </a>
-                                             </li>
-                                             <li>
-                                                 <a href="departments.html">
-                                                     University Departments
-                                                 </a>
-                                             </li>
-                                             <li>
-                                                 <a href="university-programs.html">
-                                                     University Programs
-                                                 </a>
-                                             </li>
-                                             <li>
-                                                 <a href="programs-detail.html">
-                                                     University Programs Details
-                                                 </a>
-                                             </li>
-                                         </ul>
-                                     </li>
+                                     <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
+                                     <li class="mr-3"><a href="#">About MIU</a></li>
                                      <li class="blank-box"></li>
-                                     <li><a href="university-admissions.html">Admissions</a></li>
-                                     <li class="dropdown"><a href="#">Blog</a>
+                                     <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
-                                             <li><a href="blog.html">Blog Grid View</a></li>
-                                             <li><a href="blog-2.html">Blog List View</a></li>
-                                             <li><a href="blog-3.html">Blog Large View</a></li>
-                                             <li><a href="blog-single.html">Blog Details</a></li>
+                                             <li><a href="#">Administration & Academician</a></li>
+                                             <li>
+                                                 <a href="#">Academic Collaborations</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Alumni</a>
+                                             </li>
+
+                                             <li>
+                                                 <a href="#">Awards</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Constituent Colleges</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Health Facilities</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Syllabus & Courses</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Scholarship Policy</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Refund policy</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Reservation Roster</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">Verification</a>
+                                             </li>
+                                             <li>
+                                                 <a href="#">UGC Performa</a>
+                                             </li>
+
+
+                                             <li>
+                                                 <a href="#">Recruitments</a>
+                                             </li>
+
                                          </ul>
                                      </li>
-                                     <li><a href="contact.html">Contact</a></li>
+                                     <li class="dropdown mr-3"><a href="#">Exam</a>
+                                         <ul>
+                                             <li><a href="#">Exam Results</a></li>
+                                         </ul>
+                                     </li>
+                                     <li class="dropdown mr-3"><a href="#">MIU Cell</a>
+                                         <ul>
+                                             <li><a href="#">Incubation center</a></li>
+                                             <li><a href="#">Anti Ragging</a></li>
+                                             <li><a href="#">Academic Council</a></li>
+                                             <li><a href="#">CPIO</a></li>
+                                             <li><a href="#">SGRC</a></li>
+                                             <li><a href="#">Equal opportunity cell</a></li>
+                                             <li><a href="#">Internal Complaint Committee</a></li>
+                                             <li><a href="#">Research And Development Cell</a></li>
+                                             <li><a href="#">Ombudsperson</a></li>
+                                             <li><a href="#">Project Development Cell</a></li>
+                                             <li><a href="#">SEDG Cell</a></li>
+                                             <li><a href="#">IQAC</a></li>
+                                             <li><a href="#">Telephone Directories</a></li>                                             
+                                         </ul>
+                                     </li>
+                                     <li class=" mr-3"><a href="#">School and Departments</a></li>
+                                     <li class=" mr-3"><a href="#">Contact</a></li>                                   
                                  </ul>
                              </div>
 
@@ -281,7 +189,7 @@
                  <!--End Header Left-->
 
                  <!--Start Header Right-->
-                 <div class="header-right">
+                 {{-- <div class="header-right">
                      <div class="header-right__menu">
                          <ul>
                              <li>
@@ -298,7 +206,7 @@
                              </li>
                          </ul>
                      </div>
-                 </div>
+                 </div> --}}
                  <!--End Header Right-->
 
              </div>
@@ -308,12 +216,14 @@
 
      <!--Sticky Header-->
      <div class="sticky-header">
-         <div class="container">
+         <div class="container-fluid px-md-5 py-0">
              <div class="sticky-header__inner clearfix">
                  <!--Logo-->
                  <div class="logo float-left">
                      <a href="index.html" class="img-responsive">
-                         <img src="assets/images/resources/sticky-logo.png" alt="" title="">
+                         <img src="{{ asset('/assets/images/web-image/web-log.png') }}" width="100" height="100" alt="" title="">
+                        {{-- <p class="font-weight-bold h2 text-dark">MIU</p> --}}
+
                      </a>
                  </div>
                  <!--Right Col-->

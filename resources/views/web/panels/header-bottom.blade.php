@@ -4,7 +4,7 @@
     <div class="boxed_wrapper ltr">
 
         <!-- preloader -->
-        <div class="loader-wrap">
+        {{-- <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">x</div>
                 <div id="handle-preloader" class="handle-preloader">
@@ -36,18 +36,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- preloader end -->
 
         <!-- page-direction -->
-        <div class="page_direction" style="display: none;">
+        {{-- <div class="page_direction" style="display: none;">
             <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
             <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
-        </div>
+        </div> --}}
         <!-- page-direction end -->
 
         <!-- switcher menu -->
-        <div class="switcher">
+        {{-- <div class="switcher">
             <div class="switch_btn">
                 <button><img src="assets/images/icon/color-palette.png" alt="Color Palette"> </button>
             </div>
@@ -76,4 +76,4 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> --}}

@@ -11,12 +11,13 @@
                          <div class="single-footer-widget marbtm50">
                              <div class="title">
                                  <div class="dotted"></div>
-                                 <h3>Our Campus</h3>
+                                 <h3>Manipur International University</h3>
                              </div>
                              <div class="our-company-info">
                                  <div class="text-box">
-                                     <p>Trouble that are bound to ensue equal blame belongs to those all
-                                         fail their duty we like best every pleasure is to welcomed.</p>
+                                     <p>MIU is an autonomous private university, committed to providing world-class
+                                         education and fostering research excellence. UGC recognized and NEP 2020
+                                         compliant institution dedicated to academic innovation.</p>
                                  </div>
                                  <ul>
                                      <li>
@@ -32,7 +33,7 @@
                                              <span class="icon-chat"></span>
                                          </div>
                                          <div class="text">
-                                             <a href="contact.html">Request for Consult</a>
+                                             <a href="#">Request for Consult</a>
                                          </div>
                                      </li>
                                  </ul>
@@ -46,34 +47,48 @@
                          <div class="single-footer-widget single-footer-widget--link-box marbtm50">
                              <div class="title">
                                  <div class="dotted"></div>
-                                 <h3>Academic Life</h3>
+                                 <h3>Quick Links</h3>
                              </div>
                              <div class="footer-widget-links">
                                  <ul>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>IB & Subject
+                                             <span class="icon-right-arrow-2"></span>About Us
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Learning Culture
+                                             <span class="icon-right-arrow-2"></span>Academic Programs
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Teaching & Learning
-                                             Support
+                                             <span class="icon-right-arrow-2"></span>Admissions
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Student Research
+                                             <span class="icon-right-arrow-2"></span>Faculty
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>University Guidance
+                                             <span class="icon-right-arrow-2"></span>Research
+                                         </a>
+                                     </li>
+                                      <li>
+                                         <a href="#">
+                                             <span class="icon-right-arrow-2"></span>School of Departments
+                                         </a>
+                                     </li>
+                                      <li>
+                                         <a href="#">
+                                             <span class="icon-right-arrow-2"></span>Rerutments
+                                         </a>
+                                     </li>
+                                      <li>
+                                         <a href="#">
+                                             <span class="icon-right-arrow-2"></span>Alumni
                                          </a>
                                      </li>
 
@@ -88,13 +103,13 @@
                          <div class="single-footer-widget single-footer-widget--link-box">
                              <div class="title">
                                  <div class="dotted"></div>
-                                 <h3>Admissions</h3>
+                                 <h3>Resources/h3>
                              </div>
                              <div class="footer-widget-links">
                                  <ul>
                                      <li>
                                          <a href="about.html">
-                                             <span class="icon-right-arrow-2"></span>About Admission
+                                             <span class="icon-right-arrow-2"></span>Student portal
                                          </a>
                                      </li>
                                      <li>
@@ -105,17 +120,17 @@
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Scholarship
+                                             <span class="icon-right-arrow-2"></span>Faculty Portal
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Nomination & Acceptance
+                                             <span class="icon-right-arrow-2"></span>Library
                                          </a>
                                      </li>
                                      <li>
                                          <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Question & Answer
+                                             <span class="icon-right-arrow-2"></span>Examination
                                          </a>
                                      </li>
 
@@ -133,11 +148,12 @@
                                  <h3>Get in Touch</h3>
                              </div>
                              <div class="footer-widget-contact-info">
-                                 <p>Educamb University 6500 NW Brook Park Drive Jacksonville, USA
-                                     32034.</p>
+                                 <p>Manipur International University
+Imphal, Manipur
+India - 795001</p>
                                  <ul>
-                                     <li><a href="tel:123456789">815-641-5000</a></li>
-                                     <li><a href="mailto:yourmail@email.com">support@educamb.com</a></li>
+                                     <li><a href="tel:903 698 3337">+91 903 698 3337</a></li>
+                                     <li><a href="mailto:info@miu.edu.in">info@miu.edu.in</a></li>
                                  </ul>
                              </div>
                          </div>
@@ -153,10 +169,10 @@
              <div class="container">
                  <div class="bottom-inner">
                      <div class="copyright">
-                         <p>Copyright &copy; 2022 <a href="index.html">Educamb.</a> All Rights Reserved.</p>
+                         <p>Copyright &copy; 2022 <a href="#">Educamb.</a> All Rights Reserved.</p>
                      </div>
                      <div class="footer-logo-style1">
-                         <a href="index.html">
+                         <a href="#">
                              <img src="assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
                          </a>
                      </div>
@@ -194,11 +210,11 @@
              </form>
              <h3>Recent Search Keywords</h3>
              <ul class="recent-searches">
-                 <li><a href="index.html">Campus</a></li>
-                 <li><a href="index.html">Event</a></li>
-                 <li><a href="index.html">Research</a></li>
-                 <li><a href="index.html">Training</a></li>
-                 <li><a href="index.html">Education</a></li>
+                 <li><a href="#">Campus</a></li>
+                 <li><a href="#">Event</a></li>
+                 <li><a href="#">Research</a></li>
+                 <li><a href="#">Training</a></li>
+                 <li><a href="#">Education</a></li>
              </ul>
          </div>
      </div>

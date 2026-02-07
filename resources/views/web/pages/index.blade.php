@@ -158,7 +158,7 @@
                                     University. The university is empowered to award degrees under section 22 of the UGC
                                     Act, 1956, ensuring that all degrees conferred by MIU hold national recognition and
                                     validity.</p>
-                                <p>
+                                {{-- <p>
                                     As an Autonomous University, MIU stands as a beacon of educational innovation and
                                     excellence. The university operates as an aspiring research-oriented institution under
                                     the National Education Policy (NEP) 2020, focusing on interdisciplinary learning, skill
@@ -169,7 +169,7 @@
                                     international collaborations, conduct independent research, and implement progressive
                                     academic policies that align with global standards while addressing regional and
                                     national needs.
-                                </p>
+                                </p> --}}
                             </div>
                         </div>
 
@@ -372,9 +372,9 @@
     <section class="departments-area">
         <div class="container">
             <div class="sec-title text-center">
-                <h2>Study at Educamb</h2>
+                <h2>Study at Manipur International University</h2>
                 <div class="sub-title">
-                    <p>How all this mistaken idea of denouncing pleasure and praising pain was born.</p>
+                    <p>Explore the diverse academic departments at Manipur International University</p>
                 </div>
             </div>
             <div class="row">
@@ -387,11 +387,11 @@
                             <div class="round-box"></div>
                         </div>
                         <div class="text-holder">
-                            <a href="#">Accounting</a>
+                            <a href="#">HUMANITIES and Languages</a>
                             <div class="text">
-                                <p>To take a trivial example which of us
-                                    ever undertakes laborious physical exercise
-                                    to obtain some advantage.</p>
+                                <p>TThe Department of Humanities and Languages focuses on critical thinking,
+                                    communication skills, cultural studies, and linguistic excellence to
+                                    prepare students for global academic and professional environments.</p>
                             </div>
                         </div>
                     </div>
@@ -404,11 +404,11 @@
                             <div class="round-box"></div>
                         </div>
                         <div class="text-holder">
-                            <a href="#">Computer</a>
+                            <a href="#">LAW and Strategic Studies</a>
                             <div class="text">
-                                <p>Indignation and dislike men who
-                                    are so beguileds and demoralized by that
-                                    of pleasure of the moment.</p>
+                                <p>This department offers comprehensive legal education combined with
+                                    strategic studies, policy research, and practical exposure to develop
+                                    future legal professionals and leaders.</p>
                             </div>
                         </div>
                     </div>
@@ -433,6 +433,10 @@
                                     <h3><a href="#">Graduate</a></h3>
                                     <p>Master of Science</p>
                                 </li>
+                                <li>
+                                    <h3><a href="#">Diploma</a></h3>
+                                    <p>Master of Science</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -449,9 +453,9 @@
                         <div class="text-holder">
                             <a href="#">Business</a>
                             <div class="text">
-                                <p>Indignation and dislike men who
-                                    are so beguileds and demoralized by that
-                                    of pleasure of the moment.</p>
+                                <p>The Business department equips students with modern management,
+                                    entrepreneurship, finance, and leadership skills aligned with
+                                    industry and global business standards.</p>
                             </div>
                         </div>
                     </div>
@@ -466,9 +470,9 @@
                         <div class="text-holder">
                             <a href="#">Health Sciences</a>
                             <div class="text">
-                                <p>To take a trivial example which of us
-                                    ever undertakes laborious physical exercise
-                                    to obtain some advantage.</p>
+                                <p>The Department of Health Sciences emphasizes medical knowledge,
+                                    healthcare management, and applied research to support community
+                                    wellbeing and healthcare innovation.</p>
                             </div>
                         </div>
                     </div>
@@ -486,9 +490,1827 @@
 
         </div>
     </section>
-    <!--End Departments Area-->
-    <!--Start Explore Future Area-->
     <section class="explore-future-area">
+        <div class="container">
+            <div class="sec-title text-center">
+                <h2>Top Academic Programs at Manipur International University</h2>
+                <div class="sub-title">
+                    <p>Discover industry-focused undergraduate, postgraduate, and doctoral programs designed for global
+                        careers</p>
+                </div>
+            </div>
+            <div class="row">
+
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-budget"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Accounting</a>
+                                    <div class="text">
+                                        <p>To take a trivial example which of us
+                                            ever undertakes laborious physical exercise
+                                            to obtain some advantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-1.jpg);">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Accounting Management</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-portfolio"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Business</a>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who
+                                            beguileds and all demoralized by that
+                                            of pleasure of the moment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-2.jpg);">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Business Management</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-keyboard"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Computer</a>
+                                    <div class="text">
+                                        <p>To take a trivial example which of us
+                                            ever undertakes laborious physical exercise
+                                            to obtain some advantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-3.jpg);">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content left">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Computer Science</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+
+
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-test-tube"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Health Sciences</a>
+                                    <div class="text">
+                                        <p>Our power of choice is when
+                                            nothing prevent our being able to do
+                                            what we like best.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-4.jpg);">
+                            </div>
+                        </div>
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Health Sciences</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-leaf"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Plant Sciences</a>
+                                    <div class="text">
+                                        <p>To take a trivial example which of us
+                                            ever undertakes laborious physical exercise
+                                            to obtain some advantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-5.jpg);">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Plant Sciences</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-fire-extinguisher"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Public Safety</a>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who
+                                            beguileds and all demoralized by that
+                                            of pleasure of the moment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-6.jpg);">
+                            </div>
+                        </div>
+                        <div class="single-department-box-style2__ovarlay-content left">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Public Safety</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+
+
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-fire-extinguisher"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Public Safety</a>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who
+                                            beguileds and all demoralized by that
+                                            of pleasure of the moment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-7.jpg);">
+                            </div>
+                        </div>
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Public Safety</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-test-tube"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Health Sciences</a>
+                                    <div class="text">
+                                        <p>Our power of choice is when
+                                            nothing prevent our being able to do
+                                            what we like best.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-8.jpg);">
+                            </div>
+                        </div>
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Health Sciences</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+                <!--Start Single Departments Box Style2-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-leaf"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Plant Sciences</a>
+                                    <div class="text">
+                                        <p>To take a trivial example which of us
+                                            ever undertakes laborious physical exercise
+                                            to obtain some advantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url(assets/images/resources/departments-9.jpg);">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content left">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Plant Sciences</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Departments Box Style2-->
+
+            </div>
+        </div>
+    </section>
+    <!--End Departments Area-->
+    <!--Start Fact Counter Area-->
+    <section class="fact-counter-area">
+        <div class="container">
+            <div class="sec-title text-center">
+                <h2>Manipur International University at a Glance<< /h2>
+                        <div class="sub-title">
+                            <p>Key milestones, academic strength, and infrastructure that define MIU’s excellence</p>
+                        </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-12">
+                    <ul class="fact-counter-box">
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter">
+                            <div class="title-holder">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="2019">0</span>
+                                </div>
+                                <h3>Year Established</h3>
+                            </div>
+                            <div class="icon-holder">
+                                <span class="icon-online"><span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span><span class="path4"></span><span
+                                        class="path5"></span><span class="path6"></span><span
+                                        class="path7"></span><span class="path8"></span><span
+                                        class="path9"></span><span class="path10"></span><span
+                                        class="path11"></span><span class="path12"></span><span
+                                        class="path13"></span><span class="path14"></span><span
+                                        class="path15"></span><span class="path16"></span><span
+                                        class="path17"></span></span>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter single-fact-counter--style2">
+                            <div class="title-holder">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="100">0</span>
+                                </div>
+                                <h3>Faculty Members</h3>
+                            </div>
+                            <div class="icon-holder">
+                                <span class="icon-office-building"><span class="path1"></span><span
+                                        class="path2"></span><span class="path3"></span><span
+                                        class="path4"></span><span class="path5"></span><span
+                                        class="path6"></span><span class="path7"></span><span
+                                        class="path8"></span><span class="path9"></span><span
+                                        class="path10"></span><span class="path11"></span><span
+                                        class="path12"></span><span class="path13"></span><span
+                                        class="path14"></span><span class="path15"></span><span
+                                        class="path16"></span><span class="path17"></span><span
+                                        class="path18"></span><span class="path19"></span><span
+                                        class="path20"></span><span class="path21"></span><span
+                                        class="path22"></span><span class="path23"></span><span
+                                        class="path24"></span><span class="path25"></span><span
+                                        class="path26"></span><span class="path27"></span><span
+                                        class="path28"></span><span class="path29"></span><span
+                                        class="path30"></span><span class="path31"></span><span
+                                        class="path32"></span><span class="path33"></span><span
+                                        class="path34"></span><span class="path35"></span><span
+                                        class="path36"></span><span class="path37"></span><span
+                                        class="path38"></span><span class="path39"></span><span
+                                        class="path40"></span><span class="path41"></span><span
+                                        class="path42"></span><span class="path43"></span><span
+                                        class="path44"></span><span class="path45"></span><span
+                                        class="path46"></span><span class="path47"></span><span
+                                        class="path48"></span><span class="path49"></span><span
+                                        class="path50"></span><span class="path51"></span><span
+                                        class="path52"></span><span class="path53"></span><span
+                                        class="path54"></span><span class="path55"></span><span
+                                        class="path56"></span><span class="path57"></span><span
+                                        class="path58"></span><span class="path59"></span><span
+                                        class="path60"></span><span class="path61"></span><span
+                                        class="path62"></span><span class="path63"></span></span>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                    </ul>
+
+                    <ul class="fact-counter-box bottom">
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter pdt50 pdb0">
+                            <div class="title-holder">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="50">0</span>
+                                </div>
+                                <h3>Academic Programs</h3>
+                            </div>
+                            <div class="icon-holder">
+                                <span class="icon-book"><span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span><span class="path4"></span><span
+                                        class="path5"></span><span class="path6"></span><span
+                                        class="path7"></span><span class="path8"></span><span
+                                        class="path9"></span><span class="path10"></span><span
+                                        class="path11"></span><span class="path12"></span><span
+                                        class="path13"></span><span class="path14"></span><span
+                                        class="path15"></span><span class="path16"></span><span
+                                        class="path17"></span><span class="path18"></span><span
+                                        class="path19"></span><span class="path20"></span><span
+                                        class="path21"></span><span class="path22"></span><span
+                                        class="path23"></span><span class="path24"></span><span
+                                        class="path25"></span><span class="path26"></span><span
+                                        class="path27"></span><span class="path28"></span><span
+                                        class="path29"></span><span class="path30"></span><span
+                                        class="path31"></span><span class="path32"></span><span
+                                        class="path33"></span><span class="path34"></span></span>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                        <!--Start Single Fact Counter-->
+                        <li class="single-fact-counter single-fact-counter--style2 pdt50 pdb0">
+                            <div class="title-holder">
+                                <div class="count-outer count-box">
+                                    <span class="count-text" data-speed="3000" data-stop="10">0</span>
+                                </div>
+                                <h3>Research Centers</h3>
+                            </div>
+                            <div class="icon-holder">
+                                <span class="icon-browser"><span class="path1"></span><span class="path2"></span><span
+                                        class="path3"></span><span class="path4"></span><span
+                                        class="path5"></span><span class="path6"></span><span
+                                        class="path7"></span><span class="path8"></span><span
+                                        class="path9"></span><span class="path10"></span><span
+                                        class="path11"></span><span class="path12"></span><span
+                                        class="path13"></span><span class="path14"></span><span
+                                        class="path15"></span><span class="path16"></span><span
+                                        class="path17"></span><span class="path18"></span><span
+                                        class="path19"></span><span class="path20"></span><span
+                                        class="path21"></span><span class="path22"></span><span
+                                        class="path23"></span></span>
+                            </div>
+                        </li>
+                        <!--End Single Fact Counter-->
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Fact Counter Area-->
+    <section class="testimonial-style1-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1__title">
+                        <div class="sec-title">
+                            <h2>Voices of MIU Alumni</h2>
+                            <div class="sub-title">
+                                <p>
+                                    Hear from our alumni as they share their experiences and success stories at Manipur
+                                    International University
+                                </p>
+                            </div>
+                        </div>
+                        {{-- <div class="btns-box">
+                            <a class="btn-one" href="#">
+                                <span class="txt">More Reviews</span>
+                            </a>
+                        </div> --}}
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1-content">
+                        <div class="theme_carousel testimonial-carousel owl-theme owl-carousel"
+                            data-options='{
+                                    "loop": true, 
+                                    "margin": 30, 
+                                    "autoheight":true, 
+                                    "lazyload":true, 
+                                    "nav": false, 
+                                    "dots": false, 
+                                    "autoplay": true, 
+                                    "autoplayTimeout": 5000, 
+                                    "smartSpeed": 500, 
+                                    "navText": ["<span class=\"left icon-next\"></span>",
+                                    "<span class=\"right icon-next\"></span>"], 
+                                    "responsive":{ 
+                                    "0" :{ "items": "1" }, 
+                                    "600" :{ "items" : "1" }, 
+                                    "768" :{ "items" : "1" }, 
+                                    "992":{ "items" : "2" }, 
+                                    "1200":{ "items" : "3" }
+                                }
+                            }'>
+
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-1.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Studying at Manipur International University was a life-changing experience.
+                                            The academic environment, supportive faculty, and practical learning helped
+                                            me build a strong foundation for my professional career.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Ananya Sharma</h3>
+                                    <span>B.Tech (Computer Science) | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-2.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>MIU provided me exposure to diverse cultures, modern infrastructure,
+                                            and industry-oriented education. The mentorship I received shaped
+                                            my confidence and professional growth.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Rohit Singh</h3>
+                                    <span>BBA | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-3.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>The faculty at MIU are highly knowledgeable and approachable.
+                                            Their guidance and encouragement helped me develop analytical
+                                            and leadership skills essential for my career.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Priya Devi</h3>
+                                    <span>B.Tech (Civil Engineering) | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-1.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>My journey at Manipur International University was filled with
+                                            learning opportunities, research exposure, and holistic development.
+                                            MIU truly prepares students for real-world challenges.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Amit Kumar</h3>
+                                    <span>MBA | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-2.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>MIU’s academic structure and career support system helped me
+                                            transition smoothly from student life to a professional role.
+                                            I am proud to be an MIU alumnus.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Neha Verma</h3>
+                                    <span>M.Sc | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+                            <!--Start Single Testimonial Style1-->
+                            <div class="single-testimonial-style1">
+                                <div class="border-box"></div>
+                                <div class="top-box">
+                                    <div class="quote-iocn-box">
+                                        <span class="icon-quote"></span>
+                                    </div>
+                                    <div class="inner">
+                                        <div class="img-box">
+                                            <img src="assets/images/testimonial/testimonial-v1-3.jpg" alt="">
+                                        </div>
+                                        <div class="rating-box">
+                                            <ul>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="icon-favourite">
+                                                        <span class="path1"></span><span class="path2"></span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="text">
+                                        <p>Being part of MIU allowed me to explore my potential through
+                                            innovative learning and practical exposure. The university
+                                            continues to inspire me even after graduation.</p>
+                                    </div>
+                                </div>
+                                <div class="client-name">
+                                    <h3>Rahul Meitei</h3>
+                                    <span>B.Tech (Mechanical Engineering) | MIU Alumni</span>
+                                </div>
+                            </div>
+                            <!--End Single Testimonial Style1-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{-- <section class="testimonial-style1-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1__title">
+                        <div class="sec-title">
+                            <h2>Voices of MIU Alumni</h2>
+                            <div class="sub-title">
+                                <p>
+                                    Hear from our alumni as they share their experiences and success stories at Manipur
+                                    International University
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-1.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Awards</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3><a href="blog-single.html">University of Educamb Award
+                                    4 Honorary Degrees</a></h3>
+                            <div class="text">
+                                <p>Duty obligations of business frequently
+                                    occur pleasures enjoy...</p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                    </a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Nov 25, 2022</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-2.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Academics</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3>
+                                <a href="blog-single.html">
+                                    A Core Commitment to Liberal Arts and Sciences
+                                </a>
+                            </h3>
+                            <div class="text">
+                                <p>Beguiled and demoralized by charms of
+                                    pleasure of the moment so...</p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                    </a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Nov 14, 2022</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-3.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Foundation</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3>
+                                <a href="blog-single.html">
+                                    University College Appoints Dean of Humanities
+                                </a>
+                            </h3>
+                            <div class="text">
+                                <p>These cases are perfectly simple easy
+                                    to distinguish. In a free hour...</p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                    </a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Oct 28, 2022</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+
+
+
+                <!--End Single Blog Style1-->
+            </div>
+    </section> --}}
+    <section class="testimonial-style1-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1__title">
+                        <div class="sec-title">
+                            <h2>Voices of MIU Alumni</h2>
+                            <div class="sub-title">
+                                <p>
+                                    Hear from our alumni as they share their experiences, achievements,
+                                    and journeys after graduating from Manipur International University
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-1.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Alumni Achievement</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3>
+                                <a href="blog-single.html">
+                                    MIU Alumni Recognized for Excellence in Research
+                                </a>
+                            </h3>
+                            <div class="text">
+                                <p>
+                                    Our alumni continue to make a mark globally through innovation,
+                                    leadership, and impactful research across industries.
+                                </p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                    </a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-2.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Career Growth</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3>
+                                <a href="blog-single.html">
+                                    From Campus to Corporate: MIU Alumni Career Journeys
+                                </a>
+                            </h3>
+                            <div class="text">
+                                <p>
+                                    Discover how MIU alumni transitioned from academic life to
+                                    successful professional careers in top organizations.
+                                </p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                    </a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Dec 08, 2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+
+                <!--Start Single Blog Style1-->
+                <div class="col-xl-4 col-lg-4">
+                    <div class="single-blog-style1">
+                        <div class="img-holder">
+                            <div class="inner">
+                                <img src="assets/images/blog/blog-v2-3.jpg" alt="">
+                            </div>
+                            <div class="category-box">
+                                <div class="dot-box"></div>
+                                <p>Alumni Network</p>
+                            </div>
+                        </div>
+                        <div class="text-holder">
+                            <h3>
+                                <a href="blog-single.html">
+                                    Strengthening the MIU Alumni Community Worldwide
+                                </a>
+                            </h3>
+                            <div class="text">
+                                <p>
+                                    MIU’s growing alumni network fosters lifelong connections,
+                                    mentorship opportunities, and professional collaboration.
+                                </p>
+                            </div>
+                            <div class="bottom-box">
+                                <div class="btn-box">
+                                    <a href="blog-single.html">
+                                        <span class="icon-right-arrow-1"></span>Read More
+                                        < /a>
+                                </div>
+                                <div class="meta-info">
+                                    <ul>
+                                        <li><span class="icon-calendar"></span><a href="#">Nov 20, 2023</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Blog Style1-->
+            </div>
+        </div>
+    </section>
+    {{-- <section class="testimonial-style1-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1__title">
+                        <div class="sec-title">
+                            <h2>Voices of MIU Alumni</h2>
+                            <div class="sub-title">
+                                <p>
+                                    Hear from our alumni as they share their experiences, achievements,
+                                    and journeys after graduating from Manipur International University
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>01</h2>
+                                        <h4>Dec, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Women's Basketball Tournament
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who so beguiled &amp; demoralized.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-1.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>24</h2>
+                                        <h4>Dec, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>$8</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Twenty Minutes Still Meditation in Bond
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Beguiled and demoralized by the so blinded are by desires.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-2.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>17</h2>
+                                        <h4>Jan, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>$5</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Student Art Exhibit by Design Students
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Toil and pain can procure him some great pleasure.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-3.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+
+
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>25</h2>
+                                        <h4>Jan, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>$5</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Student Art Exhibit by Design Students
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Toil and pain can procure him some great pleasure.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-4.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>06</h2>
+                                        <h4>Dec, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>Free</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Women's Basketball Tournament
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who so beguiled &amp; demoralized.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-5.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+                <!--Start Single Event Three-->
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="single-event-three">
+                        <div class="single-event-three__inner">
+                            <div class="static-content">
+                                <div class="top-box">
+                                    <div class="date-box">
+                                        <h2>01</h2>
+                                        <h4>Dec, 2022</h4>
+                                    </div>
+                                    <div class="price-box">
+                                        <div class="inner">
+                                            <h3>$10</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-holder">
+                                    <h3>
+                                        <a href="events-details.html">
+                                            Women's Basketball Tournament
+                                        </a>
+                                    </h3>
+                                    <div class="text">
+                                        <p>Indignation and dislike men who so beguiled &amp; demoralized.</p>
+                                    </div>
+                                    <ul>
+                                        <li><span class="icon-time"></span> 10.00 am - 01.00 pm</li>
+                                        <li><span class="icon-location-1"></span> Educamb Ronald Auditorium</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="overlay-content">
+                                <div class="img-bg"
+                                    style="background-image: url(assets/images/events/event-three-6.jpg);"></div>
+                                <div class="button-box">
+                                    <a class="btn-one" href="events-details.html">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Single Event Three-->
+
+            </div>
+        </div>
+    </section> --}}
+    <section class="testimonial-style1-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="testimonial-style1__title">
+                    <div class="sec-title">
+                        <h2>Events at Manipur International University</h2>
+                        <div class="sub-title">
+                            <p>
+                                Stay updated with academic, cultural, sports, and professional events
+                                happening at Manipur International University
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!--Start Single Event-->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="single-event-three">
+                    <div class="single-event-three__inner">
+                        <div class="static-content">
+                            <div class="top-box">
+                                <div class="date-box">
+                                    <h2>01</h2>
+                                    <h4>Dec, 2024</h4>
+                                </div>
+                                <div class="price-box">
+                                    <div class="inner">
+                                        <h3>Free</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h3>
+                                    <a href="events-details.html">
+                                        MIU Annual Cultural Fest
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>
+                                        A vibrant celebration of culture, talent, music, and diversity
+                                        featuring students from all departments.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><span class="icon-time"></span> 10:00 am – 05:00 pm</li>
+                                    <li><span class="icon-location-1"></span> MIU Main Campus Ground</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overlay-content">
+                            <div class="img-bg"
+                                style="background-image: url(assets/images/events/event-three-1.jpg);"></div>
+                            <div class="button-box">
+                                <a class="btn-one" href="events-details.html">
+                                    <span class="txt">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Event-->
+
+            <!--Start Single Event-->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="single-event-three">
+                    <div class="single-event-three__inner">
+                        <div class="static-content">
+                            <div class="top-box">
+                                <div class="date-box">
+                                    <h2>15</h2>
+                                    <h4>Dec, 2024</h4>
+                                </div>
+                                <div class="price-box">
+                                    <div class="inner">
+                                        <h3>Free</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h3>
+                                    <a href="events-details.html">
+                                        National Seminar on Emerging Technologies
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>
+                                        An academic seminar focusing on innovation, research trends,
+                                        and future technologies.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><span class="icon-time"></span> 11:00 am – 03:00 pm</li>
+                                    <li><span class="icon-location-1"></span> MIU Seminar Hall</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overlay-content">
+                            <div class="img-bg"
+                                style="background-image: url(assets/images/events/event-three-2.jpg);"></div>
+                            <div class="button-box">
+                                <a class="btn-one" href="events-details.html">
+                                    <span class="txt">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Event-->
+
+            <!--Start Single Event-->
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <div class="single-event-three">
+                    <div class="single-event-three__inner">
+                        <div class="static-content">
+                            <div class="top-box">
+                                <div class="date-box">
+                                    <h2>05</h2>
+                                    <h4>Jan, 2025</h4>
+                                </div>
+                                <div class="price-box">
+                                    <div class="inner">
+                                        <h3>Free</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <h3>
+                                    <a href="events-details.html">
+                                        MIU Sports Meet & Athletics Championship
+                                    </a>
+                                </h3>
+                                <div class="text">
+                                    <p>
+                                        Annual sports event promoting fitness, teamwork,
+                                        and competitive spirit of students.
+                                    </p>
+                                </div>
+                                <ul>
+                                    <li><span class="icon-time"></span> 09:00 am – 04:00 pm</li>
+                                    <li><span class="icon-location-1"></span> MIU Sports Complex</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overlay-content">
+                            <div class="img-bg"
+                                style="background-image: url(assets/images/events/event-three-3.jpg);"></div>
+                            <div class="button-box">
+                                <a class="btn-one" href="events-details.html">
+                                    <span class="txt">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Single Event-->
+
+        </div>
+    </div>
+</section>
+
+    <!--Start Explore Future Area-->
+    {{-- <section class="explore-future-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -597,150 +2419,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Explore Future Area-->
-    <!--Start Fact Counter Area-->
-    <section class="fact-counter-area">
-        <div class="container">
-            <div class="sec-title text-center">
-                <h2>Most Interesting Facts</h2>
-                <div class="sub-title">
-                    <p>To take a trivial example which of us ever undertakes laborious physical exercise.</p>
-                </div>
-            </div>
 
-            <div class="row">
-                <div class="col-xl-12">
-                    <ul class="fact-counter-box">
-                        <!--Start Single Fact Counter-->
-                        <li class="single-fact-counter">
-                            <div class="title-holder">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="2500">0</span>
-                                </div>
-                                <h3>History of High Achievers</h3>
-                            </div>
-                            <div class="icon-holder">
-                                <span class="icon-online"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span
-                                        class="path5"></span><span class="path6"></span><span
-                                        class="path7"></span><span class="path8"></span><span
-                                        class="path9"></span><span class="path10"></span><span
-                                        class="path11"></span><span class="path12"></span><span
-                                        class="path13"></span><span class="path14"></span><span
-                                        class="path15"></span><span class="path16"></span><span
-                                        class="path17"></span></span>
-                            </div>
-                        </li>
-                        <!--End Single Fact Counter-->
-                        <!--Start Single Fact Counter-->
-                        <li class="single-fact-counter single-fact-counter--style2">
-                            <div class="title-holder">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="1870">0</span>
-                                </div>
-                                <h3>Total Acres of the Land</h3>
-                            </div>
-                            <div class="icon-holder">
-                                <span class="icon-office-building"><span class="path1"></span><span
-                                        class="path2"></span><span class="path3"></span><span
-                                        class="path4"></span><span class="path5"></span><span
-                                        class="path6"></span><span class="path7"></span><span
-                                        class="path8"></span><span class="path9"></span><span
-                                        class="path10"></span><span class="path11"></span><span
-                                        class="path12"></span><span class="path13"></span><span
-                                        class="path14"></span><span class="path15"></span><span
-                                        class="path16"></span><span class="path17"></span><span
-                                        class="path18"></span><span class="path19"></span><span
-                                        class="path20"></span><span class="path21"></span><span
-                                        class="path22"></span><span class="path23"></span><span
-                                        class="path24"></span><span class="path25"></span><span
-                                        class="path26"></span><span class="path27"></span><span
-                                        class="path28"></span><span class="path29"></span><span
-                                        class="path30"></span><span class="path31"></span><span
-                                        class="path32"></span><span class="path33"></span><span
-                                        class="path34"></span><span class="path35"></span><span
-                                        class="path36"></span><span class="path37"></span><span
-                                        class="path38"></span><span class="path39"></span><span
-                                        class="path40"></span><span class="path41"></span><span
-                                        class="path42"></span><span class="path43"></span><span
-                                        class="path44"></span><span class="path45"></span><span
-                                        class="path46"></span><span class="path47"></span><span
-                                        class="path48"></span><span class="path49"></span><span
-                                        class="path50"></span><span class="path51"></span><span
-                                        class="path52"></span><span class="path53"></span><span
-                                        class="path54"></span><span class="path55"></span><span
-                                        class="path56"></span><span class="path57"></span><span
-                                        class="path58"></span><span class="path59"></span><span
-                                        class="path60"></span><span class="path61"></span><span
-                                        class="path62"></span><span class="path63"></span></span>
-                            </div>
-                        </li>
-                        <!--End Single Fact Counter-->
-                    </ul>
-
-                    <ul class="fact-counter-box bottom">
-                        <!--Start Single Fact Counter-->
-                        <li class="single-fact-counter pdt50 pdb0">
-                            <div class="title-holder">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="3.9">0</span>
-                                </div>
-                                <h3>Kilometres of Bookshelves</h3>
-                            </div>
-                            <div class="icon-holder">
-                                <span class="icon-book"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span
-                                        class="path5"></span><span class="path6"></span><span
-                                        class="path7"></span><span class="path8"></span><span
-                                        class="path9"></span><span class="path10"></span><span
-                                        class="path11"></span><span class="path12"></span><span
-                                        class="path13"></span><span class="path14"></span><span
-                                        class="path15"></span><span class="path16"></span><span
-                                        class="path17"></span><span class="path18"></span><span
-                                        class="path19"></span><span class="path20"></span><span
-                                        class="path21"></span><span class="path22"></span><span
-                                        class="path23"></span><span class="path24"></span><span
-                                        class="path25"></span><span class="path26"></span><span
-                                        class="path27"></span><span class="path28"></span><span
-                                        class="path29"></span><span class="path30"></span><span
-                                        class="path31"></span><span class="path32"></span><span
-                                        class="path33"></span><span class="path34"></span></span>
-                            </div>
-                        </li>
-                        <!--End Single Fact Counter-->
-                        <!--Start Single Fact Counter-->
-                        <li class="single-fact-counter single-fact-counter--style2 pdt50 pdb0">
-                            <div class="title-holder">
-                                <div class="count-outer count-box">
-                                    <span class="count-text" data-speed="3000" data-stop="164">0</span>
-                                </div>
-                                <h3>Awards & Achivements</h3>
-                            </div>
-                            <div class="icon-holder">
-                                <span class="icon-browser"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span
-                                        class="path5"></span><span class="path6"></span><span
-                                        class="path7"></span><span class="path8"></span><span
-                                        class="path9"></span><span class="path10"></span><span
-                                        class="path11"></span><span class="path12"></span><span
-                                        class="path13"></span><span class="path14"></span><span
-                                        class="path15"></span><span class="path16"></span><span
-                                        class="path17"></span><span class="path18"></span><span
-                                        class="path19"></span><span class="path20"></span><span
-                                        class="path21"></span><span class="path22"></span><span
-                                        class="path23"></span></span>
-                            </div>
-                        </li>
-                        <!--End Single Fact Counter-->
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Fact Counter Area-->
-    <!--Start Teaching Area-->
+    {{-- <!--Start Teaching Area-->
     <section class="teaching-area">
         <div class="auto-container">
             <div class="row">
@@ -2119,7 +3801,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!--End Slogan Style1 Area-->
 
     <!-- search-popup end -->
