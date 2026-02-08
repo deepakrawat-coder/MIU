@@ -24,7 +24,10 @@ Route::view('/registrar', 'web.pages.registrar');
 Route::view('/director', 'web.pages.director');
 Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
 Route::view('/incubation-center', 'web.pages.incubation-center');
+Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
+Route::view('/notice-and-events', 'web.pages.notice-and-events');
+Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
 
 
 require __DIR__.'/settings.php';
