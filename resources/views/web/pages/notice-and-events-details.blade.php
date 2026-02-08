@@ -30,7 +30,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -62,7 +62,7 @@
                         <div class="blog-details-page__content__inner">
 
                             <div class="blog-details-page__img-box">
-                                <img src="{{ asset('assets/images/web-image/ne1.jpeg') }}" class="w-100 img-fluid mb-4"
+                                <img src="{{ asset('/assets/images/web-image/ne1.jpeg') }}" class="w-100 img-fluid mb-4"
                                     alt="image">
                             </div>
 
@@ -142,7 +142,7 @@
                                             <div class="single-blog-style1">
                                                 <div class="img-holder">
                                                     <div class="inner">
-                                                        <img src="{{ asset('assets/images/web-image/ne1.jpeg') }}"
+                                                        <img src="{{ asset('/assets/images/web-image/ne1.jpeg') }}"
                                                             class="w-100 img-fluid" alt="image">
                                                     </div>
                                                     <div class="category-box">
@@ -180,7 +180,7 @@
                                             <div class="single-blog-style1">
                                                 <div class="img-holder">
                                                     <div class="inner">
-                                                        <img src="{{ asset('assets/images/web-image/ne2.jpg') }}"
+                                                        <img src="{{ asset('/assets/images/web-image/ne2.jpg') }}"
                                                             class="w-100 img-fluid" alt="image">
                                                     </div>
                                                     <div class="category-box">
@@ -216,7 +216,7 @@
                                             <div class="single-blog-style1">
                                                 <div class="img-holder">
                                                     <div class="inner">
-                                                        <img src="{{ asset('assets/images/web-image/ne3.jpg') }}"
+                                                        <img src="{{ asset('/assets/images/web-image/ne3.jpg') }}"
                                                             class="w-100 img-fluid" alt="image">
                                                     </div>
                                                     <div class="category-box">
@@ -254,7 +254,7 @@
                                             <div class="single-blog-style1">
                                                 <div class="img-holder">
                                                     <div class="inner">
-                                                        <img src="{{ asset('assets/images/web-image/ne4.jpg') }}"
+                                                        <img src="{{ asset('/assets/images/web-image/ne4.jpg') }}"
                                                             class="w-100 img-fluid" alt="image">
                                                     </div>
                                                     <div class="category-box">

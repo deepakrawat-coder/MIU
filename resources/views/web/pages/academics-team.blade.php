@@ -34,7 +34,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -92,7 +92,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al1.png') }}"
+                            <img src="{{ asset('/assets/images/web-image/al1.png') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -114,7 +114,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al2.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al2.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -136,7 +136,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al3.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al3.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -158,7 +158,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al4.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al4.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -180,7 +180,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al5.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al5.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -202,7 +202,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al6.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al6.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -224,7 +224,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al7.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al7.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -246,7 +246,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al8.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al8.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -268,7 +268,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al9.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al9.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -290,7 +290,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al10.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al10.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -312,7 +312,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al11.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al11.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
@@ -334,7 +334,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="text-center">
                         <div class="alt">
-                            <img src="{{ asset('assets/images/web-image/al12.jpg') }}"
+                            <img src="{{ asset('/assets/images/web-image/al12.jpg') }}"
                                 class="img-fluid messageimage border border-info my-4" alt="image">
                         </div>
                         <div class="border border-1 shadow-sm">
