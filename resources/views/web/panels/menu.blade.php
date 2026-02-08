@@ -171,7 +171,7 @@
                                      </li>
                                      <li class="dropdown mr-3"><a href="#">MIU Cell</a>
                                          <ul>
-                                             <li><a href="#">Incubation center</a></li>
+                                             <li><a href="/incubation-center">Incubation center</a></li>
                                              <li><a href="#">Anti Ragging</a></li>
                                              <li><a href="#">Academic Council</a></li>
                                              <li><a href="#">CPIO</a></li>

@@ -45,7 +45,7 @@
 
     <!-- BREADCRUMB -->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -116,7 +116,7 @@
                                         <a href="/programs-details">
                                             <div class="single-program-box-style1">
                                                 <div class="img-holder">
-                                                    <img src="assets/images/programs/program-1.jpg" class="img-fluid"
+                                                    <img src="{{ asset('/assets/images/programs/program-1.jpg') }}" class="img-fluid"
                                                         alt="">
                                                     <div class="overlay-content">
                                                         <div class="inner">

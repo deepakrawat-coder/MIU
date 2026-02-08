@@ -15,7 +15,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url(assets/images/web-image/banner1.jpg)">
+                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner1.jpg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -55,7 +55,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url(assets/images/web-image/banner2.jpeg)">
+                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner2.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content middle text-center">
@@ -96,7 +96,7 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url(assets/images/web-image/banner3.jpeg)">
+                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner3.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -205,7 +205,7 @@
                 <div class="col-xl-6">
                     <div class="teaching-img-box">
                         <div class="teaching-img-box__bg"
-                            style="background-image: url(assets/images/web-image/about--image.jpg);"></div>
+                            style="background-image: url({{asset('/assets/images/web-image/about--image.jpg')}});"></div>
                         <div class="teaching-img-box__content-bg"></div>
                         <div class="teaching-img-box__content aos-init aos-animate" data-aos="fade-left">
                             <div class="border-line"></div>
@@ -215,7 +215,7 @@
                             </h3>
                             {{-- <div class="authorized-person">
                                 <div class="signature">
-                                     <img src="assets/images/resources/signature.png" alt=""> 
+                                     <img src="{{asset('/assets/images/resources/signature.png" alt=""> 
                                 </div>
                                 <h4>Dr. [President Name]</h4>
                                 <p>[ President ]</p> 
@@ -276,7 +276,7 @@
 
                 <div class="col-xl-4 col-lg-6">
                     <div class="departments-img-box">
-                        <img src="assets/images/resources/departments-img.jpg" alt="">
+                        <img src="{{asset('/assets/images/resources/departments-img.jpg')}}" alt="">
                         <div class="departments-img-box__content">
                             <ul>
                                 <li>
@@ -378,7 +378,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-1.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-1.jpg')}});">
                             </div>
                         </div>
 
@@ -440,7 +440,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-2.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-2.jpg')}});">
                             </div>
                         </div>
 
@@ -502,7 +502,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-3.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-3.jpg')}});">
                             </div>
                         </div>
 
@@ -566,7 +566,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-4.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-4.jpg')}});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -626,7 +626,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-5.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-5.jpg')}});">
                             </div>
                         </div>
 
@@ -687,7 +687,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-6.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-6.jpg')}});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content left">
@@ -749,7 +749,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-7.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-7.jpg')}});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -809,7 +809,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-8.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-8.jpg')}});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -869,7 +869,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-9.jpg);">
+                                style="background-image: url({{asset('/assets/images/resources/departments-9.jpg')}});">
                             </div>
                         </div>
 
@@ -1110,7 +1110,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-1.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1163,7 +1163,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-2.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1216,7 +1216,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-3.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1270,7 +1270,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-1.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1323,7 +1323,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-2.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1376,7 +1376,7 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="assets/images/testimonial/testimonial-v1-3.jpg" alt="">
+                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1452,7 +1452,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="assets/images/blog/blog-v2-1.jpg" alt="">
+                                <img src="{{asset('/assets/images/blog/blog-v2-1.jpg')}}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1493,7 +1493,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="assets/images/blog/blog-v2-2.jpg" alt="">
+                                <img src="{{asset('/assets/images/blog/blog-v2-2.jpg')}}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1534,7 +1534,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="assets/images/blog/blog-v2-3.jpg" alt="">
+                                <img src="{{asset('/assets/images/blog/blog-v2-3.jpg')}}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1628,7 +1628,7 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url(assets/images/events/event-three-1.jpg);"></div>
+                                    style="background-image: url({{asset('/assets/images/events/event-three-1.jpg')}});"></div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1676,7 +1676,7 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url(assets/images/events/event-three-2.jpg);"></div>
+                                    style="background-image: url({{asset('/assets/images/events/event-three-2.jpg')}});"></div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1724,7 +1724,7 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url(assets/images/events/event-three-3.jpg);"></div>
+                                    style="background-image: url({{asset('/assets/images/events/event-three-3.jpg')}});"></div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1741,7 +1741,7 @@
     </section>
     <section class="subscribe-style6-area">
         <div class="subscribe-style6-area-bg"
-            style="background-image: url(assets/images/web-image/cta-img.jpg);"></div>
+            style="background-image: url({{asset('/assets/images/web-image/cta-img.jpg')}});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -1800,28 +1800,28 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-1.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-1.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-2.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-2.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-3.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-3.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-4.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-4.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
@@ -1829,28 +1829,28 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-5.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-5.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-6.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-6.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-7.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-7.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="assets/images/brand/brand-logo-8.png" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-8.png')}}" alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->

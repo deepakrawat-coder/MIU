@@ -23,6 +23,7 @@ Route::view('/pro-vice-chancellor', 'web.pages.pro-vice-chancellor');
 Route::view('/registrar', 'web.pages.registrar');
 Route::view('/director', 'web.pages.director');
 Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
+Route::view('/incubation-center', 'web.pages.incubation-center');
 Route::view('/coe', 'web.pages.coe');
 
 

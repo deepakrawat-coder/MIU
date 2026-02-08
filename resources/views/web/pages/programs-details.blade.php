@@ -45,7 +45,7 @@
 
     <!-- BREADCRUMB -->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -102,12 +102,12 @@
 
                     <div class="program-details-tab-content">
                         <div class="program-details-tab-content__img-box"
-                            style="background-image: url(assets/images/programs/program-details-tab-content__img-box-1.png);">
+                            style="background-image: url({{ asset('/assets/images/programs/program-details-tab-content__img-box-1.png') }});">
                         </div>
 
                         <div class="program-details-tab-content__inner">
                             <div class="program-details-tab-content__inner__shape"
-                                style="background-image: url(assets/images/shape/program-details-tab-content__inner-shape.png);">
+                                style="background-image: url({{ asset('/assets/images/shape/program-details-tab-content__inner-shape.png') }});">
                             </div>
 
                             <div class="program-details-tab-content__text">
@@ -245,7 +245,7 @@
                 <div class="col-xl-6">
                     <div class="programmes-offered-img-box">
                         <div class="programmes-offered-img-bg"
-                            style="background-image: url(assets/images/resources/programmes-offered-img.jpg);">
+                            style="background-image: url({{ asset('/assets/images/resources/programmes-offered-img.jpg') }});">
                         </div>
                         <div class="programmes-offered-tab-btn">
                             <ul class="tabs-button-box clearfix">
@@ -600,7 +600,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Academic Researcher">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Academic Researcher">
                         </div>
                         <div class="career-text">
                             <a href="#">Academic Researcher</a>
@@ -612,7 +612,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="University Lecturer">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="University Lecturer">
                         </div>
                         <div class="career-text">
                             <a href="#">University Lecturer</a>
@@ -624,7 +624,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Industry Professional">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Industry Professional">
                         </div>
                         <div class="career-text">
                             <a href="#">Industry Professional</a>
@@ -636,7 +636,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Project Manager">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Project Manager">
                         </div>
                         <div class="career-text">
                             <a href="#">Project Manager</a>
@@ -648,7 +648,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Consultant">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Consultant">
                         </div>
                         <div class="career-text">
                             <a href="#">Consultant</a>
@@ -660,7 +660,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Policy Analyst">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Policy Analyst">
                         </div>
                         <div class="career-text">
                             <a href="#">Policy Analyst</a>
@@ -672,7 +672,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Entrepreneur">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Entrepreneur">
                         </div>
                         <div class="career-text">
                             <a href="#">Entrepreneur</a>
@@ -684,7 +684,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('assets/images/marketplace/best-sellers-1.jpg') }}" alt="Public Sector Officer">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Public Sector Officer">
                         </div>
                         <div class="career-text">
                             <a href="#">Public Sector Officer</a>
@@ -718,7 +718,7 @@
     <!--Start Find Out Area-->
     <section id="essential-links" class="find-out-area">
         <div class="find-out-area__bg"
-            style="background-image: url(assets/images/parallax-background/find-out-area__bg.jpg);">
+            style="background-image: url({{ asset('/assets/images/parallax-background/find-out-area__bg.jpg') }});">
         </div>
         <div class="container">
             <div class="sec-title text-center">
@@ -786,9 +786,9 @@
         <div class="auto-container">
             <div class="slogan-style1">
                 <div class="slogan-style1__bg1"
-                    style="background-image: url(assets/images/resources/slogan-style1-bg-1.jpg);"></div>
+                    style="background-image: url({{ asset('/assets/images/resources/slogan-style1-bg-1.jpg') }});"></div>
                 <div class="slogan-style1__bg2"
-                    style="background-image: url(assets/images/resources/slogan-style1-bg-2.jpg);"></div>
+                    style="background-image: url({{ asset('/assets/images/resources/slogan-style1-bg-2.jpg') }});"></div>
                 <div class="container">
                     <div class="slogan-style1__inner">
                         <div class="title">
