@@ -100,7 +100,7 @@
                                      <li class=" mr-3"><a href="#">Admission</a></li>
                                      <li class="dropdown mr-3"><a href="#">News & Events</a>
                                          <ul>
-                                             <li><a href="#">News</a></li>
+                                             <li><a href="/notice-and-events">News</a></li>
                                              <li>
                                                  <a href="#">Events Gallery</a>
                                              </li>
@@ -120,6 +120,7 @@
                                                      <li><a href="/director"> Director </a></li>
                                                      <li><a href="/registrar"> Registrar </a></li>
                                                      <li><a href="/academic-leadership-team"> Academic Leadership Team </a></li>
+                                                     <li><a href="/academics-team"> Academics Team </a></li>
                                                      <li><a href="/coe"> COE </a></li>
                                                  </ul>
                                              </li>
