@@ -187,7 +187,7 @@
                                              <li><a href="#">Telephone Directories</a></li>
                                          </ul>
                                      </li>
-                                     <li class=" mr-3"><a href="#">School and Departments</a></li>
+                                     <li class=" mr-3"><a href="/departments">School and Departments</a></li>
                                      <li class=" mr-3"><a href="/contact-us">Contact</a></li>
                                  </ul>
                              </div>

@@ -45,7 +45,8 @@
 
     <!-- BREADCRUMB -->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
+        <div class="breadcrumb-area-bg custom-image"
+            style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -413,7 +414,7 @@
                     </div>
                 </div>
                 <div class="btns-box">
-                    <a class="btn-one" href="#">
+                    <a class="btn-one" href="/specialization-details">
                         <span class="txt">View All Programs</span>
                     </a>
                 </div>
@@ -428,153 +429,177 @@
                         <!-- ROW 1 -->
                         <ul>
                             <li class="wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Arts & Humanities</a></h3>
-                                        <p>UG / PG Programs</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Arts & Humanities</h3>
+                                            <p>UG / PG Programs</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-mask"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-mask"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="200ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Science</a></h3>
-                                        <p>Core & Applied Sciences</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Science</h3>
+                                            <p>Core & Applied Sciences</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-virus"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-virus"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="300ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Commerce & Management</a></h3>
-                                        <p>Business-Oriented Programs</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Commerce & Management</h3>
+                                            <p>Business-Oriented Programs</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-businessman"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-businessman"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="400ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Computer & IT</a></h3>
-                                        <p>Industry-Aligned Courses</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Computer & IT</h3>
+                                            <p>Industry-Aligned Courses</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-mouse"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-mouse"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="500ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Education & Training</a></h3>
-                                        <p>Teaching & Academic Studies</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Education & Training</h3>
+                                            <p>Teaching & Academic Studies</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-mortar"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-mortar"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
                         </ul>
 
                         <!-- ROW 2 -->
                         <ul>
                             <li class="wow fadeInUp" data-wow-delay="100ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Engineering & Technology</a></h3>
-                                        <p>Professional Programs</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Engineering & Technology</h3>
+                                            <p>Professional Programs</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-mouse"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-mouse"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="200ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Healthcare Studies</a></h3>
-                                        <p>Health & Wellness Fields</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Healthcare Studies</h3>
+                                            <p>Health & Wellness Fields</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-mortar"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-mortar"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="300ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Life Sciences</a></h3>
-                                        <p>Research-Based Programs</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Life Sciences</h3>
+                                            <p>Research-Based Programs</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-virus"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-virus"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="400ms">
-                                <div class="single-categories-box">
-                                    <div class="text">
-                                        <h3><a href="#">Management Studies</a></h3>
-                                        <p>Leadership & Strategy</p>
+                                <a href="/specialization-details">
+                                    <div class="single-categories-box">
+                                        <div class="text">
+                                            <h3>Management Studies</h3>
+                                            <p>Leadership & Strategy</p>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="flaticon-businessman"></span>
+                                        </div>
                                     </div>
-                                    <div class="icon">
-                                        <span class="flaticon-businessman"></span>
-                                    </div>
-                                </div>
+                                </a>
                             </li>
                         </ul>
 
                         <!-- ROW 3 -->
                         <ul>
                             <li class="wow fadeInUp" data-wow-delay="100ms">
+                                <a href="/specialization-details">
                                 <div class="single-categories-box">
                                     <div class="text">
-                                        <h3><a href="#">Research & Doctoral</a></h3>
+                                        <h3>Research & Doctoral</h3>
                                         <p>Ph.D. & Advanced Research</p>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-businessman"></span>
                                     </div>
                                 </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="200ms">
+                                <a href="/specialization-details">
                                 <div class="single-categories-box">
                                     <div class="text">
-                                        <h3><a href="#">Skill Development</a></h3>
+                                        <h3>Skill Development</h3>
                                         <p>Career Enhancement Programs</p>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-mask"></span>
                                     </div>
                                 </div>
+                                </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="300ms">
+                                <a href="/specialization-details">
                                 <div class="single-categories-box">
                                     <div class="text">
-                                        <h3><a href="#">Interdisciplinary Studies</a></h3>
+                                        <h3>Interdisciplinary Studies</h3>
                                         <p>Multi-Domain Learning</p>
                                     </div>
                                     <div class="icon">
                                         <span class="flaticon-mortar"></span>
                                     </div>
                                 </div>
+                                </a>
                             </li>
                         </ul>
 
@@ -600,7 +625,8 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Academic Researcher">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}"
+                                alt="Academic Researcher">
                         </div>
                         <div class="career-text">
                             <a href="#">Academic Researcher</a>
@@ -612,7 +638,8 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="University Lecturer">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}"
+                                alt="University Lecturer">
                         </div>
                         <div class="career-text">
                             <a href="#">University Lecturer</a>
@@ -624,7 +651,8 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Industry Professional">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}"
+                                alt="Industry Professional">
                         </div>
                         <div class="career-text">
                             <a href="#">Industry Professional</a>
@@ -684,7 +712,8 @@
                 <div class="col-xl-3 col-lg-3 col-md-6 mb-4">
                     <div class="single-career-opportunities image-card">
                         <div class="career-img">
-                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}" alt="Public Sector Officer">
+                            <img src="{{ asset('/assets/images/marketplace/best-sellers-1.jpg') }}"
+                                alt="Public Sector Officer">
                         </div>
                         <div class="career-text">
                             <a href="#">Public Sector Officer</a>
