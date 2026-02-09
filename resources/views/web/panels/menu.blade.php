@@ -1,4 +1,4 @@
- <header class="main-header header-style-one">
+ <header class="main-header header-style-one fixed-header">
 
      <!--Start Header Top-->
      <div class="header-top">
@@ -76,7 +76,7 @@
                      <div class="main-logo-box">
                          <a href="/">
                             <p></p>
-                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="80" height="80" alt="Awesome Logo" title="">
                          </a>
                      </div>
 
@@ -187,7 +187,7 @@
                                              <li><a href="#">Telephone Directories</a></li>
                                          </ul>
                                      </li>
-                                     <li class=" mr-3"><a href="/departments">School and Departments</a></li>
+                                     <li class=" mr-3"><a href="/schools-and-departments">School and Departments</a></li>
                                      <li class=" mr-3"><a href="/contact-us">Contact</a></li>
                                  </ul>
                              </div>

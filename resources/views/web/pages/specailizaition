@@ -54,7 +54,7 @@
 
         /* Enhanced Styles for New Sections */
         .specialization-features {
-            background: white;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
             padding: 80px 0;
         }
 
@@ -301,7 +301,7 @@
             padding: 30px;
             background: white;
             /* border-radius: 15px;
-                        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
         }
 
         .partner-logo {
@@ -379,7 +379,7 @@
 
         .accordion-box {
             /* max-width: 800px;
-                                                margin: 0 auto; */
+                                    margin: 0 auto; */
         }
 
         .accordion {
@@ -568,8 +568,7 @@
 
     <!-- BREADCRUMB -->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image"
-            style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -603,9 +602,11 @@
                         <div class="page-contains-btn">
                             <ul class="navigation clearfix scroll-nav">
                                 <li><a href="#overview">Overview</a></li>
-                                <li><a href="#content">Course</a></li>
-                                <li><a href="#features">Features</a></li>
-                                <li><a href="#career">Career</a></li>                                
+                                <li><a href="#requirements">Requirements</a></li>
+                                <li><a href="#features">Key Features</a></li>
+                                <li><a href="#curriculum">Curriculum</a></li>
+                                <li><a href="#programmes">Programmes</a></li>
+                                <li><a href="#career">Career</a></li>
                                 <li><a href="#alumni">Alumni</a></li>
                                 <li><a href="#faq">FAQ</a></li>
                             </ul>
@@ -728,47 +729,110 @@
         </div>
     </section>
 
-    <section id="content" class="testimonial-style1-area py-5 bg-white">
+    <!-- ELIGIBILITY SECTION -->
+    <section id="requirements" class="requirements-for-degree bg-white py-5">
         <div class="container">
-            <div class="school-tech-content">
-                <h3>Courses & Academic Scope</h3>
-                <p>
-                    The School of Technology provides a comprehensive educational experience
-                    that blends rigorous coursework, laboratory training, and research
-                    opportunities. Graduates are empowered to excel in diverse technology
-                    domains and global industries.
-                </p>
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <div class="sec-title">
+                        <h2>Eligibility & Admission Requirements</h2>
+                    </div>
+                    <p class="text-muted">
+                        To enroll in the AI & ML specialization, applicants must meet the following academic and admission
+                        criteria.
+                    </p>
+                </div>
+            </div>
 
-                <ul class="list-style-one">
-                    <li>Software Development & Computer Engineering</li>
-                    <li>Mechanical & Civil Engineering</li>
-                    <li>Artificial Intelligence & Machine Learning</li>
-                    <li>Cyber Security & Data Science</li>
-                    <li>Internet of Things (IoT) & Cloud Computing</li>
-                    <li>Robotics, Automation & Emerging Technologies</li>
-                    <li>Renewable Energy & Environmental Engineering</li>
-                    <li>Biomedical & Aerospace Engineering</li>
-                </ul>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="mr-3">
+                                    <i class="fa fa-graduation-cap fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="mb-0 font-weight-bold">Undergraduate Program Requirements</h5>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Successful completion of 10+2 with Mathematics as a subject</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Minimum 55% aggregate marks in qualifying examination</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Basic understanding of programming concepts</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Valid score in university entrance examination</span>
+                                </li>
+                                <li class="mb-0 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Personal interview with specialization faculty</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Career Opportunities</h3>
-                <p>
-                    Graduates of the School of Technology at MIU emerge as proficient
-                    technologists, creative innovators, and globally employable
-                    professionals. They are well-prepared to lead technological
-                    transformation across industries such as AI innovation, fintech,
-                    healthtech, cyber security, smart infrastructure, and data-driven
-                    enterprises.
-                </p>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="mr-3">
+                                    <i class="fa fa-graduation-cap fa-2x text-primary"></i>
+                                </div>
+                                <h5 class="mb-0 font-weight-bold">Postgraduate Program Requirements</h5>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Bachelor's degree in Computer Science/IT/related field</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Minimum 60% marks in undergraduate program</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Strong foundation in programming and algorithms</span>
+                                </li>
+                                <li class="mb-3 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Valid GATE score (optional but preferred)</span>
+                                </li>
+                                <li class="mb-0 d-flex">
+                                    <i class="fa fa-check text-success mr-2 mt-1"></i>
+                                    <span>Research proposal for thesis-based programs</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                <h3>Why Choose School of Technology, MIU?</h3>
-                <ul class="list-style-two">
-                    <li>Industry-aligned and future-oriented curriculum</li>
-                    <li>State-of-the-art laboratories and research facilities</li>
-                    <li>Strong focus on innovation, research, and skill development</li>
-                    <li>Experienced faculty with academic and industry expertise</li>
-                    <li>Holistic student development and leadership opportunities</li>
-                    <li>Global career pathways and higher education prospects</li>
-                </ul>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="alert alert-info border-0 shadow-sm">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <h5 class="alert-heading mb-2">📢 Admission Notice</h5>
+                                <p class="mb-0">Application deadline for the upcoming academic session: <strong
+                                        class="text-dark">June 30, 2024</strong></p>
+                            </div>
+                            <div class="col-lg-4 text-lg-right mt-3 mt-lg-0">
+                                <a href="#" class="btn btn-primary btn-lg px-4">
+                                    <i class="fa fa-file-alt mr-2"></i> Download Brochure
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -785,7 +849,47 @@
                 </div>
             </div>
 
-           
+            {{-- <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <h5 class="font-weight-bold text-center mb-3">Industry-Relevant Curriculum</h5>
+                        <p class="text-center mb-0">Designed in collaboration with leading tech companies to ensure current industry relevance and practical applicability.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-flask"></i>
+                        </div>
+                        <h5 class="font-weight-bold text-center mb-3">Advanced Research Labs</h5>
+                        <p class="text-center mb-0">State-of-the-art research facilities with access to high-performance computing clusters and AI hardware.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-chalkboard-teacher"></i>
+                        </div>
+                        <h5 class="font-weight-bold text-center mb-3">Expert Faculty</h5>
+                        <p class="text-center mb-0">Learn from experienced faculty with industry and research backgrounds in AI/ML from premier institutions.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <h5 class="font-weight-bold text-center mb-3">Industry Internships</h5>
+                        <p class="text-center mb-0">Guaranteed internship opportunities with partner companies for practical exposure and industry connections.</p>
+                    </div>
+                </div>
+            </div> --}}
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <div class="feature-card">
@@ -843,7 +947,7 @@
                         <div class="stat-number">95%</div>
                         <h5 class="font-weight-bold mb-2">Placement Record</h5>
                         <p class="mb-0 text-muted">Consistent high placement rate for specialization graduates across top
-                            </p>
+                            companies</p>
                     </div>
                 </div>
 
@@ -869,18 +973,165 @@
     </section>
 
 
+
+    <!-- PROGRAMMES OFFERED -->
+    <section id="programmes" class="programmes-offered-area">
+        <div class="auto-container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 col-md-12">
+                    <div class="programmes-offered-content-box">
+                        <div class="sec-title">
+                            <h2>Programmes Offered</h2>
+                            <div class="sub-title">
+                                <p>Comprehensive academic pathways in AI & Machine Learning</p>
+                            </div>
+                        </div>
+                        <div class="inner-content">
+                            <div class="icon">
+                                <span class="icon-mortarboard"></span>
+                            </div>
+                            <h3>Bachelor of Technology (B.Tech) in AI & ML</h3>
+                            <p>A comprehensive 4-year undergraduate program providing strong foundations in artificial
+                                intelligence, machine learning algorithms, and practical implementation skills.</p>
+                            <ul>
+                                <li>
+                                    <b>Eligibility</b>: <span>10+2 with Physics, Chemistry, Mathematics (60% minimum)</span>
+                                </li>
+                                <li>
+                                    <b>Duration</b>: <span>4 Years (8 Semesters)</span>
+                                </li>
+                                <li>
+                                    <b>Seats Available</b>: <span>60 (Maximum)</span>
+                                </li>
+                                <li>
+                                    <b>Start Date</b>: <span>August 2024</span>
+                                </li>
+                                <li>
+                                    <b>Credits</b>: <span>160 Total Credits</span>
+                                </li>
+                            </ul>
+                            <div class="btns-box">
+                                <a class="btn-one btn-one--style2" href="#">
+                                    <span class="txt"><span class="icon-down-arrow-1"></span>Download Brochure</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 p-3">
+                    <div class="programmes-offered-img-box">
+                        <div class="programmes-offered-img-bg"
+                            style="background-image: url({{ asset('/assets/images/resources/programmes-offered-img.jpg') }});border-radius:10px;">
+                        </div>
+                        <div class="mt-4 text-center">
+                            <h4 class="text-white mb-4">Also Available</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="program-option bg-white p-3 rounded mb-3">
+                                        <h5 class="text-dark mb-2">M.Tech AI</h5>
+                                        <p class="text-muted mb-0 small">2 Years PG Program</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="program-option bg-white p-3 rounded mb-3">
+                                        <h5 class="text-dark mb-2">Ph.D AI</h5>
+                                        <p class="text-muted mb-0 small">Research Program</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="program-option bg-white p-3 rounded">
+                                        <h5 class="text-dark mb-2">M.Sc AI</h5>
+                                        <p class="text-muted mb-0 small">2 Years PG Program</p>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="program-option bg-white p-3 rounded">
+                                        <h5 class="text-dark mb-2">Executive PG</h5>
+                                        <p class="text-muted mb-0 small">Working Professionals</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CAREER OPPORTUNITIES -->
-    <section id="career" class="career-opportunities-area" style="background: #d1143e;">
+    <section id="career" class="career-opportunities-area">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
                     <div class="sec-title">
-                        <h2 class="text-white">Career Opportunities</h2>
-                        <p class="sub-title mt-3 text-white">Diverse career paths for AI & ML specialists</p>
+                        <h2>Career Opportunities</h2>
+                        <p class="sub-title mt-3">Diverse career paths for AI & ML specialists</p>
                     </div>
                 </div>
             </div>
 
+            {{-- <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="fa fa-chart-line"></i>
+                        </div>
+                        <h5>Data Scientist</h5>
+                        <p class="text-primary mb-3">
+                            <i class="fa fa-rupee-sign mr-1"></i> ₹12-25 LPA
+                        </p>
+                        <p class="text-muted small mb-4">Analyze complex datasets to extract insights and build predictive
+                            models for business decisions.</p>
+                        <div class="skills">
+                            <span class="badge">Python</span>
+                            <span class="badge">R</span>
+                            <span class="badge">SQL</span>
+                            <span class="badge">Statistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="fa fa-brain"></i>
+                        </div>
+                        <h5>Machine Learning Engineer</h5>
+                        <p class="text-primary mb-3">
+                            <i class="fa fa-rupee-sign mr-1"></i> ₹10-22 LPA
+                        </p>
+                        <p class="text-muted small mb-4">Design, build, and deploy machine learning models and systems for
+                            production environments.</p>
+                        <div class="skills">
+                            <span class="badge">TensorFlow</span>
+                            <span class="badge">PyTorch</span>
+                            <span class="badge">Cloud</span>
+                            <span class="badge">MLOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="career-card">
+                        <div class="career-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <h5>AI Research Scientist</h5>
+                        <p class="text-primary mb-3">
+                            <i class="fa fa-rupee-sign mr-1"></i> ₹15-30 LPA
+                        </p>
+                        <p class="text-muted small mb-4">Conduct cutting-edge research to advance AI capabilities and
+                            develop novel algorithms.</p>
+                        <div class="skills">
+                            <span class="badge">Research</span>
+                            <span class="badge">Algorithms</span>
+                            <span class="badge">Publications</span>
+                            <span class="badge">Math</span>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
             <div class="row">
 
                 <div class="col-md-4 mb-4">
@@ -948,10 +1199,48 @@
 
             </div>
 
-            
-            <div class="row mt-5" >
+            {{-- <div class="row mt-5">
                 <div class="col-12">
-                    <div class="partner-logos" style="overflow:hidden;border-radius: 10px !important" >
+                    <div class="partner-logos">
+                        <h5 class="text-center mb-4">Our Placement Partners</h5>
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                                <div class="partner-logo">
+                                    <img src="/assets/images/partners/google.png" alt="Google" class="img-fluid"
+                                        style="max-height: 40px;">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                                <div class="partner-logo">
+                                    <img src="/assets/images/partners/microsoft.png" alt="Microsoft" class="img-fluid"
+                                        style="max-height: 40px;">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                                <div class="partner-logo">
+                                    <img src="/assets/images/partners/amazon.png" alt="Amazon" class="img-fluid"
+                                        style="max-height: 40px;">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                                <div class="partner-logo">
+                                    <img src="/assets/images/partners/tcs.png" alt="TCS" class="img-fluid"
+                                        style="max-height: 40px;">
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2 text-center mb-4">
+                                <div class="partner-logo">
+                                    <img src="/assets/images/partners/infosys.png" alt="Infosys" class="img-fluid"
+                                        style="max-height: 40px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="partner-logos" style="overflow:hidden">
                         <h5 class="text-center mb-4">Our Placement Partners</h5>
 
                         <!-- Swiper -->
@@ -978,8 +1267,8 @@
 
                                 <!-- Logo 4 -->
                                 <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/tcs.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="TCS">
+                                    <img src="{{ asset('/assets/images/partners/tcs.png') }}" class="img-fluid" style="max-height:40px;"
+                                        alt="TCS">
                                 </div>
 
                                 <!-- Logo 5 -->
@@ -1095,7 +1384,7 @@
     </section>
 
     <!-- FAQ SECTION -->
-    {{-- <section id="faq" class="faq-section">
+    <section id="faq" class="faq-section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -1203,145 +1492,24 @@
                 </div>
             </div>
         </div>
-    </section> --}}
-    <section id="faq" class="course-curriculum-area">
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="course-curriculum-content-box">
-                        <div class="course-layout-content-box">
-                            <div class="inner-title">
-                                <h4>FAQs</h4>
-                                <p>Artificial Intelligence & Machine Learning</p>
-                            </div>
-
-                            <ul class="accordion-box">
-
-                                <!-- FAQ 1 -->
-                                <li class="accordion block active-block">
-                                    <div class="acc-btn active">
-                                        <div class="course-layout-title-box">
-                                            <h4>What is the focus of the AI & ML specialization?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content current">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                The Artificial Intelligence & Machine Learning specialization is
-                                                industry-focused
-                                                and designed to provide strong practical and theoretical knowledge in
-                                                intelligent
-                                                systems. It covers machine learning, deep learning, data analytics, computer
-                                                vision, natural language processing, and real-world AI applications.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 2 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Which tools and technologies are taught in this specialization?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Students gain hands-on experience with industry-standard tools such as
-                                                Python,
-                                                TensorFlow, PyTorch, Keras, Scikit-Learn, SQL, and cloud platforms. The
-                                                curriculum
-                                                also includes exposure to big data tools, AI frameworks, and real-time
-                                                project
-                                                development environments.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 3 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>What kind of career opportunities are available after this specialization?
-                                            </h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Graduates can pursue careers as AI Engineer, Machine Learning Engineer, Data
-                                                Scientist, Business Intelligence Analyst, Research Engineer, AI Consultant,
-                                                and
-                                                Software Developer. Opportunities are available across IT, healthcare,
-                                                finance,
-                                                manufacturing, and emerging technology sectors.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 4 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Does this specialization include internships and industry projects?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Yes, the program includes mandatory internships and industry-oriented
-                                                projects.
-                                                Students work on real-world problem statements, live projects, and case
-                                                studies
-                                                in collaboration with industry partners to ensure strong practical exposure
-                                                and
-                                                job readiness.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 5 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Is this specialization suitable for research and higher studies?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Absolutely. The AI & ML specialization strongly supports research-oriented
-                                                learning. Students are encouraged to participate in research labs, publish
-                                                papers, work on funded research projects, and pursue higher studies
-                                                including
-                                                M.Tech and Ph.D. in Artificial Intelligence and related domains.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
-                        </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="cta-content">
+                        <h3 class="text-white mb-3">Ready to Start Your Journey in AI & Machine Learning?</h3>
+                        <p class="text-light mb-0">Join our next batch of aspiring AI specialists and build a rewarding
+                            career in one of the most exciting fields of technology. Limited seats available for August 2024
+                            intake.</p>
                     </div>
+                </div>
+                <div class="col-lg-4 text-lg-right text-center mt-4 mt-lg-0">
+                    <a href="#" class="cta-btn">
+                        <i class="fa fa-file-alt mr-2"></i> Apply Now
+                    </a>
                 </div>
             </div>
         </div>
