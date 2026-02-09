@@ -231,7 +231,7 @@
                         </div>
                         <div class="shape2"></div>
                         <div class="inner">
-                            <img src="{{ assets('/assets/images/about/about-style4__image-1.jpg') }}" alt="">
+                            <img src="{{ asset('/assets/images/about/about-style4__image-1.jpg') }}" alt="">
                         </div>
                     </div>
                 </div>
