@@ -50,7 +50,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{asset('/assets/images/about/about.jpg')}});">
         </div>
         <div class="container">
             <div class="row">
@@ -90,11 +90,11 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
-                                            <img src="{{ asset('assets/images/web-image/a1.jpg') }}" class="img-fluid"
+                                            <img src="{{ asset('/assets/images/web-image/a1.jpg') }}" class="img-fluid"
                                                 alt="image">
                                         </div>
                                         <div class="title-box">
@@ -107,7 +107,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -123,7 +123,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -139,7 +139,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -155,11 +155,11 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
-                                            <img src="{{ asset('assets/images/web-image/a2.jpg') }}" class="img-fluid"
+                                            <img src="{{ asset('/assets/images/web-image/a2.jpg') }}" class="img-fluid"
                                                 alt="image">
                                         </div>
                                         <div class="title-box">
@@ -172,7 +172,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -199,7 +199,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -235,7 +235,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -251,7 +251,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -267,7 +267,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -283,7 +283,7 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">
@@ -310,7 +310,7 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 text-center">
                             <div class="kindergarten-program__single-box wow fadeInLeft">
-                                <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
+                                <div class="decor"><img src="{{ asset('/assets/images/shape/decor.png') }}" alt=""></div>
                                 <div class="kindergarten-program__single-box__inner">
                                     <div class="static-content">
                                         <div class="img-box">

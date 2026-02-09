@@ -33,7 +33,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -75,7 +75,7 @@
                     <div class="single-blog-style1 mb-4 border border-1">
                         <div class="img-holder">
                             <div class="inner h200">
-                                <img src="{{ asset('assets/images/web-image/ac1.jpeg') }}" class="img-fluid hw200 p-3"
+                                <img src="{{ asset('/assets/images/web-image/ac1.jpeg') }}" class="img-fluid hw200 p-3"
                                     alt="image">
                             </div>
                         </div>
@@ -102,7 +102,7 @@
                     <div class="single-blog-style1 mb-4 border border-1">
                         <div class="img-holder">
                             <div class="inner h200">
-                                <img src="{{ asset('assets/images/web-image/ac2.png') }}" class="img-fluid hw200 p-3"
+                                <img src="{{ asset('/assets/images/web-image/ac2.png') }}" class="img-fluid hw200 p-3"
                                     alt="image">
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                     <div class="single-blog-style1 mb-4 border border-1">
                         <div class="img-holder">
                             <div class="inner h200">
-                                <img src="{{ asset('assets/images/web-image/ac3.jpg') }}" class="img-fluid hw200 p-3"
+                                <img src="{{ asset('/assets/images/web-image/ac3.jpg') }}" class="img-fluid hw200 p-3"
                                     alt="image">
                             </div>
                         </div>
@@ -161,7 +161,7 @@
             <div class="sec-title text-start">
                 <h2 class="mb-2"> Memorandum of Understanding (MOU) </h2>
 
-                <img src="{{ asset('assets/images/web-image/ac4.png') }}" class="img-fluid hw200 p-3" alt="image">
+                <img src="{{ asset('/assets/images/web-image/ac4.png') }}" class="img-fluid hw200 p-3" alt="image">
 
                 <h3> Information and Library Network Centre (INFLIBNET) </h3>
                 <p> Manipur International University has signed a Memorandum of Understanding with the Information and
