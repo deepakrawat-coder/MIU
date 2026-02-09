@@ -103,7 +103,7 @@
                          <div class="single-footer-widget single-footer-widget--link-box">
                              <div class="title">
                                  <div class="dotted"></div>
-                                 <h3>Resources/h3>
+                                 <h3>Resources</h3>
                              </div>
                              <div class="footer-widget-links">
                                  <ul>
