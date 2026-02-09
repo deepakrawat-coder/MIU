@@ -26,4 +26,38 @@ Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
 Route::view('/coe', 'web.pages.coe');
 
 
+
+// Route::get('/cms', function () {
+//     return view('admin.index');
+// });
+
+
+Route::middleware('guest')->get('/cms', function () {
+    return view('admin.index');
+})->name('admin.login');
+
+/*
+|--------------------------------------------------------------------------
+| Authenticated Dashboard
+|--------------------------------------------------------------------------
+*/
+
+// Route::view('/dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
+
+Route::get('/dashboard', function () {
+    return view('admin.home');
+})
+->middleware(['auth', 'verified'])
+->name('dashboard');
+
+
+
+
+
+Route::get('/test', function () {
+    return 'Laravel is working';
+});
+
 require __DIR__.'/settings.php';
