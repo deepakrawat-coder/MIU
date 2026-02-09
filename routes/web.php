@@ -23,6 +23,9 @@ Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
 Route::view('/notice-and-events', 'web.pages.notice-and-events');
 Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
+Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
+Route::view('/alumni', 'web.pages.alumni');
+Route::view('/awards', 'web.pages.awards');
 
 
 require __DIR__.'/settings.php';

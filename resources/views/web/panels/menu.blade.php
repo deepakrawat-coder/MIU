@@ -125,14 +125,14 @@
                                                  </ul>
                                              </li>
                                              <li>
-                                                 <a href="#">Academic Collaborations</a>
+                                                 <a href="/academic-collaborations">Academic Collaborations</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Alumni</a>
+                                                 <a href="/alumni">Alumni</a>
                                              </li>
 
                                              <li>
-                                                 <a href="#">Awards</a>
+                                                 <a href="/awards">Awards</a>
                                              </li>
                                              <li>
                                                  <a href="#">Constituent Colleges</a>
