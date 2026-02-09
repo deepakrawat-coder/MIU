@@ -13,7 +13,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -51,10 +51,10 @@
                     <div class="single-contact-info-style4">
                         <div class="icon">
                             <div class="icon-bg"
-                                style="background-image: url(assets/images/instructor/shape/about-v4-shape4.png);">
+                                style="background-image: url({{ asset('/assets/images/instructor/shape/about-v4-shape4.png') }});">
                             </div>
                             <div class="top-arrow">
-                                <img src="assets/images/instructor/shape/about-v4-shape3.png" alt="">
+                                <img src="{{ asset('/assets/images/instructor/shape/about-v4-shape3.png') }}" alt="">
                             </div>
                             <span class="flaticon-telephone"></span>
                         </div>
@@ -73,10 +73,10 @@
                     <div class="single-contact-info-style4">
                         <div class="icon">
                             <div class="icon-bg"
-                                style="background-image: url(assets/images/instructor/shape/about-v4-shape4.png);">
+                                style="background-image: url({{ asset('/assets/images/instructor/shape/about-v4-shape4.png') }});">
                             </div>
                             <div class="top-arrow">
-                                <img src="assets/images/instructor/shape/about-v4-shape3.png" alt="">
+                                <img src="{{ asset('/assets/images/instructor/shape/about-v4-shape3.png') }}" alt="">
                             </div>
                             <span class="flaticon-email"></span>
                         </div>
@@ -94,10 +94,10 @@
                     <div class="single-contact-info-style4">
                         <div class="icon">
                             <div class="icon-bg"
-                                style="background-image: url(assets/images/instructor/shape/about-v4-shape4.png);">
+                                style="background-image: url({{ asset('/assets/images/instructor/shape/about-v4-shape4.png')}});">
                             </div>
                             <div class="top-arrow">
-                                <img src="assets/images/instructor/shape/about-v4-shape3.png" alt="">
+                                <img src="{{ asset('/assets/images/instructor/shape/about-v4-shape3.png') }}" alt="">
                             </div>
                             <span class="flaticon-location"></span>
                         </div>

@@ -28,7 +28,13 @@
     margin-top: 10px;
     margin-bottom: 5px;
 }
-@media (min-width: 991px) {
+@media (max-width: 1200px) {
+    .program-details-tab-content__inner{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1200px) {
     .page-contains-area.stricky-fixed {
         position: fixed;
         top: 99px;
@@ -44,32 +50,4 @@
     flex: none;
     width: 57px;
     height: 56px;
-}
-.single-career-opportunities.image-card {
-    border-radius: 6px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-.single-career-opportunities.image-card:hover {
-    transform: translateY(-5px);
-}
-
-.career-img img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.career-text {
-    padding: 15px;
-}
-
-.career-text a {
-    font-weight: 600;
-    font-size: 16px;
-    color: #222;
 }

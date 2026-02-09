@@ -171,11 +171,11 @@ India - 795001</p>
                      <div class="copyright">
                          <p>Copyright &copy; 2022 <a href="#">Manipur International University (MIU).</a> All Rights Reserved.</p>
                      </div>
-                     <div class="footer-logo-style1">
+                     {{-- <div class="footer-logo-style1">
                          <a href="/">
                              <img src="{{ asset('/assets/images/web-image/miu-white.png') }}"  width="150" height="150"  alt="Awesome Logo" title="">
                          </a>
-                     </div>
+                     </div> --}}
                      <div class="footer-menu">
                          <ul>
                              <li><a href="#">Privacy Policy</a></li>

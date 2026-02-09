@@ -99,7 +99,7 @@
                                      <li class=" mr-3"><a href="#">Admission</a></li>
                                      <li class="dropdown mr-3"><a href="#">News & Events</a>
                                          <ul>
-                                             <li><a href="#">News</a></li>
+                                             <li><a href="/notice-and-events">News</a></li>
                                              <li>
                                                  <a href="#">Events Gallery</a>
                                              </li>
@@ -119,6 +119,7 @@
                                                      <li><a href="/director"> Director </a></li>
                                                      <li><a href="/registrar"> Registrar </a></li>
                                                      <li><a href="/academic-leadership-team"> Academic Leadership Team </a></li>
+                                                     <li><a href="/academics-team"> Academics Team </a></li>
                                                      <li><a href="/coe"> COE </a></li>
                                                  </ul>
                                              </li>
@@ -171,7 +172,7 @@
                                      </li>
                                      <li class="dropdown mr-3"><a href="#">MIU Cell</a>
                                          <ul>
-                                             <li><a href="#">Incubation center</a></li>
+                                             <li><a href="/incubation-center">Incubation center</a></li>
                                              <li><a href="#">Anti Ragging</a></li>
                                              <li><a href="#">Academic Council</a></li>
                                              <li><a href="#">CPIO</a></li>
@@ -186,7 +187,7 @@
                                              <li><a href="#">Telephone Directories</a></li>
                                          </ul>
                                      </li>
-                                     <li class=" mr-3"><a href="#">School and Departments</a></li>
+                                     <li class=" mr-3"><a href="/departments">School and Departments</a></li>
                                      <li class=" mr-3"><a href="/contact-us">Contact</a></li>
                                  </ul>
                              </div>

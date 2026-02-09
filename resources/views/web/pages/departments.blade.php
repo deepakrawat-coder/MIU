@@ -9,7 +9,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -61,7 +61,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-1.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-1.jpg') }});">
                             </div>
                         </div>
 
@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-2.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-2.jpg') }});">
                             </div>
                         </div>
 
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-3.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-3.jpg') }});">
                             </div>
                         </div>
 
@@ -249,7 +249,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-4.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-4.jpg') }});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -309,7 +309,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-5.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-5.jpg') }});">
                             </div>
                         </div>
 
@@ -370,7 +370,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-6.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-6.jpg') }});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content left">
@@ -432,7 +432,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-7.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-7.jpg') }});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -492,7 +492,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-8.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-8.jpg') }});">
                             </div>
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
@@ -552,7 +552,7 @@
                                 </div>
                             </div>
                             <div class="overlay-box"
-                                style="background-image: url(assets/images/resources/departments-9.jpg);">
+                                style="background-image: url({{ asset('/assets/images/resources/departments-9.jpg') }});">
                             </div>
                         </div>
 
