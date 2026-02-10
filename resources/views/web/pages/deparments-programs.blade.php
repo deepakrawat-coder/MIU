@@ -296,7 +296,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-1.jpg" alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-1.jpg') }}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Engineering & Technology</h3>
@@ -320,7 +320,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-2.jpg" alt="">
+                                    <img src="{{asset('/assets/images/resources/involment-activities-2.jpg')}}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Arts & Humanities</h3>
@@ -344,7 +344,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-3.jpg" alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-3.jpg') }}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Management & Commerce</h3>
@@ -368,7 +368,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-4.jpg" alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-4.jpg') }}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Science</h3>
@@ -392,7 +392,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-5.jpg" alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-5.jpg') }}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Health Sciences</h3>
@@ -416,7 +416,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="assets/images/resources/involment-activities-6.jpg" alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-6.jpg"') }} alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Research & Innovation</h3>
@@ -512,7 +512,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -571,7 +571,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -630,7 +630,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -689,7 +689,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -750,7 +750,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -809,7 +809,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -868,7 +868,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jp') }}g"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -927,7 +927,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -986,7 +986,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1045,7 +1045,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1106,7 +1106,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1165,7 +1165,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
+                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
