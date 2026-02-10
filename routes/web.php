@@ -26,6 +26,9 @@ Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details')
 Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
 Route::view('/alumni', 'web.pages.alumni');
 Route::view('/awards', 'web.pages.awards');
+Route::view('/constituent-colleges', 'web.pages.constituent-colleges');
+Route::view('/health-facilities', 'web.pages.health-facilities');
+Route::view('/syllabus-courses', 'web.pages.syllabus-courses');
 
 
 require __DIR__.'/settings.php';
