@@ -115,7 +115,7 @@
         }
           /* Contact Details Section Styles */
     .contact-details-section {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #083d77, #d1143e);
         color: white;
         position: relative;
         overflow: hidden;
@@ -177,14 +177,14 @@
     }
     
     .box-header {
-        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        background: #17345a;
         padding: 30px 25px;
         text-align: center;
         color: white;
     }
     
     .office-contact-box .box-header {
-        background: linear-gradient(135deg, #36d1dc, #5b86e5);
+        background: #17345a;
     }
     
     .header-icon {
@@ -226,7 +226,7 @@
     .icon-wrapper {
         width: 45px;
         height: 45px;
-        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        background: #17345a;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -236,7 +236,7 @@
     }
     
     .office-contact-box .icon-wrapper {
-        background: linear-gradient(135deg, #36d1dc, #5b86e5);
+        background: #17345a;
     }
     
     .icon-wrapper i {
@@ -865,7 +865,7 @@
                             </div>
                         </div>
                         
-                        <div class="contact-info-item">
+                        {{-- <div class="contact-info-item">
                             <div class="icon-wrapper">
                                 <i class="fa fa-building-o"></i>
                             </div>
@@ -873,7 +873,7 @@
                                 <span class="info-label">Office Hours:</span>
                                 <span class="info-value">Mon-Fri: 9:00 AM - 5:00 PM</span>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="box-footer">
                         <p class="footer-note"><i class="fa fa-paper-plane"></i> Submit written grievances & official correspondence</p>

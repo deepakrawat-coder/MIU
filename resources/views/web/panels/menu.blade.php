@@ -176,7 +176,7 @@
                                              <li><a href="/anti-ragging">Anti Ragging</a></li>
                                              <li><a href="/academic-council">Academic Council</a></li>
                                              <li><a href="/cpio">CPIO</a></li>
-                                             <li><a href="#">SGRC</a></li>
+                                             <li><a href="/grievance-cell">SGRC</a></li>
                                              <li><a href="#">Equal opportunity cell</a></li>
                                              <li><a href="#">Internal Complaint Committee</a></li>
                                              <li><a href="#">Research And Development Cell</a></li>
