@@ -134,13 +134,13 @@
                                                  <a href="/awards">Awards</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Constituent Colleges</a>
+                                                 <a href="/constituent-colleges">Constituent Colleges</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Health Facilities</a>
+                                                 <a href="/health-facilities">Health Facilities</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Syllabus & Courses</a>
+                                                 <a href="/syllabus-courses">Syllabus & Courses</a>
                                              </li>
                                              <li>
                                                  <a href="#">Scholarship Policy</a>

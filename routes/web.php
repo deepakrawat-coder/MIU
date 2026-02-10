@@ -36,4 +36,9 @@ Route::view('/awards', 'web.pages.awards');
 Route::view('/cpio', 'web.pages.cpio');
 Route::view('/grievance-cell', 'web.pages.grievance-cell');
 Route::view('/academic-council', 'web.pages.academic-council');
+Route::view('/constituent-colleges', 'web.pages.constituent-colleges');
+Route::view('/health-facilities', 'web.pages.health-facilities');
+Route::view('/syllabus-courses', 'web.pages.syllabus-courses');
+
+
 require __DIR__.'/settings.php';
