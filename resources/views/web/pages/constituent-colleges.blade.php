@@ -78,7 +78,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -154,7 +154,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c1.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c1.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -171,7 +171,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c2.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c2.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -188,7 +188,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c3.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c3.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -205,7 +205,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c4.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c4.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -222,7 +222,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c5.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c5.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -238,7 +238,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c6.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c6.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -254,7 +254,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c7.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c7.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3>
@@ -270,7 +270,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c8.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('/assets/images/web-image/c8.jpg') }}" class="img-fluid"
                                     alt="image">
                             </div>
                             <div class="text-center pt-3">
@@ -288,7 +288,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c9.jpg') }}" class="img-fluid"
+                                <img src="{{ asset('/assets/images/web-image/c9.jpg') }}" class="img-fluid"
                                     alt="image">
                             </div>
                             <div class="text-center pt-3">
@@ -305,7 +305,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c10.png') }}" class="img-fluid"
+                                <img src="{{ asset('/assets/images/web-image/c10.png') }}" class="img-fluid"
                                     alt="image">
                             </div>
                             <div class="text-center pt-3">
@@ -322,7 +322,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c11.png') }}" class="img-fluid"
+                                <img src="{{ asset('/assets/images/web-image/c11.png') }}" class="img-fluid"
                                     alt="image">
                             </div>
                             <div class="text-center pt-3">
@@ -339,7 +339,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c12.png') }}" class="img-fluid"
+                                <img src="{{ asset('/assets/images/web-image/c12.png') }}" class="img-fluid"
                                     alt="image">
                             </div>
                             <div class="text-center pt-3">

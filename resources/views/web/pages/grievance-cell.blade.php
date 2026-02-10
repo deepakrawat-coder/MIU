@@ -113,6 +113,304 @@
             background: #17345a29;
             color: black;
         }
+          /* Contact Details Section Styles */
+    .contact-details-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .contact-details-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
+    
+    .contact-details-section .container {
+        position: relative;
+        z-index: 2;
+    }
+    
+    .contact-main-title {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    .title-divider {
+        width: 100px;
+        height: 4px;
+        background: #ffd166;
+        margin: 15px auto 20px;
+        border-radius: 2px;
+    }
+    
+    .contact-subtitle {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    /* Contact Box Styles */
+    .contact-box {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        transition: transform 0.4s ease;
+        height: 100%;
+    }
+    
+    .contact-box:hover {
+        transform: translateY(-10px);
+    }
+    
+    .box-header {
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        padding: 30px 25px;
+        text-align: center;
+        color: white;
+    }
+    
+    .office-contact-box .box-header {
+        background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    }
+    
+    .header-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+        opacity: 0.9;
+    }
+    
+    .box-title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .box-role {
+        font-size: 1rem;
+        opacity: 0.9;
+        margin: 0;
+    }
+    
+    .box-body {
+        padding: 30px 25px;
+    }
+    
+    .contact-info-item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .contact-info-item:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    
+    .icon-wrapper {
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(135deg, #ff7e5f, #feb47b);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+    
+    .office-contact-box .icon-wrapper {
+        background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    }
+    
+    .icon-wrapper i {
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    .info-content {
+        flex: 1;
+    }
+    
+    .info-label {
+        display: block;
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
+    
+    .info-value {
+        color: #2c3e50;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: block;
+    }
+    
+    .info-value:hover {
+        color: #3498db;
+        text-decoration: underline;
+    }
+    
+    .address-text {
+        line-height: 1.6;
+        margin: 0;
+    }
+    
+    .box-footer {
+        background: #f8f9fa;
+        padding: 20px 25px;
+        border-top: 1px solid #eee;
+    }
+    
+    .footer-note {
+        margin: 0;
+        color: #7f8c8d;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .footer-note i {
+        margin-right: 10px;
+        color: #ff7e5f;
+    }
+    
+    .office-contact-box .footer-note i {
+        color: #36d1dc;
+    }
+    
+    /* Quick Actions Styles */
+    .quick-actions-box {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .actions-title {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    
+    .actions-title i {
+        color: #ffd166;
+        margin-right: 10px;
+    }
+    
+    .action-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 15px;
+        background: white;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #2c3e50;
+        transition: all 0.3s ease;
+        height: 100%;
+        text-align: center;
+    }
+    
+    .action-btn:hover {
+        transform: translateY(-5px);
+        text-decoration: none;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+    
+    .action-btn i {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+    
+    .action-btn span {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    
+    .email-btn i { color: #e74c3c; }
+    .call-btn i { color: #2ecc71; }
+    .info-btn i { color: #3498db; }
+    
+    /* Responsive Styles */
+    @media (max-width: 991px) {
+        .contact-main-title {
+            font-size: 2.3rem;
+        }
+        
+        .contact-box {
+            margin-bottom: 30px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .contact-main-title {
+            font-size: 2rem;
+        }
+        
+        .contact-subtitle {
+            font-size: 1rem;
+        }
+        
+        .box-header {
+            padding: 25px 20px;
+        }
+        
+        .box-body {
+            padding: 25px 20px;
+        }
+        
+        .contact-info-item {
+            flex-direction: column;
+        }
+        
+        .icon-wrapper {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        
+        .quick-actions-box {
+            padding: 20px;
+        }
+    }
+    
+    @media (max-width: 575px) {
+        .contact-details-section {
+            padding: 50px 0;
+        }
+        
+        .contact-main-title {
+            font-size: 1.8rem;
+        }
+        
+        .contact-info-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+    }
     </style>
 @endsection
 @section('content')
@@ -619,309 +917,10 @@
     </div>
 </section>
 
-<style>
-    /* Contact Details Section Styles */
-    .contact-details-section {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .contact-details-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.05);
-        z-index: 1;
-    }
-    
-    .contact-details-section .container {
-        position: relative;
-        z-index: 2;
-    }
-    
-    .contact-main-title {
-        font-size: 2.8rem;
-        font-weight: 800;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    
-    .title-divider {
-        width: 100px;
-        height: 4px;
-        background: #ffd166;
-        margin: 15px auto 20px;
-        border-radius: 2px;
-    }
-    
-    .contact-subtitle {
-        font-size: 1.2rem;
-        color: rgba(255, 255, 255, 0.9);
-        max-width: 600px;
-        margin: 0 auto;
-    }
-    
-    /* Contact Box Styles */
-    .contact-box {
-        background: white;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-        transition: transform 0.4s ease;
-        height: 100%;
-    }
-    
-    .contact-box:hover {
-        transform: translateY(-10px);
-    }
-    
-    .box-header {
-        background: linear-gradient(135deg, #ff7e5f, #feb47b);
-        padding: 30px 25px;
-        text-align: center;
-        color: white;
-    }
-    
-    .office-contact-box .box-header {
-        background: linear-gradient(135deg, #36d1dc, #5b86e5);
-    }
-    
-    .header-icon {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        opacity: 0.9;
-    }
-    
-    .box-title {
-        font-size: 1.8rem;
-        font-weight: 700;
-        margin-bottom: 5px;
-    }
-    
-    .box-role {
-        font-size: 1rem;
-        opacity: 0.9;
-        margin: 0;
-    }
-    
-    .box-body {
-        padding: 30px 25px;
-    }
-    
-    .contact-info-item {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 25px;
-        padding-bottom: 25px;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .contact-info-item:last-child {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-    }
-    
-    .icon-wrapper {
-        width: 45px;
-        height: 45px;
-        background: linear-gradient(135deg, #ff7e5f, #feb47b);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 15px;
-        flex-shrink: 0;
-    }
-    
-    .office-contact-box .icon-wrapper {
-        background: linear-gradient(135deg, #36d1dc, #5b86e5);
-    }
-    
-    .icon-wrapper i {
-        color: white;
-        font-size: 1.2rem;
-    }
-    
-    .info-content {
-        flex: 1;
-    }
-    
-    .info-label {
-        display: block;
-        font-size: 0.9rem;
-        color: #7f8c8d;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-bottom: 5px;
-    }
-    
-    .info-value {
-        color: #2c3e50;
-        font-size: 1.1rem;
-        font-weight: 600;
-        text-decoration: none;
-        transition: color 0.3s ease;
-        display: block;
-    }
-    
-    .info-value:hover {
-        color: #3498db;
-        text-decoration: underline;
-    }
-    
-    .address-text {
-        line-height: 1.6;
-        margin: 0;
-    }
-    
-    .box-footer {
-        background: #f8f9fa;
-        padding: 20px 25px;
-        border-top: 1px solid #eee;
-    }
-    
-    .footer-note {
-        margin: 0;
-        color: #7f8c8d;
-        font-size: 0.95rem;
-        display: flex;
-        align-items: center;
-    }
-    
-    .footer-note i {
-        margin-right: 10px;
-        color: #ff7e5f;
-    }
-    
-    .office-contact-box .footer-note i {
-        color: #36d1dc;
-    }
-    
-    /* Quick Actions Styles */
-    .quick-actions-box {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        border-radius: 15px;
-        padding: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    
-    .actions-title {
-        color: white;
-        font-size: 1.8rem;
-        font-weight: 700;
-    }
-    
-    .actions-title i {
-        color: #ffd166;
-        margin-right: 10px;
-    }
-    
-    .action-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 25px 15px;
-        background: white;
-        border-radius: 10px;
-        text-decoration: none;
-        color: #2c3e50;
-        transition: all 0.3s ease;
-        height: 100%;
-        text-align: center;
-    }
-    
-    .action-btn:hover {
-        transform: translateY(-5px);
-        text-decoration: none;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-    
-    .action-btn i {
-        font-size: 2.5rem;
-        margin-bottom: 15px;
-    }
-    
-    .action-btn span {
-        font-weight: 600;
-        font-size: 1.1rem;
-    }
-    
-    .email-btn i { color: #e74c3c; }
-    .call-btn i { color: #2ecc71; }
-    .info-btn i { color: #3498db; }
-    
-    /* Responsive Styles */
-    @media (max-width: 991px) {
-        .contact-main-title {
-            font-size: 2.3rem;
-        }
-        
-        .contact-box {
-            margin-bottom: 30px;
-        }
-    }
-    
-    @media (max-width: 767px) {
-        .contact-main-title {
-            font-size: 2rem;
-        }
-        
-        .contact-subtitle {
-            font-size: 1rem;
-        }
-        
-        .box-header {
-            padding: 25px 20px;
-        }
-        
-        .box-body {
-            padding: 25px 20px;
-        }
-        
-        .contact-info-item {
-            flex-direction: column;
-        }
-        
-        .icon-wrapper {
-            margin-right: 0;
-            margin-bottom: 15px;
-        }
-        
-        .quick-actions-box {
-            padding: 20px;
-        }
-    }
-    
-    @media (max-width: 575px) {
-        .contact-details-section {
-            padding: 50px 0;
-        }
-        
-        .contact-main-title {
-            font-size: 1.8rem;
-        }
-        
-        .contact-info-item {
-            margin-bottom: 20px;
-            padding-bottom: 20px;
-        }
-    }
-</style>
-
+@endsection
+@section('scripts')
 <script>
-    $(document).ready(function() {
+     $(document).ready(function() {
         // Add animation to contact boxes
         $('.contact-box').each(function(i) {
             $(this).css({
@@ -963,6 +962,4 @@
         });
     });
 </script>
-@endsection
-@section('scripts')
 @endsection

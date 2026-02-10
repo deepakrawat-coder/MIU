@@ -35,7 +35,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -87,7 +87,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Diploma in OTT </h3>
@@ -113,7 +113,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Diploma in RIT </h3>
@@ -138,7 +138,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Diploma in MLT </h3>
@@ -174,7 +174,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> B.COM (Bachelor of Commerce) </h3>
@@ -200,7 +200,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> B.A English </h3>
@@ -226,7 +226,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> B.Sc MLT </h3>
@@ -253,7 +253,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> B.Sc RIT </h3>
@@ -279,7 +279,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> B.Sc OTT </h3>
@@ -317,7 +317,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.A English </h3>
@@ -342,7 +342,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.A (Education Studies) </h3>
@@ -367,7 +367,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.A Political Science </h3>
@@ -393,7 +393,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.A Sociology </h3>
@@ -418,7 +418,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Biotechnology </h3>
@@ -444,7 +444,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Biochemistry </h3>
@@ -469,7 +469,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Botany </h3>
@@ -494,7 +494,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Environmental Science </h3>
@@ -520,7 +520,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Microbiology </h3>
@@ -545,7 +545,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc Zoology </h3>
@@ -570,7 +570,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> MA/M.Sc Yoga </h3>
@@ -595,7 +595,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc MLT </h3>
@@ -621,7 +621,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> M.Sc OTT </h3>
@@ -828,7 +828,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Doctor of Science (D.Sc) </h3>
@@ -850,7 +850,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Doctor of Literature (D.Litt) </h3>
@@ -872,7 +872,7 @@
                         <div class="text-start">
                             <div class="text-start pt-3">
                                 <div class="hw100 mb-3">
-                                    <img src="{{ asset('assets/images/web-image/graduation.png') }}" class="img-fluid"
+                                    <img src="{{ asset('/assets/images/web-image/graduation.png') }}" class="img-fluid"
                                         alt="image">
                                 </div>
                                 <h3 class="mb-3 h3"> Doctor of Law (LL.D) </h3>
