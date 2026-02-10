@@ -416,7 +416,7 @@
                         <div class="single-involment-activities-box">
                             <div class="img-box">
                                 <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-6.jpg"') }} alt="">
+                                    <img src="{{ asset('/assets/images/resources/involment-activities-6.jpg') }}" alt="">
                                 </div>
                                 <div class="text-holder">
                                     <h3>School of Research & Innovation</h3>
