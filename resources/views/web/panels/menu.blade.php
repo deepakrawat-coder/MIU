@@ -173,9 +173,9 @@
                                      <li class="dropdown mr-3"><a href="#">MIU Cell</a>
                                          <ul>
                                              <li><a href="/incubation-center">Incubation center</a></li>
-                                             <li><a href="#">Anti Ragging</a></li>
-                                             <li><a href="#">Academic Council</a></li>
-                                             <li><a href="#">CPIO</a></li>
+                                             <li><a href="/anti-ragging">Anti Ragging</a></li>
+                                             <li><a href="/academic-council">Academic Council</a></li>
+                                             <li><a href="/cpio">CPIO</a></li>
                                              <li><a href="#">SGRC</a></li>
                                              <li><a href="#">Equal opportunity cell</a></li>
                                              <li><a href="#">Internal Complaint Committee</a></li>
