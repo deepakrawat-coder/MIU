@@ -72,8 +72,8 @@
                  <!--End Header Left-->
 
                  <!--Start Header Left-->
-                 <div class="header-middle  w-100">
-                     <div class="main-logo-box">
+                 <div class="header-middle  w-100" style="column-gap:26px !important;width:100% !important;">
+                     <div class="">
                          <a href="/">
                             <p></p>
                              <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="80" height="80" alt="Awesome Logo" title="">
@@ -108,7 +108,7 @@
                                      </li>
                                      <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
                                      <li class="mr-3"><a href="/about-us">About MIU</a></li>
-                                     <li class="blank-box"></li>
+                                     {{-- <li class="blank-box"></li> --}}
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
                                             <li class="dropdown mr-3"><a href="#">Administration & Academician</a>

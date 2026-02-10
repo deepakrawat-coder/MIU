@@ -33,6 +33,7 @@ Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details')
 Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
 Route::view('/alumni', 'web.pages.alumni');
 Route::view('/awards', 'web.pages.awards');
-
-
+Route::view('/cpio', 'web.pages.cpio');
+Route::view('/grievance-cell', 'web.pages.grievance-cell');
+Route::view('/academic-council', 'web.pages.academic-council');
 require __DIR__.'/settings.php';
