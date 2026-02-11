@@ -4,84 +4,7 @@
 
 @section('styles')
     <style>
-        /* Tabs */
-        a{
-            color:rgba(0, 0, 0, 0.692);
-        }
-        .pr-tab {
-            display: none;
-        }
-
-        .pr-tab.active-tab {
-            display: block;
-        }
-
-        /* ===== STICKY SIDEBAR ===== */
-        @media (min-width: 992px) {
-
-            .testimonial-style1-area,
-            .testimonial-style1-area .row {
-                overflow: visible !important;
-            }
-
-            .dept-col {
-                position: relative;
-            }
-
-            .sticky-department {
-                position: sticky;
-                top: 120px;
-                /* header height */
-                z-index: 5;
-            }
-        }
-
-        @media (max-width: 991px) {
-            .sticky-department {
-                position: static;
-            }
-        }
-
-        .register-accommodation-area {
-            position: relative;
-            z-index: 1;
-        }
-
-        .register-accommodation-area__bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            background-position: center;
-            z-index: -1;
-        }
-
-        /* OVERLAY */
-        .register-accommodation-area__bg::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #000000cf !important;
-            /* dark overlay */
-        }
-
-        .register-accommodation-content {
-            position: relative;
-            z-index: 2;
-            color: #ffffff;
-        }
-
-        .register-accommodation-content p,
-        .register-accommodation-content h2,
-        .register-accommodation-content h3,
-        .register-accommodation-content ul li {
-            color: #ffffff;
-        }
+     
     </style>
 @endsection
 
@@ -97,12 +20,12 @@
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2>Deparments and Programs</h2>
+                            <h2>Departments and Programs</h2>
                         </div>
                         <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <ul>
                                 <li><a href="/">Home</a></li>
-                                <li class="active">Deparments and Programs</li>
+                                <li class="active">Program Details</li>
                             </ul>
                         </div>
                     </div>
@@ -110,342 +33,527 @@
             </div>
         </div>
     </section>
-    <!-- DEPARTMENTS -->
-    {{-- <section class="testimonial-style1-area py-5">
-        <div class="container">
+
+    <!-- PAGE NAVIGATION -->
+    <section class="page-contains-area stricky">
+        <div class="container-fluid">
             <div class="row">
-
-                <!-- LEFT SIDEBAR -->
-                <div class="col-xl-3 col-lg-4 col-md-12 dept-col">
-                    <div class="explore-future-tab__button sticky-department">
-
-                        <div class="sec-title mb-3">
-                            <h2>Our Departments</h2>
-                            <p>Explore academic departments and their programs.</p>
-                        </div>
-
-                        <ul class="tab-btns list-unstyled">
-                            <li class="tab-btn active-btn" data-tab="#students">
-                                <h3>Arts & Humanities</h3>
-                                <div class="round-box"></div>
-                            </li>
-
-                            <li class="tab-btn" data-tab="#graduate">
-                                <h3>Science</h3>
-                                <div class="round-box"></div>
-                            </li>
-
-                            <li class="tab-btn" data-tab="#transfer">
-                                <h3>Commerce & Management</h3>
-                                <div class="round-box"></div>
-                            </li>
-
-                            <li class="tab-btn" data-tab="#research">
-                                <h3>Research & Doctoral</h3>
-                                <div class="round-box"></div>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <!-- RIGHT CONTENT -->
-                <div class="col-xl-9 col-lg-8 col-md-12">
-                    <div class="pr-content">
-
-                        <!-- TAB 1 -->
-                        <div class="pr-tab active-tab" id="students">
-                            <div class="row">
-                                @for ($i = 1; $i <= 20; $i++)
-                                    <div class="col-xl-4 col-lg-6 col-md-6 mb-4">
-                                        <a href="/programs-details">
-                                            <div class="single-program-box-style1">
-                                                <div class="img-holder">
-                                                    <img src="{{ asset('/assets/images/programs/program-1.jpg') }}" class="img-fluid"
-                                                        alt="">
-                                                    <div class="overlay-content">
-                                                        <div class="inner">
-                                                            <p>UG / PG</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="text-holder text-center">
-                                                    <h3>Animation</h3>
-                                                    <p>Arts & Performance</p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-                                @endfor
-                            </div>
-                        </div>
-
-                        <!-- TAB 2 -->
-                        <div class="pr-tab" id="graduate">
-                            <p>Science department programs will appear here.</p>
-                        </div>
-
-                        <!-- TAB 3 -->
-                        <div class="pr-tab" id="transfer">
-                            <p>Commerce & Management programs listed here.</p>
-                        </div>
-
-                        <!-- TAB 4 -->
-                        <div class="pr-tab" id="research">
-                            <p>PhD & Research programs listed here.</p>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> --}}
-    <section class="teaching-area mt-5">
-        <div class="auto-container">
-            <div class="row">
-                <div class="col-xl-6">
-                    <div class="teaching-content">
-                        <div class="sec-title">
-                            <h2>MIU Schools<br> of Academic Excellence</h2>
-                            <div class="sub-title">
-                                <p>
-                                    Manipur International University (MIU) delivers quality education through a diverse
-                                    range of academic divisions known as MIU Schools, fostering excellence, innovation,
-                                    and holistic development across disciplines.
-                                </p>
-                            </div>
-                        </div>
-
+                <div class="col-xl-12 d-flex justify-content-center">
+                    <div class="page-contains-box ">
                         <div class="inner-title">
-                            <div class="border-line"></div>
-                            <h3>Interdisciplinary & Industry-Oriented Learning</h3>
+                            <h3>Page Contains:</h3>
                         </div>
-
-                        <ul>
-                            <li>
-                                <div class="dot-box"></div>
-                                Engineering, Technology, Arts & Humanities, and Sciences
-                            </li>
-                            <li>
-                                <div class="dot-box"></div>
-                                Management, Health Sciences & Education Programs
-                            </li>
-                            <li>
-                                <div class="dot-box"></div>
-                                Undergraduate, Postgraduate, Diploma & Doctoral Studies
-                            </li>
-                            <li>
-                                <div class="dot-box"></div>
-                                Research, Innovation & Multidisciplinary Collaboration
-                            </li>
-                        </ul>
-
-                        <div class="btns-box">
-                            <a class="btn-one" href="about.html">
-                                <span class="txt">Explore MIU Schools</span>
-                            </a>
+                        <div class="page-contains-btn">
+                            <ul class="navigation clearfix scroll-nav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#content">Requirements</a></li>
+                                <li><a href="#department">Specializations</a></li>
+                                <li><a href="#specialization">Programs</a></li>
+                                <li><a href="#testimonials">Testimonials</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#partner">Recruiter Partner</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-xl-6">
-                    <div class="teaching-img-box">
-                        <div class="teaching-img-box__bg"
-                            style="background-image: url(assets/images/resources/teaching-img.jpg);">
-                        </div>
-                        <div class="teaching-img-box__content-bg"></div>
-
-                        <div class="teaching-img-box__content aos-init aos-animate" data-aos="fade-left">
-                            <div class="border-line"></div>
-                            <h3>
-                                “MIU fosters a vibrant academic ecosystem where
-                                education, research, and innovation come together
-                                to prepare graduates for global opportunities.”
-                            </h3>
-
-                            <div class="authorized-person">
-                                {{-- <div class="signature">
-                                <img src="assets/images/resources/signature.png" alt="">
-                            </div> --}}
-                                <h4>Manipur International University</h4>
-                                <p>[ Academic Leadership ]</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
-    <section class="involment-activities-area involment-activities-area--style2">
+
+    <!-- OVERVIEW SECTION -->
+    <section id="overview" class="program-details-area">
         <div class="container">
-            <div class="sec-title text-center">
-                <h2>MIU Schools</h2>
-                <div class="sub-title">
-                    <p>
-                        Manipur International University offers diverse schools focused on
-                        academic excellence, innovation, and industry-oriented education.
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="program-details-tab-content">
+                        <div class="program-details-tab-content__img-box"
+                            style="background-image: url({{ asset('/assets/images/programs/program-details-tab-content__img-box-1.png') }});">
+                        </div>
+
+                        <div class="program-details-tab-content__inner">
+                            <div class="program-details-tab-content__inner__shape"
+                                style="background-image: url({{ asset('/assets/images/shape/program-details-tab-content__inner-shape.png') }});">
+                            </div>
+
+                            <div class="program-details-tab-content__text">
+                                <div class="sec-title">
+                                    <h2>School of Technology – Overview</h2>
+                                </div>
+
+                                <p>
+                                    The School of Technology at Manipur International University is dedicated to
+                                    nurturing technically skilled professionals equipped with strong analytical,
+                                    problem-solving, and innovation capabilities. The school offers industry-aligned
+                                    programs that combine academic rigor with hands-on learning.
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-star"></span>
+                                        </div>
+                                        <div class="inner-text">
+                                            <h3>Academic Focus</h3>
+                                            <p>
+                                                Emphasis on engineering fundamentals, emerging technologies,
+                                                practical laboratories, and project-based learning to meet
+                                                current industry demands.
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-star"></span>
+                                        </div>
+                                        <div class="inner-text">
+                                            <h3>Industry & Career Readiness</h3>
+                                            <p>
+                                                Industry-experienced faculty, internships, skill enhancement
+                                                programs, and research opportunities prepare students for
+                                                successful technical careers.
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="program-details-form-box">
+                                <div class="sec-title">
+                                    <h2>Apply for Admission</h2>
+                                </div>
+
+                                <form id="program-details-form-1" name="programDetailsForm" action="#" method="post">
+                                    <div class="input-box">
+                                        <input type="text" name="form_name" id="formName"
+                                            placeholder="Enter Your Full Name" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <input type="email" name="form_email" id="formEmail"
+                                            placeholder="Enter Your Email Address" required>
+                                    </div>
+
+                                    <div class="input-box">
+                                        <div class="select-box">
+                                            <select class="wide" name="applicant_type">
+                                                <option value="">Select Applicant Type</option>
+                                                <option value="1">Undergraduate Applicant</option>
+                                                <option value="2">Postgraduate Applicant</option>
+                                                <option value="3">Doctoral Applicant</option>
+                                                <option value="4">Lateral Entry</option>
+                                                <option value="5">International Student</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="button-box">
+                                        <button class="btn-one" type="submit">
+                                            <span class="txt">Apply Now</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COURSES & SCOPE -->
+    <section id="content" class="testimonial-style1-area py-5 bg-white">
+        <div class="container">
+            <div class="school-tech-content">
+                <h3>Courses & Academic Scope</h3>
+                <p>
+                    The School of Technology provides a comprehensive educational experience
+                    that blends rigorous coursework, laboratory training, and research
+                    opportunities. Graduates are empowered to excel in diverse technology
+                    domains and global industries.
+                </p>
+
+                <ul class="list-style-one">
+                    <li>Software Development & Computer Engineering</li>
+                    <li>Mechanical & Civil Engineering</li>
+                    <li>Artificial Intelligence & Machine Learning</li>
+                    <li>Cyber Security & Data Science</li>
+                    <li>Internet of Things (IoT) & Cloud Computing</li>
+                    <li>Robotics, Automation & Emerging Technologies</li>
+                    <li>Renewable Energy & Environmental Engineering</li>
+                    <li>Biomedical & Aerospace Engineering</li>
+                </ul>
+
+                <h3>Career Opportunities</h3>
+                <p>
+                    Graduates of the School of Technology at MIU emerge as proficient
+                    technologists, creative innovators, and globally employable
+                    professionals. They are well-prepared to lead technological
+                    transformation across industries such as AI innovation, fintech,
+                    healthtech, cyber security, smart infrastructure, and data-driven
+                    enterprises.
+                </p>
+
+                <h3>Why Choose School of Technology, MIU?</h3>
+                <ul class="list-style-two">
+                    <li>Industry-aligned and future-oriented curriculum</li>
+                    <li>State-of-the-art laboratories and research facilities</li>
+                    <li>Strong focus on innovation, research, and skill development</li>
+                    <li>Experienced faculty with academic and industry expertise</li>
+                    <li>Holistic student development and leadership opportunities</li>
+                    <li>Global career pathways and higher education prospects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPARTMENTS SECTION -->
+    <section id="department" style=" background: #17345a;" class="tech-department-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title text-white">School of Technology</h2>
+                    <p class="section-subtitle text-white">
+                        Disciplines & Specializations at Manipur International University
                     </p>
                 </div>
             </div>
+
             <div class="row">
-                <!-- School 1 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-1.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Engineering & Technology</h3>
-                                    <p>
-                                        Focused on cutting-edge engineering education, technology,
-                                        innovation, and practical skill development.
-                                    </p>
-                                    <ul>
-                                        <li>Engineering & Technology Programs</li>
-                                        <li>Industry-Oriented Curriculum</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Computer Science -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="dept-card">
+                        <div class="dept-header">
+                            <span class="dept-icon flaticon-mouse"></span>
+                            <h3>Computer Science & IT</h3>
                         </div>
-                    </a>
+                        <div class="dept-body">
+                            <span class="tag">B.Tech CSE</span>
+                            <span class="tag">M.Tech CSE</span>
+                            <span class="tag">Ph.D CSE</span>
+                            <span class="tag">BCA</span>
+                            <span class="tag">MCA</span>
+                            <span class="tag">Integrated BCA–MCA</span>
+                            <span class="tag">AI & ML (Diploma)</span>
+                            <span class="tag">Cyber & Forensics</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- School 2 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{asset('/assets/images/resources/involment-activities-2.jpg')}}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Arts & Humanities</h3>
-                                    <p>
-                                        Promoting creativity, critical thinking, culture,
-                                        communication, and social sciences.
-                                    </p>
-                                    <ul>
-                                        <li>Arts & Humanities</li>
-                                        <li>Interdisciplinary Learning</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Electrical -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="dept-card">
+                        <div class="dept-header">
+                            <span class="dept-icon flaticon-virus"></span>
+                            <h3>Electrical Engineering</h3>
                         </div>
-                    </a>
+                        <div class="dept-body">
+                            <span class="tag">B.Tech EE</span>
+                            <span class="tag">B.Tech EEE</span>
+                            <span class="tag">M.Tech EE</span>
+                            <span class="tag">M.Tech EEE</span>
+                            <span class="tag">Diploma EE</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- School 3 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-3.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Management & Commerce</h3>
-                                    <p>
-                                        Developing future leaders with strong foundations in
-                                        business management, finance, and entrepreneurship.
-                                    </p>
-                                    <ul>
-                                        <li>Management & Commerce</li>
-                                        <li>Entrepreneurship Focus</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Mechanical -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="dept-card">
+                        <div class="dept-header">
+                            <span class="dept-icon flaticon-businessman"></span>
+                            <h3>Mechanical Engineering</h3>
                         </div>
-                    </a>
+                        <div class="dept-body">
+                            <span class="tag">B.Tech Mechanical</span>
+                            <span class="tag">M.Tech Mechanical</span>
+                            <span class="tag">Ph.D Mechanical</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- School 4 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-4.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Science</h3>
-                                    <p>
-                                        Emphasizing scientific research, innovation, and analytical
-                                        skills across core science disciplines.
-                                    </p>
-                                    <ul>
-                                        <li>Basic & Applied Sciences</li>
-                                        <li>Research-Oriented Programs</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- Civil -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="dept-card">
+                        <div class="dept-header">
+                            <span class="dept-icon flaticon-mask"></span>
+                            <h3>Civil Engineering</h3>
                         </div>
-                    </a>
+                        <div class="dept-body">
+                            <span class="tag">B.Tech Civil</span>
+                            <span class="tag">M.Tech Civil</span>
+                            <span class="tag">Ph.D Civil</span>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- School 5 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-5.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Health Sciences</h3>
-                                    <p>
-                                        Dedicated to healthcare education, wellness, and professional
-                                        competence in health-related fields.
-                                    </p>
-                                    <ul>
-                                        <li>Health & Allied Sciences</li>
-                                        <li>Practical Clinical Exposure</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!-- ECE -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="dept-card">
+                        <div class="dept-header">
+                            <span class="dept-icon flaticon-mortar"></span>
+                            <h3>Electronics & Communication</h3>
                         </div>
-                    </a>
-                </div>
-
-                <!-- School 6 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-6.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Research & Innovation</h3>
-                                    <p>
-                                        Encouraging multidisciplinary research, innovation,
-                                        and real-world problem-solving initiatives.
-                                    </p>
-                                    <ul>
-                                        <li>Research & Innovation</li>
-                                        <li>Industry & Academic Collaboration</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="dept-body">
+                            <span class="tag">B.Tech ECE</span>
+                            <span class="tag">M.Tech ECE</span>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area bg-white">
+
+    <!-- CSE SPECIALIZATIONS -->
+    <section id="specialization" class="cse-specialization-section">
+        <div class="container">
+            <!-- TITLE -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">B.Tech in Computer Science & Engineering</h2>
+                    <p class="section-subtitle">
+                        Industry-oriented Specializations at Manipur International University
+                    </p>
+                </div>
+            </div>
+
+            <!-- SPECIALIZATION CARDS -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="spec-card image-card">
+                        <a href="/specialization-details">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/core-cse.jpg') }}" alt="Core Computer Science">
+                            </div>
+                            <h4>Core Computer Science</h4>
+                            <p>Programming, Data Structures & Algorithms</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/ai-ml.jpg') }}" alt="AI & ML">
+                            </div>
+                            <h4>Artificial Intelligence & ML</h4>
+                            <p>Machine Learning & Intelligent Systems</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/cyber-security.jpg') }}" alt="Cyber Security">
+                            </div>
+                            <h4>Cyber Security</h4>
+                            <p>Ethical Hacking & Digital Forensics</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/data-science.jpg') }}" alt="Data Science">
+                            </div>
+                            <h4>Data Science</h4>
+                            <p>Big Data Analytics & Visualization</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/cloud.jpg') }}" alt="Cloud Computing">
+                            </div>
+                            <h4>Cloud Computing</h4>
+                            <p>Cloud Architecture & DevOps</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/iot.jpg') }}" alt="IoT">
+                            </div>
+                            <h4>Internet of Things (IoT)</h4>
+                            <p>Smart Devices & Embedded Systems</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/blockchain.jpg') }}" alt="Blockchain">
+                            </div>
+                            <h4>Blockchain Technology</h4>
+                            <p>Decentralized Apps & Smart Contracts</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/cse/fullstack.jpg') }}" alt="Full Stack">
+                            </div>
+                            <h4>Full Stack Development</h4>
+                            <p>Frontend, Backend & APIs</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CIVIL SPECIALIZATIONS -->
+    <section class="cse-specialization-section">
+        <div class="container">
+            <!-- TITLE -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">B.Tech in Civil Engineering</h2>
+                    <p class="section-subtitle">
+                        Specialized domains shaping infrastructure and sustainability
+                    </p>
+                </div>
+            </div>
+
+            <!-- SPECIALIZATION CARDS -->
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/civil/structural.jpg') }}"
+                                    alt="Structural Engineering">
+                            </div>
+                            <h4>Structural Engineering</h4>
+                            <p>Buildings, Bridges & Structural Design</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/civil/geotechnical.jpg') }}"
+                                    alt="Geotechnical Engineering">
+                            </div>
+                            <h4>Geotechnical Engineering</h4>
+                            <p>Soil Mechanics & Foundation Systems</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/civil/transportation.jpg') }}" alt="Transportation">
+                            </div>
+                            <h4>Transportation Engineering</h4>
+                            <p>Highways, Traffic & Airports</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <a href="/specialization-details">
+                        <div class="spec-card image-card">
+                            <div class="spec-img">
+                                <img src="{{ asset('assets/images/civil/environmental.jpg') }}"
+                                    alt="Environmental Engineering">
+                            </div>
+                            <h4>Environmental Engineering</h4>
+                            <p>Water, Waste & Pollution Control</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    {{-- <section id="testimonials" style=" background: #17345a;" class="testimonial-style1-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="testimonial-style1__title">
                         <div class="sec-title">
-                            <h2>Voices of MIU Alumni</h2>
+                            <h2 class="text-white">Voices of MIU Alumni</h2>
+                            <div class="sub-title text-white">
+                                <p>Hear from our alumni as they share their experiences and success stories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1-content">
+                        <div class="theme_carousel testimonial-carousel owl-theme owl-carousel">
+                            @for ($i = 0; $i < 7; $i++)
+                                <div class="single-testimonial-style1">
+                                    <div class="border-box"></div>
+                                    <div class="top-box">
+                                        <div class="quote-iocn-box">
+                                            <span class="icon-quote"></span>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="img-box">
+                                                <img src="{{ asset('/assets/images/testimonial/testimonial-v1-' . ($i + 1) . '.jpg') }}"
+                                                    alt="Alumni">
+                                            </div>
+                                            <div class="rating-box">
+                                                <ul>
+                                                    @for ($j = 0; $j < 7; $j++)
+                                                        <li><span class="icon-favourite"></span></li>
+                                                    @endfor
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <p>The practical approach and industry exposure at MIU prepared me perfectly for
+                                                my career in technology.</p>
+                                        </div>
+                                    </div>
+                                    <div class="client-name">
+                                        <h3>Alumni Name {{ $i + 1 }}</h3>
+                                        <span>B.Tech | MIU Alumni</span>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> --}}
+    <section id="testimonials" class="testimonial-style1-area" style=" background: #17345a;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-style1__title">
+                        <div class="sec-title">
+                            <h2 class="text-white">Voices of MIU Alumni</h2>
                             <div class="sub-title">
-                                <p>
+                                <p class="text-white">
                                     Hear from our alumni as they share their experiences and success stories at Manipur
                                     International University
                                 </p>
@@ -512,7 +620,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -571,7 +679,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -630,7 +738,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -689,7 +797,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -750,7 +858,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -809,7 +917,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -868,7 +976,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jp') }}g"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -927,7 +1035,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -986,7 +1094,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1045,7 +1153,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1106,7 +1214,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1165,7 +1273,7 @@
                                                 </div>
                                                 <div class="inner">
                                                     <div class="img-box">
-                                                        <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
                                                             alt="">
                                                     </div>
                                                     <div class="rating-box">
@@ -1228,9 +1336,165 @@
             </div>
         </div>
     </section>
+    <!-- FAQs -->
+    <section id="faq" class="course-curriculum-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="course-curriculum-content-box">
+                        <div class="course-layout-content-box">
+                            <div class="inner-title">
+                                <h4>FAQs</h4>
+                                <p>Need Help?</p>
+                            </div>
+                            <ul class="accordion-box">
+                                <li class="accordion block active-block">
+                                    <div class="acc-btn active">
+                                        <div class="course-layout-title-box">
+                                            <h4>What programs are offered in the School of Technology?</h4>
+                                            <div class="icon-outer">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content current">
+                                        <div class="course-layout-content-box-inner">
+                                            <p class="p-3">
+                                                The School of Technology offers undergraduate, postgraduate, and doctoral
+                                                programs in Computer Science, Mechanical Engineering, Civil Engineering,
+                                                Artificial Intelligence, Data Science, Cyber Security, and related
+                                                specializations.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="course-layout-title-box">
+                                            <h4>What are the admission requirements?</h4>
+                                            <div class="icon-outer">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="course-layout-content-box-inner">
+                                            <p class="p-3">
+                                                Admission requirements vary by program. Generally, UG programs require 10+2
+                                                with PCM/PCB, PG programs require relevant bachelor's degree, and PhD
+                                                programs require master's degree with minimum marks. Entrance exams may
+                                                apply.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="course-layout-title-box">
+                                            <h4>Are there placement opportunities?</h4>
+                                            <div class="icon-outer">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="course-layout-content-box-inner">
+                                            <p class="p-3">
+                                                Yes, MIU has an active placement cell with connections to leading tech
+                                                companies. Regular campus drives, internships, and industry projects are
+                                                organized to ensure students get excellent career opportunities.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECRUITERS -->
+    <section id="partner" class="course-curriculum-area">
+        <div class="container" style="overflow: hidden;">
+            <div class="auto-container">
+                <div class="sec-title text-center mb-4">
+                    <h2>Our Recruiters & Industry Partners</h2>
+                    <p>Leading organizations that trust and hire our graduates</p>
+                </div>
+                <div class="swiper recruiters-swiper">
+                    <div class="swiper-wrapper">
+                        @php
+                            $recruiters = ['TCS', 'Infosys', 'Wipro', 'Accenture', 'HCL', 'IBM', 'Microsoft', 'Amazon'];
+                        @endphp
+
+                        @foreach ($recruiters as $recruiter)
+                            <div class="swiper-slide my-4">
+                                <div class="recruiter-logo">
+                                    <img src="{{ asset('/assets/images/programs/program-1.jpg') }}"
+                                        alt="{{ $recruiter }}">
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection
 
 @section('scripts')
-  
+    <script>
+        // Swiper for recruiters
+        var swiper = new Swiper(".recruiters-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2
+                },
+                576: {
+                    slidesPerView: 3
+                },
+                768: {
+                    slidesPerView: 4
+                },
+                992: {
+                    slidesPerView: 5
+                }
+            }
+        });
+
+        // FAQ Accordion
+        document.addEventListener("DOMContentLoaded", function() {
+            const accBtns = document.querySelectorAll(".acc-btn");
+            accBtns.forEach(btn => {
+                btn.addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    const content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+        });
+
+        // Form submission
+        document.getElementById('program-details-form-1').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Application submitted successfully! We will contact you shortly.');
+            this.reset();
+        });
+    </script>
 @endsection

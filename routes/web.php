@@ -13,7 +13,7 @@ Route::view('dashboard', 'dashboard')
 Route::view('/', 'web.pages.index');
 Route::view('/about-us', 'web.pages.about-us');
 Route::view('/departments', 'web.pages.departments');
-Route::view('/programs', 'web.pages.deparments-programs');
+Route::view('/schools-and-departments', 'web.pages.deparments-programs');
 Route::view('/programs-details', 'web.pages.programs-details');
 Route::view('/specialization-details', 'web.pages.specialization-details');
 Route::view('/contact-us', 'web.pages.contact-us');
@@ -27,7 +27,18 @@ Route::view('/incubation-center', 'web.pages.incubation-center');
 Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
 Route::view('/notice-and-events', 'web.pages.notice-and-events');
+Route::view('/anti-ragging', 'web.pages.anti-ragging');
+Route::view('/school-details', 'web.pages.school-details');
 Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
+Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
+Route::view('/alumni', 'web.pages.alumni');
+Route::view('/awards', 'web.pages.awards');
+Route::view('/cpio', 'web.pages.cpio');
+Route::view('/grievance-cell', 'web.pages.grievance-cell');
+Route::view('/academic-council', 'web.pages.academic-council');
+Route::view('/constituent-colleges', 'web.pages.constituent-colleges');
+Route::view('/health-facilities', 'web.pages.health-facilities');
+Route::view('/syllabus-courses', 'web.pages.syllabus-courses');
 
 
 

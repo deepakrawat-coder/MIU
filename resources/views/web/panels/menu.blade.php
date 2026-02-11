@@ -1,4 +1,4 @@
- <header class="main-header header-style-one">
+ <header class="main-header header-style-one fixed-header">
 
      <!--Start Header Top-->
      <div class="header-top">
@@ -72,11 +72,11 @@
                  <!--End Header Left-->
 
                  <!--Start Header Left-->
-                 <div class="header-middle  w-100">
-                     <div class="main-logo-box">
+                 <div class="header-middle  w-100" style="column-gap:26px !important;width:100% !important;">
+                     <div class="">
                          <a href="/">
                             <p></p>
-                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="80" height="80" alt="Awesome Logo" title="">
                          </a>
                      </div>
 
@@ -108,7 +108,7 @@
                                      </li>
                                      <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
                                      <li class="mr-3"><a href="/about-us">About MIU</a></li>
-                                     <li class="blank-box"></li>
+                                     {{-- <li class="blank-box"></li> --}}
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
                                          <ul>
                                             <li class="dropdown mr-3"><a href="#">Administration & Academician</a>
@@ -124,23 +124,23 @@
                                                  </ul>
                                              </li>
                                              <li>
-                                                 <a href="#">Academic Collaborations</a>
+                                                 <a href="/academic-collaborations">Academic Collaborations</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Alumni</a>
+                                                 <a href="/alumni">Alumni</a>
                                              </li>
 
                                              <li>
-                                                 <a href="#">Awards</a>
+                                                 <a href="/awards">Awards</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Constituent Colleges</a>
+                                                 <a href="/constituent-colleges">Constituent Colleges</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Health Facilities</a>
+                                                 <a href="/health-facilities">Health Facilities</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Syllabus & Courses</a>
+                                                 <a href="/syllabus-courses">Syllabus & Courses</a>
                                              </li>
                                              <li>
                                                  <a href="#">Scholarship Policy</a>
@@ -173,10 +173,10 @@
                                      <li class="dropdown mr-3"><a href="#">MIU Cell</a>
                                          <ul>
                                              <li><a href="/incubation-center">Incubation center</a></li>
-                                             <li><a href="#">Anti Ragging</a></li>
-                                             <li><a href="#">Academic Council</a></li>
-                                             <li><a href="#">CPIO</a></li>
-                                             <li><a href="#">SGRC</a></li>
+                                             <li><a href="/anti-ragging">Anti Ragging</a></li>
+                                             <li><a href="/academic-council">Academic Council</a></li>
+                                             <li><a href="/cpio">CPIO</a></li>
+                                             <li><a href="/grievance-cell">SGRC</a></li>
                                              <li><a href="#">Equal opportunity cell</a></li>
                                              <li><a href="#">Internal Complaint Committee</a></li>
                                              <li><a href="#">Research And Development Cell</a></li>
@@ -187,7 +187,7 @@
                                              <li><a href="#">Telephone Directories</a></li>
                                          </ul>
                                      </li>
-                                     <li class=" mr-3"><a href="/departments">School and Departments</a></li>
+                                     <li class=" mr-3"><a href="/schools-and-departments">School and Departments</a></li>
                                      <li class=" mr-3"><a href="/contact-us">Contact</a></li>
                                  </ul>
                              </div>
