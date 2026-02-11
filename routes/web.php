@@ -42,6 +42,9 @@ Route::view('/syllabus-courses', 'web.pages.syllabus-courses');
 Route::view('/equal-opportunity-cell', 'web.pages.equal-opportunity-cell');
 Route::view('/research-and-development-cell', 'web.pages.research-and-development-cell');
 Route::view('/internal-complaint-committee', 'web.pages.internal-complaint-committee');
+Route::view('/scholarship-policy', 'web.pages.scholarship-policy');
+Route::view('/refund-policy', 'web.pages.refund-policy');
+Route::view('/reservation-roster', 'web.pages.reservation-roster');
 
 
 require __DIR__.'/settings.php';

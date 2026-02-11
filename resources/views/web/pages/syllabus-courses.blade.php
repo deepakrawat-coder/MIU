@@ -42,7 +42,7 @@
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2> Health Facilities </h2>
+                            <h2> Academic Programmes </h2>
                         </div>
                         <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <ul>
