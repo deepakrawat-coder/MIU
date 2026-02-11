@@ -177,9 +177,9 @@
                                              <li><a href="/academic-council">Academic Council</a></li>
                                              <li><a href="/cpio">CPIO</a></li>
                                              <li><a href="/grievance-cell">SGRC</a></li>
-                                             <li><a href="#">Equal opportunity cell</a></li>
-                                             <li><a href="#">Internal Complaint Committee</a></li>
-                                             <li><a href="#">Research And Development Cell</a></li>
+                                             <li><a href="/equal-opportunity-cell">Equal opportunity cell</a></li>
+                                             <li><a href="/internal-complaint-committee">Internal Complaint Committee</a></li>
+                                             <li><a href="/research-and-development-cell">Research And Development Cell</a></li>
                                              <li><a href="#">Ombudsperson</a></li>
                                              <li><a href="#">Project Development Cell</a></li>
                                              <li><a href="#">SEDG Cell</a></li>

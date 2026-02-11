@@ -39,6 +39,9 @@ Route::view('/academic-council', 'web.pages.academic-council');
 Route::view('/constituent-colleges', 'web.pages.constituent-colleges');
 Route::view('/health-facilities', 'web.pages.health-facilities');
 Route::view('/syllabus-courses', 'web.pages.syllabus-courses');
+Route::view('/equal-opportunity-cell', 'web.pages.equal-opportunity-cell');
+Route::view('/research-and-development-cell', 'web.pages.research-and-development-cell');
+Route::view('/internal-complaint-committee', 'web.pages.internal-complaint-committee');
 
 
 require __DIR__.'/settings.php';

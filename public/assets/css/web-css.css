@@ -830,3 +830,132 @@
                 padding: 5px 10px;
             }
         }
+
+        /*anti ragging css*/
+           .anti-ragging-section {
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Helpline card styling */
+        .helpline-card {
+            /* background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue)); */
+            color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(13, 71, 161, 0.2);
+        }
+
+        .helpline-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .helpline-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: white;
+            text-decoration: none;
+            display: block;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .helpline-number:hover {
+            color: #e3f2fd;
+            text-decoration: none;
+            transform: scale(1.05);
+        }
+
+        /* Contact cards */
+        .contact-card {
+            border-left: 5px solid var(--primary-blue);
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #e3f2fd;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .contact-title {
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .contact-link {
+            color: var(--secondary-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-link:hover {
+            color: var(--accent-red);
+            text-decoration: underline;
+        }
+
+        /* Warning box */
+        .warning-box {
+            background-color: var(--warning-red);
+            border-left: 5px solid var(--accent-red);
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-title {
+            color: #c62828;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Committee and squad cards */
+        .spec-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .spec-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        .spec-card h4 {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .helpline-number {
+                font-size: 1.8rem;
+            }
+            .anti-ragging-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .helpline-number {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* Icon styling */
+        .icon {
+            color: var(--primary-blue);
+            margin-right: 10px;
+        }
+        /*end anti ragging css*/
