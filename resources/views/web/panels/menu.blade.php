@@ -179,7 +179,7 @@
                                              <li><a href="/grievance-cell">SGRC</a></li>
                                              <li><a href="/equal-opportunity-cell">Equal opportunity cell</a></li>
                                              <li><a href="/internal-complaint-committee">Internal Complaint Committee</a></li>
-                                             <li><a href="/research-and-development-cell">Research And Development Cells</a></li>
+                                             <li><a href="/research-and-development-cell">Research And Development Cell</a></li>
                                              <li><a href="#">Ombudsperson</a></li>
                                              <li><a href="#">Project Development Cell</a></li>
                                              <li><a href="#">SEDG Cell</a></li>
