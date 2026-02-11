@@ -94,6 +94,14 @@
         /* Title Icon Animation */
         .title-icon {
             animation: rotateIn 0.8s ease;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #17345a, #0f2a3f);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 25px rgba(23, 52, 90, 0.15);
         }
 
         @keyframes slideInRight {
@@ -238,8 +246,8 @@
         }
 
         /* .mission-vision-area {
-                                                        background: #d1143e14;
-                                                    } */
+                                                            background: #d1143e14;
+                                                        } */
         /* Simple & Clean Research Programs Section */
         .research-programs-section .card {
             transition: all 0.2s ease;
@@ -320,7 +328,7 @@
         }
 
         .single-categories-box .text h3 a:hover {
-            color: #e4a11b;
+            color: var(--thm-base);
         }
 
         .single-categories-box .icon i {
@@ -420,6 +428,9 @@
             .publication-item {
                 padding: 18px !important;
             }
+        }
+        .Faculty-badge{
+            background: #d1143e; color: white; border-radius: 50px; font-weight: 600;
         }
     </style>
 @endsection
@@ -631,15 +642,14 @@
                     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <div class="section-title-wrapper mb-3 mb-md-0">
                             <div class="d-flex align-items-center">
-                                <div class="title-icon me-3 mr-3"
-                                    style="width: 70px; height: 70px; background: linear-gradient(135deg, #17345a, #0f2a3f); border-radius: 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 15px 25px rgba(23,52,90,0.15);">
+                                <div class="title-icon me-3 mr-3" style="">
                                     <i class="fa fa-flask fa-3x text-white"></i>
                                 </div>
                                 <div>
                                     <h1 class="section-title text-start w-100 text-dark">Research Committee</h1>
                                     <div class="d-flex align-items-center mt-2">
-                                        <span class="badge mr-2 px-4 py-2"
-                                            style="background: #d1143e; color: white; border-radius: 50px; font-weight: 600;">
+                                        <span class="badge Faculty-badge mr-2 px-4 py-2"
+                                            style="">
                                             <i class="fa fa-check-circle"></i> Faculty Research Committee
                                         </span>
                                         <span class="badge px-4 py-2"
@@ -976,7 +986,7 @@
                         <div class="card-header bg-transparent border-0 pt-4 px-4">
                             <div class="d-flex align-items-center">
                                 <span class="badge mr-3 px-3 py-2"
-                                    style="background: #e4a11b; color: white; font-weight: 600; border-radius: 50px;">
+                                    style="background: var(--thm-base); color: white; font-weight: 600; border-radius: 50px;">
                                     <i class="fa fa-certificate"></i> Post-doctoral Programs
                                 </span>
                                 <span class="small text-muted">Doctoral Fellowships</span>
@@ -1005,7 +1015,7 @@
                                     <div class="d-flex align-items-center">
                                         <div
                                             style="width: 40px; height: 40px; background: rgba(228,161,27,0.08); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 12px;">
-                                            <i class="fa fa-book" style="color: #e4a11b;"></i>
+                                            <i class="fa fa-book" style="color: var(--thm-base);"></i>
                                         </div>
                                         <div>
                                             <span class="d-block font-weight-bold" style="color: #17345a;">D.Litt.</span>
@@ -1035,7 +1045,7 @@
                             <!-- Footer Info -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <small class="text-muted">
-                                    <i class="fa fa-clock-o" style="color: #e4a11b;"></i> Duration: 2-3 Years
+                                    <i class="fa fa-clock-o" style="color: var(--thm-base);"></i> Duration: 2-3 Years
                                 </small>
                                 <small class="text-muted">
                                     <i class="fa fa-check-circle" style="color: #17345a;"></i> UGC Approved
@@ -1073,7 +1083,7 @@
                     <div class="row mb-5">
                         <div class="col-12">
                             <h3 class="mb-4 font-weight-bold"
-                                style="color: #17345a; border-left: 5px solid #e4a11b; padding-left: 15px;">
+                                style="color: #17345a; border-left: 5px solid var(--thm-base); padding-left: 15px;">
                                 <i class="fa fa-flask"></i> Group A - Sciences & Technology
                             </h3>
                         </div>
@@ -1086,7 +1096,8 @@
                                                 <h3><a href="#">Agriculture</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-leaf" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-leaf"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1106,7 +1117,8 @@
                                                 <h3><a href="#">Biotechnology</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-eyedropper" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-eyedropper"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1126,7 +1138,8 @@
                                                 <h3><a href="#">Computer Science</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-desktop" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-desktop"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1146,7 +1159,8 @@
                                                 <h3><a href="#">Food Technology</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-cutlery" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-cutlery"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1166,7 +1180,8 @@
                                                 <h3><a href="#">Environmental Science</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-tree" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-tree"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1186,7 +1201,8 @@
                                                 <h3><a href="#">Geography</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-globe" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-globe"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1206,7 +1222,7 @@
                                                 <h3><a href="#">Microbiology</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-bug" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-bug" style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1226,7 +1242,8 @@
                                                 <h3><a href="#">Health Sciences</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-heartbeat" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-heartbeat"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1239,7 +1256,7 @@
                     <div class="row">
                         <div class="col-12">
                             <h3 class="mb-4 font-weight-bold"
-                                style="color: #17345a; border-left: 5px solid #e4a11b; padding-left: 15px;">
+                                style="color: #17345a; border-left: 5px solid var(--thm-base); padding-left: 15px;">
                                 <i class="fa fa-book"></i> Group B - Arts, Humanities & Social Sciences
                             </h3>
                         </div>
@@ -1262,7 +1279,8 @@
                                                 <h3><a href="#">Commerce</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-line-chart" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-line-chart"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1284,7 +1302,7 @@
                                             </div>
                                             <div class="icon">
                                                 <i class="fa fa-graduation-cap"
-                                                    style="color: #e4a11b; font-size: 24px;"></i>
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1304,7 +1322,7 @@
                                                 <h3><a href="#">Economics</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-usd" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-usd" style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1324,7 +1342,8 @@
                                                 <h3><a href="#">Fashion Technology</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-scissors" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-scissors"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1344,7 +1363,8 @@
                                                 <h3><a href="#">Hindi</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-pencil" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-pencil"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1364,7 +1384,8 @@
                                                 <h3><a href="#">Indian Languages</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-comment" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-comment"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1384,7 +1405,8 @@
                                                 <h3><a href="#">Library Science</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-book" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-book"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1404,7 +1426,8 @@
                                                 <h3><a href="#">Mathematics</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-calculator" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-calculator"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1424,7 +1447,8 @@
                                                 <h3><a href="#">Physical Education</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-futbol-o" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-futbol-o"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1444,7 +1468,8 @@
                                                 <h3><a href="#">Political Science</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-university" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-university"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1465,7 +1490,7 @@
                                             </div>
                                             <div class="icon">
                                                 <i class="fa fa-question-circle"
-                                                    style="color: #e4a11b; font-size: 24px;"></i>
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1485,7 +1510,8 @@
                                                 <h3><a href="#">Social Work</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-handshake-o" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-handshake-o"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1505,7 +1531,8 @@
                                                 <h3><a href="#">Theatre</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-film" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-film"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1525,7 +1552,8 @@
                                                 <h3><a href="#">Visual Arts</a></h3>
                                             </div>
                                             <div class="icon">
-                                                <i class="fa fa-picture-o" style="color: #e4a11b; font-size: 24px;"></i>
+                                                <i class="fa fa-picture-o"
+                                                    style="color: var(--thm-base); font-size: 24px;"></i>
                                             </div>
                                         </div>
                                     </li>
@@ -1574,7 +1602,7 @@
 
                         <!-- Publication 1 -->
                         <div class="publication-item mb-4 p-4"
-                            style="background: #fff; border-radius: 12px; border-left: 4px solid #e4a11b; box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
+                            style="background: #fff; border-radius: 12px; border-left: 4px solid var(--thm-base); box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
                             <h5 class="font-weight-bold mb-2" style="color: #17345a; font-size: 1.1rem;">
                                 Lajpharkapm Pinky Chanu, Ngangbam, A.K.
                             </h5>
@@ -1586,7 +1614,7 @@
                                     Conservation.</span>
                                 31: S45-S50, ISSN (Print): 0971-765X, DOI:
                                 <a href="http://doi.org/10.53550/EEC.2025.v31i02s.008" target="_blank"
-                                    style="color: #e4a11b; word-break: break-all;">
+                                    style="color: var(--thm-base); word-break: break-all;">
                                     http://doi.org/10.53550/EEC.2025.v31i02s.008
                                 </a>
                             </p>
@@ -1608,7 +1636,7 @@
 
                         <!-- Publication 3 -->
                         <div class="publication-item mb-4 p-4"
-                            style="background: #fff; border-radius: 12px; border-left: 4px solid #e4a11b; box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
+                            style="background: #fff; border-radius: 12px; border-left: 4px solid var(--thm-base); box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
                             <h5 class="font-weight-bold mb-2" style="color: #17345a; font-size: 1.1rem;">
                                 Senthilkumar, S., Singh, P.K. and Rani, C.K.
                             </h5>
@@ -1617,7 +1645,7 @@
                                     class="font-italic">Acalypha indica</span> linn, International Journal of Science and
                                 Research Archive, 15(01): 1600-1606, DOI:
                                 <a href="https://doi.org/10.30574/ijsra.2025.15.1.1265" target="_blank"
-                                    style="color: #e4a11b; word-break: break-all;">
+                                    style="color: var(--thm-base); word-break: break-all;">
                                     https://doi.org/10.30574/ijsra.2025.15.1.1265
                                 </a>
                             </p>
@@ -1634,7 +1662,7 @@
                                 Reference to Manipur and Nagaland, in <span class="font-italic">International Journal of
                                     Creative Research Thoughts (IJCRT), An International Open Access Peer-Reviewed, Refereed
                                     journal</span>, 13 (4), ISSN: 2320-2882.
-                                <a href="http://www.ijcrrt.org" target="_blank" style="color: #e4a11b;">
+                                <a href="http://www.ijcrrt.org" target="_blank" style="color: var(--thm-base);">
                                     www.ijcrrt.org
                                 </a>
                             </p>
@@ -1642,7 +1670,7 @@
 
                         <!-- Publication 5 -->
                         <div class="publication-item mb-4 p-4"
-                            style="background: #fff; border-radius: 12px; border-left: 4px solid #e4a11b; box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
+                            style="background: #fff; border-radius: 12px; border-left: 4px solid var(--thm-base); box-shadow: 0 3px 12px rgba(0,0,0,0.03);">
                             <h5 class="font-weight-bold mb-2" style="color: #17345a; font-size: 1.1rem;">
                                 Awungashi Samshokwo Varekan, Harikumar Pallathadka and Yuhlung Cheithou Charles.
                             </h5>
@@ -1651,7 +1679,7 @@
                                 Reference to Manipur and Nagaland, in <span class="font-italic">International Journal of
                                     Creative Research Thoughts (IJCRT), An International Open Access Peer-Reviewed, Refereed
                                     journal</span>, 13 (4), ISSN: 2320-2882.
-                                <a href="http://www.ijcrrt.org" target="_blank" style="color: #e4a11b;">
+                                <a href="http://www.ijcrrt.org" target="_blank" style="color: var(--thm-base);">
                                     www.ijcrrt.org
                                 </a>
                             </p>
