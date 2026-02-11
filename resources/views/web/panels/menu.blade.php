@@ -144,13 +144,13 @@
                                                  <a href="/syllabus-courses">Syllabus & Courses</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Scholarship Policy</a>
+                                                 <a href="/scholarship-policy">Scholarship Policy</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Refund policy</a>
+                                                 <a href="/refund-policy">Refund policy</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Reservation Roster</a>
+                                                 <a href="/reservation-roster">Reservation Roster</a>
                                              </li>
                                              <li>
                                                  <a href="#">Verification</a>
