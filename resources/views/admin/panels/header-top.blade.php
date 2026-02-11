@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ERP Dashboard | DSMS</title>
+    <title>Admin Dashboard | MIU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Herozi is the top-selling Bootstrap 5 admin dashboard template. With Dark Mode, multi-demo options, RTL support, and lifetime updates, it's perfect for web developers.">
@@ -14,7 +14,7 @@
 
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="DSMS">
+    <meta property="og:title" content="MIU">
     <meta property="og:description"
         content="Herozi is the top-selling Bootstrap 5 admin dashboard template. With Dark Mode, multi-demo options, RTL support, and lifetime updates, it's perfect for web developers.">
     <meta property="og:url" content="https://themeforest.net/user/srbthemes/portfolio">
@@ -30,7 +30,9 @@
     <script src="{{ asset('admin/assets/js/layout/layout.js') }}"></script>
 
     <!-- Choice Css -->
-    {{-- <link rel="stylesheet" href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
+    {{--
+    <link rel="stylesheet"
+        href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/admin/assets/styles/choices.min.css">
 
     <!-- Simplebar Css -->
@@ -40,26 +42,31 @@
     <!-- Sweet Alert -->
     <link href="{{ asset('admin/assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css">
     <!-- Bootstrap Css -->
-    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
+        type="text/css">
     <!-- App Css-->
     <link href="{{ asset('admin/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
     <link href="{{ asset('admin/assets/css/custom.min.css') }}" id="custom-style" rel="stylesheet" type="text/css">
 
-    {{-- <link rel="stylesheet"
+    {{--
+    <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/jquery-datatables-checkboxes@1.3.0/css/dataTables.checkboxes.min.css"> --}}
 
     <!-- Toastr CSS -->
-    {{-- <link rel="stylesheet" href="admin/assets/libs/toastr/toastr.css" > --}}
+    {{--
+    <link rel="stylesheet" href="admin/assets/libs/toastr/toastr.css"> --}}
 
     <link rel="stylesheet" href="{{ asset('admin/assets/libs/toastr/toastr.css') }}">
-{{-- <link rel="stylesheet" href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
+    {{--
+    <link rel="stylesheet"
+        href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
 
     {{-- C:\xampp\htdocs\erp_new\public\assets\libs\choices.js\public\assets\styles\choices.min.css --}}
 
 
 
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 
 
