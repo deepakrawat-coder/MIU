@@ -36,7 +36,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="slide">
+            {{-- <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">
                     <span class="side_menu_icon"><i class="ri-layout-line"></i></span>
                     <span class="side-menu__label" data-lang="hr-layout">Layout</span>
@@ -64,7 +64,15 @@
                             data-lang="hr-layout-small-icon">Small Icon</a>
                     </li>
                 </ul>
+            </li> --}}
+
+            <li class="slide {{ Route::is('events.index') ? 'active' : '' }}">
+                <a href="{{ route('events.index') }}" class="side-menu__item">
+                    <span class="side_menu_icon"><i class="ri-calendar-event-line"></i></span>
+                    <span class="side-menu__label">Events Category</span>
+                </a>
             </li>
+
 
             {{-- <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">
@@ -74,7 +82,7 @@
                 </a>
                 <ul class="slide-menu" role="menu">
                     <li class="slide">
-                        <a href="{{ route('menu.index') }}"  class="side-menu__item" role="menuitem"
+                        <a href="{{ route('menu.index') }}" class="side-menu__item" role="menuitem"
                             data-lang="hr-layout-horizontal">Menu Setting</a>
                     </li>
                     <li class="slide">
@@ -980,7 +988,8 @@
         <!-- START BRAND LOGO -->
         <div class="app-sidebar-logo">
             <a href="index.html">
-                <img height="35" class="app-sidebar-logo-default h-25px" alt="Logo" src="admin/assets/images/light-logo.png">
+                <img height="35" class="app-sidebar-logo-default h-25px" alt="Logo"
+                    src="admin/assets/images/light-logo.png">
                 <img height="40" class="app-sidebar-logo-minimize" alt="Logo" src="admin/assets/images/Favicon.png">
             </a>
         </div>
