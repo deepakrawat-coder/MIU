@@ -155,7 +155,7 @@
                                                  <a href="/verification">Verification</a>
                                              </li>
                                              <li>
-                                                 <a href="/assets/images/web-image/UGC-2f-Proforma-MIU.pdf">UGC Performa</a>
+                                                 <a href="{{asset('/assets/images/web-image/UGC-2f-Proforma-MIU.pdf')}}">UGC Performa</a>
                                              </li>
 
 
