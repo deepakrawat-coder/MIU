@@ -152,15 +152,15 @@
                                                  <a href="/reservation-roster">Reservation Roster</a>
                                              </li>
                                              <li>
-                                                 <a href="#">Verification</a>
+                                                 <a href="/verification">Verification</a>
                                              </li>
                                              <li>
-                                                 <a href="#">UGC Performa</a>
+                                                 <a href="/assets/images/web-image/UGC-2f-Proforma-MIU.pdf">UGC Performa</a>
                                              </li>
 
 
                                              <li>
-                                                 <a href="#">Recruitments</a>
+                                                 <a href="/recruitments">Recruitments</a>
                                              </li>
 
                                          </ul>

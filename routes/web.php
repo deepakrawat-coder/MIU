@@ -48,5 +48,8 @@ Route::view('/reservation-roster', 'web.pages.reservation-roster');
 Route::view('/ombudsperson', 'web.pages.ombudsperson');
 Route::view('/project-development-cell', 'web.pages.project-development-cell');
 Route::view('/sedg-cell', 'web.pages.sedg-cell');
+Route::view('/verification', 'web.pages.verification');
+Route::view('/recruitments', 'web.pages.recruitments');
+
 
 require __DIR__.'/settings.php';
