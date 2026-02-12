@@ -45,6 +45,8 @@ Route::view('/internal-complaint-committee', 'web.pages.internal-complaint-commi
 Route::view('/scholarship-policy', 'web.pages.scholarship-policy');
 Route::view('/refund-policy', 'web.pages.refund-policy');
 Route::view('/reservation-roster', 'web.pages.reservation-roster');
-
+Route::view('/ombudsperson', 'web.pages.ombudsperson');
+Route::view('/project-development-cell', 'web.pages.project-development-cell');
+Route::view('/sedg-cell', 'web.pages.sedg-cell');
 
 require __DIR__.'/settings.php';
