@@ -34,6 +34,8 @@ Route::view('/refund-policy', 'web.pages.refund-policy');
 Route::view('/reservation-roster', 'web.pages.reservation-roster');
 Route::view('/verification', 'web.pages.verification');
 Route::view('/recruitments', 'web.pages.recruitments');
+Route::view('/exam-results', 'web.pages.exam-results');
+Route::view('/gallery', 'web.pages.gallery');
 
 
 require __DIR__.'/settings.php';
