@@ -53,6 +53,8 @@ Route::view('/recruitments', 'web.pages.recruitments');
 Route::view('/telephone-directories', 'web.pages.telephone-directories');
 Route::view('/iqac', 'web.pages.iqac');
 Route::view('/public-self-disclosure', 'web.pages.public-self-disclosure');
+Route::view('/exam-results', 'web.pages.exam-results');
+Route::view('/gallery', 'web.pages.gallery');
 
 
 require __DIR__.'/settings.php';

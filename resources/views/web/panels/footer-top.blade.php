@@ -67,7 +67,7 @@
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="#">
+                                         <a href="/academics-team">
                                              <span class="icon-right-arrow-2"></span>Faculty
                                          </a>
                                      </li>
@@ -76,18 +76,18 @@
                                              <span class="icon-right-arrow-2"></span>Research
                                          </a>
                                      </li>
-                                      <li>
+                                     <li>
                                          <a href="#">
                                              <span class="icon-right-arrow-2"></span>School of Departments
                                          </a>
                                      </li>
-                                      <li>
-                                         <a href="#">
-                                             <span class="icon-right-arrow-2"></span>Rerutments
+                                     <li>
+                                         <a href="/recruitments">
+                                             <span class="icon-right-arrow-2"></span>Recruitments
                                          </a>
                                      </li>
-                                      <li>
-                                         <a href="#">
+                                     <li>
+                                         <a href="/alumni">
                                              <span class="icon-right-arrow-2"></span>Alumni
                                          </a>
                                      </li>
@@ -129,11 +129,20 @@
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="#">
+                                         <a href="/exam-results">
                                              <span class="icon-right-arrow-2"></span>Examination
                                          </a>
                                      </li>
-
+                                     <li>
+                                         <a href="#">
+                                             <span class="icon-right-arrow-2"></span>Academic Calendar
+                                         </a>
+                                     </li>
+                                     <li>
+                                         <a href="/notice-and-events">
+                                             <span class="icon-right-arrow-2"></span>Notice Board
+                                         </a>
+                                     </li>
                                  </ul>
                              </div>
                          </div>
@@ -149,8 +158,8 @@
                              </div>
                              <div class="footer-widget-contact-info">
                                  <p>Manipur International University
-Imphal, Manipur
-India - 795001</p>
+                                     Imphal, Manipur
+                                     India - 795001</p>
                                  <ul>
                                      <li><a href="tel:903 698 3337">+91 903 698 3337</a></li>
                                      <li><a href="mailto:info@miu.edu.in">info@miu.edu.in</a></li>
