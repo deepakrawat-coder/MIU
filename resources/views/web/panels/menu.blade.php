@@ -106,7 +106,7 @@
                                              
                                          </ul>
                                      </li>
-                                     <li class="mr-3"><a href="#">Public Self Disclosure</a></li>
+                                     <li class="mr-3"><a href="/public-self-disclosure">Public Self Disclosure</a></li>
                                      <li class="mr-3"><a href="/about-us">About MIU</a></li>
                                      {{-- <li class="blank-box"></li> --}}
                                      <li class="dropdown mr-3"><a href="#">Information Cell</a>
@@ -183,8 +183,8 @@
                                              <li><a href="/ombudsperson">Ombudsperson</a></li>
                                              <li><a href="/project-development-cell">Project Development Cell</a></li>
                                              <li><a href="/sedg-cell">SEDG Cell</a></li>
-                                             <li><a href="#">IQAC</a></li>
-                                             <li><a href="#">Telephone Directories</a></li>
+                                             <li><a href="/iqac">IQAC</a></li>
+                                             <li><a href="/telephone-directorie">Telephone Directories</a></li>
                                          </ul>
                                      </li>
                                      <li class=" mr-3"><a href="/schools-and-departments">School and Departments</a></li>
