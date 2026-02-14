@@ -67,7 +67,7 @@
 
     <section class="blog-style1-area mb-5">
         <div class="container">
-            <div class="sec-title text-start mb-5 border border-1 rounded10 p-5 shadow">
+            <div class="sec-title ">
                 <h2> About the Reservation Roster </h2>
                 <p>
                     Manipur International University (MIU) is committed to upholding the principles of equity, inclusion,
@@ -89,7 +89,7 @@
                 </p>
             </div>
 
-            <div class="sec-title text-start mb-5 border border-1 rounded10 p-5 shadow">
+            <div class="sec-title ">
                 <h2> Key Features of MIU's Reservation Roster </h2>
                 <ul class="ml-3">
                     <li>1. Ensures equitable distribution of reserved seats and positions across categories.</li>
@@ -99,7 +99,7 @@
                 </ul>
             </div>
 
-            <div class="sec-title text-start mb-5 border border-1 rounded10 p-5 shadow">
+            <div class="sec-title ">
                 <h2> The 100-Point Roster Framework </h2>
                 <p class="mb-5">
                     The 100-point roster is a statutory framework used to ensure proportional representation of reserved

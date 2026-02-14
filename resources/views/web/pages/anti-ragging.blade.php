@@ -119,7 +119,7 @@
     <!-- Main Anti-Ragging Information Section -->
     <section id="anti-ragging" class="py-5">
         <div class="container anti-ragging-section">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 sec-title pb-0">
                 <h1 class="font-weight-bold mb-3">NATIONAL RAGGING PREVENTION PROGRAMME</h1>
                 <p class="text-muted">24/7 Support System for Students Against Ragging</p>
             </div>
@@ -219,7 +219,7 @@
     <section id="anti-ragging-committee" class="py-5 bg-danger">
         <div class="container">
             <div class="row mb-5">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center sec-title pb-3">
                     <h2 class="section-title text-white">Anti-Ragging Committee</h2>
                     <p class=" text-white">Manipur International University</p>
                 </div>
@@ -261,7 +261,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-title">
+                    <h2 class="sec-title pb-3">
                         <i class="fa fa-users"></i> Anti-Ragging Squad
                     </h2>
                     <p class="text-muted">Manipur International University</p>

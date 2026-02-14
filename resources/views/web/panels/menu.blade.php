@@ -184,7 +184,7 @@
                                              <li><a href="/project-development-cell">Project Development Cell</a></li>
                                              <li><a href="/sedg-cell">SEDG Cell</a></li>
                                              <li><a href="/iqac">IQAC</a></li>
-                                             <li><a href="/telephone-directorie">Telephone Directories</a></li>
+                                             <li><a href="/telephone-directories">Telephone Directories</a></li>
                                          </ul>
                                      </li>
                                      <li class=" mr-3"><a href="/schools-and-departments">School and Departments</a></li>

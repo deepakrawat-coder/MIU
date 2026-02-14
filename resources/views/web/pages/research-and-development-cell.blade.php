@@ -2,8 +2,8 @@
 @section('title', '| About Us')
 @section('description', 'About')
 @section('styles')
-<link rel="stylesheet" href="{{ asset('/assets/css/webcss/reseachAndDevelopment.css') }}">
-  
+    <link rel="stylesheet" href="{{ asset('/assets/css/webcss/reseachAndDevelopment.css') }}">
+
 @endsection
 
 @section('content')
@@ -35,11 +35,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-md-12">
                     <div class="research-card text-center">
-                        <h2 class="section-title text-start w-100 text-white">National Education Policy 2020</h2>
+                        <div class="sec-title pb-3">
+                            <h2 class="text-start w-100 text-white">National Education Policy 2020</h2>
+                        </div>
                         <p class="content-text text-white">
                             The National Education Policy 2020 provides the roadmap to boost quality research in higher
-                            education. As research serves as the backbone in improving the learning offered by Higher Education
-                            Institutions, our nation is on the front gear to tackle its societal challenges with robust higher
+                            education. As research serves as the backbone in improving the learning offered by Higher
+                            Education
+                            Institutions, our nation is on the front gear to tackle its societal challenges with robust
+                            higher
                             education that focuses on research and innovation along with technology development.
                         </p>
                         <div class="mt-4 text-white">
@@ -53,17 +57,20 @@
     </section>
 
     <section class="mission-vision-area">
-        <div class="mission-vision-area-shape" style="background-image: url({{ asset('/assets/images/shape/thm-shape-1.png') }});"></div>
+        <div class="mission-vision-area-shape"
+            style="background-image: url({{ asset('/assets/images/shape/thm-shape-1.png') }});"></div>
         <div class="container">
             <!-- Row 1: Our Institution -->
             <div class="row">
                 <div class="col-xl-6">
                     <div class="mission-vision-content-box">
                         <div class="sec-title-style2">
-                            <div class="sub-title">
+                            {{-- <div class="sub-title">
                                 <h5>Our Institution</h5>
+                            </div> --}}
+                            <div class="sec-title pb-3">
+                                <h2>Manipur International<br> University</h2>
                             </div>
-                            <h2>Manipur International<br> University</h2>
                         </div>
                         <div class="inner-content">
                             <div class="top-text">
@@ -85,7 +92,8 @@
                 <div class="col-xl-6">
                     <div class="mission-vision-img-box">
                         <div class="mission-vision-img-box__inner">
-                            <img src="{{ asset('/assets/images/web-image/about--image.jpg') }}" alt="Manipur International University">
+                            <img src="{{ asset('/assets/images/web-image/about--image.jpg') }}"
+                                alt="Manipur International University">
                         </div>
                         <div class="icon">
                             <span class="icon-mountains"></span>
@@ -206,7 +214,9 @@
                                     <i class="fa fa-flask fa-3x text-white"></i>
                                 </div>
                                 <div>
-                                    <h1 class="section-title text-start w-100 text-dark">Research Committee</h1>
+                                    <div class="sec-title pb-0">
+                                        <h1 class=" text-start w-100 text-dark">Research Committee</h1>
+                                    </div>
                                     <div class="d-flex align-items-center mt-2">
                                         <span class="badge Faculty-badge mr-2 px-4 py-2">
                                             <i class="fa fa-check-circle"></i> Faculty Research Committee
@@ -238,9 +248,11 @@
                             <div class="card border-0 h-100 card-rounded-30 card-shadow-soft bg-navy-gradient-decor">
                                 <div class="card-body p-4 p-xl-5">
                                     <div class="mb-4">
-                                        <span class="fs-48 text-gold-soft" style="font-family: serif; color: rgba(228,161,27,0.15);">"</span>
+                                        <span class="fs-48 text-gold-soft"
+                                            style="font-family: serif; color: rgba(228,161,27,0.15);">"</span>
                                     </div>
-                                    <p class="lead mb-4 fs-20" style="line-height: 1.7; color: #2c3e50; font-weight: 400;">
+                                    <p class="lead mb-4 fs-20"
+                                        style="line-height: 1.7; color: #2c3e50; font-weight: 400;">
                                         The overall progression of research works falls strictly under the purview of
                                         <span class="font-weight-bold px-3 py-1 badge-gold-soft d-inline-block mx-1">
                                             FRC (Faculty Research Committee)
@@ -248,11 +260,13 @@
                                         headed by the Chairman who also serves as the Pro VC of the University.
                                     </p>
                                     <div class="d-flex align-items-center mt-4 pt-3 border-top border-soft-gold">
-                                        <div class="mr-4 pr-4 border-right" style="border-right: 2px solid rgba(228,161,27,0.3) !important;">
+                                        <div class="mr-4 pr-4 border-right"
+                                            style="border-right: 2px solid rgba(228,161,27,0.3) !important;">
                                             <i class="fa fa-users fa-2x text-primary-red"></i>
                                         </div>
                                         <p class="mb-0 font-weight-medium text-primary-navy fs-18">
-                                            Other committee members are represented by the Deans of respective schools of the University.
+                                            Other committee members are represented by the Deans of respective schools of
+                                            the University.
                                         </p>
                                     </div>
                                 </div>
@@ -261,13 +275,15 @@
 
                         <!-- Chairman Card - Hero Style -->
                         <div class="col-12">
-                            <div class="card border-0 card-rounded-30 bg-navy-gradient card-shadow-navy overflow-hidden position-relative">
+                            <div
+                                class="card border-0 card-rounded-30 bg-navy-gradient card-shadow-navy overflow-hidden position-relative">
                                 <div class="wave-decoration bg-decoration-wave"></div>
                                 <div class="card-body p-4 p-xl-5 position-relative z-index-2">
                                     <div class="row align-items-center">
                                         <div class="col-md-8">
                                             <div class="chairman-info">
-                                                <small class="text-white-50-custom d-block mb-2 letter-spacing-2">CHAIRMAN, FRC</small>
+                                                <small class="text-white-50-custom d-block mb-2 letter-spacing-2">CHAIRMAN,
+                                                    FRC</small>
                                                 <h2 class="text-white font-weight-bold mb-2 fs-32 text-shadow-navy">
                                                     Prof. Potsangbam Kumar Singh
                                                 </h2>
@@ -280,7 +296,8 @@
                                         </div>
                                         <div class="col-md-4 mt-4 mt-md-0">
                                             <div class="text-md-right">
-                                                <div class="d-inline-block p-3 bg-white-fade backdrop-blur card-rounded-20">
+                                                <div
+                                                    class="d-inline-block p-3 bg-white-fade backdrop-blur card-rounded-20">
                                                     <span class="text-white-50-custom d-block small">Since</span>
                                                     <span class="text-white font-weight-bold fs-24">2020</span>
                                                 </div>
@@ -317,7 +334,8 @@
                                             </div>
                                             <div>
                                                 <small class="text-muted d-block mb-1">Leadership</small>
-                                                <span class="font-weight-bold text-primary-navy fs-18">Chairman (Pro VC)</span>
+                                                <span class="font-weight-bold text-primary-navy fs-18">Chairman (Pro
+                                                    VC)</span>
                                             </div>
                                         </div>
                                         <!-- Members Item -->
@@ -330,7 +348,8 @@
                                             </div>
                                             <div>
                                                 <small class="text-muted d-block mb-1">Members</small>
-                                                <span class="font-weight-bold text-primary-navy fs-18">Deans of respective schools</span>
+                                                <span class="font-weight-bold text-primary-navy fs-18">Deans of respective
+                                                    schools</span>
                                             </div>
                                         </div>
                                         <!-- Scope Item -->
@@ -342,7 +361,8 @@
                                             </div>
                                             <div>
                                                 <small class="text-muted d-block mb-1">Scope</small>
-                                                <span class="font-weight-bold text-primary-navy fs-18">Overall research progression oversight</span>
+                                                <span class="font-weight-bold text-primary-navy fs-18">Overall research
+                                                    progression oversight</span>
                                             </div>
                                         </div>
                                     </div>
@@ -368,18 +388,21 @@
                                 The main research program is formally open for:
                             </p>
                             <div class="program-grid">
-                                <div class="d-flex align-items-center mb-3 p-3 bg-white card-rounded-15 card-shadow-soft border-soft-navy">
+                                <div
+                                    class="d-flex align-items-center mb-3 p-3 bg-white card-rounded-15 card-shadow-soft border-soft-navy">
                                     <div class="mr-3">
                                         <span class="icon-box-45 bg-gold-soft icon-rounded-12">
                                             <i class="fa fa-certificate fa-lg text-primary-red"></i>
                                         </span>
                                     </div>
                                     <div>
-                                        <span class="font-weight-bold d-block text-primary-navy">Post-doctoral program</span>
+                                        <span class="font-weight-bold d-block text-primary-navy">Post-doctoral
+                                            program</span>
                                         <small class="text-muted">Advanced research fellowship</small>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-center p-3 bg-white card-rounded-15 card-shadow-soft border-soft-navy">
+                                <div
+                                    class="d-flex align-items-center p-3 bg-white card-rounded-15 card-shadow-soft border-soft-navy">
                                     <div class="mr-3">
                                         <span class="icon-box-45 bg-primary-navy-soft icon-rounded-12">
                                             <i class="fa fa-flask fa-lg text-primary-navy"></i>
@@ -412,7 +435,9 @@
                             <i class="fa fa-graduation-cap fa-2x text-white"></i>
                         </div>
                         <div>
-                            <h2 class="font-weight-bold mb-0 text-primary-navy">Research Programs & Disciplines</h2>
+                            <div class="sec-title pb-0 ">
+                                <h2 class="font-weight-bold mb-0 text-black">Research Programs & Disciplines</h2>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -991,7 +1016,8 @@
             <div class="row">
                 <div class="col-lg-10 col-xl-10">
                     <div class="publications-wrapper">
-                        <div class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
+                        <div
+                            class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
                             <h5 class="font-weight-bold mb-2 text-primary-navy fs-18">
                                 Lajpharkapm Pinky Chanu, Ngangbam, A.K.
                             </h5>
@@ -1009,7 +1035,8 @@
                             </p>
                         </div>
 
-                        <div class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-navy card-shadow-soft">
+                        <div
+                            class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-navy card-shadow-soft">
                             <h5 class="font-weight-bold mb-2 text-primary-navy fs-18">
                                 Moirangthem, M., Thokchom, R. and Singh, P. K.
                             </h5>
@@ -1021,7 +1048,8 @@
                             </p>
                         </div>
 
-                        <div class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
+                        <div
+                            class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
                             <h5 class="font-weight-bold mb-2 text-primary-navy fs-18">
                                 Senthilkumar, S., Singh, P.K. and Rani, C.K.
                             </h5>
@@ -1036,7 +1064,8 @@
                             </p>
                         </div>
 
-                        <div class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-navy card-shadow-soft">
+                        <div
+                            class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-navy card-shadow-soft">
                             <h5 class="font-weight-bold mb-2 text-primary-navy fs-18">
                                 Awungashi Samshokwo Varekan, Harikumar Pallathadka and Yuhlung Cheithou Charles.
                             </h5>
@@ -1051,7 +1080,8 @@
                             </p>
                         </div>
 
-                        <div class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
+                        <div
+                            class="publication-item mb-4 p-4 bg-white card-rounded-12 publication-border-left-gold card-shadow-soft">
                             <h5 class="font-weight-bold mb-2 text-primary-navy fs-18">
                                 Awungashi Samshokwo Varekan, Harikumar Pallathadka and Yuhlung Cheithou Charles.
                             </h5>

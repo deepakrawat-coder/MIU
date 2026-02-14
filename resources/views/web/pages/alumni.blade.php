@@ -105,7 +105,7 @@
 
             <div class="kindergarten-program-sec py-2">
                 <div class="container">
-                    <div class="sec-title-style2 text-start">
+                    <div class="sec-title pb-3">
                         <h2> Executive Committee </h2>
                         <p> Ex-officio Patron: The Vice-Chancellor </p>
                     </div>

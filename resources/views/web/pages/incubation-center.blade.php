@@ -42,7 +42,7 @@
                 alt="">
         </div>
         <div class="container">
-            <div class="sec-title-style4 center text-center">
+            <div class="sec-title pb-2 center text-center">
                 <div class="sub-title">
                     <div class="decor"></div>
                     <h5>Manipur International University</h5>
@@ -238,7 +238,7 @@
 
                 <div class="col-xl-6">
                     <div class="about-style4__content">
-                        <div class="sec-title-style4">
+                        <div class="sec-title pb-3">
                             <div class="sub-title">
                                 <div class="decor"></div>
                                 <h5>About Incubation Centre</h5>
@@ -297,7 +297,7 @@
         <div class="big-title-box paroller-2">Focus</div>
 
         <div class="container">
-            <div class="sec-title-style4 center text-center">
+            <div class="sec-title pb-3 center text-center">
                 <div class="sub-title">
                     <div class="decor"></div>
                     <h5>Our Focus Areas</h5>

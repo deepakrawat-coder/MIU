@@ -265,7 +265,9 @@
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2>Equal Opportunity Cell (EOC)</h2>
+                            <div class="sec-title">
+                                <h2>Equal Opportunity Cell (EOC)</h2>
+                            </div>
                         </div>
                         <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <ul>
@@ -361,7 +363,9 @@
                 <div class="sub-title">
                     <h5>Equal Opportunity</h5>
                 </div>
-                <h2>Our Commitment to Inclusive Education</h2>
+                <div class="sec-title pb-3">
+                    <h2>Our Commitment to Inclusive Education</h2>
+                </div>
             </div>
             <!-- First Row: 3 Cards -->
             <div class="row mb-4">
@@ -471,11 +475,13 @@
     </section>
     <section class="admission-process-area">
         <div class="container">
-            <div class="sec-title-style2 text-center">
+            <div class="sec-title pb-0 text-center">
                 <div class="sub-title">
                     {{-- <h5>Equal Opportunity</h5> --}}
                 </div>
-                <h2>Policies & Initiatives</h2>
+              
+                    <h2>Policies & Initiatives</h2>
+               
             </div>
 
             <!-- First Row: Scholarships & Financial Assistance -->
@@ -559,7 +565,7 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-title">
+                    <h2 class="sec-title pb-3">
                         <i class="fa fa-handshake"></i> Who Can Approach the EOC
                     </h2>
                     <p class="text-muted">Equal Opportunity Cell - Support for All</p>

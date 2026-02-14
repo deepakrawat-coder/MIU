@@ -246,7 +246,7 @@
     </section>
     <section class="team-style2-area">
         <div class="container">
-            <div class="sec-title-style2 text-center">
+            <div class="sec-title pb-3 text-center">
                 <div class="sub-title">
                     {{-- <h5>Teachers</h5> --}}
                 </div>
@@ -381,7 +381,7 @@
     </section>
     <section class="admission-process-area">
         <div class="container">
-            <div class="sec-title-style2 text-center">
+            <div class="sec-title pb-3 text-center">
                 <div class="sub-title"></div>
                 <h2>Regulatory Framework</h2>
             </div>
@@ -467,7 +467,7 @@
 
             <!-- TITLE -->
             <div class="row mb-5">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center sec-title pb-3">
                     <h2 class="section-title">
                         <i class="fa fa-clipboard"></i> Committee Mandate
                     </h2>
@@ -530,13 +530,13 @@
             <!-- Section Header with Creative Design -->
             <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <div class="section-badge d-inline-block px-4 py-2 mb-3"
+                    {{-- <div class="section-badge d-inline-block px-4 py-2 mb-3"
                         style="background: rgba(23, 52, 90, 0.1); border-radius: 50px;">
                         <span class="text-uppercase small font-weight-bold" style="color: var(--thm-base);">
                             <i class="fa fa-address-card"></i> Get in Touch
                         </span>
-                    </div>
-                    <h2 class="section-title display-4 font-weight-bold" style="color: var(--thm-bg);">
+                    </div> --}}
+                    <h2 class="sec-title pb-3 " >
                         <i class="fa fa-envelope-open-o"></i> Contact Information
                     </h2>
                     <div class="title-divider d-flex align-items-center justify-content-center">

@@ -348,7 +348,7 @@
 
     <section class="instructor-courses-area gray-bg">
         <div class="container">
-            <div class="sec-title-style5 text-start pb-4">
+            <div class="sec-title pb-3">
                 <h2> Recent Notices </h2>
             </div>
             <div class="row">
@@ -444,7 +444,7 @@
 
     <section class="instructor-courses-area gray-bg pt-1">
         <div class="container">
-            <div class="sec-title-style5 text-start pb-4">
+            <div class="sec-title pb-3">
                 <h2> Recent Updates </h2>
             </div>
             <div class="row">

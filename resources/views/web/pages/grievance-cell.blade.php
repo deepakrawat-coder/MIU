@@ -774,7 +774,7 @@
             
             <!-- Main Heading -->
             <div class="col-12 text-center mb-5">
-                <h2 class="contact-main-title">Contact Information</h2>
+                <h2 class="contact-main-title sec-title pb-3">Contact Information</h2>
                 <div class="title-divider"></div>
                 <p class="contact-subtitle">Get in touch with the Grievance Redressal Committee</p>
             </div>
@@ -790,7 +790,7 @@
                         <div class="header-icon">
                             <i class="fa fa-user-md"></i>
                         </div>
-                        <h3 class="box-title">Ombudsperson</h3>
+                        <h3 class="box-title text-white">Ombudsperson</h3>
                         <p class="box-role">Impartial Mediator & Advisor</p>
                     </div>
                     <div class="box-body">
@@ -837,7 +837,7 @@
                         <div class="header-icon">
                             <i class="fa fa-university"></i>
                         </div>
-                        <h3 class="box-title">Grievance Cell Office</h3>
+                        <h3 class="box-title text-white">Grievance Cell Office</h3>
                         <p class="box-role">Official Communication Channel</p>
                     </div>
                     <div class="box-body">
