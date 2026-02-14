@@ -61,5 +61,7 @@ Route::view('/blog-details', 'web.pages.blog-details');
 
 // static blogs
 Route::view('/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india', 'web.pages.why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india');
+Route::view('/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students', 'web.pages.top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students');
+Route::view('/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know', 'web.pages.ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know');
 
 require __DIR__.'/settings.php';
