@@ -143,6 +143,11 @@
                                              <span class="icon-right-arrow-2"></span>Notice Board
                                          </a>
                                      </li>
+                                     <li>
+                                         <a href="/blog">
+                                             <span class="icon-right-arrow-2"></span> Blogs
+                                         </a>
+                                     </li>
                                  </ul>
                              </div>
                          </div>
