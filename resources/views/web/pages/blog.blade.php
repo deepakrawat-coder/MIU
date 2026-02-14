@@ -19,6 +19,16 @@
         .text-start {
             text-align: start;
         }
+
+        .single-blog-style2__img-holder .inner img {
+    height: 270px;
+        }
+
+        @media (max-width: 990px) {
+            .single-blog-style2__img-holder .inner img {
+    height: auto;
+        }
+        }
     </style>
 @endsection
 @section('content')
@@ -60,7 +70,7 @@
                                 <div class="single-blog-style2">
                                     <div class="single-blog-style2__img-holder">
                                         <div class="inner">
-                                            <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
+                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
                                                 alt="image">
                                         </div>
                                     </div>
@@ -107,7 +117,7 @@
                                 <div class="single-blog-style2">
                                     <div class="single-blog-style2__img-holder">
                                         <div class="inner">
-                                            <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
+                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
                                                 alt="image">
                                         </div>
                                     </div>
@@ -115,17 +125,16 @@
                                         <div class="top">
                                             <div class="category-box">
                                                 <div class="dot-box"></div>
-                                                <p>Awards</p>
+                                                <p>Manipur International University</p>
                                             </div>
                                         </div>
                                         <h3 class="blog-title">
                                             <a href="/blog-details">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing...
+                                                Top Career-Oriented Programs at Manip...
                                             </a>
                                         </h3>
                                         <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, impedit
-                                                culpa dicta alias consequatur aspernatur...</p>
+                                            <p>In today’s fast-changing job market, students are increasingly choosing programs that combine academic knowledge with prac...</p>
                                         </div>
                                         <div class="bottom-box">
                                             <div class="btn-box">
@@ -137,7 +146,7 @@
                                                 <ul>
                                                     <li>
                                                         <span class="icon-calendar"></span>
-                                                        <a href="/blog-details">Nov 25, 2022</a>
+                                                        <a href="/blog-details">Feb 13, 2026</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -149,7 +158,7 @@
                                 <div class="single-blog-style2">
                                     <div class="single-blog-style2__img-holder">
                                         <div class="inner">
-                                            <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
+                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
                                                 alt="image">
                                         </div>
                                     </div>
@@ -157,17 +166,16 @@
                                         <div class="top">
                                             <div class="category-box">
                                                 <div class="dot-box"></div>
-                                                <p>Awards</p>
+                                                <p>Manipur International University</p>
                                             </div>
                                         </div>
                                         <h3 class="blog-title">
                                             <a href="/blog-details">
-                                                Lorem ipsum dolor sit amet consectetur adipisicing...
+                                                GC Recognition and NEP-Aligned Education at...
                                             </a>
                                         </h3>
                                         <div class="text">
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, impedit
-                                                culpa dicta alias consequatur aspernatur ex...</p>
+                                            <p>In today’s competitive academic environment, students and parents are increasingly careful about choosing the right...</p>
                                         </div>
                                         <div class="bottom-box">
                                             <div class="btn-box">
@@ -179,7 +187,7 @@
                                                 <ul>
                                                     <li>
                                                         <span class="icon-calendar"></span>
-                                                        <a href="/blog-details">Nov 25, 2022</a>
+                                                        <a href="/blog-details">Feb 12, 2026</a>
                                                     </li>
                                                 </ul>
                                             </div>
