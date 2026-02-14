@@ -977,6 +977,8 @@
 .footer-bottom {
     background: black;
 }
+
 .footer {
-    padding-top: 169px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
