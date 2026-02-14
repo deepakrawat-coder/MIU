@@ -55,6 +55,11 @@ Route::view('/iqac', 'web.pages.iqac');
 Route::view('/public-self-disclosure', 'web.pages.public-self-disclosure');
 Route::view('/exam-results', 'web.pages.exam-results');
 Route::view('/gallery', 'web.pages.gallery');
+Route::view('/blog', 'web.pages.blog');
+Route::view('/blog-details', 'web.pages.blog-details');
 
+
+// static blogs
+Route::view('/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india', 'web.pages.why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india');
 
 require __DIR__.'/settings.php';
