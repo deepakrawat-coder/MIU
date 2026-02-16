@@ -73,6 +73,13 @@
                 </a>
             </li>
 
+            <li class="slide {{ Route::is('posts.index') ? 'active' : '' }}">
+                <a href="{{ route('posts.index') }}" class="side-menu__item">
+                    <span class="side_menu_icon"><i class="ri-calendar-event-line"></i></span>
+                    <span class="side-menu__label">Events Post</span>
+                </a>
+            </li>
+
 
             {{-- <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">
@@ -116,220 +123,47 @@
                 </ul>
             </li> --}}
 
-            <li class="menu-title" role="presentation" data-lang="hr-title-applications">Applications</li>
-            <li class="slide">
-                <a href="#!" class="side-menu__item" role="menuitem">
-                    <span class="side_menu_icon"><i class="ri-gallery-view-2"></i></span>
-                    <span class="side-menu__label" data-lang="hr-apps">Apps</span>
-                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                </a>
-                <ul class="slide-menu" role="menu">
-                    <li class="slide">
-                        <a href="apps-calendar.html" class="side-menu__item" role="menuitem"
-                            data-lang="hr-apps-calendar">Calendar</a>
-                    </li>
-                    <li class="slide">
-                        <a href="apps-tasks-kanban.html" class="side-menu__item" role="menuitem"
-                            data-lang="hr-apps-kanban">Kanban</a>
-                    </li>
-                    <li class="slide">
-                        <a href="apps-file-manager.html" class="side-menu__item" role="menuitem"
-                            data-lang="hr-apps-file-manager">File Manager</a>
-                    </li>
-                    <li class="slide">
-                        <a href="apps-todo.html" class="side-menu__item" role="menuitem" data-lang="hr-apps-to-do">To
-                            Do</a>
-                    </li>
-                    <li class="slide">
-                        <a href="apps-chat.html" class="side-menu__item" role="menuitem"
-                            data-lang="hr-apps-chat">Chat</a>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-apps-email">Email</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-email-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-apps-email-inbox">Inbox</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-email-view.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-apps-email-view-reply">View & Reply</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-ecommerce">E-Commerce</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-products.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-products">Products</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-products-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-product-list">Product List</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-details.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-product-details">Product Details</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-create.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-add-product">Add Product</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-cart.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-cart">Cart</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-checkout.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-checkout">Checkout</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-category-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-categories">Categories</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-order-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-orders">Orders</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-product-order-details.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-ecom-order-details">Order Details</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-projects">Projects</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-projects-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-projects-list">List</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-projects-overview.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-projects-overview">Overview</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-projects-create.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-projects-create-project">Create Project</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-online-courses">Online Courses</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-course-overview.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-courses-overview">Overview</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-course-details.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-courses-details">Course Details</a>
-                            </li>
-                            <li class="slide">
-                                <a href="#!" class="side-menu__item" role="menuitem">
-                                    <span class="side-menu__label" data-lang="hr-teacher">Teacher</span>
-                                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                                </a>
-                                <ul class="slide-menu" role="menu">
-                                    <li class="slide">
-                                        <a href="apps-course-teacher-list.html" class="side-menu__item" role="menuitem"
-                                            data-lang="hr-teacher-list">List</a>
-                                    </li>
-                                    <li class="slide">
-                                        <a href="apps-course-teacher-details.html" class="side-menu__item"
-                                            role="menuitem" data-lang="hr-teacher-details">Details</a>
-                                    </li>
-                                    <li class="slide">
-                                        <a href="apps-course-teacher-add.html" class="side-menu__item" role="menuitem"
-                                            data-lang="hr-teacher-add">Add</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="slide">
-                                <a href="#!" class="side-menu__item" role="menuitem">
-                                    <span class="side-menu__label" data-lang="hr-student">Student</span>
-                                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                                </a>
-                                <ul class="slide-menu" role="menu">
-                                    <li class="slide">
-                                        <a href="apps-course-student-list.html" class="side-menu__item" role="menuitem"
-                                            data-lang="hr-student-list">List</a>
-                                    </li>
-                                    <li class="slide">
-                                        <a href="apps-course-student-details.html" class="side-menu__item"
-                                            role="menuitem" data-lang="hr-student-details">Details</a>
-                                    </li>
-                                    <li class="slide">
-                                        <a href="apps-course-student-add.html" class="side-menu__item" role="menuitem"
-                                            data-lang="hr-student-add">Add</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-social">Social Media</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-social-feeds.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-social-feeds">Feeds</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-social-friends.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-social-friends">Friends</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-social-events.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-social-events">Events</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-social-activity.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-social-activity">Activity</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-social-watch-video.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-social-watch-video">Watch Videos</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="slide">
-                        <a href="#!" class="side-menu__item" role="menuitem">
-                            <span class="side-menu__label" data-lang="hr-invoices">Invoices</span>
-                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-                        </a>
-                        <ul class="slide-menu" role="menu">
-                            <li class="slide">
-                                <a href="apps-invoices-list.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-invoices-list">List</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-invoices-details.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-invoices-details">Details</a>
-                            </li>
-                            <li class="slide">
-                                <a href="apps-create-invoices.html" class="side-menu__item" role="menuitem"
-                                    data-lang="hr-create-invoices">Create invoice</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
+
+            <li class="menu-title" role="presentation" data-lang="hr-title-school">School & Department</li>
+
+<li class="slide">
+    <a href="#!" class="side-menu__item" role="menuitem">
+        <span class="side_menu_icon"><i class="ri-building-line"></i></span>
+        <span class="side-menu__label" data-lang="hr-school-dept">Manage</span>
+        <i class="ri-arrow-down-s-line side-menu__angle"></i>
+    </a>
+    <ul class="slide-menu" role="menu">
+        <li class="slide {{ Route::is('schools.index') ? 'active' : '' }}">
+            <a href="{{ route('schools.index') }}" class="side-menu__item" role="menuitem">
+                School / Department
+            </a>
+        </li>
+
+        <li class="slide {{ Route::is('programs.index') ? 'active' : '' }}">
+            <a href="{{ route('programs.index') }}" class="side-menu__item" role="menuitem">
+                Programs
+            </a>
+        </li>
+        <li class="slide {{ Route::is('courses.index') ? 'active' : '' }}">
+            <a href="{{ route('courses.index') }}" class="side-menu__item" role="menuitem">
+                Courses
+            </a>
+        </li>
+        <li class="slide ">
+            <a href="" class="side-menu__item" role="menuitem">
+                FAQs
+            </a>
+        </li>
+        <li class="slide ">
+            <a href="" class="side-menu__item" role="menuitem">
+                Others
+            </a>
+        </li>
+    </ul>
+</li>
+
+
+
             <li class="menu-title" role="presentation" data-lang="hr-title-pages">Pages</li>
             <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">
@@ -338,7 +172,8 @@
                     <i class="ri-arrow-down-s-line side-menu__angle"></i>
                 </a>
                 <ul class="slide-menu" role="menu">
-                    <li class="slide">
+
+                    {{-- <li class="slide">
                         <a href="pages-starter.html" class="side-menu__item" role="menuitem"
                             data-lang="hr-pages-start">Start</a>
                     </li>
@@ -505,7 +340,7 @@
                                     data-lang="hr-error-offline">offline page</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                 </ul>
             </li>
             <li class="slide">
@@ -748,6 +583,222 @@
                     </li>
                 </ul>
             </li>
+
+            <li class="menu-title" role="presentation" data-lang="hr-title-applications">Applications</li>
+            <li class="slide">
+                <a href="#!" class="side-menu__item" role="menuitem">
+                    <span class="side_menu_icon"><i class="ri-gallery-view-2"></i></span>
+                    <span class="side-menu__label" data-lang="hr-apps">Apps</span>
+                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                </a>
+                <ul class="slide-menu" role="menu">
+                    <li class="slide">
+                        <a href="apps-calendar.html" class="side-menu__item" role="menuitem"
+                            data-lang="hr-apps-calendar">Calendar</a>
+                    </li>
+                    <li class="slide">
+                        <a href="apps-tasks-kanban.html" class="side-menu__item" role="menuitem"
+                            data-lang="hr-apps-kanban">Kanban</a>
+                    </li>
+                    <li class="slide">
+                        <a href="apps-file-manager.html" class="side-menu__item" role="menuitem"
+                            data-lang="hr-apps-file-manager">File Manager</a>
+                    </li>
+                    <li class="slide">
+                        <a href="apps-todo.html" class="side-menu__item" role="menuitem" data-lang="hr-apps-to-do">To
+                            Do</a>
+                    </li>
+                    <li class="slide">
+                        <a href="apps-chat.html" class="side-menu__item" role="menuitem"
+                            data-lang="hr-apps-chat">Chat</a>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-apps-email">Email</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-email-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-apps-email-inbox">Inbox</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-email-view.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-apps-email-view-reply">View & Reply</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-ecommerce">E-Commerce</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-products.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-products">Products</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-products-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-product-list">Product List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-details.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-product-details">Product Details</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-create.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-add-product">Add Product</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-cart.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-cart">Cart</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-checkout.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-checkout">Checkout</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-category-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-categories">Categories</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-order-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-orders">Orders</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-product-order-details.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-ecom-order-details">Order Details</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-projects">Projects</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-projects-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-projects-list">List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-projects-overview.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-projects-overview">Overview</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-projects-create.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-projects-create-project">Create Project</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-online-courses">Online Courses</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-course-overview.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-courses-overview">Overview</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-course-details.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-courses-details">Course Details</a>
+                            </li>
+                            <li class="slide">
+                                <a href="#!" class="side-menu__item" role="menuitem">
+                                    <span class="side-menu__label" data-lang="hr-teacher">Teacher</span>
+                                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu" role="menu">
+                                    <li class="slide">
+                                        <a href="apps-course-teacher-list.html" class="side-menu__item" role="menuitem"
+                                            data-lang="hr-teacher-list">List</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="apps-course-teacher-details.html" class="side-menu__item"
+                                            role="menuitem" data-lang="hr-teacher-details">Details</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="apps-course-teacher-add.html" class="side-menu__item" role="menuitem"
+                                            data-lang="hr-teacher-add">Add</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="slide">
+                                <a href="#!" class="side-menu__item" role="menuitem">
+                                    <span class="side-menu__label" data-lang="hr-student">Student</span>
+                                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                                </a>
+                                <ul class="slide-menu" role="menu">
+                                    <li class="slide">
+                                        <a href="apps-course-student-list.html" class="side-menu__item" role="menuitem"
+                                            data-lang="hr-student-list">List</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="apps-course-student-details.html" class="side-menu__item"
+                                            role="menuitem" data-lang="hr-student-details">Details</a>
+                                    </li>
+                                    <li class="slide">
+                                        <a href="apps-course-student-add.html" class="side-menu__item" role="menuitem"
+                                            data-lang="hr-student-add">Add</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-social">Social Media</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-social-feeds.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-social-feeds">Feeds</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-social-friends.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-social-friends">Friends</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-social-events.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-social-events">Events</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-social-activity.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-social-activity">Activity</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-social-watch-video.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-social-watch-video">Watch Videos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="slide">
+                        <a href="#!" class="side-menu__item" role="menuitem">
+                            <span class="side-menu__label" data-lang="hr-invoices">Invoices</span>
+                            <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                        </a>
+                        <ul class="slide-menu" role="menu">
+                            <li class="slide">
+                                <a href="apps-invoices-list.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-invoices-list">List</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-invoices-details.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-invoices-details">Details</a>
+                            </li>
+                            <li class="slide">
+                                <a href="apps-create-invoices.html" class="side-menu__item" role="menuitem"
+                                    data-lang="hr-create-invoices">Create invoice</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
             <li class="menu-title" role="presentation" data-lang="hr-title-tables">Other</li>
             <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">

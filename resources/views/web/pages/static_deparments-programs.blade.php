@@ -278,8 +278,7 @@
             </div>
         </div>
     </section>
-
-    {{-- <section class="involment-activities-area involment-activities-area--style2">
+    <section class="involment-activities-area involment-activities-area--style2">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>MIU Schools</h2>
@@ -437,62 +436,7 @@
 
             </div>
         </div>
-    </section> --}}
-
-    <section class="involment-activities-area involment-activities-area--style2">
-    <div class="container">
-        <div class="sec-title text-center">
-            <h2>MIU Schools</h2>
-            <div class="sub-title">
-                <p>
-                    Manipur International University offers diverse schools focused on
-                    academic excellence, innovation, and industry-oriented education.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-
-            @foreach($schools as $school)
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="{{ route('schools.show', $school->slug) }}">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset($school->image) }}"
-                                         alt="{{ $school->name }}">
-                                </div>
-
-                                <div class="text-holder">
-                                    <h3>{{ $school->name }}</h3>
-
-                                    <p>
-                                        {!! \Illuminate\Support\Str::limit($school->short_description, 120) !!}
-                                    </p>
-
-                                    {{-- Features --}}
-                                    @if($school->features)
-                                        <ul>
-                                            @foreach(json_decode($school->features) as $feature)
-                                                <li>{{ $feature }}</li>
-                                            @endforeach
-                                        </ul>
-                                    @endif
-
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            @endforeach
-
-        </div>
-    </div>
-</section>
-
-
-
-
+    </section>
     <section class="testimonial-style1-area bg-white">
         <div class="container">
             <div class="row">

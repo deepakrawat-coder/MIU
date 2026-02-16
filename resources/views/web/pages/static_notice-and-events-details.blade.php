@@ -63,14 +63,12 @@
                     <div class="blog-details-page__content__inner">
 
                         <div class="blog-details-page__img-box">
-                            {{-- <img src="{{ asset('/assets/images/web-image/ne1.jpeg') }}"
-                                class="w-100 img-fluid mb-4" alt="image"> --}}
-                            <img src="{{ asset($post->image) }}" class="w-100 img-fluid mb-4" alt="{{ $post->title }}">
-
+                            <img src="{{ asset('/assets/images/web-image/ne1.jpeg') }}" class="w-100 img-fluid mb-4"
+                                alt="image">
                         </div>
 
                         <div class="blog-details-page__text-3">
-                            {{-- <span class="badge badge-info"> January 27, 2026 </span>
+                            <span class="badge badge-info"> January 27, 2026 </span>
                             <span class="badge badge-danger mb-3">MIU Official</span>
 
                             <h3>Patriotic Run – Veterans India</h3>
@@ -80,28 +78,7 @@
                                     International University, followed by fun-filled games with students and
                                     faculty—celebrating unity, teamwork, and national pride!
                                 </p>
-                            </div> --}}
-
-                            {{-- Date --}}
-                            @if($post->publish_date)
-                            <span class="badge badge-info">
-                                {{ $post->publish_date->format('F d, Y') }}
-                            </span>
-                            @endif
-
-                            {{-- Category --}}
-                            <span class="badge badge-danger mb-3">
-                                {{ $post->category->name ?? 'MIU Official' }}
-                            </span>
-
-                            {{-- Title --}}
-                            <h3>{{ $post->title }}</h3>
-
-                            {{-- Description --}}
-                            <div class="inner-text">
-                                {!! $post->description !!}
                             </div>
-
                         </div>
                     </div>
 
@@ -162,7 +139,7 @@
                                 }'>
 
                                     <!--Start Single Testimonial Style9-->
-                                    {{-- <div class="single-testimonial-style9 p-0">
+                                    <div class="single-testimonial-style9 p-0">
                                         <div class="single-blog-style1">
                                             <div class="img-holder">
                                                 <div class="inner">
@@ -320,65 +297,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> --}}
-
-                                    @forelse($similarPosts as $similar)
-<div class="single-testimonial-style9 p-0">
-    <div class="single-blog-style1">
-
-        <div class="img-holder">
-            <div class="inner">
-                <img src="{{ asset($similar->image) }}"
-                     class="w-100 img-fluid"
-                     alt="{{ $similar->title }}">
-            </div>
-
-            <div class="category-box">
-                <div class="dot-box"></div>
-                <p>{{ $similar->category->name ?? 'MIU Official' }}</p>
-            </div>
-        </div>
-
-        <div class="text-holder">
-
-            <h3>
-                <a href="{{ route('post.details', $similar->slug) }}">
-                    {{ Str::limit($similar->title, 60) }}
-                </a>
-            </h3>
-
-            <div class="text pt-0">
-                <p>
-                    {{ Str::limit(strip_tags($similar->short_description ?? $similar->description), 120) }}
-                </p>
-            </div>
-
-            <div class="bottom-box">
-                <div class="btn-box">
-                    <a href="{{ route('post.details', $similar->slug) }}">
-                        <span class="icon-right-arrow-1"></span> Read More...
-                    </a>
-                </div>
-
-                <div class="meta-info">
-                    <ul>
-                        <li>
-                            <span class="icon-calendar"></span>
-                            {{ $similar->publish_date?->format('d F Y') }}
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-@empty
-<div class="text-center p-4">
-    <p>No similar posts available.</p>
-</div>
-@endforelse
-
+                                    </div>
 
                                 </div>
                             </div>

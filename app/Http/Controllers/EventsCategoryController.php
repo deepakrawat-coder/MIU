@@ -10,9 +10,90 @@ use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Validator;
 use Exception;
 
+use App\Models\EventsPost;
+
 
 class EventsCategoryController extends Controller
 {
+
+
+
+public function noticeAndEvents()
+{
+    // Carousel (Featured posts)
+    $featuredPosts = EventsPost::where('status', 1)
+        ->where('is_featured', 1)
+        ->latest('publish_date')
+        ->take(6)
+        ->get();
+
+        // dd($featuredPosts);
+
+    // Recent Events
+    $recentEvents = EventsPost::where('status', 1)
+        ->whereHas('category', function ($q) {
+            $q->where('slug', 'events');
+        })
+        ->latest('publish_date')
+        ->take(6)
+        ->get();
+
+    // Recent Notices
+    $recentNotices = EventsPost::where('status', 1)
+        ->whereHas('category', function ($q) {
+            $q->where('slug', 'notice');
+        })
+        ->latest('publish_date')
+        ->take(6)
+        ->get();
+
+    // Recent Updates
+    $recentUpdates = EventsPost::where('status', 1)
+        ->whereHas('category', function ($q) {
+            $q->where('slug', 'update');
+        })
+        ->latest('publish_date')
+        ->take(6)
+        ->get();
+
+    return view('web.pages.notice-and-events', compact(
+        'featuredPosts',
+        'recentEvents',
+        'recentNotices',
+        'recentUpdates'
+    ));
+}
+
+
+// public function showPost($slug)
+// {
+//     $post = EventsPost::where('slug', $slug)->firstOrFail();
+//     return view('web.pages.notice-and-events-details', compact('post'));
+
+
+// }
+
+
+public function showPost($slug)
+{
+    $post = EventsPost::with('category')
+        ->where('slug', $slug)
+        ->where('status', 1)
+        ->firstOrFail();
+
+    // Similar posts (same category, exclude current)
+    $similarPosts = EventsPost::with('category')
+        ->where('status', 1)
+        ->where('category_id', $post->category_id)
+        ->where('id', '!=', $post->id)
+        ->latest('publish_date')
+        ->take(6)
+        ->get();
+
+    return view('web.pages.notice-and-events-details', compact('post', 'similarPosts'));
+}
+
+
     /**
      * Display a listing of the resource.
      */
