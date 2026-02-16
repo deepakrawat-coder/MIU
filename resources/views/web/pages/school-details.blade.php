@@ -4,7 +4,7 @@
 
 @section('styles')
     <style>
-     
+
     </style>
 @endsection
 
@@ -77,17 +77,22 @@
 
                             <div class="program-details-tab-content__text">
                                 <div class="sec-title">
-                                    <h2>School of Technology – Overview</h2>
+                                    {{-- <h2>School of Technology – Overview</h2> --}}
+                                                <h2>{{ $school->name }} – Overview</h2>
+
                                 </div>
 
-                                <p>
+
+                                        <p>{!! $school->description !!}</p>
+
+                                {{-- <p>
                                     The School of Technology at Manipur International University is dedicated to
                                     nurturing technically skilled professionals equipped with strong analytical,
                                     problem-solving, and innovation capabilities. The school offers industry-aligned
                                     programs that combine academic rigor with hands-on learning.
-                                </p>
+                                </p> --}}
 
-                                <ul>
+                                {{-- <ul>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-star"></span>
@@ -115,7 +120,7 @@
                                             </p>
                                         </div>
                                     </li>
-                                </ul>
+                                </ul> --}}
                             </div>
 
                             <div class="program-details-form-box">
@@ -165,7 +170,7 @@
     <section id="content" class="testimonial-style1-area py-5 bg-white">
         <div class="container">
             <div class="school-tech-content">
-                <h3>Courses & Academic Scope</h3>
+                {{-- <h3>Courses & Academic Scope</h3>
                 <p>
                     The School of Technology provides a comprehensive educational experience
                     that blends rigorous coursework, laboratory training, and research
@@ -202,7 +207,10 @@
                     <li>Experienced faculty with academic and industry expertise</li>
                     <li>Holistic student development and leadership opportunities</li>
                     <li>Global career pathways and higher education prospects</li>
-                </ul>
+                </ul> --}}
+
+                                                        <p>{!! $school->content !!}</p>
+
             </div>
         </div>
     </section>
@@ -568,22 +576,22 @@
                     <div class="testimonial-style1-content">
                         <div class="theme_carousel testimonial-carousel owl-theme owl-carousel owl-loaded owl-drag"
                             data-options="{
-                                    &quot;loop&quot;: true, 
-                                    &quot;margin&quot;: 30, 
-                                    &quot;autoheight&quot;:true, 
-                                    &quot;lazyload&quot;:true, 
-                                    &quot;nav&quot;: false, 
-                                    &quot;dots&quot;: false, 
-                                    &quot;autoplay&quot;: true, 
-                                    &quot;autoplayTimeout&quot;: 5000, 
-                                    &quot;smartSpeed&quot;: 500, 
+                                    &quot;loop&quot;: true,
+                                    &quot;margin&quot;: 30,
+                                    &quot;autoheight&quot;:true,
+                                    &quot;lazyload&quot;:true,
+                                    &quot;nav&quot;: false,
+                                    &quot;dots&quot;: false,
+                                    &quot;autoplay&quot;: true,
+                                    &quot;autoplayTimeout&quot;: 5000,
+                                    &quot;smartSpeed&quot;: 500,
                                     &quot;navText&quot;: [&quot;&lt;span class=\&quot;left icon-next\&quot;&gt;&lt;/span&gt;&quot;,
-                                    &quot;&lt;span class=\&quot;right icon-next\&quot;&gt;&lt;/span&gt;&quot;], 
-                                    &quot;responsive&quot;:{ 
-                                    &quot;0&quot; :{ &quot;items&quot;: &quot;1&quot; }, 
-                                    &quot;600&quot; :{ &quot;items&quot; : &quot;1&quot; }, 
-                                    &quot;768&quot; :{ &quot;items&quot; : &quot;1&quot; }, 
-                                    &quot;992&quot;:{ &quot;items&quot; : &quot;2&quot; }, 
+                                    &quot;&lt;span class=\&quot;right icon-next\&quot;&gt;&lt;/span&gt;&quot;],
+                                    &quot;responsive&quot;:{
+                                    &quot;0&quot; :{ &quot;items&quot;: &quot;1&quot; },
+                                    &quot;600&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;768&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;992&quot;:{ &quot;items&quot; : &quot;2&quot; },
                                     &quot;1200&quot;:{ &quot;items&quot; : &quot;3&quot; }
                                 }
                             }">
