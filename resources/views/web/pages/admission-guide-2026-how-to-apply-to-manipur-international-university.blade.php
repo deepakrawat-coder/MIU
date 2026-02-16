@@ -244,12 +244,12 @@
                                  <h3>Popular Posts</h3>
                              </div>
                              <div class="sidebar-blog-post">
-                                 <ul class="blog-post">
+                                <ul class="blog-post">
                                      <li>
                                          <div class="inner">
                                              <div class="img-box">
-                                                 <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                     alt="image">
+                                                 <img src="{{ asset('assets/images/about/about.jpg') }}"
+                                                     class="img-fluid" alt="image">
                                                  <div class="overlay-content">
                                                      <a
                                                          href="/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india">
@@ -259,7 +259,7 @@
                                              </div>
                                              <div class="title-box">
                                                  <div class="post-date">
-                                                     <span class="icon-date"></span> Nov 25, 2022
+                                                     <span class="icon-date"></span> Feb 14, 2026
                                                  </div>
                                                  <h4>
                                                      <a
@@ -273,11 +273,10 @@
                                      <li>
                                          <div class="inner">
                                              <div class="img-box">
-                                                 <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                     alt="image">
+                                                 <img src="{{ asset('assets/images/about/about.jpg') }}"
+                                                     class="img-fluid" alt="image">
                                                  <div class="overlay-content">
-                                                     <a
-                                                         href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
+                                                     <a href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
                                                          <i class="fa fa-link" aria-hidden="true"></i>
                                                      </a>
                                                  </div>
@@ -287,8 +286,7 @@
                                                      <span class="icon-date"></span> Feb 13, 2026
                                                  </div>
                                                  <h4>
-                                                     <a
-                                                         href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
+                                                     <a href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
                                                          Top Career-Oriented Progr...
                                                      </a>
                                                  </h4>
@@ -298,11 +296,10 @@
                                      <li>
                                          <div class="inner">
                                              <div class="img-box">
-                                                 <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                     alt="image">
+                                                 <img src="{{ asset('assets/images/about/about.jpg') }}"
+                                                     class="img-fluid" alt="image">
                                                  <div class="overlay-content">
-                                                     <a
-                                                         href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
+                                                     <a href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
                                                          <i class="fa fa-link" aria-hidden="true"></i>
                                                      </a>
                                                  </div>
@@ -312,9 +309,54 @@
                                                      <span class="icon-date"></span> Feb 12, 2026
                                                  </div>
                                                  <h4>
-                                                     <a
-                                                         href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
+                                                     <a href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
                                                          UGC Recognition and NEP...
+                                                     </a>
+                                                 </h4>
+                                             </div>
+                                         </div>
+                                     </li>
+                                     <li>
+                                         <div class="inner">
+                                             <div class="img-box">
+                                                 <img src="{{ asset('assets/images/about/about.jpg') }}"
+                                                     class="img-fluid" alt="image">
+                                                 <div class="overlay-content">
+                                                     <a href="/campus-life-and-student-development-at-manipur-international-university">
+                                                         <i class="fa fa-link" aria-hidden="true"></i>
+                                                     </a>
+                                                 </div>
+                                             </div>
+                                             <div class="title-box">
+                                                 <div class="post-date">
+                                                     <span class="icon-date"></span> Feb 11, 2026
+                                                 </div>
+                                                 <h4>
+                                                     <a href="/campus-life-and-student-development-at-manipur-international-university">
+                                                         Campus Life and Student Deve...
+                                                     </a>
+                                                 </h4>
+                                             </div>
+                                         </div>
+                                     </li>
+                                     <li>
+                                         <div class="inner">
+                                             <div class="img-box">
+                                                 <img src="{{ asset('assets/images/about/about.jpg') }}"
+                                                     class="img-fluid" alt="image">
+                                                 <div class="overlay-content">
+                                                     <a href="/admission-guide-2026-how-to-apply-to-manipur-international-university">
+                                                         <i class="fa fa-link" aria-hidden="true"></i>
+                                                     </a>
+                                                 </div>
+                                             </div>
+                                             <div class="title-box">
+                                                 <div class="post-date">
+                                                     <span class="icon-date"></span> Feb 10, 2026
+                                                 </div>
+                                                 <h4>
+                                                     <a href="/admission-guide-2026-how-to-apply-to-manipur-international-university">
+                                                         Admission Guide 2026: How to...
                                                      </a>
                                                  </h4>
                                              </div>
