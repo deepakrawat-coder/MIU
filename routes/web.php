@@ -28,7 +28,15 @@ Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
 Route::view('/notice-and-events', 'web.pages.notice-and-events');
 Route::view('/anti-ragging', 'web.pages.anti-ragging');
-Route::view('/school-details', 'web.pages.school-details');
+// Route::view('/school-details', 'web.pages.school-details');
+Route::get('/school-details/{slug}', function ($slug) {
+    $view = "web.pages.school-details.$slug";
+    if (view()->exists($view)) {
+        return view($view);
+    }
+    abort(404);
+});
+
 Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
 Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
 Route::view('/alumni', 'web.pages.alumni');
@@ -66,4 +74,4 @@ Route::view('/ugc-recognition-and-nep-aligned-education-at-manipur-international
 Route::view('/campus-life-and-student-development-at-manipur-international-university', 'web.pages.campus-life-and-student-development-at-manipur-international-university');
 Route::view('/admission-guide-2026-how-to-apply-to-manipur-international-university', 'web.pages.admission-guide-2026-how-to-apply-to-manipur-international-university');
 
-require __DIR__.'/settings.php';
+require __DIR__ . '/settings.php';
