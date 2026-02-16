@@ -1,6 +1,12 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Yoga Science')
+@section('description',
+    '
+    The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A.
+    (Yoga) programs designed to promote holistic education, physical well-being, and mental
+    balance. Rooted in ancient Indian traditions and supported by modern scientific
+    approaches, these programs provide students with a comprehensive understanding of yogic
+    philosophy, practices, and therapeutic applications.')
 
 @section('styles')
     <style>

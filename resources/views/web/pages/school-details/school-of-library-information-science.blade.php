@@ -1,6 +1,11 @@
     @extends('web.layouts.main')
-    @section('title', '| Departments')
-    @section('description', 'Manipur International University – Departments & Programs')
+    @section('title', '| School of Library & Information Science')
+    @section('description', 'The School of Library and Information Science at Manipur International University
+                                        (MIU) offers B.L.I.S. and M.L.I.S. programs designed to prepare skilled information
+                                        professionals for the digital age. These programs combine traditional library
+                                        science principles with modern information management practices, enabling students
+                                        to organize, manage, and disseminate knowledge effectively in academic, corporate,
+                                        and digital environments.')
 
     @section('styles')
         <style>
@@ -399,11 +404,11 @@
                                 <span class="dept-icon flaticon-book"></span>
                                 <h3>B.LIS</h3>
                             </div>
-                                <div class="dept-body">
-                                    <span class="tag">2 Semesters</span>
-                                    <span class="tag">Eligibility: Graduate</span>
-                                </div>
-                           
+                            <div class="dept-body">
+                                <span class="tag">2 Semesters</span>
+                                <span class="tag">Eligibility: Graduate</span>
+                            </div>
+
                         </div>
                     </div>
 
@@ -413,12 +418,12 @@
                             <div class="dept-header">
                                 <span class="dept-icon flaticon-handshake"></span>
                                 <h3>M.LIS</h3>
-                                    </div>
-                                <div class="dept-body">
-                                    <span class="tag">2 Semesters</span>
-                                    <span class="tag">Eligibility: B.LIS</span>
-                                </div>
-                        
+                            </div>
+                            <div class="dept-body">
+                                <span class="tag">2 Semesters</span>
+                                <span class="tag">Eligibility: B.LIS</span>
+                            </div>
+
                         </div>
                     </div>
 
@@ -1411,13 +1416,13 @@
                             <div class="course-layout-content-box">
                                 <div class="inner-title">
                                     <h4>FAQs</h4>
-                                    <p>Need Help?</p>
+                                    <p>School of Library & Information Science</p>
                                 </div>
                                 <ul class="accordion-box">
                                     <li class="accordion block active-block">
                                         <div class="acc-btn active">
                                             <div class="course-layout-title-box">
-                                                <h4>What programs are offered in the School of Technology?</h4>
+                                                <h4>What library science programs are offered at MIU?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1426,11 +1431,10 @@
                                         <div class="acc-content current">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    The School of Technology offers undergraduate, postgraduate, and
-                                                    doctoral
-                                                    programs in Computer Science, Mechanical Engineering, Civil Engineering,
-                                                    Artificial Intelligence, Data Science, Cyber Security, and related
-                                                    specializations.
+                                                    The School offers Bachelor of Library and Information Science (B.LIS) of
+                                                    2 Semesters and Master of Library and Information Science (M.LIS) of 2
+                                                    Semesters. These programs combine traditional library science principles
+                                                    with modern information management practices.
                                                 </p>
                                             </div>
                                         </div>
@@ -1439,7 +1443,7 @@
                                     <li class="accordion block">
                                         <div class="acc-btn">
                                             <div class="course-layout-title-box">
-                                                <h4>What are the admission requirements?</h4>
+                                                <h4>What is the eligibility for B.LIS?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1448,11 +1452,8 @@
                                         <div class="acc-content">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    Admission requirements vary by program. Generally, UG programs require
-                                                    10+2
-                                                    with PCM/PCB, PG programs require relevant bachelor's degree, and PhD
-                                                    programs require master's degree with minimum marks. Entrance exams may
-                                                    apply.
+                                                    For B.LIS (Bachelor of Library and Information Science), candidates must
+                                                    be graduates from any recognized university.
                                                 </p>
                                             </div>
                                         </div>
@@ -1461,7 +1462,7 @@
                                     <li class="accordion block">
                                         <div class="acc-btn">
                                             <div class="course-layout-title-box">
-                                                <h4>Are there placement opportunities?</h4>
+                                                <h4>What is the eligibility for M.LIS?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1470,9 +1471,51 @@
                                         <div class="acc-content">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    Yes, MIU has an active placement cell with connections to leading tech
-                                                    companies. Regular campus drives, internships, and industry projects are
-                                                    organized to ensure students get excellent career opportunities.
+                                                    For M.LIS (Master of Library and Information Science), candidates must
+                                                    have completed B.LIS from any recognized university.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>What facilities are available for library science students?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    The School offers well-equipped library and digital resource centers,
+                                                    access to e-databases and digital cataloguing tools, practical training
+                                                    in library automation, and workshops, seminars, and expert sessions.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>What career opportunities are available for library science graduates?
+                                                </h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Graduates can pursue careers as Librarian, Information Officer, Digital
+                                                    Library Manager, Documentation Specialist, or Researcher/Academic
+                                                    Instructor. Opportunities exist in academic institutions, public
+                                                    libraries, corporate organizations, research centers, and digital
+                                                    information services.
                                                 </p>
                                             </div>
                                         </div>

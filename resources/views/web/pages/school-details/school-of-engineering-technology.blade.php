@@ -1,6 +1,11 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Engineering & Technology – Overview')
+@section('description', ' The School of Technology at Manipur International University (MIU) offers a
+                                    comprehensive and dynamic learning environment for students aspiring to build careers in
+                                    diverse technological fields. The School provides a wide range of undergraduate,
+                                    postgraduate, and doctoral programs designed to equip students with the knowledge,
+                                    skills, and practical exposure needed to succeed in the rapidly evolving world of
+                                    technology.')
 
 @section('styles')
     <style>

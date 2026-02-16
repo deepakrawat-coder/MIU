@@ -1,6 +1,10 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Mass Communication and Journalism')
+@section('description', ' The School of Journalism and Mass Communication at Manipur International University
+                                    (MIU) offers B.J.M.C. and M.J.M.C. programs designed to prepare students for dynamic
+                                    careers in media, communication, and the creative industries. These programs combine
+                                    strong theoretical foundations with practical training in journalism, digital media,
+                                    broadcasting, advertising, and public relations.')
 
 @section('styles')
     <style>

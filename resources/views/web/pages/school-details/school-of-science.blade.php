@@ -1,6 +1,12 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Science')
+@section('description', ' The School of Basic Sciences and Biotechnology at Manipur International University (MIU)
+                                    offers interdisciplinary B.Sc. and M.Sc. programs designed to provide a strong
+                                    foundation in core scientific disciplines. The School exposes students to diverse areas
+                                    such as Chemistry, Biochemistry, Physics, Mathematics, Life Sciences, Environmental
+                                    Sciences, and Biotechnology. These programs are aligned with the latest scientific and
+                                    technological advancements, preparing students for both higher education and
+                                    professional careers.')
 
 @section('styles')
     <style>

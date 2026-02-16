@@ -1,6 +1,11 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Arts & Humanities')
+@section('description', 'The School of Arts and Humanities at Manipur International University (MIU) is a dynamic
+                                    academic space where culture, communication, and creativity open doors to diverse career
+                                    opportunities. Through its humanities and arts disciplines, the School transforms
+                                    knowledge into meaningful cultural and societal insights. The humanities are regarded as
+                                    the soul of education, enabling students to understand human behavior, values,
+                                    languages, history, and cultures that shape the world.')
 
 @section('styles')
     <style>

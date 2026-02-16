@@ -116,7 +116,7 @@
     <section class="teaching-area mt-5">
         <div class="auto-container">
             <div class="row">
-                <div class="col-xl-6">
+                {{-- <div class="col-xl-6">
                     <div class="teaching-content">
                         <div class="sec-title">
                             <h2>MIU Schools<br> of Academic Excellence</h2>
@@ -159,8 +159,41 @@
                             </a>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+<div class="col-xl-6">
+                    <div class="teaching-content">
+                        <div class="sec-title">
+                            <h2>Advancing Excellence in<br> Teaching and Learning</h2>
+                            <div class="sub-title">
+                                <p>
+                                    Manipur International University (MIU) is an autonomous statutory international university established, recognized, and institutionally accredited by the Government of Manipur. The university functions under the Manipur International University Act, 2018 (Manipur Act No. 2 of 2019), which received the assent of the Hon'ble Governor of Manipur on 23rd January 2019.
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="inner-title">
+                            <div class="border-line"></div>
+                            <h3>UGC Recognition & National Validity</h3>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="dot-box"></div>
+                                MIU is duly approved and listed by the University Grants Commission (UGC), Ministry of Education, Government of India, under Section 2(f) of the UGC Act, 1956, as a State Private University.
+                            </li>
+                            <li>
+                                <div class="dot-box"></div>
+                                The university is authorized to award degrees under Section 22 of the UGC Act, 1956, ensuring that all degrees conferred by MIU are nationally recognized and valid.
+                            </li>
+                        </ul>
+
+                        {{-- <div class="btns-box">
+                            <a class="btn-one" href="about.html">
+                                <span class="txt">Explore MIU Schools</span>
+                            </a>
+                        </div> --}}
+                    </div>
+                </div>
                 <div class="col-xl-6">
                     <div class="teaching-img-box">
                         <div class="teaching-img-box__bg"

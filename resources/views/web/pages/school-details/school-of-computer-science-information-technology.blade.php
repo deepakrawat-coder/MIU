@@ -1,6 +1,12 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Computer Science & Information Technology')
+@section('description',
+    'The School of Computer Science and Information Technology at Manipur International
+    University (MIU) offers a wide range of programs, including DCA, BCA, M.C.A., B.Sc.
+    (CS/IT), M.Sc. (CS/IT), and PGDCA, designed to prepare students for successful careers
+    in the fast-growing IT and digital technology sectors. These programs combine strong
+    theoretical foundations with practical, industry-oriented training to equip students
+    with the technical and analytical skills required in today’s technology-driven world.')
 
 @section('styles')
     <style>
@@ -402,12 +408,12 @@
                         <div class="dept-header">
                             <span class="dept-icon flaticon-book"></span>
                             <h3>BCA</h3>
-                            </div>
-                            <div class="dept-body">
-                                <span class="tag">6 Semesters</span>
-                                <span class="tag">Eligibility: 10+2 (Maths)</span>
-                            </div>
-                        
+                        </div>
+                        <div class="dept-body">
+                            <span class="tag">6 Semesters</span>
+                            <span class="tag">Eligibility: 10+2 (Maths)</span>
+                        </div>
+
                     </div>
                 </div>
 
@@ -417,12 +423,12 @@
                         <div class="dept-header">
                             <span class="dept-icon flaticon-handshake"></span>
                             <h3>MCA</h3>
-                            </div>
-                            <div class="dept-body">
-                                <span class="tag">4 Semesters</span>
-                                <span class="tag">Eligibility: Graduation</span>
-                            </div>
-                        
+                        </div>
+                        <div class="dept-body">
+                            <span class="tag">4 Semesters</span>
+                            <span class="tag">Eligibility: Graduation</span>
+                        </div>
+
                     </div>
                 </div>
 
@@ -1468,13 +1474,13 @@
                         <div class="course-layout-content-box">
                             <div class="inner-title">
                                 <h4>FAQs</h4>
-                                <p>Need Help?</p>
+                                <p>School of Computer Science & Information Technology</p>
                             </div>
                             <ul class="accordion-box">
                                 <li class="accordion block active-block">
                                     <div class="acc-btn active">
                                         <div class="course-layout-title-box">
-                                            <h4>What programs are offered in the School of Technology?</h4>
+                                            <h4>What computer science programs are offered at MIU?</h4>
                                             <div class="icon-outer">
                                                 <i class="icon-plus"></i>
                                             </div>
@@ -1483,10 +1489,10 @@
                                     <div class="acc-content current">
                                         <div class="course-layout-content-box-inner">
                                             <p class="p-3">
-                                                The School of Technology offers undergraduate, postgraduate, and doctoral
-                                                programs in Computer Science, Mechanical Engineering, Civil Engineering,
-                                                Artificial Intelligence, Data Science, Cyber Security, and related
-                                                specializations.
+                                                The School offers DCA (2 Semesters), BCA (6 Semesters), MCA (4 Semesters),
+                                                B.Sc. (IT/CS) (6 Semesters), M.Sc. (IT/CS) (4 Semesters), and PGDCA (2
+                                                Semesters). These programs cover programming, data structures, databases,
+                                                networking, cybersecurity, cloud computing, and AI.
                                             </p>
                                         </div>
                                     </div>
@@ -1495,7 +1501,7 @@
                                 <li class="accordion block">
                                     <div class="acc-btn">
                                         <div class="course-layout-title-box">
-                                            <h4>What are the admission requirements?</h4>
+                                            <h4>What are the eligibility requirements for different programs?</h4>
                                             <div class="icon-outer">
                                                 <i class="icon-plus"></i>
                                             </div>
@@ -1504,10 +1510,9 @@
                                     <div class="acc-content">
                                         <div class="course-layout-content-box-inner">
                                             <p class="p-3">
-                                                Admission requirements vary by program. Generally, UG programs require 10+2
-                                                with PCM/PCB, PG programs require relevant bachelor's degree, and PhD
-                                                programs require master's degree with minimum marks. Entrance exams may
-                                                apply.
+                                                For BCA: 10+2 with Mathematics. For B.Sc. (IT/CS) and DCA: 10+2. For MCA,
+                                                M.Sc. (IT/CS), and PGDCA: Graduation from any recognized university.
+                                                Eligibility varies by program level and specialization.
                                             </p>
                                         </div>
                                     </div>
@@ -1516,7 +1521,7 @@
                                 <li class="accordion block">
                                     <div class="acc-btn">
                                         <div class="course-layout-title-box">
-                                            <h4>Are there placement opportunities?</h4>
+                                            <h4>What facilities are available for computer science students?</h4>
                                             <div class="icon-outer">
                                                 <i class="icon-plus"></i>
                                             </div>
@@ -1525,9 +1530,53 @@
                                     <div class="acc-content">
                                         <div class="course-layout-content-box-inner">
                                             <p class="p-3">
-                                                Yes, MIU has an active placement cell with connections to leading tech
-                                                companies. Regular campus drives, internships, and industry projects are
-                                                organized to ensure students get excellent career opportunities.
+                                                The School offers modern computer laboratories with updated software and
+                                                hardware, high-speed internet and digital learning resources, practical
+                                                sessions and coding labs, workshops and industry interactions, and
+                                                internship and placement support.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="course-layout-title-box">
+                                            <h4>What career opportunities are available for IT graduates?</h4>
+                                            <div class="icon-outer">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="course-layout-content-box-inner">
+                                            <p class="p-3">
+                                                Graduates can pursue careers as Software Developer, Web/Mobile App
+                                                Developer, System Administrator, Database Administrator, Cybersecurity
+                                                Analyst, Data Analyst, IT Support Specialist, or Researcher/Academic
+                                                Instructor. Opportunities exist in software development, networking,
+                                                cybersecurity, data analytics, and cloud computing.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="accordion block">
+                                    <div class="acc-btn">
+                                        <div class="course-layout-title-box">
+                                            <h4>What is the difference between BCA and B.Sc. (IT/CS)?</h4>
+                                            <div class="icon-outer">
+                                                <i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="acc-content">
+                                        <div class="course-layout-content-box-inner">
+                                            <p class="p-3">
+                                                BCA (Bachelor of Computer Applications) focuses more on application
+                                                development and programming, while B.Sc. (IT/CS) provides a balanced mix of
+                                                theoretical computer science concepts and practical IT skills. Both are
+                                                6-semester programs with BCA requiring Mathematics in 10+2.
                                             </p>
                                         </div>
                                     </div>

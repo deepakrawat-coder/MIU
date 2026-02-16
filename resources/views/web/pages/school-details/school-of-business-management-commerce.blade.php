@@ -1,6 +1,10 @@
 @extends('web.layouts.main')
-@section('title', '| Departments')
-@section('description', 'Manipur International University – Departments & Programs')
+@section('title', '| School of Business, Management & Commerce')
+@section('description', 'The School of Business Management and Commerce at Manipur International University (MIU)
+                                    is dedicated to shaping future leaders, entrepreneurs, and business professionals. The
+                                    School focuses on developing industry-ready graduates who can thrive in a globally
+                                    competitive economy. Its programs are designed for students who aspire to build
+                                    successful careers in business, commerce, and finance.')
 
 @section('styles')
     <style>
