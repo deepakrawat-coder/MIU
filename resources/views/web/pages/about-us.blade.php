@@ -2,35 +2,13 @@
 @section('title', '| About Us')
 @section('description', 'About')
 
-@section('styles')
-    <style>
-        .custom-image {
-            background-position: center;
-        }
-
-        .about-style1__inner:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 50%;
-            bottom: 0;
-            width: 0px !important;
-            background: #ede8e6;
-        }
-
-        .wrapper_years .single-blog-style4 .blog-title {
-            font-size: 30px !important;
-            line-height: 30px;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-    </style>
+@section('styles')    
 @endsection
 @section('content')
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{asset('/assets/images/about/about.jpg')}});">
         </div>
         <div class="container">
             <div class="row">
@@ -109,7 +87,7 @@
 
     <section class="blog-style4-area">
         <div class="container">
-            <div class="sec-title-style5 text-center">
+            <div class="sec-title pb-3">
                 <h2>Our Prestigious Recognitions</h2>
             </div>
             <div class="row text-center">
@@ -325,7 +303,7 @@
 
     <section class="blog-style4-area">
         <div class="container">
-            <div class="sec-title-style5 text-center">
+            <div class="sec-title pb-3">
                 <h2>Academic Excellence & Innovation</h2>
 
                 <p>At MIU, we believe in nurturing minds that will shape the future. Our academic philosophy is rooted in
@@ -413,7 +391,7 @@
 
     <section class="blog-style4-area bg-white">
         <div class="container">
-            <div class="sec-title-style5 text-start pb-3">
+            <div class="sec-title pb-3">
                 <h2>The Sacred Symbolism of Our Logo</h2>
 
                 <p>The logo of Manipur International University is far more than a mere visual identifier—it is a profound
@@ -570,7 +548,7 @@
 
     <section class="blog-style4-area pt-2 bg-white">
         <div class="container">
-            <div class="sec-title-style5 text-start pb-3">
+            <div class="sec-title pb-3">
                 <h2>The Guardian Elephants</h2>
                 <p>The two elephants facing each other with their trunks raised upward are profound symbols in both Buddhist
                     and Hindu traditions. They represent:</p>
@@ -601,7 +579,7 @@
                 values and mission.</p>
 
 
-            <div class="sec-title-style5 text-start pb-3 mt-5">
+            <div class="sec-title pb-3 mt-5">
                 <h2>Important Documents</h2>
                 <p>Access our official documents and legal recognitions:</p>
 

@@ -25,7 +25,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(assets/images/about/about.jpg);"></div>
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -53,7 +53,7 @@
                 <h1> Manipur International University </h1>
                 {{-- <h3 class="mt-2 text-info"> Chancellor </h3> --}}
 
-                <img src="{{ asset('assets/images/web-image/director.jpg') }}"
+                <img src="{{ asset('/assets/images/web-image/director.jpg') }}"
                     class="img-fluid messageimage border border-info my-4" alt="image">
 
                 <h2> Ningombam Amarjit Singh </h2>

@@ -72,12 +72,12 @@
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="#">
+                                         <a href="/research-and-development-cell">
                                              <span class="icon-right-arrow-2"></span>Research
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="#">
+                                         <a href="/schools-and-departments">
                                              <span class="icon-right-arrow-2"></span>School of Departments
                                          </a>
                                      </li>
@@ -112,12 +112,12 @@
                                              <span class="icon-right-arrow-2"></span>Student portal
                                          </a>
                                      </li>
-                                     <li>
+                                     {{-- <li>
                                          <a href="#">
                                              <span class="icon-right-arrow-2"></span>How to Apply
                                              <sup>*[Open]</sup>
                                          </a>
-                                     </li>
+                                     </li> --}}
                                      <li>
                                          <a href="#">
                                              <span class="icon-right-arrow-2"></span>Faculty Portal
@@ -134,7 +134,8 @@
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="#">
+                                         <a href="{{ asset('/assets/images/web-image/Academic-Calender.pdf') }}"
+                                             target="_blank">
                                              <span class="icon-right-arrow-2"></span>Academic Calendar
                                          </a>
                                      </li>
@@ -144,10 +145,18 @@
                                          </a>
                                      </li>
                                      <li>
-                                         <a href="/blog">
-                                             <span class="icon-right-arrow-2"></span> Blogs
+                                         <a href="https://samadhaan.ugc.ac.in/">
+                                             <span class="icon-right-arrow-2"></span>e-Samadhan Portal
                                          </a>
                                      </li>
+                                     <li>
+                                         <a href="https://www.ugc.gov.in/">
+                                             <span class="icon-right-arrow-2"></span>UGC Website
+
+                                     </li>
+                                     <li> <a href="/blog">
+                                             <span class="icon-right-arrow-2"></span> Blogs
+                                         </a></li>
                                  </ul>
                              </div>
                          </div>
@@ -165,10 +174,33 @@
                                  <p>Manipur International University
                                      Imphal, Manipur
                                      India - 795001</p>
-                                 <ul>
-                                     <li><a href="tel:903 698 3337">+91 903 698 3337</a></li>
-                                     <li><a href="mailto:info@miu.edu.in">info@miu.edu.in</a></li>
+                                 <ul class="list-unstyled">
+                                     <li>
+                                         <i class="fa fa-phone"></i>
+                                         <a href="tel:9036983337">+91 903 698 3337</a>
+                                     </li>
+
+                                     <li>
+                                         <i class="fa fa-phone"></i>
+                                         <a href="tel:8899788788">+91 889 978 8788</a>
+                                     </li>
+
+                                     <li>
+                                         <i class="fa fa-envelope"></i>
+                                         <a href="mailto:info@miu.edu.in">info@miu.edu.in</a>
+                                     </li>
+
+                                     <li>
+                                         <i class="fa fa-envelope"></i>
+                                         <a href="mailto:admissions@miu.edu.in">admissions@miu.edu.in</a>
+                                     </li>
+
+                                     <li>
+                                         <i class="fa fa-clock-o"></i>
+                                         Mon - Sat: 9:30 AM - 4:00 PM
+                                     </li>
                                  </ul>
+
                              </div>
                          </div>
                      </div>
@@ -183,24 +215,23 @@
              <div class="container">
                  <div class="bottom-inner">
                      <div class="copyright">
-                         <p>Copyright &copy; 2022 <a href="#">Educamb.</a> All Rights Reserved.</p>
+                         <p>© 2025 Manipur International University. All Rights Reserved.</p>
                      </div>
-                     <div class="footer-logo-style1">
-                         <a href="#">
-                             <img src="assets/images/footer/footer-logo.png" alt="Awesome Logo" title="">
+                     {{-- <div class="footer-logo-style1">
+                         <a href="/">
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}"  width="150" height="150"  alt="Awesome Logo" title="">
                          </a>
-                     </div>
+                     </div> --}}
                      <div class="footer-menu">
                          <ul>
                              <li><a href="#">Privacy Policy</a></li>
-                             <li><a href="#">Term Of Use</a></li>
-                             <li><a href="#">Support</a></li>
+                             <li><a href="#">Terms & Conditions</a></li>
+                             <li><a href="/refund-policy">Refund Policy</a></li>
                          </ul>
                      </div>
                  </div>
              </div>
          </div>
-
      </footer>
      <!--End footer area-->
  </div>

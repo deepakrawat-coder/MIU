@@ -78,7 +78,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -139,7 +139,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow w-100 h-100">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c1.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c1.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3 class="mb-3">
@@ -159,7 +159,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3 w-100 h-100">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c7.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c7.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3 class="mb-3">
@@ -178,7 +178,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3 w-100 h-100">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c8.jpg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c8.jpg') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3 class="mb-3">
@@ -198,7 +198,7 @@
                     <div class="border border-1 rounded10 border-info p-4 shadow mb-3 w-100 h-100">
                         <div class="text-center">
                             <div class="hw150 d-block mx-auto mb-3">
-                                <img src="{{ asset('assets/images/web-image/c10.png') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/c10.png') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="text-center pt-3">
                                 <h3 class="mb-3">

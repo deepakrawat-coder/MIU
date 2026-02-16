@@ -46,7 +46,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -338,7 +338,7 @@
                         </div>
 
                         <div class="bg-light border border-1 border-danger p-4 rounded10 mb-4">
-                            <img src="{{ asset('assets/images/web-image/clock.png') }}" class="img-fluid mb-3"
+                            <img src="{{ asset('/assets/images/web-image/clock.png') }}" class="img-fluid mb-3"
                                 alt="image" width="80" height="80">
                             <h3> Processing Timeline </h3>
                             <p class="mb-2"> <strong>Standard Service:</strong> 4-5 working days</p>

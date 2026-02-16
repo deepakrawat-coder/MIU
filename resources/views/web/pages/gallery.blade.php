@@ -65,7 +65,7 @@
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
+        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -116,32 +116,32 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm1.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm1.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm2.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm2.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm3.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm3.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm4.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm4.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm5.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm5.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                         <div class="col-12 col-md-4">
                             <div class="mb-3 border border-1 p-2 shadow-sm">
-                                <img src="{{ asset('assets/images/web-image/tm6.jpeg') }}" class="img-fluid" alt="image">
+                                <img src="{{ asset('/assets/images/web-image/tm6.jpeg') }}" class="img-fluid" alt="image">
                             </div>
                         </div>
                     </div>
@@ -166,7 +166,7 @@
                             process. Proud to connect education with culture and community...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-1">
-                            <img src="{{ asset('assets/images/web-image/tm1.jpeg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/tm1.jpeg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -179,7 +179,7 @@
                         <p>November 21st and 22nd, 2025, Manipur International University is hosting a crucial International Conference to address the key concerns of chemical fertilizer and pesticides overuse in Manipur...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-2">
-                            <img src="{{ asset('assets/images/web-image/ic1.jpeg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/ic1.jpeg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -192,7 +192,7 @@
                         <p>Manipur International University, in collaboration with the BI Manipur Centre, successfully organized a soulful Satsang on 1st November at the MIU Ground Floor Meeting Room, Dr. Gurumayum Kennedy Institute of Petrotechnology...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-3">
-                            <img src="{{ asset('assets/images/web-image/s1.jpg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/s1.jpg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -204,7 +204,7 @@
                         <p>3rd Academic Council Meeting held on 31st October 2025 at the MIU Head Office, Ghari. Key discussions included updates on PhD & course regulations, new syllabi and research initiatives.Grateful to all members and...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-4">
-                            <img src="{{ asset('assets/images/web-image/s2.jpeg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/s2.jpeg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -216,7 +216,7 @@
                         <p>A proud day for MIU! Our scholar from the Department of Yoga & Physical Education has made history by winning Gold, Silver, and Bronze at the National Yoga Competition in Nagpur, Maharashtra...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-5">
-                            <img src="{{ asset('assets/images/web-image/y1.jpeg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/y1.jpeg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -228,7 +228,7 @@
                         <p>Today, we paid floral tribute to Major Dhyan Chand, the hockey legend of India, and celebrated National Sports Day with great spirit at Manipur International University...</p>
 
                         <div class="card gallery-page__single" data-tgt="gallery-6">
-                            <img src="{{ asset('assets/images/web-image/n1.jpeg') }}" class="img-fluid" alt="image">
+                            <img src="{{ asset('/assets/images/web-image/n1.jpeg') }}" class="img-fluid" alt="image">
                         </div>
                     </div>
                 </div>
@@ -237,79 +237,79 @@
 
             <!-- Hidden Galleries -->
             <div id="gallery-1" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/tm1.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/tm2.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/tm3.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/tm4.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/tm5.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/tm6.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm1.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm2.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm3.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm4.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm5.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/tm6.jpeg') }}"></a>
             </div>
 
             <div id="gallery-2" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/ic1.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/ic1.jpeg') }}"></a>
             </div>
 
             <div id="gallery-3" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/s1.jpg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s2.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s3.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s4.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s5.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s6.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s7.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s8.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s9.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s10.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s1.jpg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s2.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s3.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s4.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s5.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s6.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s7.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s8.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s9.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s10.jpeg') }}"></a>
             </div>
 
             <div id="gallery-4" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/s1.jpg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s2.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s3.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s4.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s5.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s6.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s7.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s8.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s9.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/s10.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s1.jpg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s2.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s3.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s4.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s5.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s6.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s7.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s8.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s9.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/s10.jpeg') }}"></a>
             </div>
 
             <div id="gallery-5" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/y1.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y2.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y3.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y4.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y5.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y6.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y7.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y8.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y9.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y10.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y11.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y12.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y13.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y14.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y15.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y16.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y18.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y19.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/y20.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y1.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y2.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y3.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y4.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y5.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y6.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y7.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y8.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y9.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y10.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y11.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y12.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y13.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y14.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y15.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y16.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y18.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y19.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/y20.jpeg') }}"></a>
             </div>
 
             <div id="gallery-6" class="mfp-hide">
-                <a href="{{ asset('assets/images/web-image/n1.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n2.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n3.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n4.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n5.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n6.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n7.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n8.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n9.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n10.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n11.jpeg') }}"></a>
-                <a href="{{ asset('assets/images/web-image/n12.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n1.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n2.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n3.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n4.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n5.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n6.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n7.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n8.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n9.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n10.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n11.jpeg') }}"></a>
+                <a href="{{ asset('/assets/images/web-image/n12.jpeg') }}"></a>
             </div>
         </div>
     </section>
