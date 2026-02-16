@@ -13,6 +13,14 @@
      <!-- responsive meta -->
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <!-- For IE -->
+     <!-- Open Graph / Facebook -->
+     <meta property="og:type" content="website">
+     <meta property="og:url" content="https://www.miu.edu.in/">
+     <meta property="og:title" content="Manipur International University">
+     <meta property="og:description"
+         content="Explore academic programs, admissions, research initiatives, and vibrant campus life at Manipur International University.">
+
+     <meta property="og:image" content="{{ asset('/assets/images/web-image/web-log.png') }}">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <!-- Google Fonts -->
      <link
