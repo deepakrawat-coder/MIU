@@ -23,8 +23,18 @@ public function show()
 
     return view('web.pages.deparments-programs', compact('schools'));
 
-    
+
 }
+
+public function details($slug)
+{
+    $school = School::where('slug', $slug)
+                ->where('status', 1)
+                ->firstOrFail();
+
+    return view('web.pages.school-details', compact('school'));
+}
+
     /**
      * Display a listing of the resource.
      */

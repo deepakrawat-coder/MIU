@@ -38,7 +38,7 @@ Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
 // Route::view('/notice-and-events', 'web.pages.notice-and-events');
 Route::view('/anti-ragging', 'web.pages.anti-ragging');
-Route::view('/school-details', 'web.pages.school-details');
+// Route::view('/school-details', 'web.pages.school-details');
 Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
 Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
 Route::view('/alumni', 'web.pages.alumni');
@@ -83,6 +83,9 @@ Route::get('/dashboard', function () {
 
     // route for frontend
     Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
+
+Route::get('/school-details/{slug}', [SchoolController::class, 'details'])
+    ->name('schools.details');
 
 
 
