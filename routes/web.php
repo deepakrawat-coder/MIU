@@ -1,6 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\EventsCategoryController;
+use App\Http\Controllers\EventsPostController;
+use App\Http\Controllers\SchoolController;
+use App\Http\Controllers\ProgramController;
+use App\Http\Controllers\SpecializationController;
+use App\Http\Controllers\CourseController;
+
+
+
 
 Route::get('/homw', function () {
     return view('welcome');
@@ -13,7 +23,7 @@ Route::view('dashboard', 'dashboard')
 Route::view('/', 'web.pages.index');
 Route::view('/about-us', 'web.pages.about-us');
 Route::view('/departments', 'web.pages.departments');
-Route::view('/schools-and-departments', 'web.pages.deparments-programs');
+// Route::view('/schools-and-departments', 'web.pages.deparments-programs');
 Route::view('/programs-details', 'web.pages.programs-details');
 Route::view('/specialization-details', 'web.pages.specialization-details');
 Route::view('/contact-us', 'web.pages.contact-us');
@@ -26,17 +36,9 @@ Route::view('/academic-leadership-team', 'web.pages.academic-leadership-team');
 Route::view('/incubation-center', 'web.pages.incubation-center');
 Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
-Route::view('/notice-and-events', 'web.pages.notice-and-events');
+// Route::view('/notice-and-events', 'web.pages.notice-and-events');
 Route::view('/anti-ragging', 'web.pages.anti-ragging');
 // Route::view('/school-details', 'web.pages.school-details');
-Route::get('/school-details/{slug}', function ($slug) {
-    $view = "web.pages.school-details.$slug";
-    if (view()->exists($view)) {
-        return view($view);
-    }
-    abort(404);
-});
-
 Route::view('/notice-and-events-details', 'web.pages.notice-and-events-details');
 Route::view('/academic-collaborations', 'web.pages.academic-collaborations');
 Route::view('/alumni', 'web.pages.alumni');
@@ -67,11 +69,167 @@ Route::view('/blog', 'web.pages.blog');
 Route::view('/blog-details', 'web.pages.blog-details');
 
 
-// static blogs
-Route::view('/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india', 'web.pages.why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india');
-Route::view('/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students', 'web.pages.top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students');
-Route::view('/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know', 'web.pages.ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know');
-Route::view('/campus-life-and-student-development-at-manipur-international-university', 'web.pages.campus-life-and-student-development-at-manipur-international-university');
-Route::view('/admission-guide-2026-how-to-apply-to-manipur-international-university', 'web.pages.admission-guide-2026-how-to-apply-to-manipur-international-university');
+
+// Route::get('/cms', function () {
+//     return view('admin.index');
+// });
+
+
+Route::middleware('guest')->get('/cms', function () {
+    return view('admin.index');
+})->name('admin.login');
+
+/*
+|--------------------------------------------------------------------------
+| Authenticated Dashboard
+|--------------------------------------------------------------------------
+*/
+
+// Route::view('/dashboard', 'dashboard')
+//     ->middleware(['auth', 'verified'])
+//     ->name('dashboard');
+
+Route::get('/dashboard', function () {
+    return view('admin.home');
+})
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
+
+
+
+
+    // route for frontend
+    Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
+
+Route::get('/school-details/{slug}', [SchoolController::class, 'details'])
+    ->name('schools.details');
+
+
+
+
+Route::prefix('events')->group(function () {
+
+    Route::get('/', [EventsCategoryController::class, 'index'])
+        ->name('events.index');
+
+    Route::get('/create', [EventsCategoryController::class, 'create'])
+        ->name('events.create');
+
+    Route::post('/store', [EventsCategoryController::class, 'store'])
+        ->name('events.store');
+
+    Route::get('/edit/{id}', [EventsCategoryController::class, 'edit'])
+        ->name('events.edit');
+
+    Route::post('/update/{id}', [EventsCategoryController::class, 'update'])
+        ->name('events.update');
+
+    Route::delete('/delete/{id}', [EventsCategoryController::class, 'destroy'])
+        ->name('events.delete');
+
+    Route::get('/status/{id}', [EventsCategoryController::class, 'status'])
+        ->name('events.status');
+});
+
+
+
+Route::get('/notice-and-events', [EventsCategoryController::class, 'noticeAndEvents'])
+    ->name('notice.events');
+
+Route::get('/notice-and-events/{slug}', [EventsCategoryController::class, 'showPost'])
+    ->name('post.details');
+
+
+
+
+
+
+Route::prefix('posts')->group(function () {
+
+    Route::get('/', [EventsPostController::class, 'index'])
+        ->name('posts.index');
+
+    Route::get('/create', [EventsPostController::class, 'create'])
+        ->name('posts.create');
+
+    Route::post('/store', [EventsPostController::class, 'store'])
+        ->name('posts.store');
+
+    Route::get('/edit/{id}', [EventsPostController::class, 'edit'])
+        ->name('posts.edit');
+
+    Route::post('/update/{id}', [EventsPostController::class, 'update'])
+        ->name('posts.update');
+
+    Route::delete('/delete/{id}', [EventsPostController::class, 'destroy'])
+        ->name('posts.delete');
+
+    Route::get('/status/{id}', [EventsPostController::class, 'status'])->name(
+        'posts.status'
+    );
+});
+
+
+Route::prefix('schools')->group(function () {
+
+    Route::get('/', [SchoolController::class, 'index'])
+        ->name('schools.index');
+
+    Route::get('/create', [SchoolController::class, 'create'])
+        ->name('schools.create');
+
+    Route::post('/store', [SchoolController::class, 'store'])
+        ->name('schools.store');
+
+    Route::get('/edit/{id}', [SchoolController::class, 'edit'])
+        ->name('schools.edit');
+
+    Route::post('/update/{id}', [SchoolController::class, 'update'])
+        ->name('schools.update');
+
+    Route::delete('/delete/{id}', [SchoolController::class, 'destroy'])
+        ->name('schools.delete');
+
+    Route::get('/status/{id}', [SchoolController::class, 'status'])->name(
+        'schools.status'
+    );
+
+
+
+});
+
+
+
+
+
+Route::prefix('programs')->group(function () {
+    Route::get('/', [ProgramController::class, 'index'])->name('programs.index');
+    Route::get('/create', [ProgramController::class, 'create'])->name('programs.create');
+    Route::post('/store', [ProgramController::class, 'store'])->name('programs.store');
+    Route::get('/edit/{id}', [ProgramController::class, 'edit'])->name('programs.edit');
+    Route::post('/update/{id}', [ProgramController::class, 'update'])->name('programs.update');
+    Route::delete('/delete/{id}', [ProgramController::class, 'destroy'])->name('programs.delete');
+    Route::get('/status/{id}', [ProgramController::class, 'status'])->name('programs.status');
+});
+
+
+Route::prefix('courses')->group(function () {
+    Route::get('/', [CourseController::class, 'index'])->name('courses.index');
+    Route::get('/create', [CourseController::class, 'create'])->name('courses.create');
+    Route::post('/store', [CourseController::class, 'store'])->name('courses.store');
+    Route::get('/edit/{id}', [CourseController::class, 'edit'])->name('courses.edit');
+    Route::post('/update/{id}', [CourseController::class, 'update'])->name('courses.update');
+    Route::delete('/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete');
+    Route::get('/status/{id}', [CourseController::class, 'status'])->name('courses.status');
+});
+
+
+
+
+
+Route::get('/test', function () {
+    return 'Laravel is working';
+});
 
 require __DIR__ . '/settings.php';
