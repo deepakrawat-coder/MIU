@@ -15,7 +15,8 @@
 
         <div class="mb-3">
             <label class="form-label">Short Description</label>
-            <input type="text" name="short_description" id="short_description" class="form-control">
+            <!-- <input type="text" name="short_description" id="short_description" class="form-control"> -->
+            <textarea name="short_description" id="short_description" class="form-control" rows="3"></textarea>
         </div>
 
         <div class="mb-3">
@@ -125,75 +126,74 @@ $(document).ready(function() {
 
 <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 <script>
-let descriptionEditor;
-let contentEditor;
-let shortDescriptionEditor;
+    let descriptionEditor;
+    let contentEditor;
+    let shortDescriptionEditor;
 
-$(document).ready(function() {
+    $(document).ready(function() {
 
-    // Short Description Editor
-    ClassicEditor
-        .create(document.querySelector('#short_description'))
-        .then(editor => {
-            shortDescriptionEditor = editor;
-        })
-        .catch(error => {
-            console.error(error);
-        });
+        // Short Description Editor
+        ClassicEditor
+            .create(document.querySelector('#short_description'))
+            .then(editor => {
+                shortDescriptionEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
 
-    // Full Description Editor
-    ClassicEditor
-        .create(document.querySelector('#description'))
-        .then(editor => {
-            descriptionEditor = editor;
-        })
-        .catch(error => {
-            console.error(error);
-        });
+        // Full Description Editor
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .then(editor => {
+                descriptionEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
 
-    // Content Editor
-    ClassicEditor
-        .create(document.querySelector('#content'))
-        .then(editor => {
-            contentEditor = editor;
-        })
-        .catch(error => {
-            console.error(error);
-        });
+        // Content Editor
+        ClassicEditor
+            .create(document.querySelector('#content'))
+            .then(editor => {
+                contentEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
 
-    // AJAX Form Submit
-    $("#school-form").submit(function(e){
-        e.preventDefault();
+        // AJAX Form Submit
+        $("#school-form").submit(function(e) {
+            e.preventDefault();
 
-        // Set all editor data before submit
-        $('textarea[name="short_description"]').val(shortDescriptionEditor.getData());
-        $('textarea[name="description"]').val(descriptionEditor.getData());
-        $('textarea[name="content"]').val(contentEditor.getData());
+            // Set all editor data before submit
+            $('textarea[name="short_description"]').val(shortDescriptionEditor.getData());
+            $('textarea[name="description"]').val(descriptionEditor.getData());
+            $('textarea[name="content"]').val(contentEditor.getData());
 
-        let formData = new FormData(this);
+            let formData = new FormData(this);
 
-        $.ajax({
-            url: $(this).attr('action'),
-            type: 'POST',
-            data: formData,
-            processData: false,
-            contentType: false,
-            dataType: 'json',
-            success: function(res){
-                if(res.status=='success'){
-                    toastr.success(res.message);
-                    $(".modal").modal('hide');
-                    $('#schools-table').DataTable().ajax.reload();
-                }else{
-                    toastr.error(res.message);
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+                success: function(res) {
+                    if (res.status == 'success') {
+                        toastr.success(res.message);
+                        $(".modal").modal('hide');
+                        $('#schools-table').DataTable().ajax.reload();
+                    } else {
+                        toastr.error(res.message);
+                    }
+                },
+                error: function(err) {
+                    toastr.error(err.responseJSON?.message || 'Something went wrong!');
                 }
-            },
-            error: function(err){
-                toastr.error(err.responseJSON?.message || 'Something went wrong!');
-            }
+            });
         });
+
     });
-
-});
 </script>
-

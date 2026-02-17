@@ -45,158 +45,110 @@
 
 @endsection
 
-{{-- @section('scripts')
+@section('scripts')
 <script>
-$(function() {
-    const addButton = {
-        text: 'Add School',
-        className: 'add-new btn btn-primary mb-3 mb-md-0',
-        attr: { 'onclick': "add('{{ route('schools.create') }}', 'modal-lg')" }
-    };
+    $(function() {
 
-    var table = $('#schools-table').DataTable({
-        processing: true,
-        serverSide: true,
-        ajax: "{{ route('schools.index') }}",
-        columns: [
-            { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable:false, searchable:false },
-            { data: 'name', name: 'name' },
-            { data: 'status', name: 'status', orderable:false, searchable:false },
-            { data: 'action', name: 'action', orderable:false, searchable:false }
-        ],
-        columnDefs: [
-            {
-                targets: 2,
-                render: function(data,type,full){
-                    var checked = full.status == 1 ? 'checked':'';
-                    var label = full.status == 1 ? 'Active':'Inactive';
-                    return `<div class="form-check form-switch form-switch-success">
+        const addButton = {
+            text: 'Add School',
+            className: 'add-new btn btn-primary mb-3 mb-md-0',
+            attr: {
+                'onclick': "add('{{ route('schools.create') }}', 'modal-xl')"
+            }
+        };
+
+        var table = $('#schools-table').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('schools.index') }}",
+            columns: [{
+                    data: 'DT_RowIndex',
+                    name: 'DT_RowIndex',
+                    orderable: false,
+                    searchable: false
+                },
+                {
+                    data: 'name',
+                    name: 'name'
+                },
+
+                // ✅ Image Column
+                {
+                    data: 'image',
+                    name: 'image',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data) {
+                        if (data) {
+                            return `<img src="/${data}" style="width:60px; height:60px; object-fit:cover; border-radius:6px;">`;
+                        }
+                        return '-';
+                    }
+                },
+
+                // ✅ Icon Column
+                {
+                    data: 'icon',
+                    name: 'icon',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data) {
+                        if (data) {
+                            return `<img src="/${data}" style="width:40px; height:40px; object-fit:contain;">`;
+                        }
+                        return '-';
+                    }
+                },
+
+                // ✅ Status Column
+                {
+                    data: 'status',
+                    name: 'status',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data, type, full) {
+                        var checked = data == 1 ? 'checked' : '';
+                        var label = data == 1 ? 'Active' : 'Inactive';
+
+                        return `<div class="form-check form-switch form-switch-success">
                         <input class="form-check-input" type="checkbox" ${checked}
                             onclick="updateActiveStatus('schools/status/${full.id}','schools-table')">
                         <label class="form-check-label">${label}</label>
                     </div>`;
-                }
-            },
-            {
-                targets:-1,
-                render:function(data,type,full){
-                    return `<div class="hstack gap-2">
-                        <button class="btn btn-sm btn-light-primary" onclick="edit('schools/edit/${full.id}','modal-lg')">
+                    }
+                },
+
+                // ✅ Action Column
+                {
+                    data: 'action',
+                    name: 'action',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data, type, full) {
+                        return `<div class="hstack gap-2">
+                        <button class="btn btn-sm btn-light-primary" onclick="edit('schools/edit/${full.id}','modal-xl')">
                             <i class="ri-pencil-line"></i>
                         </button>
                         <button class="btn btn-sm btn-light-danger" onclick="destroy('schools/delete/${full.id}','schools-table')">
                             <i class="ri-delete-bin-line"></i>
                         </button>
                     </div>`;
-                }
-            }
-        ],
-        order:[[0,'desc']],
-        responsive:true,
-        pageLength:10,
-        dom:'<"d-flex justify-content-between mb-2"<"dataTables_filter"f><"add_button"B>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
-        buttons:[addButton],
-        language:{search:"_INPUT_",searchPlaceholder:"Search Schools..."}
-    });
-});
-</script>
-@endsection --}}
-
-
-@section('scripts')
-<script>
-$(function() {
-
-    const addButton = {
-        text: 'Add School',
-        className: 'add-new btn btn-primary mb-3 mb-md-0',
-        attr: { 'onclick': "add('{{ route('schools.create') }}', 'modal-xl')" }
-    };
-
-    var table = $('#schools-table').DataTable({
-        processing: true,
-        serverSide: true,
-        ajax: "{{ route('schools.index') }}",
-        columns: [
-            { data: 'DT_RowIndex', name: 'DT_RowIndex', orderable:false, searchable:false },
-            { data: 'name', name: 'name' },
-
-            // ✅ Image Column
-            {
-                data: 'image',
-                name: 'image',
-                orderable:false,
-                searchable:false,
-                render: function(data){
-                    if(data){
-                        return `<img src="/${data}" style="width:60px; height:60px; object-fit:cover; border-radius:6px;">`;
                     }
-                    return '-';
                 }
-            },
-
-            // ✅ Icon Column
-            {
-                data: 'icon',
-                name: 'icon',
-                orderable:false,
-                searchable:false,
-                render: function(data){
-                    if(data){
-                        return `<img src="/${data}" style="width:40px; height:40px; object-fit:contain;">`;
-                    }
-                    return '-';
-                }
-            },
-
-            // ✅ Status Column
-            {
-                data: 'status',
-                name: 'status',
-                orderable:false,
-                searchable:false,
-                render: function(data,type,full){
-                    var checked = data == 1 ? 'checked':'';
-                    var label = data == 1 ? 'Active':'Inactive';
-
-                    return `<div class="form-check form-switch form-switch-success">
-                        <input class="form-check-input" type="checkbox" ${checked}
-                            onclick="updateActiveStatus('schools/status/${full.id}','schools-table')">
-                        <label class="form-check-label">${label}</label>
-                    </div>`;
-                }
-            },
-
-            // ✅ Action Column
-            {
-                data: 'action',
-                name: 'action',
-                orderable:false,
-                searchable:false,
-                render:function(data,type,full){
-                    return `<div class="hstack gap-2">
-                        <button class="btn btn-sm btn-light-primary" onclick="edit('schools/edit/${full.id}','modal-xl')">
-                            <i class="ri-pencil-line"></i>
-                        </button>
-                        <button class="btn btn-sm btn-light-danger" onclick="destroy('schools/${full.id}','schools-table')">
-                            <i class="ri-delete-bin-line"></i>
-                        </button>
-                    </div>`;
-                }
+            ],
+            order: [
+                [0, 'desc']
+            ],
+            responsive: true,
+            pageLength: 10,
+            dom: '<"d-flex justify-content-between mb-2"<"dataTables_filter"f><"add_button"B>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+            buttons: [addButton],
+            language: {
+                search: "_INPUT_",
+                searchPlaceholder: "Search Schools..."
             }
-        ],
-        order:[[0,'desc']],
-        responsive:true,
-        pageLength:10,
-        dom:'<"d-flex justify-content-between mb-2"<"dataTables_filter"f><"add_button"B>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
-        buttons:[addButton],
-        language:{
-            search:"_INPUT_",
-            searchPlaceholder:"Search Schools..."
-        }
-    });
+        });
 
-});
+    });
 </script>
 @endsection
-

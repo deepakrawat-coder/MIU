@@ -15,25 +15,23 @@ class SchoolController extends Controller
 
 
 
-public function show()
-{
-    $schools = School::where('status', 1)
-                ->orderBy('order', 'asc')
-                ->get();
+    public function show()
+    {
+        $schools = School::where('status', 1)
+            ->orderBy('order', 'asc')
+            ->get();
 
-    return view('web.pages.deparments-programs', compact('schools'));
+        return view('web.pages.deparments-programs', compact('schools'));
+    }
 
+    public function details($slug)
+    {
+        $school = School::where('slug', $slug)
+            ->where('status', 1)
+            ->firstOrFail();
 
-}
-
-public function details($slug)
-{
-    $school = School::where('slug', $slug)
-                ->where('status', 1)
-                ->firstOrFail();
-
-    return view('web.pages.school-details', compact('school'));
-}
+        return view('web.pages.school-details', compact('school'));
+    }
 
     /**
      * Display a listing of the resource.
@@ -69,6 +67,7 @@ public function details($slug)
      */
     public function store(Request $request)
     {
+        // dd($request->all());
         // ✅ Validation
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255|unique:schools,name',
@@ -171,6 +170,7 @@ public function details($slug)
      */
     public function update(Request $request, $id)
     {
+        // dd($request->all());
         // ✅ Find School
         $school = School::findOrFail($id);
 
@@ -212,7 +212,7 @@ public function details($slug)
             $school->description = $request->description;
             $school->content = $request->content;
 
-             // ✅ Order Update
+            // ✅ Order Update
 
             $school->order = $request->order ?? $school->order;
 
@@ -289,6 +289,7 @@ public function details($slug)
     public function destroy($schoolId)
     { {
             try {
+                // dd($schoolId);
                 $school = School::destroy($schoolId);
                 return ['status' => 'success', 'message' => 'School deleted successfully!'];
             } catch (\Throwable $e) {

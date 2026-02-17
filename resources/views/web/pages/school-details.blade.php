@@ -524,31 +524,31 @@
                                 <div class="inner">
                                     <div class="img-box">
                                         <img src="{{ asset('/assets/images/testimonial/testimonial-v1-' . ($i + 1) . '.jpg') }}"
-                                            alt="Alumni">
-                                    </div>
-                                    <div class="rating-box">
-                                        <ul>
-                                            @for ($j = 0; $j < 7; $j++) <li><span class="icon-favourite"></span></li>
-                                                @endfor
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="text">
-                                    <p>The practical approach and industry exposure at MIU prepared me perfectly for
-                                        my career in technology.</p>
-                                </div>
-                            </div>
-                            <div class="client-name">
-                                <h3>Alumni Name {{ $i + 1 }}</h3>
-                                <span>B.Tech | MIU Alumni</span>
-                            </div>
-                    </div>
-                    @endfor
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
+alt="Alumni">
+</div>
+<div class="rating-box">
+    <ul>
+        @for ($j = 0; $j < 7; $j++) <li><span class="icon-favourite"></span></li>
+            @endfor
+    </ul>
+</div>
+</div>
+<div class="text">
+    <p>The practical approach and industry exposure at MIU prepared me perfectly for
+        my career in technology.</p>
+</div>
+</div>
+<div class="client-name">
+    <h3>Alumni Name {{ $i + 1 }}</h3>
+    <span>B.Tech | MIU Alumni</span>
+</div>
+</div>
+@endfor
+</div>
+</div>
+</div>
+</div>
+</div>
 </section> --}}
 <section id="testimonials" class="testimonial-style1-area" style=" background: #17345a;">
     <div class="container">
@@ -1394,51 +1394,51 @@
 @section('scripts')
 <script>
     // Swiper for recruiters
-        var swiper = new Swiper(".recruiters-swiper", {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
+    var swiper = new Swiper(".recruiters-swiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2
             },
-            breakpoints: {
-                0: {
-                    slidesPerView: 2
-                },
-                576: {
-                    slidesPerView: 3
-                },
-                768: {
-                    slidesPerView: 4
-                },
-                992: {
-                    slidesPerView: 5
-                }
+            576: {
+                slidesPerView: 3
+            },
+            768: {
+                slidesPerView: 4
+            },
+            992: {
+                slidesPerView: 5
             }
-        });
+        }
+    });
 
-        // FAQ Accordion
-        document.addEventListener("DOMContentLoaded", function() {
-            const accBtns = document.querySelectorAll(".acc-btn");
-            accBtns.forEach(btn => {
-                btn.addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    const content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
+    // FAQ Accordion
+    document.addEventListener("DOMContentLoaded", function() {
+        const accBtns = document.querySelectorAll(".acc-btn");
+        accBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
             });
         });
+    });
 
-        // Form submission
-        document.getElementById('program-details-form-1').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Application submitted successfully! We will contact you shortly.');
-            this.reset();
-        });
+    // Form submission
+    document.getElementById('program-details-form-1').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Application submitted successfully! We will contact you shortly.');
+        this.reset();
+    });
 </script>
 @endsection

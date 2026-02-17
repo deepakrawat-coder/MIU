@@ -28,12 +28,13 @@
             .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
             .join(' ');
     }
+
     function add(url, modal) {
         if (modal.length > 0) {
             $.ajax({
                 url: url,
                 type: "GET",
-                success: function (data) {
+                success: function(data) {
                     $('#' + modal + '-content').html(data);
                     $('#' + modal).modal('show');
                 }
@@ -43,17 +44,8 @@
         }
     }
 
-    function edit(url, modal) {
-        $(".modal").modal('hide');
-        $.ajax({
-            url: url,
-            type: "GET",
-            success: function (data) {
-                $('#' + modal + '-content').html(data);
-                $('#' + modal).modal('show');
-            }
-        })
-    }
+
+
 
 
 
@@ -82,7 +74,7 @@
         $.ajax({
             url: url,
             type: "GET",
-            success: function (data) {
+            success: function(data) {
                 $('#' + modal + '-content').html(data);
                 $('#' + modal).modal('show');
             }
@@ -90,12 +82,12 @@
     }
 
 
-     function view(url, modal) {
+    function view(url, modal) {
         $(".modal").modal('hide');
         $.ajax({
             url: url,
             type: "GET",
-            success: function (data) {
+            success: function(data) {
                 $('#' + modal + '-content').html(data);
                 $('#' + modal).modal('show');
             }
@@ -106,7 +98,7 @@
         $.ajax({
             url: url,
             type: "GET",
-            success: function (response) {
+            success: function(response) {
                 if (response.status == 'success') {
                     toastr.success(response.message);
                 } else {
@@ -117,7 +109,8 @@
         })
     }
 
-    function destry(url, table) {
+    function destroy(url, table) {
+        console.log(url);
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -129,7 +122,7 @@
                 cancelButton: 'btn btn-label-secondary waves-effect waves-light'
             },
             buttonsStyling: false
-        }).then(function (result) {
+        }).then(function(result) {
             if (result.value) {
                 $.ajax({
                     url: url,
@@ -138,7 +131,7 @@
                     data: {
                         _token: "{{ csrf_token() }}"
                     },
-                    success: function (response) {
+                    success: function(response) {
                         if (response.status == 'success') {
                             toastr.success(response.message);
                             if (table.length > 0) {
@@ -168,7 +161,7 @@
                 cancelButton: 'btn btn-label-secondary waves-effect waves-light'
             },
             buttonsStyling: false
-        }).then(function (result) {
+        }).then(function(result) {
             if (result.value) {
                 $.ajax({
                     url: url,
@@ -177,7 +170,7 @@
                     data: {
                         _token: "{{ csrf_token() }}"
                     },
-                    success: function (response) {
+                    success: function(response) {
                         if (response.status == 'success') {
                             toastr.success(response.message);
                             if (table.length > 0) {
@@ -201,7 +194,7 @@
         $.ajax({
             url: url,
             type: 'GET',
-            success: function (data) {
+            success: function(data) {
                 $('#' + modal + '-content').html(data);
                 $('#' + modal).modal('show');
             }
