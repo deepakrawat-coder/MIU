@@ -33,8 +33,12 @@ class Program extends Model
     ];
 
     // Relationship
-    public function school()
+    public function courses()
     {
-        return $this->belongsTo(School::class);
+        return $this->belongsToMany(Course::class);
+    }
+    public function specializations()
+    {
+        return $this->hasMany(Specialization::class);
     }
 }

@@ -4,4 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class School extends Model {}
+class School extends Model
+{
+     public function courses()
+    {
+        return $this->hasMany(Course::class);
+    }
+}

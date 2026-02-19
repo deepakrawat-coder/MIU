@@ -88,7 +88,8 @@
 <!-- App js -->
 <script type="module" src="{{ asset('admin/assets/js/app.js') }}"></script>
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!-- Toastr JS -->
 <script src="{{ asset('admin/assets/libs/toastr/toastr.js') }}"></script>
 <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>

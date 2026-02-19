@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Validator;
 use Exception;
 use Illuminate\Support\Str;
 use App\Models\Program;
+use App\Models\School;
 
 class CourseController extends Controller
 {
@@ -19,11 +20,14 @@ class CourseController extends Controller
     {
         if (request()->ajax()) {
 
-            $courses = Course::with('program')->latest()->get();
+            $courses = Course::with('school')->select('courses.*');
 
             return DataTables::of($courses)
                 ->addIndexColumn()
                 ->addColumn('action', fn($row) => '')
+                ->addColumn('short_description', function ($row) {
+                    return \Illuminate\Support\Str::limit(strip_tags($row->short_description), 80);
+                })
                 ->make(true);
         }
         return view('admin.Courses.index');
@@ -36,31 +40,20 @@ class CourseController extends Controller
      */
     public function create()
     {
-        $programs = Program::where('status', 1)->get();
-        return view('admin.Courses.create', compact('programs'));
-    }
+        $schools = School::where('status', 1)->get();
 
-    /**
-     * Store a newly created resource in storage.
-     */
+        return view('admin.Courses.create', compact('schools'));
+    }
     public function store(Request $request)
     {
         // ✅ Validation
         $validator = Validator::make($request->all(), [
-            'program_id' => 'required|exists:programs,id',
-            'code' => 'required|string|max:100|unique:courses,code',
-            'name' => 'required|string|max:255',
-            'slug' => 'nullable|string|max:255|unique:courses,slug',
-            'description' => 'nullable|string',
-            'semester' => 'nullable|integer|min:1',
-            'year' => 'nullable|integer|min:1',
-            'credits' => 'nullable|integer|min:0',
-            'type' => 'required|in:core,elective,laboratory,project,internship',
-            'prerequisites' => 'nullable|array',
-            'syllabus' => 'nullable|array',
-            'learning_outcomes' => 'nullable|array',
-            'resources' => 'nullable|array',
-            'order' => 'nullable|integer',
+            'school_id'        => 'required|exists:schools,id',
+            'name'             => 'required|string|max:255',
+            'short_description' => 'nullable|string',
+            'meta_title'       => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string',
+            'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if ($validator->fails()) {
@@ -74,45 +67,26 @@ class CourseController extends Controller
 
             $course = new Course();
 
-            // ✅ Foreign Key
-            $course->program_id = $request->program_id;
+            $course->school_id        = $request->school_id;
+            $course->name             = $request->name;
+            $course->short_description = $request->short_description;
+            $course->meta_title       = $request->meta_title;
+            $course->meta_description = $request->meta_description;
+            // ✅ Image Upload
 
-            $course->code = $request->code;
-            $course->name = $request->name;
-
-            // ✅ Generate Slug (if not provided)
-            $course->slug = $request->slug
-                ? Str::slug($request->slug)
-                : generateSlug(Course::class, $request->name);
-
-            $course->description = $request->description;
-            $course->semester = $request->semester;
-            $course->year = $request->year;
-            $course->credits = $request->credits;
-            $course->type = $request->type;
-
-            // ✅ Default values
-            $course->order = $request->order ?? 0;
-
-            // ✅ JSON Fields
-            $course->prerequisites = $request->prerequisites
-                ? json_encode($request->prerequisites)
-                : null;
-
-            $course->syllabus = $request->syllabus
-                ? json_encode($request->syllabus)
-                : null;
-
-            $course->learning_outcomes = $request->learning_outcomes
-                ? json_encode($request->learning_outcomes)
-                : null;
-
-            $course->resources = $request->resources
-                ? json_encode($request->resources)
-                : null;
-
+            if ($request->hasFile('image')) {
+                $file = $request->file('image');
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->move(public_path('uploads/courses'), $filename);
+                $course->image = 'uploads/courses/' . $filename;
+            }
             $course->save();
 
+            // return response()->json([
+            //     'status' => 'success',
+            //     'message' => 'Course added successfully',
+            //     'data' => $course
+            // ]);
             return response()->json([
                 'status' => 'success',
                 'message' => 'Course added successfully',
@@ -128,6 +102,7 @@ class CourseController extends Controller
     }
 
 
+
     /**
      * Display the specified resource.
      */
@@ -141,104 +116,120 @@ class CourseController extends Controller
      */
     public function edit($courseID)
     {
-        $programs = Program::where('status', 1)->get();
-        $course = Course::findOrFail($courseID);
-        return view('admin.Courses.edit', compact('course', 'programs'));
+        $schools = School::where('status', 1)->get();
+        $course  = Course::findOrFail($courseID);
+
+        return view('admin.Courses.edit', compact('course', 'schools'));
     }
+
 
     /**
      * Update the specified resource in storage.
      */
-   public function update(Request $request, $courseID)
-{
-    // ✅ Find Course
-    $course = Course::findOrFail($courseID);
+    public function update(Request $request, $courseID)
+    {
+        // dd([
+        //     'request' => $request->all(),
+        //     'courseID' => $courseID
+        // ]);
+        // ✅ Find Course
+        $course = Course::findOrFail($courseID);
 
-    // ✅ Validation
-    $validator = Validator::make($request->all(), [
-        'program_id' => 'required|exists:programs,id',
-        'code' => 'required|string|max:100|unique:courses,code,' . $course->id,
-        'name' => 'required|string|max:255',
-        'slug' => 'nullable|string|max:255|unique:courses,slug,' . $course->id,
-        'description' => 'nullable|string',
-        'semester' => 'nullable|integer|min:1',
-        'year' => 'nullable|integer|min:1',
-        'credits' => 'nullable|integer|min:0',
-        'type' => 'required|in:core,elective,laboratory,project,internship',
-        'prerequisites' => 'nullable|array',
-        'syllabus' => 'nullable|array',
-        'learning_outcomes' => 'nullable|array',
-        'resources' => 'nullable|array',
-        'order' => 'nullable|integer',
-    ]);
-
-    if ($validator->fails()) {
-        return response()->json([
-            'status' => 0,
-            'errors' => $validator->errors()
-        ], 422);
-    }
-
-    try {
-
-        // ✅ Update Fields
-        $course->program_id = $request->program_id;
-        $course->code = $request->code;
-        $course->name = $request->name;
-
-        // ✅ Slug Handling
-        $course->slug = $request->slug
-            ? Str::slug($request->slug)
-            : generateSlug(Course::class, $request->name, $course->id);
-
-        $course->description = $request->description;
-        $course->semester = $request->semester;
-        $course->year = $request->year;
-        $course->credits = $request->credits;
-        $course->type = $request->type;
-        $course->order = $request->order ?? 0;
-
-        // ✅ JSON Fields
-        $course->prerequisites = $request->prerequisites
-            ? json_encode($request->prerequisites)
-            : null;
-
-        $course->syllabus = $request->syllabus
-            ? json_encode($request->syllabus)
-            : null;
-
-        $course->learning_outcomes = $request->learning_outcomes
-            ? json_encode($request->learning_outcomes)
-            : null;
-
-        $course->resources = $request->resources
-            ? json_encode($request->resources)
-            : null;
-
-        $course->save();
-
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Course updated successfully',
-            'data' => $course
+        // ✅ Validation
+        $validator = Validator::make($request->all(), [
+            'school_id'        => 'required|exists:schools,id',
+            'name'             => 'required|string|max:255',
+            'short_description' => 'nullable|string',
+            'meta_title'       => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string',
+            'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
-    } catch (Exception $e) {
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'errors' => $validator->errors()
+            ], 422);
+        }
 
-        return response()->json([
-            'status' => 0,
-            'message' => 'Something went wrong: ' . $e->getMessage()
-        ], 500);
+        try {
+
+            // ✅ Update Fields
+            $course->school_id         = $request->school_id;
+            $course->name              = $request->name;
+            $course->short_description = $request->short_description;
+            $course->meta_title        = $request->meta_title;
+            $course->meta_description  = $request->meta_description;
+
+            // ✅ Image Update (Replace Old Image)
+            if ($request->hasFile('image')) {
+
+                // Delete old image if exists
+                if ($course->image && file_exists(public_path($course->image))) {
+                    unlink(public_path($course->image));
+                }
+
+                $file = $request->file('image');
+                $filename = time() . '_' . $file->getClientOriginalName();
+                $file->move(public_path('uploads/courses'), $filename);
+
+                $course->image = 'uploads/courses/' . $filename;
+            }
+
+            $course->save();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Course updated successfully',
+                'data' => $course
+            ]);
+        } catch (Exception $e) {
+
+            return response()->json([
+                'status' => 0,
+                'message' => 'Something went wrong: ' . $e->getMessage()
+            ], 500);
+        }
     }
-}
 
+    public function status($id)
+    {
+        try {
+            $course = Course::findOrFail($id);
+            if ($course) {
+                $course->status = $course->status == 1 ? 0 : 1;
+                $course->save();
+                return response()->json([
+                    'status' => 'success',
+                    'message' => $course->name . ' status updated successfully!',
+                ]);
+            } else {
+                return response()->json([
+                    'status' => 'error',
+                    'message' => 'School not found',
+                ]);
+            }
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 'error',
+                'message' => $e->getMessage(),
+            ]);
+        }
+    }
 
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Course $course)
-    {
-        //
+    public function destroy($id)
+    { {
+            try {
+                // dd($schoolId);
+                $school = Course::destroy($id);
+                return ['status' => 'success', 'message' => 'School deleted successfully!'];
+            } catch (\Throwable $e) {
+                return response()->json(['status' => 'error', 'message' => $e->getMessage()]);
+            }
+        }
     }
 }

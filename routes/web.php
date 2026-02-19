@@ -25,7 +25,7 @@ Route::view('/about-us', 'web.pages.about-us');
 Route::view('/departments', 'web.pages.departments');
 // Route::view('/schools-and-departments', 'web.pages.deparments-programs');
 Route::view('/programs-details', 'web.pages.programs-details');
-Route::view('/specialization-details', 'web.pages.specialization-details');
+// Route::view('/specialization-details', 'web.pages.specialization-details');
 Route::view('/contact-us', 'web.pages.contact-us');
 Route::view('/chancellor', 'web.pages.chancellor');
 Route::view('/vice-chancellor', 'web.pages.vice-chancellor');
@@ -69,45 +69,21 @@ Route::view('/blog', 'web.pages.blog');
 Route::view('/blog-details', 'web.pages.blog-details');
 
 
-
-// Route::get('/cms', function () {
-//     return view('admin.index');
-// });
-
-
 Route::middleware('guest')->get('/cms', function () {
     return view('admin.index');
 })->name('admin.login');
 
-/*
-|--------------------------------------------------------------------------
-| Authenticated Dashboard
-|--------------------------------------------------------------------------
-*/
 
-// Route::view('/dashboard', 'dashboard')
-//     ->middleware(['auth', 'verified'])
-//     ->name('dashboard');
 
 Route::get('/dashboard', function () {
     return view('admin.home');
 })
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
-
-
-
-
-
-    // route for frontend
-    Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
-
-Route::get('/school-details/{slug}', [SchoolController::class, 'details'])
-    ->name('schools.details');
-
-
-
-
+// route for frontend
+Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
+Route::get('/schools/{slug}', [SchoolController::class, 'details'])
+    ->name('schools.{slug}');
 Route::prefix('events')->group(function () {
 
     Route::get('/', [EventsCategoryController::class, 'index'])
@@ -131,20 +107,10 @@ Route::prefix('events')->group(function () {
     Route::get('/status/{id}', [EventsCategoryController::class, 'status'])
         ->name('events.status');
 });
-
-
-
 Route::get('/notice-and-events', [EventsCategoryController::class, 'noticeAndEvents'])
     ->name('notice.events');
-
 Route::get('/notice-and-events/{slug}', [EventsCategoryController::class, 'showPost'])
     ->name('post.details');
-
-
-
-
-
-
 Route::prefix('posts')->group(function () {
 
     Route::get('/', [EventsPostController::class, 'index'])
@@ -169,8 +135,6 @@ Route::prefix('posts')->group(function () {
         'posts.status'
     );
 });
-
-
 Route::prefix('schools')->group(function () {
 
     Route::get('/', [SchoolController::class, 'index'])
@@ -194,15 +158,7 @@ Route::prefix('schools')->group(function () {
     Route::get('/status/{id}', [SchoolController::class, 'status'])->name(
         'schools.status'
     );
-
-
-
 });
-
-
-
-
-
 Route::prefix('programs')->group(function () {
     Route::get('/', [ProgramController::class, 'index'])->name('programs.index');
     Route::get('/create', [ProgramController::class, 'create'])->name('programs.create');
@@ -212,8 +168,6 @@ Route::prefix('programs')->group(function () {
     Route::delete('/delete/{id}', [ProgramController::class, 'destroy'])->name('programs.delete');
     Route::get('/status/{id}', [ProgramController::class, 'status'])->name('programs.status');
 });
-
-
 Route::prefix('courses')->group(function () {
     Route::get('/', [CourseController::class, 'index'])->name('courses.index');
     Route::get('/create', [CourseController::class, 'create'])->name('courses.create');
@@ -223,8 +177,16 @@ Route::prefix('courses')->group(function () {
     Route::delete('/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete');
     Route::get('/status/{id}', [CourseController::class, 'status'])->name('courses.status');
 });
-
-
+Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
+Route::prefix('specialization')->group(function () {
+    Route::get('/', [SpecializationController::class, 'index'])->name('specialization.index');
+    Route::get('/create', [SpecializationController::class, 'create'])->name('specialization.create');
+    Route::post('/store', [SpecializationController::class, 'store'])->name('specialization.store');
+    Route::get('/edit/{id}', [SpecializationController::class, 'edit'])->name('specialization.edit');
+    Route::post('/update/{id}', [SpecializationController::class, 'update'])->name('specialization.update');
+    Route::delete('/delete/{id}', [SpecializationController::class, 'destroy'])->name('specialization.delete');
+    Route::get('/status/{id}', [SpecializationController::class, 'status'])->name('specialization.status');
+});
 
 
 

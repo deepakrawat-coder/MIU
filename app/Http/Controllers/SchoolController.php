@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 use App\Models\School;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -24,14 +25,44 @@ class SchoolController extends Controller
         return view('web.pages.deparments-programs', compact('schools'));
     }
 
+    // public function details($slug)
+    // {
+    //     $school = School::with('courses', 'courses.programs', 'courses.programs.specializations')
+    //         ->where('slug', $slug)
+    //         ->where('status', 1)
+    //         ->firstOrFail();
+    //     $course = $school->courses->toArray();
+    //     $programs = $course->programs;
+    //     $specizations = $programs->specializations;
+    //     dd($specizations);
+    //     return view('web.pages.school-details', compact('school', 'specialPrograms'));
+    // }
     public function details($slug)
     {
-        $school = School::where('slug', $slug)
+        $school = School::with('courses.programs.specializations')
+            ->where('slug', $slug)
             ->where('status', 1)
             ->firstOrFail();
 
-        return view('web.pages.school-details', compact('school'));
+        // Get all programs
+        $programs = $school->courses
+            ->flatMap->programs
+            ->unique('id')
+            ->values();
+
+
+        // Get all specializations
+        $specializations = $programs
+            ->pluck('specializations')
+            ->flatten()
+            ->unique('id')
+            ->values();
+
+        // dd($specializations);
+
+        return view('web.pages.school-details', compact('school', 'specializations', 'programs'));
     }
+
 
     /**
      * Display a listing of the resource.

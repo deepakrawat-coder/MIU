@@ -3,26 +3,45 @@
 namespace App\Http\Controllers;
 
 use App\Models\Program;
+use App\Models\Course;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Validator;
-use Exception;
 use Illuminate\Support\Str;
-use App\Models\School;
+use Exception;
 
 class ProgramController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display listing
      */
     public function index(Request $request)
     {
         if ($request->ajax()) {
 
-            $data = Program::with('school')->latest();
+            $programs = Program::with('courses')->select('programs.*');
 
-            return DataTables::of($data)
+            return DataTables::of($programs)
                 ->addIndexColumn()
+
+                // Show multiple courses
+                ->addColumn('courses', function ($row) {
+
+                    return $row->courses->map(function ($course) {
+                        return '<span class="badge bg-primary me-1">'
+                            . $course->name .
+                            '</span>';
+                    })->implode(' ');
+                })
+                ->rawColumns(['courses'])
+
+
+                ->addColumn('short_description', function ($row) {
+                    return Str::limit(strip_tags($row->short_description), 80);
+                })
+
+                ->addColumn('action', fn($row) => '')
+
                 ->make(true);
         }
 
@@ -30,231 +49,207 @@ class ProgramController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show create form
      */
     public function create()
-
     {
-        $Schools = School::where('status', 1)->get();
-        return view('admin.Programs.create', compact('Schools'));
+        $courses = Course::where('status', 1)->get();
+        return view('admin.Programs.create', compact('courses'));
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store program
      */
-
+    // public function store(Request $request)
 
     public function store(Request $request)
     {
-        // ✅ Validation
         $validator = Validator::make($request->all(), [
-            'School_id' => 'required|exists:schools,id',
-            'name' => 'required|string|max:255|unique:programs,name',
-            'degree_type' => 'nullable|string|max:255',
-            'duration' => 'nullable|string|max:255',
-            'level' => 'nullable|string|max:255',
-            'overview' => 'nullable|string',
-            'featured_image' => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
-            'eligibility' => 'nullable|array',
-            'curriculum_structure' => 'nullable|array',
-            'highlights' => 'nullable|array',
-            'total_seats' => 'nullable|integer',
-            'fee_min' => 'nullable|numeric',
-            'fee_max' => 'nullable|numeric',
+            'course_id'        => 'required|array',
+            'course_id.*'      => 'exists:courses,id',
+            'name'             => 'required|string|max:255',
+            'short_description' => 'nullable|string',
+            'meta_title'       => 'nullable|string|max:255',
+            'meta_description' => 'nullable|string',
+            'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
-                'status' => 0,
+                'status' => 'error',
                 'errors' => $validator->errors()
             ], 422);
         }
 
         try {
-
             $program = new Program();
-
-            // ✅ Foreign Key
-            $program->School_id = $request->School_id;
-
             $program->name = $request->name;
+            $program->short_description = $request->short_description;
+            $program->meta_title = $request->meta_title;
+            $program->meta_description = $request->meta_description;
+            $program->status = 1; // You might want to make this configurable
 
-            // ✅ Generate Unique Slug
-            $program->slug = generateSlug(Program::class, $request->name);
-
-            $program->degree_type = $request->degree_type;
-            $program->duration = $request->duration;
-            $program->level = $request->level;
-            $program->overview = $request->overview;
-
-            $program->total_seats = $request->total_seats;
-            $program->fee_min = $request->fee_min;
-            $program->fee_max = $request->fee_max;
-
-            // ✅ Default values
-            $program->order = 0;
-            $program->status  = 1;
-
-            // ✅ Featured Image Upload
-            if ($request->hasFile('featured_image')) {
-                $file = $request->file('featured_image');
+            // Image upload
+            if ($request->hasFile('image')) {
+                $file = $request->file('image');
                 $filename = time() . '_' . $file->getClientOriginalName();
                 $file->move(public_path('uploads/programs'), $filename);
-                $program->featured_image = 'uploads/programs/' . $filename;
+                $program->image = 'uploads/programs/' . $filename;
             }
-
-            // ✅ JSON Fields
-            $program->eligibility = $request->eligibility
-                ? json_encode($request->eligibility)
-                : null;
-
-            $program->curriculum_structure = $request->curriculum_structure
-                ? json_encode($request->curriculum_structure)
-                : null;
-
-            $program->highlights = $request->highlights
-                ? json_encode($request->highlights)
-                : null;
 
             $program->save();
 
+            // Attach multiple courses - using course_id array
+            if ($request->has('course_id')) {
+                $program->courses()->sync($request->course_id);
+            }
             return response()->json([
                 'status' => 'success',
-                'message' => 'Program added successfully',
+                'message' => 'Program created successfully',
                 'data' => $program
             ]);
-        } catch (Exception $e) {
-
+        } catch (\Exception $e) {
             return response()->json([
-                'status' => 0,
+                'status' => 'error',
                 'message' => 'Something went wrong: ' . $e->getMessage()
             ], 500);
         }
     }
 
-
     /**
-     * Display the specified resource.
+     * Edit form
      */
-    public function show(Program $program)
+    public function edit($id)
     {
-        //
+        $program = Program::with('courses')->findOrFail($id);
+        $courses = Course::where('status', 1)->get();
+        // dd($courses);
+        return view('admin.Programs.edit', compact('program', 'courses'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($programID)
-    {
-        $program = Program::findOrFail($programID);
-        $Schools = School::where('status', 1)->get();
-        return view('admin.Programs.edit', compact('program', 'Schools'));
-    }
 
     /**
-     * Update the specified resource in storage.
+     * Update program
      */
+
     public function update(Request $request, $id)
     {
-        // Find Program
-        $program = Program::findOrFail($id);
-
-        // ✅ Validation
         $validator = Validator::make($request->all(), [
-            'school_id' => 'required|exists:schools,id',
-            'name' => 'required|string|max:255|unique:programs,name,' . $program->id,
-            'degree_type' => 'nullable|string|max:255',
-            'duration' => 'nullable|string|max:255',
-            'level' => 'nullable|string|max:255',
-            'overview' => 'nullable|string',
-            'featured_image' => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
-            'eligibility' => 'nullable|array',
-            'curriculum_structure' => 'nullable|array',
-            'highlights' => 'nullable|array',
-            'total_seats' => 'nullable|integer',
-            'fee_min' => 'nullable|numeric',
-            'fee_max' => 'nullable|numeric',
+            'course_id'          => 'required|array',
+            'course_id.*'        => 'exists:courses,id',
+            'name'               => 'required|string|max:255',
+            'short_description'  => 'nullable|string',
+            'meta_title'         => 'nullable|string|max:255',
+            'meta_description'   => 'nullable|string',
+            'image'              => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
         if ($validator->fails()) {
             return response()->json([
-                'status' => 0,
+                'status' => 'error',
                 'errors' => $validator->errors()
             ], 422);
         }
 
         try {
-
-            // ✅ Foreign Key
-            // $program->school_id  = $request->School_id;
-            $program->school_id  = $request->school_id;
-
-
-            // ✅ Regenerate slug if name changed
-            if ($program->name !== $request->name) {
-                $program->slug = generateSlug(Program::class, $request->name);
-            }
-
+            $program = Program::findOrFail($id);
             $program->name = $request->name;
-            $program->degree_type = $request->degree_type;
-            $program->duration = $request->duration;
-            $program->level = $request->level;
-            $program->overview = $request->overview;
+            $program->short_description = $request->short_description;
+            $program->meta_title = $request->meta_title;
+            $program->meta_description = $request->meta_description;
 
-            $program->total_seats = $request->total_seats;
-            $program->fee_min = $request->fee_min;
-            $program->fee_max = $request->fee_max;
 
-            // ✅ Update Image if uploaded
-            if ($request->hasFile('featured_image')) {
+            /* =========================
+           Image Upload (If Changed)
+        ==========================*/
+            if ($request->hasFile('image')) {
 
-                // Delete old image
-                if ($program->featured_image && file_exists(public_path($program->featured_image))) {
-                    unlink(public_path($program->featured_image));
+                // Delete old image if exists
+                if (!empty($program->image) && file_exists(public_path($program->image))) {
+                    unlink(public_path($program->image));
                 }
 
-                $file = $request->file('featured_image');
+                $file = $request->file('image');
                 $filename = time() . '_' . $file->getClientOriginalName();
                 $file->move(public_path('uploads/programs'), $filename);
 
-                $program->featured_image = 'uploads/programs/' . $filename;
+                $program->image = 'uploads/programs/' . $filename;
             }
-
-            // ✅ JSON Fields
-            $program->eligibility = $request->eligibility
-                ? json_encode($request->eligibility)
-                : null;
-
-            $program->curriculum_structure = $request->curriculum_structure
-                ? json_encode($request->curriculum_structure)
-                : null;
-
-            $program->highlights = $request->highlights
-                ? json_encode($request->highlights)
-                : null;
 
             $program->save();
 
+            /* =========================
+           Sync Multiple Courses
+        ==========================*/
+            $program->courses()->sync($request->course_id);
             return response()->json([
                 'status' => 'success',
                 'message' => 'Program updated successfully',
                 'data' => $program
             ]);
-        } catch (Exception $e) {
-
+        } catch (\Exception $e) {
             return response()->json([
-                'status' => 0,
+                'status'  => 'error',
                 'message' => 'Something went wrong: ' . $e->getMessage()
             ], 500);
         }
     }
 
 
+
     /**
-     * Remove the specified resource from storage.
+     * Toggle status
      */
-    public function destroy(Program $program)
+    public function status($id)
     {
-        //
+        try {
+
+            $program = Program::findOrFail($id);
+            $program->status = $program->status == 1 ? 0 : 1;
+            $program->save();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => $program->name . ' status updated successfully!',
+            ]);
+        } catch (\Exception $e) {
+
+            return response()->json([
+                'status' => 'error',
+                'message' => $e->getMessage(),
+            ]);
+        }
+    }
+
+    /**
+     * Delete
+     */
+    public function destroy($id)
+    {
+        try {
+
+            $program = Program::findOrFail($id);
+
+            // Delete image
+            if ($program->image && file_exists(public_path($program->image))) {
+                unlink(public_path($program->image));
+            }
+
+            // Detach pivot
+            $program->courses()->detach();
+
+            $program->delete();
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Program deleted successfully!'
+            ]);
+        } catch (\Throwable $e) {
+
+            return response()->json([
+                'status' => 'error',
+                'message' => $e->getMessage()
+            ]);
+        }
     }
 }

@@ -91,25 +91,19 @@
                             School / Department
                         </a>
                     </li>
-
-                    <li class="slide {{ Route::is('programs.index') ? 'active' : '' }}">
-                        <a href="{{ route('programs.index') }}" class="side-menu__item" role="menuitem">
-                            Programs
-                        </a>
-                    </li>
                     <li class="slide {{ Route::is('courses.index') ? 'active' : '' }}">
                         <a href="{{ route('courses.index') }}" class="side-menu__item" role="menuitem">
                             Courses
                         </a>
                     </li>
-                    <li class="slide ">
-                        <a href="" class="side-menu__item" role="menuitem">
-                            FAQs
+                    <li class="slide {{ Route::is('programs.index') ? 'active' : '' }}">
+                        <a href="{{ route('programs.index') }}" class="side-menu__item" role="menuitem">
+                            Programs
                         </a>
                     </li>
-                    <li class="slide ">
-                        <a href="" class="side-menu__item" role="menuitem">
-                            Others
+                    <li class="slide {{ Route::is('specialization.index') ? 'active' : '' }}">
+                        <a href="{{ route('specialization.index') }}" class="side-menu__item" role="menuitem">
+                            Specialization
                         </a>
                     </li>
                 </ul>

@@ -301,7 +301,7 @@
             padding: 30px;
             background: white;
             /* border-radius: 15px;
-                        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
+                                                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
         }
 
         .partner-logo {
@@ -379,7 +379,7 @@
 
         .accordion-box {
             /* max-width: 800px;
-                                                margin: 0 auto; */
+                                                                            margin: 0 auto; */
         }
 
         .accordion {
@@ -576,13 +576,13 @@
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2>Specialization Details</h2>
+                            <h2>{{ $specialization->title }}</h2>
                         </div>
                         <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <ul>
                                 <li><a href="/">Home</a></li>
                                 {{-- <li><a href="{{ route('departments') }}">Departments</a></li> --}}
-                                <li class="active">Specialization Details</li>
+                                <li class="active">{{ $specialization->title }}</li>
                             </ul>
                         </div>
                     </div>
@@ -605,7 +605,7 @@
                                 <li><a href="#overview">Overview</a></li>
                                 <li><a href="#content">Course</a></li>
                                 <li><a href="#features">Features</a></li>
-                                <li><a href="#career">Career</a></li>                                
+                                <li><a href="#career">Career</a></li>
                                 <li><a href="#alumni">Alumni</a></li>
                                 <li><a href="#faq">FAQ</a></li>
                             </ul>
@@ -634,46 +634,42 @@
                             <div class="program-details-tab-content__text">
                                 <div class="specialization-badge">Industry-Focused Specialization</div>
                                 <div class="sec-title">
-                                    <h2>Artificial Intelligence & Machine Learning Specialization</h2>
+                                    <h2>{{ $specialization->title }} : Overview</h2>
                                 </div>
 
                                 <p>
-                                    The Artificial Intelligence & Machine Learning specialization at Manipur International
-                                    University provides students with cutting-edge knowledge and practical skills in one of
-                                    the most rapidly evolving fields of technology. This program combines theoretical
-                                    foundations with hands-on experience to prepare students for careers in AI development,
-                                    data science, and intelligent systems.
+                                    {!! $specialization->description !!}
                                 </p>
 
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star"></span>
-                                        </div>
-                                        <div class="inner-text">
-                                            <h3>Program Highlights</h3>
-                                            <p>
-                                                Comprehensive coverage of AI algorithms, machine learning models, neural
-                                                networks, deep learning, natural language processing, and computer vision
-                                                with industry-relevant projects.
-                                            </p>
-                                        </div>
-                                    </li>
+                                {{-- <ul>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-star"></span>
+                                            </div>
+                                            <div class="inner-text">
+                                                <h3>Program Highlights</h3>
+                                                <p>
+                                                    Comprehensive coverage of AI algorithms, machine learning models, neural
+                                                    networks, deep learning, natural language processing, and computer vision
+                                                    with industry-relevant projects.
+                                                </p>
+                                            </div>
+                                        </li>
 
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-star"></span>
-                                        </div>
-                                        <div class="inner-text">
-                                            <h3>Learning Outcomes</h3>
-                                            <p>
-                                                Develop expertise in building intelligent systems, analyzing complex
-                                                datasets, implementing AI solutions, and solving real-world problems using
-                                                advanced computational techniques.
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
+                                        <li>
+                                            <div class="icon">
+                                                <span class="icon-star"></span>
+                                            </div>
+                                            <div class="inner-text">
+                                                <h3>Learning Outcomes</h3>
+                                                <p>
+                                                    Develop expertise in building intelligent systems, analyzing complex
+                                                    datasets, implementing AI solutions, and solving real-world problems using
+                                                    advanced computational techniques.
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul> --}}
                             </div>
 
                             <div class="program-details-form-box">
@@ -730,7 +726,7 @@
 
     <section id="content" class="testimonial-style1-area py-5 bg-white">
         <div class="container">
-            <div class="school-tech-content">
+            {{-- <div class="school-tech-content">
                 <h3>Courses & Academic Scope</h3>
                 <p>
                     The School of Technology provides a comprehensive educational experience
@@ -769,6 +765,9 @@
                     <li>Holistic student development and leadership opportunities</li>
                     <li>Global career pathways and higher education prospects</li>
                 </ul>
+            </div> --}}
+            <div class="school-tech-content">
+                {!! $specialization->content !!}
             </div>
         </div>
     </section>
@@ -776,95 +775,57 @@
     <!-- KEY FEATURES SECTION -->
     <section id="features" class="specialization-features">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <div class="sec-title">
-                        <h2>Why Choose This Specialization?</h2>
-                        <p class="sub-title mt-3">Distinctive advantages that make our AI & ML program exceptional</p>
-                    </div>
-                </div>
-            </div>
-
-           
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-laptop"></i>
+            @if ($why_choose && count($why_choose) > 0)
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <div class="sec-title">
+                            <h2>Why Choose This Specialization?</h2>
+                            <p class="sub-title mt-3">Distinctive advantages that make our {{ $specialization->title }}
+                                program exceptional</p>
                         </div>
-                        <h5 class="font-weight-bold text-center mb-3">Industry-Relevant Curriculum</h5>
-                        <p class="text-center mb-0">
-                            Designed in collaboration with leading tech companies to ensure current industry relevance and
-                            practical applicability.
-                        </p>
                     </div>
                 </div>
+                <div class="row">
+                    @foreach ($why_choose as $feature)
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    @if (!empty($feature->image))
+                                        <img src="{{ asset($feature->image) }}" alt="{{ $feature->title }}"
+                                            class="img-fluid rounded">
+                                    @else
+                                        <i class="fa fa-laptop"></i>
+                                    @endif
+                                </div>
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-flask"></i>
+                                <h5 class="font-weight-bold  mb-3">
+                                    {{ $feature->title ?? 'Feature Title' }}
+                                </h5>
+
+                                <p class=" mb-0">
+                                    {{ Str::limit($feature->content ?? 'Feature description goes here.', 120) }}
+                                </p>
+                            </div>
                         </div>
-                        <h5 class="font-weight-bold text-center mb-3">Advanced Research Labs</h5>
-                        <p class="text-center mb-0">
-                            State-of-the-art research facilities with access to modern computing and AI-enabled systems.
-                        </p>
-                    </div>
-                </div>
+                    @endforeach
 
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-graduation-cap"></i>
+                </div>
+            @endif
+            @if ($success_rate && count($success_rate) > 0)
+                <div class="row mt-5">
+                    @foreach ($success_rate as $success_rates)
+                        <div class="col-lg-4 col-md-12 mb-4">
+                            <div class="stat-box">
+                                <div class="stat-number">{{ $success_rates->number }}</div>
+                                <h5 class="font-weight-bold mb-2">{{ $success_rates->title }}</h5>
+                                <p class="mb-0 text-muted">
+                                    {{ Str::limit($success_rates->content ?? 'Description goes here.', 120) }}
+                                </p>
+                            </div>
                         </div>
-                        <h5 class="font-weight-bold text-center mb-3">Expert Faculty</h5>
-                        <p class="text-center mb-0">
-                            Learn from experienced faculty with strong academic, industry, and research expertise.
-                        </p>
-                    </div>
+                    @endforeach
                 </div>
-
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
-                        <h5 class="font-weight-bold text-center mb-3">Industry Internships</h5>
-                        <p class="text-center mb-0">
-                            Internship and industry exposure opportunities to enhance real-world skills and employability.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="stat-box">
-                        <div class="stat-number">95%</div>
-                        <h5 class="font-weight-bold mb-2">Placement Record</h5>
-                        <p class="mb-0 text-muted">Consistent high placement rate for specialization graduates across top
-                            </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="stat-box">
-                        <div class="stat-number">25+</div>
-                        <h5 class="font-weight-bold mb-2">Industry Partners</h5>
-                        <p class="mb-0 text-muted">Active collaborations with leading tech companies for projects and
-                            placements</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12 mb-4">
-                    <div class="stat-box">
-                        <div class="stat-number">15+</div>
-                        <h5 class="font-weight-bold mb-2">Research Publications</h5>
-                        <p class="mb-0 text-muted">Annual publications by students in reputed international AI conferences
-                        </p>
-                    </div>
-                </div>
-            </div>
+            @endif
         </div>
     </section>
 
@@ -872,150 +833,159 @@
     <!-- CAREER OPPORTUNITIES -->
     <section id="career" class="career-opportunities-area" style="background: #d1143e;">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <div class="sec-title">
-                        <h2 class="text-white">Career Opportunities</h2>
-                        <p class="sub-title mt-3 text-white">Diverse career paths for AI & ML specialists</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <div class="career-card">
-                        <div class="career-icon">
-                            <i class="fa fa-line-chart"></i>
-                        </div>
-                        <h5>Data Scientist</h5>
-                        <p class="text-primary mb-3">
-                            <i class="fa fa-inr mr-1"></i> 12–25 LPA
-                        </p>
-                        <p class="text-muted small mb-4">
-                            Analyze complex datasets to extract insights and build predictive models for business decisions.
-                        </p>
-                        <div class="skills">
-                            <span class="badge">Python</span>
-                            <span class="badge">R</span>
-                            <span class="badge">SQL</span>
-                            <span class="badge">Statistics</span>
+            @if ($career && count($career) > 0)
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <div class="sec-title">
+                            <h2 class="text-white">Career Opportunities</h2>
+                            <p class="sub-title mt-3 text-white">Diverse career paths for {{ $specialization->title }}
+                                specialists</p>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    @foreach ($career as $careers)
+                        <div class="col-md-4 mb-4">
+                            <div class="career-card">
+                                <div class="career-icon">
+                                    @if (!empty($careers->image))
+                                        <img src="{{ asset($careers->image) }}" alt="{{ $careers->title }}"
+                                            class="img-fluid rounded">
+                                    @else
+                                        <i class="fa fa-line-chart"></i>
+                                    @endif
 
-                <div class="col-md-4 mb-4">
-                    <div class="career-card">
-                        <div class="career-icon">
-                            <i class="fa fa-cogs"></i>
+                                </div>
+                                <h5>{{ $careers->title }}</h5>
+                                <p class="text-primary mb-3">
+                                    <i class="fa fa-inr mr-1"></i> {{ $careers->package }}
+                                </p>
+                                <p class="text-muted small mb-4">
+                                    {{ $careers->skill }}
+                                </p>
+                                {{-- <div class="skills">
+                                <span class="badge">Python</span>
+                                <span class="badge">R</span>
+                                <span class="badge">SQL</span>
+                                <span class="badge">Statistics</span>
+                            </div> --}}
+                            </div>
                         </div>
-                        <h5>Machine Learning Engineer</h5>
-                        <p class="text-primary mb-3">
-                            <i class="fa fa-inr mr-1"></i> 10–22 LPA
-                        </p>
-                        <p class="text-muted small mb-4">
-                            Design, build, and deploy machine learning models and systems for production environments.
-                        </p>
-                        <div class="skills">
-                            <span class="badge">TensorFlow</span>
-                            <span class="badge">PyTorch</span>
-                            <span class="badge">Cloud</span>
-                            <span class="badge">MLOps</span>
+                    @endforeach
+
+                    {{-- <div class="col-md-4 mb-4">
+                        <div class="career-card">
+                            <div class="career-icon">
+                                <i class="fa fa-cogs"></i>
+                            </div>
+                            <h5>Machine Learning Engineer</h5>
+                            <p class="text-primary mb-3">
+                                <i class="fa fa-inr mr-1"></i> 10–22 LPA
+                            </p>
+                            <p class="text-muted small mb-4">
+                                Design, build, and deploy machine learning models and systems for production environments.
+                            </p>
+                            <div class="skills">
+                                <span class="badge">TensorFlow</span>
+                                <span class="badge">PyTorch</span>
+                                <span class="badge">Cloud</span>
+                                <span class="badge">MLOps</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-4">
-                    <div class="career-card">
-                        <div class="career-icon">
-                            <i class="fa fa-search"></i>
+                    <div class="col-md-4 mb-4">
+                        <div class="career-card">
+                            <div class="career-icon">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <h5>AI Research Scientist</h5>
+                            <p class="text-primary mb-3">
+                                <i class="fa fa-inr mr-1"></i> 15–30 LPA
+                            </p>
+                            <p class="text-muted small mb-4">
+                                Conduct cutting-edge research to advance AI capabilities and develop novel algorithms.
+                            </p>
+                            <div class="skills">
+                                <span class="badge">Research</span>
+                                <span class="badge">Algorithms</span>
+                                <span class="badge">Publications</span>
+                                <span class="badge">Math</span>
+                            </div>
                         </div>
-                        <h5>AI Research Scientist</h5>
-                        <p class="text-primary mb-3">
-                            <i class="fa fa-inr mr-1"></i> 15–30 LPA
-                        </p>
-                        <p class="text-muted small mb-4">
-                            Conduct cutting-edge research to advance AI capabilities and develop novel algorithms.
-                        </p>
-                        <div class="skills">
-                            <span class="badge">Research</span>
-                            <span class="badge">Algorithms</span>
-                            <span class="badge">Publications</span>
-                            <span class="badge">Math</span>
-                        </div>
-                    </div>
+                    </div> --}}
+
                 </div>
+            @endif
+            @if ($recruiter && count($recruiter) > 0)
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="partner-logos" style="overflow:hidden;border-radius: 10px !important">
+                            <h5 class="text-center mb-4">Our Placement Partners</h5>
 
-            </div>
+                            <!-- Swiper -->
+                            <div class="swiper partnerSwiper">
+                                <div class="swiper-wrapper">
 
-            
-            <div class="row mt-5" >
-                <div class="col-12">
-                    <div class="partner-logos" style="overflow:hidden;border-radius: 10px !important" >
-                        <h5 class="text-center mb-4">Our Placement Partners</h5>
+                                    <!-- Logo 1 -->
+                                    {{-- <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/google.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Google">
+                                    </div> --}}
 
-                        <!-- Swiper -->
-                        <div class="swiper partnerSwiper">
-                            <div class="swiper-wrapper">
+                                    <!-- Logo 2 -->
+                                    @foreach ($recruiter as $recruiters)
+                                        <div class="swiper-slide text-center">
+                                            <img src="{{$recruiters->image ? asset($recruiters->image) : asset('/assets/images/partners/logo1.png')   }}"
+                                                class="img-fluid rounded" style="max-height:100px;" alt="Microsoft">
+                                        </div>
+                                    @endforeach
+                                    {{-- <!-- Logo 3 -->
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/amazon.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Amazon">
+                                    </div>
 
-                                <!-- Logo 1 -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/google.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Google">
+                                    <!-- Logo 4 -->
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/tcs.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="TCS">
+                                    </div>
+
+                                    <!-- Logo 5 -->
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/infosys.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Infosys">
+                                    </div>
+
+                                    <!-- Dummy -->
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/logo1.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Partner">
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/logo2.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Partner">
+                                    </div>
+
+                                    <div class="swiper-slide text-center">
+                                        <img src="{{ asset('/assets/images/partners/logo3.png') }}" class="img-fluid"
+                                            style="max-height:40px;" alt="Partner">
+                                    </div> --}}
+
                                 </div>
-
-                                <!-- Logo 2 -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/microsoft.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Microsoft">
-                                </div>
-
-                                <!-- Logo 3 -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/amazon.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Amazon">
-                                </div>
-
-                                <!-- Logo 4 -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/tcs.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="TCS">
-                                </div>
-
-                                <!-- Logo 5 -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/infosys.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Infosys">
-                                </div>
-
-                                <!-- Dummy -->
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/logo1.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Partner">
-                                </div>
-
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/logo2.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Partner">
-                                </div>
-
-                                <div class="swiper-slide text-center">
-                                    <img src="{{ asset('/assets/images/partners/logo3.png') }}" class="img-fluid"
-                                        style="max-height:40px;" alt="Partner">
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
+            @endif
 
         </div>
     </section>
 
     <!-- ALUMNI SUCCESS -->
-    <section id="alumni" class="alumni-success">
+    <section id="alumni" class="alumni-success bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
@@ -1093,117 +1063,6 @@
             </div>
         </div>
     </section>
-
-    <!-- FAQ SECTION -->
-    {{-- <section id="faq" class="faq-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center mb-5">
-                        <div class="sec-title">
-                            <h2>Frequently Asked Questions</h2>
-                            <p class="sub-title mt-3">Find answers to common questions about the AI & ML specialization</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <div class="accordion-box w-100 m-0 p-0">
-                        <div class="accordion block active-block">
-                            <button class="acc-btn active text-black">
-                                What programming languages are taught in this specialization?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content current">
-                                <p>The specialization focuses primarily on Python for AI/ML development, along with R for
-                                    statistical analysis. Students also learn SQL for database management and get exposure
-                                    to JavaScript for AI web applications. Advanced courses cover frameworks like
-                                    TensorFlow, PyTorch, and Keras.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion block">
-                            <button class="acc-btn text-black">
-                                Are there any prerequisites for joining this specialization?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content">
-                                <p>For undergraduate programs: Strong foundation in Mathematics (especially Calculus and
-                                    Linear Algebra) is essential. For postgraduate programs: Basic programming knowledge and
-                                    understanding of data structures is required. Some introductory courses are available
-                                    for students needing background preparation.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion block">
-                            <button class="acc-btn text-black">
-                                What kind of projects do students work on?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content">
-                                <p>Students work on industry-relevant projects including image recognition systems, natural
-                                    language processing applications, recommendation engines, predictive analytics models,
-                                    AI-driven chatbots, autonomous vehicle simulations, healthcare diagnostics AI, and
-                                    financial forecasting systems.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion block">
-                            <button class="acc-btn text-black">
-                                Is internship mandatory in this program?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content">
-                                <p>Yes, a minimum 6-month industry internship is mandatory for all students. The university
-                                    has tie-ups with leading tech companies to provide internship opportunities. We also
-                                    offer research internships for students interested in academic careers.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion block">
-                            <button class="acc-btn text-black">
-                                What are the research opportunities available?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content">
-                                <p>Students can participate in ongoing research projects in our AI Research Lab, collaborate
-                                    with faculty on publications, work on funded research projects, attend international
-                                    conferences, and contribute to open-source AI projects. Research areas include computer
-                                    vision, NLP, robotics, and ethical AI.</p>
-                            </div>
-                        </div>
-
-                        <div class="accordion block">
-                            <button class="acc-btn text-black">
-                                What support is available for placement?
-                                <div class="icon-outer">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </button>
-                            <div class="acc-content">
-                                <p>The university provides comprehensive placement support including resume building
-                                    workshops, mock interviews, coding test preparation, industry connect sessions,
-                                    hackathon participation, portfolio development guidance, and a dedicated placement cell
-                                    for AI/ML specialization students.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
     <section id="faq" class="course-curriculum-area">
         <div class="container">
             <div class="row">

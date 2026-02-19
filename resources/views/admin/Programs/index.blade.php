@@ -27,12 +27,9 @@
                             <thead class="bg-light bg-opacity-30">
                                 <tr>
                                     <th>No.</th>
+                                    <th>Course</th>
                                     <th>Name</th>
-                                    <th>School</th>
-                                    <th>Degree</th>
-                                    <th>Duration</th>
-                                    <th>Level</th>
-                                    <th>Fees</th>
+                                    <th>Short Description</th>
                                     <th>Image</th>
                                     <th>Status</th>
                                     <th>Action</th>
@@ -52,112 +49,113 @@
 
 @section('scripts')
 <script>
-$(function() {
+    $(function() {
 
-    const addButton = {
-        text: 'Add Program',
-        className: 'add-new btn btn-primary mb-3 mb-md-0',
-        attr: { 'onclick': "add('{{ route('programs.create') }}', 'modal-lg')" }
-    };
-
-    var table = $('#programs-table').DataTable({
-        processing: true,
-        serverSide: true,
-        ajax: "{{ route('programs.index') }}",
-
-        columns: [
-            { data: 'DT_RowIndex', orderable:false, searchable:false },
-
-            { data: 'name', name: 'name' },
-
-            { data: 'school.name', name: 'school.name' },
-
-            { data: 'degree_type', name: 'degree_type' },
-
-            { data: 'duration', name: 'duration' },
-
-            { data: 'level', name: 'level' },
-
-            // ✅ Fee Column
-            {
-                data: null,
-                orderable:false,
-                searchable:false,
-                render:function(data,type,full){
-                    if(full.fee_min && full.fee_max){
-                        return `₹ ${full.fee_min} - ₹ ${full.fee_max}`;
-                    }
-                    if(full.fee_min){
-                        return `₹ ${full.fee_min}`;
-                    }
-                    return '-';
-                }
-            },
-
-            // ✅ Featured Image
-            {
-                data: 'featured_image',
-                orderable:false,
-                searchable:false,
-                render:function(data){
-                    if(data){
-                        return `<img src="/${data}"
-                            style="width:60px;height:60px;object-fit:cover;border-radius:6px;">`;
-                    }
-                    return '-';
-                }
-            },
-
-            // ✅ Status Toggle (Correct Column: status)
-            {
-                data: 'status',
-                orderable:false,
-                searchable:false,
-                render:function(data,type,full){
-                    var checked = data == 1 ? 'checked':'';
-                    var label = data == 1 ? 'Active':'Inactive';
-
-                    return `<div class="form-check form-switch form-switch-success">
-                        <input class="form-check-input" type="checkbox" ${checked}
-                            onclick="updateActiveStatus('programs/status/${full.id}','programs-table')">
-                        <label class="form-check-label">${label}</label>
-                    </div>`;
-                }
-            },
-
-            // ✅ Action Buttons
-            {
-                data: 'action',
-                orderable:false,
-                searchable:false,
-                render:function(data,type,full){
-                    return `<div class="hstack gap-2">
-                        <button class="btn btn-sm btn-light-primary"
-                            onclick="edit('programs/edit/${full.id}','modal-lg')">
-                            <i class="ri-pencil-line"></i>
-                        </button>
-                        <button class="btn btn-sm btn-light-danger"
-                            onclick="destroy('programs/${full.id}','programs-table')">
-                            <i class="ri-delete-bin-line"></i>
-                        </button>
-                    </div>`;
-                }
+        const addButton = {
+            text: 'Add Program',
+            className: 'add-new btn btn-primary mb-3 mb-md-0',
+            attr: {
+                'onclick': "add('{{ route('programs.create') }}', 'modal-lg')"
             }
-        ],
+        };
 
-        order:[[0,'desc']],
-        responsive:true,
-        pageLength:10,
+        var table = $('#programs-table').DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: "{{ route('programs.index') }}",
 
-        dom:'<"d-flex justify-content-between mb-2"<"dataTables_filter"f><"add_button"B>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
-        buttons:[addButton],
+            columns: [{
+                    data: 'DT_RowIndex',
+                    orderable: false,
+                    searchable: false
+                },
 
-        language:{
-            search:"_INPUT_",
-            searchPlaceholder:"Search Programs..."
-        }
+                // ✅ Course Name (relationship)
+                {
+                    data: 'courses',
+                    name: 'courses',
+                    orderable: false,
+                    searchable: false
+                },
+
+                {
+                    data: 'name',
+                    name: 'name'
+                },
+
+                // ✅ Short Description (strip HTML)
+                {
+                    data: 'short_description',
+                    name: 'short_description'
+                },
+
+                // ✅ Image
+                {
+                    data: 'image',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data) {
+                        if (data) {
+                            return `<img src="/${data}"
+                                style="width:60px;height:60px;object-fit:cover;border-radius:6px;">`;
+                        }
+                        return '-';
+                    }
+                },
+
+                // ✅ Status Toggle
+                {
+                    data: 'status',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data, type, full) {
+
+                        var checked = data == 1 ? 'checked' : '';
+                        var label = data == 1 ? 'Active' : 'Inactive';
+
+                        return `<div class="form-check form-switch form-switch-success">
+                            <input class="form-check-input" type="checkbox" ${checked}
+                                onclick="updateActiveStatus('programs/status/${full.id}','programs-table')">
+                            <label class="form-check-label">${label}</label>
+                        </div>`;
+                    }
+                },
+
+                // ✅ Action Buttons
+                {
+                    data: 'action',
+                    orderable: false,
+                    searchable: false,
+                    render: function(data, type, full) {
+                        return `<div class="hstack gap-2">
+                            <button class="btn btn-sm btn-light-primary"
+                                onclick="edit('programs/edit/${full.id}','modal-lg')">
+                                <i class="ri-pencil-line"></i>
+                            </button>
+                            <button class="btn btn-sm btn-light-danger"
+                                onclick="destroy('programs/delete/${full.id}','programs-table')">
+                                <i class="ri-delete-bin-line"></i>
+                            </button>
+                        </div>`;
+                    }
+                }
+            ],
+
+            order: [
+                [0, 'desc']
+            ],
+            responsive: true,
+            pageLength: 10,
+
+            dom: '<"d-flex justify-content-between mb-2"<"dataTables_filter"f><"add_button"B>>rt<"row"<"col-sm-12 col-md-5"i><"col-sm-12 col-md-7"p>>',
+            buttons: [addButton],
+
+            language: {
+                search: "_INPUT_",
+                searchPlaceholder: "Search Programs..."
+            }
+        });
+
     });
-
-});
 </script>
 @endsection
