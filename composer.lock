@@ -1222,16 +1222,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.51.0",
+            "version": "v12.52.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "ce4de3feb211e47c4f959d309ccf8a2733b1bc16"
+                "reference": "d5511fa74f4608dbb99864198b1954042aa8d5a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/ce4de3feb211e47c4f959d309ccf8a2733b1bc16",
-                "reference": "ce4de3feb211e47c4f959d309ccf8a2733b1bc16",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/d5511fa74f4608dbb99864198b1954042aa8d5a7",
+                "reference": "d5511fa74f4608dbb99864198b1954042aa8d5a7",
                 "shasum": ""
             },
             "require": {
@@ -1440,7 +1440,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-02-10T18:20:19+00:00"
+            "time": "2026-02-17T17:07:04+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -2189,16 +2189,16 @@
         },
         {
             "name": "livewire/flux",
-            "version": "v2.12.0",
+            "version": "v2.12.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/flux.git",
-                "reference": "78bc26f54a29c28ff916751b9f796f4ce1592003"
+                "reference": "24c139b97b6df1e67c0235637f0e08c206bf4486"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/flux/zipball/78bc26f54a29c28ff916751b9f796f4ce1592003",
-                "reference": "78bc26f54a29c28ff916751b9f796f4ce1592003",
+                "url": "https://api.github.com/repos/livewire/flux/zipball/24c139b97b6df1e67c0235637f0e08c206bf4486",
+                "reference": "24c139b97b6df1e67c0235637f0e08c206bf4486",
                 "shasum": ""
             },
             "require": {
@@ -2211,7 +2211,7 @@
                 "symfony/console": "^6.0|^7.0"
             },
             "conflict": {
-                "livewire/blaze": "<1.0.0"
+                "livewire/blaze": "<1.0.0-beta.2"
             },
             "type": "library",
             "extra": {
@@ -2249,9 +2249,9 @@
             ],
             "support": {
                 "issues": "https://github.com/livewire/flux/issues",
-                "source": "https://github.com/livewire/flux/tree/v2.12.0"
+                "source": "https://github.com/livewire/flux/tree/v2.12.1"
             },
-            "time": "2026-02-09T23:35:27+00:00"
+            "time": "2026-02-17T21:12:27+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -7629,16 +7629,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "11.5.53",
+            "version": "11.5.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607"
+                "reference": "adc7262fccc12de2b30f12a8aa0b33775d814f00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a997a653a82845f1240d73ee73a8a4e97e4b0607",
-                "reference": "a997a653a82845f1240d73ee73a8a4e97e4b0607",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/adc7262fccc12de2b30f12a8aa0b33775d814f00",
+                "reference": "adc7262fccc12de2b30f12a8aa0b33775d814f00",
                 "shasum": ""
             },
             "require": {
@@ -7711,7 +7711,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.53"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/11.5.55"
             },
             "funding": [
                 {
@@ -7735,7 +7735,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-10T12:28:25+00:00"
+            "time": "2026-02-18T12:37:06+00:00"
         },
         {
             "name": "sebastian/cli-parser",

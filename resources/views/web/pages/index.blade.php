@@ -15,7 +15,8 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner1.jpg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner1.jpg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -26,36 +27,37 @@
                                 <p>Empowering minds, shaping futures through excellence in education and research</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="campus-life.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Campus Life
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
-                                {{-- <a class="video-popup" title="Video Gallery"
+                            {{-- <div class="video-gallery-btns-box">
+                                <a class="video-popup" title="Video Gallery"
                                             href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                             <span class="icon-play"></span>
-                                        </a> --}}
+                                        </a>
                                 <p>
                                     <a class="video-popup" title="Video Gallery"
                                         href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner2.jpeg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner2.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content middle text-center">
@@ -67,18 +69,18 @@
                                     Manipur’ at Grand Vijay Diwas Celebrations in New Delhi</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="#">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Download
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -89,14 +91,15 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner3.jpeg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner3.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -107,18 +110,18 @@
                                 <p>Discover innovative programs designed for the leaders of tomorrow</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="departments.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Departments
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -129,7 +132,7 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -195,7 +198,7 @@
                             </li>
                         </ul> --}}
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="/about-us">
                                 <span class="txt">Read More</span>
                             </a>
                         </div>
@@ -205,7 +208,7 @@
                 <div class="col-xl-6">
                     <div class="teaching-img-box">
                         <div class="teaching-img-box__bg"
-                            style="background-image: url({{asset('/assets/images/web-image/about--image.jpg')}});"></div>
+                            style="background-image: url({{ asset('/assets/images/web-image/about--image.jpg') }});"></div>
                         <div class="teaching-img-box__content-bg"></div>
                         <div class="teaching-img-box__content aos-init aos-animate" data-aos="fade-left">
                             <div class="border-line"></div>
@@ -236,6 +239,199 @@
                 </div>
             </div>
             <div class="row">
+
+                <!--Start Single Departments Box Style2-->
+                {{-- <div class="col-xl-4 col-lg-4">
+                    <div class="single-departments-box single-department-box-style2">
+                        <div class="single-department-box-style2__inner text-center">
+                            <div class="static-content">
+                                <div class="icon">
+                                    <span class="icon-budget"></span>
+                                    <div class="round-box"></div>
+                                </div>
+                                <div class="text-holder">
+                                    <a href="#">Accounting</a>
+                                    <div class="text">
+                                        <p>To take a trivial example which of us
+                                            ever undertakes laborious physical exercise
+                                            to obtain some advantage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-box"
+                                style="background-image: url({{ asset('/assets/images/resources/departments-1.jpg') }});">
+                            </div>
+                        </div>
+
+                        <div class="single-department-box-style2__ovarlay-content">
+                            <div class="inner">
+                                <h5>Undergraduate</h5>
+                                <h3>Accounting Management</h3>
+                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                <ul>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Business Administration</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>Bachelor of Commerce (Honours)</h4>
+                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-box">
+                                    <a class="btn-one btn-one--style2" href="#">
+                                        <span class="txt">Read More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> --}}
+                <?php
+                $schools = [
+                    [
+                        'link' => '/school-of-arts-humanities',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Arts & Humanities',
+                        'description' => 'The School of Arts and Humanities at Manipur International University (MIU) ...',
+                        'features' => ['Creative Writing & Literature', 'Cultural & Historical Studies'],
+                    ],
+                    [
+                        'link' => '/school-of-business-management-commerce',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Business, Management & Commerce',
+                        'description' => 'The School of Business, Management & Commerce at Manipur International University (MIU) offers B.Com and M.Com programs...',
+                        'features' => ['Business Administration', 'Financial Management'],
+                    ],
+                    [
+                        'link' => '/school-of-engineering-technology',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Engineering & Technology',
+                        'description' => 'The School of Technology at Manipur International University (MIU) offers a comprehensive...',
+                        'features' => ['B.Tech & M.Tech Programs', 'Research & Development Labs'],
+                    ],
+                    [
+                        'link' => '/school-of-science',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Science',
+                        'description' => 'The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...',
+                        'features' => ['Physics & Chemistry Labs', 'Biotechnology Research'],
+                    ],
+                    [
+                        'link' => '/school-of-yoga-science',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Yoga Science',
+                        'description' => 'The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs...',
+                        'features' => ['Practical Yoga Training', 'Meditation & Wellness'],
+                    ],
+                    [
+                        'link' => '/school-of-mass-communication-and-journalism',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Mass Communication and Journalism',
+                        'description' => 'The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C. ...',
+                        'features' => ['Practical Journalism Training', 'Media Production & Editing'],
+                    ],
+                    [
+                        'link' => '/school-of-library-information-science',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Library & Information Science',
+                        'description' => 'The School of Library and Information Science at Manipur International University (MIU) offers B.L.I.S. and M.L.I.S. ...',
+                        'features' => ['Digital Library Management', 'Information Architecture'],
+                    ],
+                    [
+                        'link' => '/school-of-computer-science-information-technology',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Computer Science & Information Technology',
+                        'description' => 'The School of Computer Science and Information Technology at Manipur International University (MIU) ...',
+                        'features' => ['Software Development', 'Data Science & AI'],
+                    ],
+                    [
+                        'link' => '/school-of-animation',
+                        'image' => 'involment-activities-6.jpg',
+                        'title' => 'School of Animation',
+                        'description' => 'The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs designed  ...',
+                        'features' => ['2D & 3D Animation', 'Visual Effects (VFX)'],
+                    ],
+                ]; ?>
+
+                @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4">
+
+                        <div class="single-departments-box single-department-box-style2">                           
+                                <div class="single-department-box-style2__inner text-center">
+                                    <div class="static-content">
+                                        <div class="icon">
+                                            <span class="icon-budget"></span>
+                                            <div class="round-box"></div>
+                                        </div>
+                                        <div class="text-holder">
+                                            <a href="/school-details{{ $school['link'] }}"
+                                                style="line-height: normal; padding: 12px;">
+                                                {{ $school['title'] }}
+                                            </a>
+                                            <div class="text">
+                                                <p>
+                                                    {{ Str::words($school['description'], 20, '...') }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="/school-details{{ $school['link'] }}">
+                                        <div
+                                            class="overlay-box"style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
+                                        </div>
+                                    </a>
+                                </div>                          
+                          
+                                <div class="single-department-box-style2__ovarlay-content">
+                                    <div class="inner">
+                                        <h5>Undergraduate</h5>
+                                        <h3>{{ $school['title'] }}</h3>
+                                        <p>
+                                            {{ Str::words($school['description'], 15, '...') }}
+                                        </p>
+
+                                        <ul>
+                                            @foreach ($school['features'] as $feature)
+                                                <li>
+                                                    <div class="dot-box"></div>
+                                                    <div class="inner-text">
+                                                        <h4>{{ $feature }}</h4>
+                                                        {{-- <a href="#">
+                                                        <span class="fa fa-file-pdf-o"></span> Syllabus.pdf
+                                                    </a> --}}
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
+
+                                        <div class="btn-box">
+                                            <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
+                                                <span class="txt">Read More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>                           
+                        </div>
+                    </div>
+                @endforeach
+
+            </div>
+            {{-- <div class="row">
                 <div class="col-xl-4 col-lg-3">
                     <!--Start Single Departments Box-->
                     <div class="single-departments-box marginbottom text-center wow fadeInLeft" data-wow-duration="1s"
@@ -344,11 +540,11 @@
                         <a href="departments.html">View All Departments</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>
-    <section class="explore-future-area">
+    {{-- <section class="explore-future-area">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Top Academic Programs at Manipur International University</h2>
@@ -914,7 +1110,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <section class="fact-counter-area">
         <div class="container">
             <div class="sec-title text-center">
@@ -1110,7 +1306,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1163,7 +1360,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1216,7 +1414,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1270,7 +1469,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1323,7 +1523,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1376,7 +1577,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1452,7 +1654,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-1.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/images/blog/blog-v2-1.jpg') }}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1493,7 +1695,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-2.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/images/blog/blog-v2-2.jpg') }}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1534,7 +1736,7 @@
                     <div class="single-blog-style1">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-3.jpg')}}" alt="">
+                                <img src="{{ asset('/assets/images/blog/blog-v2-3.jpg') }}" alt="">
                             </div>
                             <div class="category-box">
                                 <div class="dot-box"></div>
@@ -1628,7 +1830,8 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-1.jpg')}});"></div>
+                                    style="background-image: url({{ asset('/assets/images/events/event-three-1.jpg') }});">
+                                </div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1676,7 +1879,8 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-2.jpg')}});"></div>
+                                    style="background-image: url({{ asset('/assets/images/events/event-three-2.jpg') }});">
+                                </div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1724,7 +1928,8 @@
                             </div>
                             <div class="overlay-content">
                                 <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-3.jpg')}});"></div>
+                                    style="background-image: url({{ asset('/assets/images/events/event-three-3.jpg') }});">
+                                </div>
                                 <div class="button-box">
                                     <a class="btn-one" href="events-details.html">
                                         <span class="txt">Read More</span>
@@ -1741,7 +1946,7 @@
     </section>
     <section class="subscribe-style6-area">
         <div class="subscribe-style6-area-bg"
-            style="background-image: url({{asset('/assets/images/web-image/cta-img.jpg')}});"></div>
+            style="background-image: url({{ asset('/assets/images/web-image/cta-img.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -1769,7 +1974,8 @@
                             </div>
                             <div class="input-box">
                                 <div class="input-label">Message</div>
-                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea" placeholder="Write your query or message here"></textarea>
+                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea"
+                                    placeholder="Write your query or message here"></textarea>
                             </div>
                             <button class="btn-one style2" type="submit">
                                 <span class="txt">
@@ -1783,7 +1989,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area">
+    <section class="testimonial-style1-area bg-white">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Our Esteemed Industry Partners</h2>
@@ -1800,28 +2006,35 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-1.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/asian_paints-logo_brandlogos.net_sieab.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-2.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/genpact1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-3.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Hero_MotoCorp_Logo.svg') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-4.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Infosys_logo.svg.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
@@ -1829,34 +2042,41 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-5.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/noida-tech-mahindra-logo-business-brand-technology-firm1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-6.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Tata-Motors-800x600.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-7.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/tcs.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-8.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/tvs-vector-logo-free-download-11574023530akrlm14a2x1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
             </div>
 
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="btns-box">
                         <a class="btn-one" href="about.html">
@@ -1864,7 +2084,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>
