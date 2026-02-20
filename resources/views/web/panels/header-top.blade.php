@@ -31,44 +31,44 @@
 
 
 
-     <link rel="stylesheet" href="{{ asset('/assets/css/animate.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/aos.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/custom-animate.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/fancybox.min.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/flaticon.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/font-awesome.min.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/icomoon.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/imp.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/jquery.bootstrap-touchspin.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/magnific-popup.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/nice-select.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/owl.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/rtl.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/scrollbar.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/swiper.min.css?=1.1') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/animate.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/aos.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/custom-animate.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/fancybox.min.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/flaticon.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/font-awesome.min.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/icomoon.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/imp.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/jquery.bootstrap-touchspin.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/magnific-popup.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/nice-select.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/owl.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/rtl.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/scrollbar.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/swiper.min.css?=1.2') }}">
 
      <!-- Module css -->
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/header-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/banner-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/about-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/blog-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/fact-counter-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/faq-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/contact-page.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/breadcrumb-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/team-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/partner-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/testimonial-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/services-section.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/footer-section.css?=1.1') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/header-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/banner-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/about-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/blog-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/fact-counter-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/faq-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/contact-page.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/breadcrumb-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/team-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/partner-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/testimonial-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/services-section.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/module-css/footer-section.css?=1.2') }}">
 
-     <link href="{{ asset('/assets/css/color/theme-color.css?=1.1') }}" id="jssDefault" rel="stylesheet">
-     <link rel="stylesheet" href="{{ asset('/assets/css/style.css?=1.1') }}">
-     <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css?=1.1') }}">
+     <link href="{{ asset('/assets/css/color/theme-color.css?=1.2') }}" id="jssDefault" rel="stylesheet">
+     <link rel="stylesheet" href="{{ asset('/assets/css/style.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css?=1.2') }}">
      <!-- Favicon -->
      <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/images/web-image/web-log.png') }}">
      <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}"
          sizes="32x32') }}">
      <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="16x16">
-     <link rel="stylesheet" href="{{ asset('/assets/css/web-css.css?=1.1') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/web-css.css?=1.2') }}">
