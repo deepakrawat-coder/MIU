@@ -37,8 +37,8 @@
      <link rel="stylesheet" href="{{ asset('/assets/css/custom-animate.css?=1.2') }}">
      <link rel="stylesheet" href="{{ asset('/assets/css/fancybox.min.css?=1.2') }}">
      <link rel="stylesheet" href="{{ asset('/assets/css/flaticon.css?=1.2') }}">
-     <link rel="stylesheet" href="/public/assets/css/font-awesome.min.css?=1.2">
-     <link rel="stylesheet" href="/public/assets/css/icomoon.css?=1.2'">
+     <link rel="stylesheet" href="{{ asset('/assets/css/font-awesome.min.css?=1.2') }}">
+     <link rel="stylesheet" href="{{ asset('/assets/css/icomoon.css?=1.2') }}">
      <link rel="stylesheet" href="{{ asset('/assets/css/imp.css?=1.2') }}">
      <link rel="stylesheet" href="{{ asset('/assets/css/jquery.bootstrap-touchspin.css?=1.2') }}">
      <link rel="stylesheet" href="{{ asset('/assets/css/magnific-popup.css?=1.2') }}">
