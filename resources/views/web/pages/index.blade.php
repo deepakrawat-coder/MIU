@@ -27,29 +27,29 @@
                                 <p>Empowering minds, shaping futures through excellence in education and research</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="campus-life.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Campus Life
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
-                                {{-- <a class="video-popup" title="Video Gallery"
+                            {{-- <div class="video-gallery-btns-box">
+                                <a class="video-popup" title="Video Gallery"
                                             href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                             <span class="icon-play"></span>
-                                        </a> --}}
+                                        </a>
                                 <p>
                                     <a class="video-popup" title="Video Gallery"
                                         href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -69,18 +69,18 @@
                                     Manipur’ at Grand Vijay Diwas Celebrations in New Delhi</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="#">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Download
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -91,7 +91,7 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -110,18 +110,18 @@
                                 <p>Discover innovative programs designed for the leaders of tomorrow</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="departments.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Departments
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -132,7 +132,7 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                             </li>
                         </ul> --}}
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="/about-us">
                                 <span class="txt">Read More</span>
                             </a>
                         </div>
@@ -370,61 +370,62 @@
 
                 @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4">
-                        <div class="single-departments-box single-department-box-style2">
-                            <div class="single-department-box-style2__inner text-center">
-                                <div class="static-content">
-                                    <div class="icon">
-                                        <span class="icon-budget"></span>
-                                        <div class="round-box"></div>
-                                    </div>
-                                    <div class="text-holder">
-                                        <a href="/school-details{{ $school['link'] }}"
-                                            style="line-height: normal; padding: 12px;">
-                                            {{ $school['title'] }}
-                                        </a>
-                                        <div class="text">
-                                            <p>
-                                                {{ Str::words($school['description'], 20, '...') }}
-                                            </p>
+
+                        <div class="single-departments-box single-department-box-style2">                           
+                                <div class="single-department-box-style2__inner text-center">
+                                    <div class="static-content">
+                                        <div class="icon">
+                                            <span class="icon-budget"></span>
+                                            <div class="round-box"></div>
+                                        </div>
+                                        <div class="text-holder">
+                                            <a href="/school-details{{ $school['link'] }}"
+                                                style="line-height: normal; padding: 12px;">
+                                                {{ $school['title'] }}
+                                            </a>
+                                            <div class="text">
+                                                <p>
+                                                    {{ Str::words($school['description'], 20, '...') }}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                    <a href="/school-details{{ $school['link'] }}">
+                                        <div
+                                            class="overlay-box"style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
+                                        </div>
+                                    </a>
+                                </div>                          
+                          
+                                <div class="single-department-box-style2__ovarlay-content">
+                                    <div class="inner">
+                                        <h5>Undergraduate</h5>
+                                        <h3>{{ $school['title'] }}</h3>
+                                        <p>
+                                            {{ Str::words($school['description'], 15, '...') }}
+                                        </p>
 
-                                <div class="overlay-box"
-                                    style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
-                                </div>
-                            </div>
-
-                            <div class="single-department-box-style2__ovarlay-content">
-                                <div class="inner">
-                                    <h5>Undergraduate</h5>
-                                    <h3>{{ $school['title'] }}</h3>
-                                    <p>
-                                        {{ Str::words($school['description'], 15, '...') }}
-                                    </p>
-
-                                    <ul>
-                                        @foreach ($school['features'] as $feature)
-                                            <li>
-                                                <div class="dot-box"></div>
-                                                <div class="inner-text">
-                                                    <h4>{{ $feature }}</h4>
-                                                    {{-- <a href="#">
+                                        <ul>
+                                            @foreach ($school['features'] as $feature)
+                                                <li>
+                                                    <div class="dot-box"></div>
+                                                    <div class="inner-text">
+                                                        <h4>{{ $feature }}</h4>
+                                                        {{-- <a href="#">
                                                         <span class="fa fa-file-pdf-o"></span> Syllabus.pdf
                                                     </a> --}}
-                                                </div>
-                                            </li>
-                                        @endforeach
-                                    </ul>
+                                                    </div>
+                                                </li>
+                                            @endforeach
+                                        </ul>
 
-                                    <div class="btn-box">
-                                        <a class="btn-one btn-one--style2" href="/school-details{{ $school['link']}}">
-                                            <span class="txt">Read More</span>
-                                        </a>
+                                        <div class="btn-box">
+                                            <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
+                                                <span class="txt">Read More</span>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-
+                                </div>                           
                         </div>
                     </div>
                 @endforeach
@@ -1988,7 +1989,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area">
+    <section class="testimonial-style1-area bg-white">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Our Esteemed Industry Partners</h2>
@@ -2005,7 +2006,8 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-1.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/asian_paints-logo_brandlogos.net_sieab.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2013,7 +2015,7 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-2.png') }}"
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/genpact1.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2021,7 +2023,8 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-3.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Hero_MotoCorp_Logo.svg') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2029,7 +2032,8 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-4.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Infosys_logo.svg.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2038,7 +2042,8 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-5.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/noida-tech-mahindra-logo-business-brand-technology-firm1.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2046,7 +2051,8 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-6.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Tata-Motors-800x600.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2054,7 +2060,7 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-7.png') }}"
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/tcs.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
@@ -2062,14 +2068,15 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{ asset('/assets/images/brand/brand-logo-8.png') }}"
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/tvs-vector-logo-free-download-11574023530akrlm14a2x1.png') }}"
                                 alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
             </div>
 
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="btns-box">
                         <a class="btn-one" href="about.html">
@@ -2077,7 +2084,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>
