@@ -345,87 +345,73 @@
                         'description' => 'The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C. ...',
                         'features' => ['Practical Journalism Training', 'Media Production & Editing'],
                     ],
-                    [
-                        'link' => '/school-of-library-information-science',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Library & Information Science',
-                        'description' => 'The School of Library and Information Science at Manipur International University (MIU) offers B.L.I.S. and M.L.I.S. ...',
-                        'features' => ['Digital Library Management', 'Information Architecture'],
-                    ],
-                    [
-                        'link' => '/school-of-computer-science-information-technology',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Computer Science & Information Technology',
-                        'description' => 'The School of Computer Science and Information Technology at Manipur International University (MIU) ...',
-                        'features' => ['Software Development', 'Data Science & AI'],
-                    ],
-                    [
-                        'link' => '/school-of-animation',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Animation',
-                        'description' => 'The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs designed  ...',
-                        'features' => ['2D & 3D Animation', 'Visual Effects (VFX)'],
-                    ],
+                  
                 ]; ?>
 
                 @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4">
 
-                        <div class="single-departments-box single-department-box-style2">                           
-                                <div class="single-department-box-style2__inner text-center">
-                                    <div class="static-content">
-                                        <div class="icon">
+                        <div class="single-departments-box single-department-box-style2">
+                            <div class="single-department-box-style2__inner text-center">
+                                <div class="static-content">
+                                    <div class="icon">
+                                        @if (!empty($school['image']))
+                                            <img src="{{ asset('assets/images/resources/' . $school['image']) }}"
+                                                alt="{{ $school['title'] }}"
+                                                style="width: 100px; height: 100px; object-fit: cover; border-radius: 12px;">
+                                        @else
                                             <span class="icon-budget"></span>
                                             <div class="round-box"></div>
-                                        </div>
-                                        <div class="text-holder">
-                                            <a href="/school-details{{ $school['link'] }}"
-                                                style="line-height: normal; padding: 12px;">
-                                                {{ $school['title'] }}
-                                            </a>
-                                            <div class="text">
-                                                <p>
-                                                    {{ Str::words($school['description'], 20, '...') }}
-                                                </p>
-                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="text-holder">
+                                        <a href="/school-details{{ $school['link'] }}"
+                                            style="line-height: normal; padding: 12px;">
+                                            {{ $school['title'] }}
+                                        </a>
+                                        <div class="text">
+                                            <p>
+                                                {{ Str::words($school['description'], 10) }}
+                                            </p>
                                         </div>
                                     </div>
-                                    <a href="/school-details{{ $school['link'] }}">
-                                        <div
-                                            class="overlay-box"style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
-                                        </div>
-                                    </a>
-                                </div>                          
-                          
-                                <div class="single-department-box-style2__ovarlay-content">
-                                    <div class="inner">
-                                        <h5>Undergraduate</h5>
-                                        <h3>{{ $school['title'] }}</h3>
-                                        <p>
-                                            {{ Str::words($school['description'], 15, '...') }}
-                                        </p>
+                                </div>
+                                <a href="/school-details{{ $school['link'] }}">
+                                    <div
+                                        class="overlay-box"style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
+                                    </div>
+                                </a>
+                            </div>
 
-                                        <ul>
-                                            @foreach ($school['features'] as $feature)
-                                                <li>
-                                                    <div class="dot-box"></div>
-                                                    <div class="inner-text">
-                                                        <h4>{{ $feature }}</h4>
-                                                        {{-- <a href="#">
+                            <div class="single-department-box-style2__ovarlay-content">
+                                <div class="inner">
+                                    <h5>Undergraduate</h5>
+                                    <h3>{{ $school['title'] }}</h3>
+                                    <p>
+                                        {{ Str::words($school['description'], 15, '...') }}
+                                    </p>
+
+                                    <ul>
+                                        @foreach ($school['features'] as $feature)
+                                            <li>
+                                                <div class="dot-box"></div>
+                                                <div class="inner-text">
+                                                    <h4>{{ $feature }}</h4>
+                                                    {{-- <a href="#">
                                                         <span class="fa fa-file-pdf-o"></span> Syllabus.pdf
                                                     </a> --}}
-                                                    </div>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
 
-                                        <div class="btn-box">
-                                            <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
-                                                <span class="txt">Read More</span>
-                                            </a>
-                                        </div>
+                                    <div class="btn-box">
+                                        <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
+                                            <span class="txt">Read More</span>
+                                        </a>
                                     </div>
-                                </div>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
                 @endforeach
