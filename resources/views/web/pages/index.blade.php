@@ -1100,7 +1100,7 @@
     <section class="fact-counter-area">
         <div class="container">
             <div class="sec-title text-center">
-                <h2>Manipur International University at a Glance<< /h2>
+                <h2>Manipur International University at a Glance  </h2>
                         <div class="sub-title">
                             <p>Key milestones, academic strength, and infrastructure that define MIU’s excellence</p>
                         </div>
@@ -1932,7 +1932,7 @@
     </section>
     <section class="subscribe-style6-area">
         <div class="subscribe-style6-area-bg"
-            style="background-image: url({{ asset('/assets/images/web-image/cta-img.jpg') }});"></div>
+            style="background-image: url({{ asset('/assets/images/web-image/connect1.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
