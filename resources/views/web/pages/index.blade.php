@@ -238,194 +238,118 @@
                     <p>Explore the diverse academic departments at Manipur International University</p>
                 </div>
             </div>
-            <div class="row">
-
-                <!--Start Single Departments Box Style2-->
-                {{-- <div class="col-xl-4 col-lg-4">
-                    <div class="single-departments-box single-department-box-style2">
-                        <div class="single-department-box-style2__inner text-center">
-                            <div class="static-content">
-                                <div class="icon">
-                                    <span class="icon-budget"></span>
-                                    <div class="round-box"></div>
-                                </div>
-                                <div class="text-holder">
-                                    <a href="#">Accounting</a>
-                                    <div class="text">
-                                        <p>To take a trivial example which of us
-                                            ever undertakes laborious physical exercise
-                                            to obtain some advantage.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="overlay-box"
-                                style="background-image: url({{ asset('/assets/images/resources/departments-1.jpg') }});">
-                            </div>
-                        </div>
-
-                        <div class="single-department-box-style2__ovarlay-content">
-                            <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Accounting Management</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
-                                <ul>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="btn-box">
-                                    <a class="btn-one btn-one--style2" href="#">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div> --}}
+            <div class="row">               
                 <?php
                 $schools = [
                     [
                         'link' => '/school-of-arts-humanities',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-arts-humanities.jpg'),
                         'title' => 'School of Arts & Humanities',
                         'description' => 'The School of Arts and Humanities at Manipur International University (MIU) ...',
                         'features' => ['Creative Writing & Literature', 'Cultural & Historical Studies'],
                     ],
                     [
                         'link' => '/school-of-business-management-commerce',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-business-management-commerce.jpg'),
                         'title' => 'School of Business, Management & Commerce',
                         'description' => 'The School of Business, Management & Commerce at Manipur International University (MIU) offers B.Com and M.Com programs...',
                         'features' => ['Business Administration', 'Financial Management'],
                     ],
                     [
                         'link' => '/school-of-engineering-technology',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-engineering-technology.jpg') ,
                         'title' => 'School of Engineering & Technology',
                         'description' => 'The School of Technology at Manipur International University (MIU) offers a comprehensive...',
                         'features' => ['B.Tech & M.Tech Programs', 'Research & Development Labs'],
                     ],
                     [
                         'link' => '/school-of-science',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-science.jpg') ,
                         'title' => 'School of Science',
                         'description' => 'The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...',
                         'features' => ['Physics & Chemistry Labs', 'Biotechnology Research'],
                     ],
                     [
                         'link' => '/school-of-yoga-science',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-yoga-science.jpg'),
                         'title' => 'School of Yoga Science',
                         'description' => 'The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs...',
                         'features' => ['Practical Yoga Training', 'Meditation & Wellness'],
                     ],
                     [
                         'link' => '/school-of-mass-communication-and-journalism',
-                        'image' => 'involment-activities-6.jpg',
+                        'image' => asset('/assets/images/school-image/school-of-mass-communication-and-journalism.jpg'),
                         'title' => 'School of Mass Communication and Journalism',
                         'description' => 'The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C. ...',
                         'features' => ['Practical Journalism Training', 'Media Production & Editing'],
                     ],
-                    [
-                        'link' => '/school-of-library-information-science',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Library & Information Science',
-                        'description' => 'The School of Library and Information Science at Manipur International University (MIU) offers B.L.I.S. and M.L.I.S. ...',
-                        'features' => ['Digital Library Management', 'Information Architecture'],
-                    ],
-                    [
-                        'link' => '/school-of-computer-science-information-technology',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Computer Science & Information Technology',
-                        'description' => 'The School of Computer Science and Information Technology at Manipur International University (MIU) ...',
-                        'features' => ['Software Development', 'Data Science & AI'],
-                    ],
-                    [
-                        'link' => '/school-of-animation',
-                        'image' => 'involment-activities-6.jpg',
-                        'title' => 'School of Animation',
-                        'description' => 'The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs designed  ...',
-                        'features' => ['2D & 3D Animation', 'Visual Effects (VFX)'],
-                    ],
+                  
                 ]; ?>
 
                 @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4">
 
-                        <div class="single-departments-box single-department-box-style2">                           
-                                <div class="single-department-box-style2__inner text-center">
-                                    <div class="static-content">
-                                        <div class="icon">
+                        <div class="single-departments-box single-department-box-style2">
+                            <div class="single-department-box-style2__inner text-center">
+                                <div class="static-content">
+                                    <div class="icon">
+                                        @if (!empty($school['image']))
+                                            <img src="{{ $school['image'] }}"
+                                                alt="{{ $school['title'] }}"
+                                                style="width: 100px; height: 100px; object-fit: cover; border-radius: 12px;">
+                                        @else
                                             <span class="icon-budget"></span>
                                             <div class="round-box"></div>
-                                        </div>
-                                        <div class="text-holder">
-                                            <a href="/school-details{{ $school['link'] }}"
-                                                style="line-height: normal; padding: 12px;">
-                                                {{ $school['title'] }}
-                                            </a>
-                                            <div class="text">
-                                                <p>
-                                                    {{ Str::words($school['description'], 20, '...') }}
-                                                </p>
-                                            </div>
+                                        @endif
+                                    </div>
+                                    <div class="text-holder">
+                                        <a href="/school-details{{ $school['link'] }}"
+                                            style="line-height: normal; padding: 12px;">
+                                            {{ $school['title'] }}
+                                        </a>
+                                        <div class="text">
+                                            <p>
+                                                {{ Str::words($school['description'], 10) }}
+                                            </p>
                                         </div>
                                     </div>
-                                    <a href="/school-details{{ $school['link'] }}">
-                                        <div
-                                            class="overlay-box"style="background-image: url({{ asset('assets/images/resources/' . $school['image']) }});">
-                                        </div>
-                                    </a>
-                                </div>                          
-                          
-                                <div class="single-department-box-style2__ovarlay-content">
-                                    <div class="inner">
-                                        <h5>Undergraduate</h5>
-                                        <h3>{{ $school['title'] }}</h3>
-                                        <p>
-                                            {{ Str::words($school['description'], 15, '...') }}
-                                        </p>
+                                </div>
+                                <a href="/school-details{{ $school['link'] }}">
+                                    <div
+                                        class="overlay-box"style="background-image: url({{$school['image']}});">
+                                    </div>
+                                </a>
+                            </div>
 
-                                        <ul>
-                                            @foreach ($school['features'] as $feature)
-                                                <li>
-                                                    <div class="dot-box"></div>
-                                                    <div class="inner-text">
-                                                        <h4>{{ $feature }}</h4>
-                                                        {{-- <a href="#">
+                            <div class="single-department-box-style2__ovarlay-content">
+                                <div class="inner">
+                                    <h5>Undergraduate</h5>
+                                    <h3>{{ $school['title'] }}</h3>
+                                    <p>
+                                        {{ Str::words($school['description'], 15, '...') }}
+                                    </p>
+
+                                    <ul>
+                                        @foreach ($school['features'] as $feature)
+                                            <li>
+                                                <div class="dot-box"></div>
+                                                <div class="inner-text">
+                                                    <h4>{{ $feature }}</h4>
+                                                    {{-- <a href="#">
                                                         <span class="fa fa-file-pdf-o"></span> Syllabus.pdf
                                                     </a> --}}
-                                                    </div>
-                                                </li>
-                                            @endforeach
-                                        </ul>
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
 
-                                        <div class="btn-box">
-                                            <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
-                                                <span class="txt">Read More</span>
-                                            </a>
-                                        </div>
+                                    <div class="btn-box">
+                                        <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
+                                            <span class="txt">Read More</span>
+                                        </a>
                                     </div>
-                                </div>                           
+                                </div>
+                            </div>
                         </div>
                     </div>
                 @endforeach
@@ -1114,7 +1038,7 @@
     <section class="fact-counter-area">
         <div class="container">
             <div class="sec-title text-center">
-                <h2>Manipur International University at a Glance<< /h2>
+                <h2>Manipur International University at a Glance  </h2>
                         <div class="sub-title">
                             <p>Key milestones, academic strength, and infrastructure that define MIU’s excellence</p>
                         </div>
@@ -1946,7 +1870,7 @@
     </section>
     <section class="subscribe-style6-area">
         <div class="subscribe-style6-area-bg"
-            style="background-image: url({{ asset('/assets/images/web-image/cta-img.jpg') }});"></div>
+            style="background-image: url({{ asset('/assets/images/web-image/connect1.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
