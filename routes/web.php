@@ -28,7 +28,7 @@ Route::view('/academics-team', 'web.pages.academics-team');
 Route::view('/coe', 'web.pages.coe');
 Route::view('/notice-and-events', 'web.pages.notice-and-events');
 Route::view('/anti-ragging', 'web.pages.anti-ragging');
-// Route::view('/school-details', 'web.pages.school-details');
+// Route::view('/school-detail', 'web.pages.school-details');
 Route::get('/school-details/{slug}', function ($slug) {
     $view = "web.pages.school-details.$slug";
     if (view()->exists($view)) {

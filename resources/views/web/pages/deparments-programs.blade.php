@@ -451,42 +451,42 @@
             $schools = [
                 [
                     'link' => '/school-of-arts-humanities',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-arts-humanities.jpg'),
                     'title' => 'School of Arts & Humanities',
                     'description' => 'The School of Arts and Humanities at Manipur International University (MIU) ...',
                     'features' => ['Creative Writing & Literature', 'Cultural & Historical Studies'],
                 ],
                 [
                     'link' => '/school-of-business-management-commerce',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-business-management-commerce.jpg'),
                     'title' => 'School of Business, Management & Commerce',
                     'description' => 'The School of Business, Management & Commerce at Manipur International University (MIU) offers B.Com and M.Com programs...',
                     'features' => ['Business Administration', 'Financial Management'],
                 ],
                 [
                     'link' => '/school-of-engineering-technology',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-engineering-technology.jpg'),
                     'title' => 'School of Engineering & Technology',
                     'description' => 'The School of Technology at Manipur International University (MIU) offers a comprehensive...',
                     'features' => ['B.Tech & M.Tech Programs', 'Research & Development Labs'],
                 ],
                 [
                     'link' => '/school-of-science',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-science.jpg'),
                     'title' => 'School of Science',
                     'description' => 'The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...',
                     'features' => ['Physics & Chemistry Labs', 'Biotechnology Research'],
                 ],
                 [
                     'link' => '/school-of-yoga-science',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-yoga-science.jpg'),
                     'title' => 'School of Yoga Science',
                     'description' => 'The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs...',
                     'features' => ['Practical Yoga Training', 'Meditation & Wellness'],
                 ],
                 [
                     'link' => '/school-of-mass-communication-and-journalism',
-                    'image' => 'involment-activities-6.jpg',
+                    'image' => asset('/assets/images/school-image/school-of-mass-communication-and-journalism.jpg'),
                     'title' => 'School of Mass Communication and Journalism',
                     'description' => 'The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C. ...',
                     'features' => ['Practical Journalism Training', 'Media Production & Editing'],
@@ -523,8 +523,8 @@
                             <div class="single-involment-activities-box">
                                 <div class="img-box">
                                     <div class="inner">
-                                        <img src="{{ asset('/assets/images/resources/' . $school['image']) }}"
-                                            alt="{{ $school['title'] }}">
+                                        <img src="{{ $school['image'] }}"
+                                            alt="{{ $school['title'] }}" style="min-height:400px;">
                                     </div>
                                     <div class="text-holder">
                                         <h3>{{ $school['title'] }}</h3>
