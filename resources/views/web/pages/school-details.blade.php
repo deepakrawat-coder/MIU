@@ -404,7 +404,7 @@
             </div>
         </div>
     </section> --}}
-    @foreach ($school->courses as $course)
+    {{-- @foreach ($school->courses as $course)
         @foreach ($course->programs as $program)
             <section class="cse-specialization-section">
                 <div class="container">
@@ -435,7 +435,7 @@
                                                 alt="{{ $specialization->title }}">
                                         </div>
                                         <h4>{{ $specialization->title }}</h4>
-                                        {{-- <p>{{ $specialization->short_description }}</p> --}}
+                                       
                                     </div>
                                 </a>
                             </div>
@@ -445,8 +445,57 @@
                 </div>
             </section>
         @endforeach
+    @endforeach --}}
+@foreach ($school->courses as $course)
+
+    @foreach ($course->programs as $program)
+
+        @if($program->specializations->isNotEmpty())
+
+            <section class="cse-specialization-section">
+                <div class="container">
+
+                    <!-- TITLE -->
+                    <div class="row mb-5">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title">
+                                {{ $course->name }} in {{ $school->name }}
+                            </h2>
+
+                            <p class="section-subtitle">
+                                Industry-oriented Specializations at Manipur International University
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- SPECIALIZATION CARDS -->
+                    <div class="row">
+
+                        @foreach ($program->specializations as $specialization)
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <a href="/{{ Str::slug($course->name) }}/{{ Str::slug($program->name) }}/{{ $specialization->slug }}">
+                                    
+                                    <div class="spec-card image-card">
+                                        <div class="spec-img">
+                                            <img src="{{ asset($specialization->image) }}"
+                                                 alt="{{ $specialization->title }}">
+                                        </div>
+                                        <h4>{{ $specialization->title }}</h4>
+                                    </div>
+
+                                </a>
+                            </div>
+                        @endforeach
+
+                    </div>
+                </div>
+            </section>
+
+        @endif
+
     @endforeach
 
+@endforeach
     <!-- TESTIMONIALS -->
     {{-- <section id="testimonials" style=" background: #17345a;" class="testimonial-style1-area">
     <div class="container">
@@ -612,8 +661,8 @@ alt="Alumni">
                                 </div>
                                 <ul class="accordion-box">
                                     @foreach ($faq as $item)
-                                        <li class="accordion block active-block">
-                                            <div class="acc-btn active">
+                                        <li class="accordion block ">
+                                            <div class="acc-btn ">
                                                 <div class="course-layout-title-box">
                                                     <h4>{{ $item['question'] }}</h4>
                                                     <div class="icon-outer">
@@ -621,7 +670,7 @@ alt="Alumni">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="acc-content current">
+                                            <div class="acc-content ">
                                                 <div class="course-layout-content-box-inner">
                                                     <p class="p-3">
                                                         {{ $item['answer'] }}

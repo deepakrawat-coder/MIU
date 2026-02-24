@@ -10,9 +10,7 @@ use App\Http\Controllers\SpecializationController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\FaqController;
-
-
-
+use App\Http\Controllers\WebHomeController;
 
 Route::get('/homw', function () {
     return view('welcome');
@@ -22,7 +20,8 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
-Route::view('/', 'web.pages.index');
+// Route::view('/', 'web.pages.index');
+Route::get('/', [WebHomeController::class, 'index'])->name('home');
 Route::view('/about-us', 'web.pages.about-us');
 Route::view('/departments', 'web.pages.departments');
 // Route::view('/schools-and-departments', 'web.pages.deparments-programs');
@@ -178,7 +177,7 @@ Route::prefix('courses')->group(function () {
     Route::delete('/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete');
     Route::get('/status/{id}', [CourseController::class, 'status'])->name('courses.status');
 });
-// Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
+
 Route::prefix('testimonials')->group(function () {
     Route::get('/', [TestimonialController::class, 'index'])->name('testimonials.index');
     Route::get('/create', [TestimonialController::class, 'create'])->name('testimonials.create');
@@ -216,7 +215,7 @@ Route::get('/test', function () {
 });
 Route::get('/schools/{slug}', [SchoolController::class, 'details'])
     ->name('schools.{slug}');
-
+Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
 require __DIR__ . '/settings.php';
 
 require __DIR__ . '/settings.php';

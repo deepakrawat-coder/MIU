@@ -63,9 +63,9 @@
         <!-- Description -->
         <div class="col-md-12">
             <label class="form-label">Description</label>
-            <textarea name="description"
+            <textarea name="description" id="description"
                       rows="5"
-                      class="form-control">{{ $post->description }}</textarea>
+                      class="form-control">{!! $post->description !!}</textarea>
         </div>
 
         <!-- Image -->
@@ -171,7 +171,7 @@
 
     </form>
 </div>
-<script>
+{{-- <script>
 $(function () {
 
     // Meta title counter
@@ -242,4 +242,95 @@ $(function () {
     });
 
 });
+</script> --}}
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+<script>
+    let editDescriptionEditor;
+
+    $(document).ready(function () {
+
+        // Initialize CKEditor for Edit
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .then(editor => {
+                editDescriptionEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        // Meta title counter
+        $('#meta_title').on('input', function () {
+            $('#titleCount').text($(this).val().length);
+        });
+
+        // Meta description counter
+        $('#meta_description').on('input', function () {
+            $('#descCount').text($(this).val().length);
+        });
+
+        // Edit Form Submit
+        $("#post-form").on('submit', function (e) {
+
+            e.preventDefault();
+
+            let form = $(this);
+            let submitBtn = form.find('button[type="submit"]');
+            submitBtn.prop('disabled', true);
+
+            // ✅ Update textarea BEFORE FormData
+            if (editDescriptionEditor) {
+                $('#description').val(editDescriptionEditor.getData());
+            }
+
+            let formData = new FormData(this);
+
+            // ✅ Important for Laravel PUT route
+            formData.append('_method', 'POST');
+
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST', // Must be POST when using FormData
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+
+                success: function (response) {
+
+                    submitBtn.prop('disabled', false);
+
+                    if (response.status === 'success') {
+
+                        toastr.success(response.message);
+
+                        $(".modal").modal('hide');
+
+                        $('#posts-table').DataTable().ajax.reload(null, false);
+
+                    } else {
+                        toastr.error(response.message);
+                    }
+                },
+
+                error: function (xhr) {
+
+                    submitBtn.prop('disabled', false);
+
+                    if (xhr.status === 422) {
+
+                        $.each(xhr.responseJSON.errors, function (key, value) {
+                            toastr.error(value[0]);
+                        });
+
+                    } else {
+                        toastr.error(xhr.responseJSON?.message || 'Something went wrong!');
+                    }
+                }
+            });
+
+        });
+
+    });
 </script>

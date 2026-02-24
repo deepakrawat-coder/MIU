@@ -250,6 +250,7 @@
                         {{-- dd($featuredPosts); --}}
                         <div class="single-testimonial-style9 p-0">
                             <div class="single-blog-style1">
+                                @if(!empty($post->image))
                                 <div class="img-holder">
                                     <div class="inner">
                                         <img src="{{ asset($post->image) }}" class="w-100 img-fluid"
@@ -260,6 +261,7 @@
                                         <p>{{ $post->category->name ?? 'MIU Official' }}</p>
                                     </div>
                                 </div>
+                                @endif
                                 <div class="text-holder">
                                     <h3>
                                         <a href="{{ route('post.details', $post->slug) }}">
@@ -299,7 +301,7 @@
 </section>
 
 
-<section class="blog-style1-area">
+{{-- <section class="blog-style1-area">
     <div class="container">
         <div class="sec-title text-start">
             <h2> Recent Events</h2>
@@ -400,7 +402,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section class="blog-style1-area">
     <div class="container">
@@ -412,6 +414,7 @@
             @forelse($recentEvents as $post)
                 <div class="col-xl-4 col-lg-4">
                     <div class="single-blog-style1 mb-4">
+                        @if(!empty($post->image))
                         <div class="img-holder">
                             <div class="inner h200">
                                 <img src="{{ asset($post->image) }}"
@@ -419,7 +422,7 @@
                                      alt="{{ $post->title }}">
                             </div>
                         </div>
-
+                        @endif
                         <div class="text-holder pt-3">
 
                             {{-- Publish Date --}}
@@ -576,7 +579,7 @@
 </section>
 
 
-<section class="instructor-courses-area gray-bg pt-1">
+{{-- <section class="instructor-courses-area gray-bg pt-1">
     <div class="container">
         <div class="sec-title-style5 text-start pb-4">
             <h2> Recent Updates </h2>
@@ -653,7 +656,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 
 @endsection

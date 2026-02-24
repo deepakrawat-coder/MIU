@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Faq;
 use App\Models\Specialization;
 use App\Models\Program;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
@@ -40,8 +42,26 @@ class SpecializationController extends Controller
             $career       = $decoded->career       ?? [];
             $recruiter    = $decoded->recruiter    ?? [];
         }
-        // dd($why_choose, $success_rate, $career, $recruiter);
-        return view('web.pages.specialization-details', compact('specialization', 'why_choose', 'success_rate', 'career', 'recruiter'));
+        $testimonials = Testimonial::where('specialization_id', $specialization->id)
+            ->where('status', 1)
+            ->get();
+
+        // FAQ
+        $faqencode = Faq::where('specialization_id', $specialization->id)
+            ->where('status', 1)
+            ->first();
+
+        $faq = [];
+
+        if ($faqencode && $faqencode->faqs_json) {
+            $faq = collect(json_decode(base64_decode($faqencode->faqs_json), true))
+                ->where('status', 1)
+                ->sortBy('order')
+                ->values()
+                ->toArray();
+        }
+        // dd($testimonials);
+        return view('web.pages.specialization-details', compact('specialization', 'why_choose', 'success_rate', 'career', 'recruiter', 'testimonials', 'faq'));
     }
 
     public function index(Request $request)

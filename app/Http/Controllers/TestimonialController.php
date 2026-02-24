@@ -73,7 +73,7 @@ class TestimonialController extends Controller
             $testimonial->page_type    = $request->page_type;
             $testimonial->school_id    = $request->school_id;
             $testimonial->status       = $request->status ?? 1;
-
+            $testimonial->specialization_id = $request->specialization_id;
             if ($request->hasFile('image')) {
                 $file = $request->file('image');
                 $filename = time() . '_' . $file->getClientOriginalName();
@@ -131,7 +131,7 @@ class TestimonialController extends Controller
             $testimonial->page_type    = $request->page_type;
             $testimonial->school_id    = $request->school_id;
             $testimonial->status       = $request->status ?? 1;
-
+            $testimonial->specialization_id = $request->specialization_id;
             if ($request->hasFile('image')) {
                 // Delete old image
                 if ($testimonial->image && file_exists(public_path($testimonial->image))) {

@@ -301,7 +301,7 @@
             padding: 30px;
             background: white;
             /* border-radius: 15px;
-                                                    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
+                                                            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06); */
         }
 
         .partner-logo {
@@ -379,7 +379,7 @@
 
         .accordion-box {
             /* max-width: 800px;
-                                                                            margin: 0 auto; */
+                                                                                    margin: 0 auto; */
         }
 
         .accordion {
@@ -873,7 +873,7 @@
                         </div>
                     @endforeach
 
-                
+
 
                 </div>
             @endif
@@ -889,10 +889,10 @@
 
                                     @foreach ($recruiter as $recruiters)
                                         <div class="swiper-slide text-center">
-                                            <img src="{{$recruiters->image ? asset($recruiters->image) : asset('/assets/images/partners/logo1.png')   }}"
+                                            <img src="{{ $recruiters->image ? asset($recruiters->image) : asset('/assets/images/partners/logo1.png') }}"
                                                 class="img-fluid rounded" style="max-height:100px;" alt="Microsoft">
                                         </div>
-                                    @endforeach                                 
+                                    @endforeach
 
                                 </div>
                             </div>
@@ -905,41 +905,48 @@
     </section>
 
     <!-- ALUMNI SUCCESS -->
-    <section id="alumni" class="alumni-success bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <div class="sec-title">
-                        <h2>Alumni Success Stories</h2>
-                        <p class="sub-title mt-3">Our graduates making waves in the industry</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="alumni-card">
-                        <div class="alumni-img">
-                            <div class="alumni-avatar">
-                                RS
-                            </div>
-                        </div>
-                        <div class="alumni-content">
-                            <h5 class="font-weight-bold text-center">Rohan Sharma</h5>
-                            <p class="text-center text-muted mb-2">Class of 2020</p>
-                            <p class="text-center font-weight-bold text-primary mb-3">AI Engineer at Google</p>
-                            <p class="text-center small mb-4">"The AI specialization at MIU provided me with the perfect
-                                blend of theoretical knowledge and practical skills that directly translated to my current
-                                role."</p>
-                            <div class="achievements text-center">
-                                <span class="badge">Google</span>
-                                <span class="badge">₹28 LPA</span>
-                            </div>
+    @if (!empty($testimonials) && count($testimonials) > 0)
+        <section id="alumni" class="alumni-success bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-5">
+                        <div class="sec-title">
+                            <h2>Alumni Success Stories</h2>
+                            <p class="sub-title mt-3">Our graduates making waves in the industry</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4 mb-4">
+                <div class="row">
+                    @foreach ($testimonials as $testimonial)
+                        <div class="col-md-4 mb-4">
+                            <div class="alumni-card">
+
+                                @if (!empty($testimonial->image))
+                                    <img src="{{ asset($testimonial->image) }}" alt="Alumni Image" class="img-fluid">
+                                @else
+                                    <div class="alumni-img">
+                                        <div class="alumni-avatar">
+                                            RS
+                                        </div>
+                                    </div>
+                                @endif
+
+                                <div class="alumni-content">
+                                    <h5 class="font-weight-bold text-center">{{ $testimonial->name }}</h5>
+                                    <p class="text-center text-muted mb-2">Batch: {{ $testimonial->passing_year }}</p>
+                                    <p class="text-center font-weight-bold text-primary mb-3">{{ $testimonial->company }}
+                                    </p>
+                                    <p class="text-center small mb-4">{{ $testimonial->message }}</p>
+                                    <div class="achievements text-center">
+                                        <span class="badge">{{ $testimonial->company }}</span>
+                                        <span class="badge">₹{{ $testimonial->package }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                    {{-- <div class="col-md-4 mb-4">
                     <div class="alumni-card">
                         <div class="alumni-img">
                             <div class="alumni-avatar">
@@ -958,9 +965,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="col-md-4 mb-4">
+                    {{-- <div class="col-md-4 mb-4">
                     <div class="alumni-card">
                         <div class="alumni-img">
                             <div class="alumni-avatar">
@@ -979,153 +986,183 @@
                             </div>
                         </div>
                     </div>
+                </div> --}}
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="faq" class="course-curriculum-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="course-curriculum-content-box">
-                        <div class="course-layout-content-box">
-                            <div class="inner-title">
-                                <h4>FAQs</h4>
-                                <p>Artificial Intelligence & Machine Learning</p>
+        </section>
+    @endif
+    @if (!empty($faq) && count($faq) > 0)
+        <section id="faq" class="course-curriculum-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="course-curriculum-content-box">
+                            <div class="course-layout-content-box">
+                                <div class="inner-title">
+                                    <h4>FAQs</h4>
+                                    <p>Artificial Intelligence & Machine Learning</p>
+                                </div>
+
+                                {{-- <ul class="accordion-box">
+
+                                    <!-- FAQ 1 -->
+                                    <li class="accordion block active-block">
+                                        <div class="acc-btn active">
+                                            <div class="course-layout-title-box">
+                                                <h4>What is the focus of the AI & ML specialization?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content current">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    The Artificial Intelligence & Machine Learning specialization is
+                                                    industry-focused
+                                                    and designed to provide strong practical and theoretical knowledge in
+                                                    intelligent
+                                                    systems. It covers machine learning, deep learning, data analytics,
+                                                    computer
+                                                    vision, natural language processing, and real-world AI applications.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- FAQ 2 -->
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>Which tools and technologies are taught in this specialization?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Students gain hands-on experience with industry-standard tools such as
+                                                    Python,
+                                                    TensorFlow, PyTorch, Keras, Scikit-Learn, SQL, and cloud platforms. The
+                                                    curriculum
+                                                    also includes exposure to big data tools, AI frameworks, and real-time
+                                                    project
+                                                    development environments.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- FAQ 3 -->
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>What kind of career opportunities are available after this
+                                                    specialization?
+                                                </h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Graduates can pursue careers as AI Engineer, Machine Learning Engineer,
+                                                    Data
+                                                    Scientist, Business Intelligence Analyst, Research Engineer, AI
+                                                    Consultant,
+                                                    and
+                                                    Software Developer. Opportunities are available across IT, healthcare,
+                                                    finance,
+                                                    manufacturing, and emerging technology sectors.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- FAQ 4 -->
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>Does this specialization include internships and industry projects?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Yes, the program includes mandatory internships and industry-oriented
+                                                    projects.
+                                                    Students work on real-world problem statements, live projects, and case
+                                                    studies
+                                                    in collaboration with industry partners to ensure strong practical
+                                                    exposure
+                                                    and
+                                                    job readiness.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <!-- FAQ 5 -->
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>Is this specialization suitable for research and higher studies?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Absolutely. The AI & ML specialization strongly supports
+                                                    research-oriented
+                                                    learning. Students are encouraged to participate in research labs,
+                                                    publish
+                                                    papers, work on funded research projects, and pursue higher studies
+                                                    including
+                                                    M.Tech and Ph.D. in Artificial Intelligence and related domains.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul> --}}
+                                <ul class="accordion-box">
+                                    @foreach ($faq as $item)
+                                        <li class="accordion block ">
+                                            <div class="acc-btn ">
+                                                <div class="course-layout-title-box">
+                                                    <h4>{{ $item['question'] }}</h4>
+                                                    <div class="icon-outer">
+                                                        <i class="icon-plus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-content ">
+                                                <div class="course-layout-content-box-inner">
+                                                    <p class="p-3">
+                                                        {{ $item['answer'] }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </div>
-
-                            <ul class="accordion-box">
-
-                                <!-- FAQ 1 -->
-                                <li class="accordion block active-block">
-                                    <div class="acc-btn active">
-                                        <div class="course-layout-title-box">
-                                            <h4>What is the focus of the AI & ML specialization?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content current">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                The Artificial Intelligence & Machine Learning specialization is
-                                                industry-focused
-                                                and designed to provide strong practical and theoretical knowledge in
-                                                intelligent
-                                                systems. It covers machine learning, deep learning, data analytics, computer
-                                                vision, natural language processing, and real-world AI applications.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 2 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Which tools and technologies are taught in this specialization?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Students gain hands-on experience with industry-standard tools such as
-                                                Python,
-                                                TensorFlow, PyTorch, Keras, Scikit-Learn, SQL, and cloud platforms. The
-                                                curriculum
-                                                also includes exposure to big data tools, AI frameworks, and real-time
-                                                project
-                                                development environments.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 3 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>What kind of career opportunities are available after this specialization?
-                                            </h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Graduates can pursue careers as AI Engineer, Machine Learning Engineer, Data
-                                                Scientist, Business Intelligence Analyst, Research Engineer, AI Consultant,
-                                                and
-                                                Software Developer. Opportunities are available across IT, healthcare,
-                                                finance,
-                                                manufacturing, and emerging technology sectors.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 4 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Does this specialization include internships and industry projects?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Yes, the program includes mandatory internships and industry-oriented
-                                                projects.
-                                                Students work on real-world problem statements, live projects, and case
-                                                studies
-                                                in collaboration with industry partners to ensure strong practical exposure
-                                                and
-                                                job readiness.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <!-- FAQ 5 -->
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Is this specialization suitable for research and higher studies?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Absolutely. The AI & ML specialization strongly supports research-oriented
-                                                learning. Students are encouraged to participate in research labs, publish
-                                                papers, work on funded research projects, and pursue higher studies
-                                                including
-                                                M.Tech and Ph.D. in Artificial Intelligence and related domains.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    @endif
 @endsection
 
 @section('scripts')

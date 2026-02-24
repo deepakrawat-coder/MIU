@@ -15,7 +15,7 @@
             </label>
             <select name="category_id" class="form-select" required>
                 <option value="">Select Category</option>
-                @foreach($categories as $category)
+                @foreach ($categories as $category)
                     <option value="{{ $category->id }}">{{ $category->name }}</option>
                 @endforeach
             </select>
@@ -44,7 +44,7 @@
         <!-- Description -->
         <div class="col-md-12">
             <label class="form-label">Description</label>
-            <textarea name="description" rows="5" class="form-control"></textarea>
+            <textarea name="description" id="description" rows="5" class="form-control"></textarea>
         </div>
 
         <!-- Image -->
@@ -94,8 +94,7 @@
 
                         <div class="col-md-12">
                             <label class="form-label">Meta Description</label>
-                            <textarea name="meta_description" id="meta_description" maxlength="160"
-                                rows="3" class="form-control"></textarea>
+                            <textarea name="meta_description" id="meta_description" maxlength="160" rows="3" class="form-control"></textarea>
                             <small class="text-muted">
                                 <span id="descCount">0</span>/160 characters
                             </small>
@@ -119,50 +118,139 @@
 
     </form>
 </div>
+{{-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 <script>
-$(function() {
-
-    $('#meta_title').on('input', function() {
-        $('#titleCount').text($(this).val().length);
-    });
-
-    $('#meta_description').on('input', function() {
-        $('#descCount').text($(this).val().length);
-    });
-
-    $("#post-form").submit(function(e) {
-        e.preventDefault();
-        $(':input[type="submit"]').prop('disabled', true);
-
-        var formData = new FormData(this);
-        formData.append("_token", "{{ csrf_token() }}");
-
-        $.ajax({
-            url: $(this).attr('action'),
-            type: $(this).attr('method'),
-            data: formData,
-            processData: false,
-            contentType: false,
-            dataType: 'json',
-
-            success: function(response) {
-                $(':input[type="submit"]').prop('disabled', false);
-
-                if (response.status === 'success') {
-                    toastr.success(response.message);
-                    $(".modal").modal('hide');
-                    $('#posts-table').DataTable().ajax.reload();
-                } else {
-                    toastr.error(response.message);
-                }
-            },
-
-            error: function(xhr) {
-                $(':input[type="submit"]').prop('disabled', false);
-                toastr.error(xhr.responseJSON?.message || 'Something went wrong!');
-            }
+    $(function() {
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .then(editor => {
+                descriptionEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        $('#meta_title').on('input', function() {
+            $('#titleCount').text($(this).val().length);
         });
-    });
 
-});
+        $('#meta_description').on('input', function() {
+            $('#descCount').text($(this).val().length);
+        });
+
+        $("#post-form").submit(function(e) {
+            e.preventDefault();
+            $(':input[type="submit"]').prop('disabled', true);
+
+            var formData = new FormData(this);
+            formData.append("_token", "{{ csrf_token() }}");
+            $('textarea[name="description"]').val(descriptionEditor.getData())
+            $.ajax({
+                url: $(this).attr('action'),
+                type: $(this).attr('method'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+
+                success: function(response) {
+                    $(':input[type="submit"]').prop('disabled', false);
+
+                    if (response.status === 'success') {
+                        toastr.success(response.message);
+                        $(".modal").modal('hide');
+                        $('#posts-table').DataTable().ajax.reload();
+                    } else {
+                        toastr.error(response.message);
+                    }
+                },
+
+                error: function(xhr) {
+                    $(':input[type="submit"]').prop('disabled', false);
+                    toastr.error(xhr.responseJSON?.message || 'Something went wrong!');
+                }
+            });
+        });
+
+    });
+</script> --}}
+<script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+
+<script>
+    let descriptionEditor;
+
+    $(document).ready(function () {
+
+        // Initialize CKEditor
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .then(editor => {
+                descriptionEditor = editor;
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        // Meta title counter
+        $('#meta_title').on('input', function () {
+            $('#titleCount').text($(this).val().length);
+        });
+
+        // Meta description counter
+        $('#meta_description').on('input', function () {
+            $('#descCount').text($(this).val().length);
+        });
+
+        // Form Submit
+        $("#post-form").on('submit', function (e) {
+            e.preventDefault();
+
+            let submitBtn = $(this).find('button[type="submit"]');
+            submitBtn.prop('disabled', true);
+
+            // ✅ Update textarea BEFORE FormData
+            if (descriptionEditor) {
+                $('#description').val(descriptionEditor.getData());
+            }
+
+            let formData = new FormData(this);
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: $(this).attr('method'),
+                data: formData,
+                processData: false,
+                contentType: false,
+                dataType: 'json',
+
+                success: function (response) {
+                    submitBtn.prop('disabled', false);
+
+                    if (response.status === 'success') {
+                        toastr.success(response.message);
+                        $(".modal").modal('hide');
+                        $('#post-form')[0].reset();
+                        descriptionEditor.setData('');
+                        $('#posts-table').DataTable().ajax.reload();
+                    } else {
+                        toastr.error(response.message);
+                    }
+                },
+
+                error: function (xhr) {
+                    submitBtn.prop('disabled', false);
+
+                    if (xhr.status === 422) {
+                        let errors = xhr.responseJSON.errors;
+                        $.each(errors, function (key, value) {
+                            toastr.error(value[0]);
+                        });
+                    } else {
+                        toastr.error('Something went wrong!');
+                    }
+                }
+            });
+
+        });
+
+    });
 </script>

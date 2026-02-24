@@ -63,7 +63,7 @@ class SchoolController extends Controller
         } else {
             $faq = [];
         }
-        // dd($faq);
+        // dd($school->courses);
         return view('web.pages.school-details', compact('school', 'specializations', 'programs', 'coursesInfo', 'testimonials', 'faq'));
     }
 
