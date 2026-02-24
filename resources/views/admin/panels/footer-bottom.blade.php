@@ -31,6 +31,7 @@
 
     function add(url, modal) {
         if (modal.length > 0) {
+            // console.log(url);
             $.ajax({
                 url: url,
                 type: "GET",

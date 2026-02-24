@@ -12,8 +12,8 @@
             <label class="form-label">School <span class="text-danger">*</span></label>
             <select name="school_id" class="form-select" required>
                 <option value="">Select School</option>
-                @foreach($schools as $school)
-                <option value="{{ $school->id }}">{{ $school->name }}</option>
+                @foreach ($schools as $school)
+                    <option value="{{ $school->id }}">{{ $school->name }}</option>
                 @endforeach
             </select>
         </div>
@@ -23,7 +23,15 @@
             <label class="form-label">Course Name <span class="text-danger">*</span></label>
             <input type="text" name="name" class="form-control" required>
         </div>
-
+        <div class="mb-3">
+            <label class="form-label">Duration</label>
+            <input type="text" name="duration" id="duration" class="form-control" >
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Eligibility</label>
+            <input name="eligibility" id="eligibility" class="form-control" rows="3"></input>
+        </div>
+        
         <!-- Short Description -->
         <div class="mb-3">
             <label class="form-label">Short Description</label>

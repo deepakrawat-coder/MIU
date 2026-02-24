@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Exception;
 use Illuminate\Support\Facades\Validator;
+use Yajra\DataTables\Facades\DataTables;
 
 class SpecializationController extends Controller
 {
@@ -40,7 +41,7 @@ class SpecializationController extends Controller
             $recruiter    = $decoded->recruiter    ?? [];
         }
         // dd($why_choose, $success_rate, $career, $recruiter);
-        return view('web.pages.specialization-details', compact('specialization','why_choose','success_rate','career','recruiter'));
+        return view('web.pages.specialization-details', compact('specialization', 'why_choose', 'success_rate', 'career', 'recruiter'));
     }
 
     public function index(Request $request)
@@ -49,7 +50,7 @@ class SpecializationController extends Controller
 
             $data = Specialization::with('program')->latest();
 
-            return datatables()->of($data)
+            return DataTables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
                     return '';

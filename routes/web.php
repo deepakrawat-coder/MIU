@@ -8,6 +8,8 @@ use App\Http\Controllers\SchoolController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\SpecializationController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\FaqController;
 
 
 
@@ -82,8 +84,7 @@ Route::get('/dashboard', function () {
     ->name('dashboard');
 // route for frontend
 Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
-Route::get('/schools/{slug}', [SchoolController::class, 'details'])
-    ->name('schools.{slug}');
+
 Route::prefix('events')->group(function () {
 
     Route::get('/', [EventsCategoryController::class, 'index'])
@@ -177,7 +178,27 @@ Route::prefix('courses')->group(function () {
     Route::delete('/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete');
     Route::get('/status/{id}', [CourseController::class, 'status'])->name('courses.status');
 });
-Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
+// Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
+Route::prefix('testimonials')->group(function () {
+    Route::get('/', [TestimonialController::class, 'index'])->name('testimonials.index');
+    Route::get('/create', [TestimonialController::class, 'create'])->name('testimonials.create');
+    Route::post('/store', [TestimonialController::class, 'store'])->name('testimonials.store');
+    Route::get('/edit/{id}', [TestimonialController::class, 'edit'])->name('testimonials.edit');
+    Route::post('/update/{id}', [TestimonialController::class, 'update'])->name('testimonials.update');
+    Route::delete('/delete/{id}', [TestimonialController::class, 'destroy'])->name('testimonials.delete');
+    Route::get('/status/{id}', [TestimonialController::class, 'status'])->name('testimonials.status');
+});
+
+Route::prefix('faqs')->group(function () {
+    Route::get('/', [FaqController::class, 'index'])->name('faqs.index');
+    Route::get('/create', [FaqController::class, 'create'])->name('faqs.create');
+    Route::post('/store', [FaqController::class, 'store'])->name('faqs.store');
+    Route::get('/edit/{id}', [FaqController::class, 'edit'])->name('faqs.edit');
+    Route::post('/update/{id}', [FaqController::class, 'update'])->name('faqs.update');
+    Route::delete('/delete/{id}', [FaqController::class, 'destroy'])->name('faqs.delete');
+    Route::get('/status/{id}', [FaqController::class, 'status'])->name('faqs.status');
+});
+
 Route::prefix('specialization')->group(function () {
     Route::get('/', [SpecializationController::class, 'index'])->name('specialization.index');
     Route::get('/create', [SpecializationController::class, 'create'])->name('specialization.create');
@@ -193,5 +214,9 @@ Route::prefix('specialization')->group(function () {
 Route::get('/test', function () {
     return 'Laravel is working';
 });
+Route::get('/schools/{slug}', [SchoolController::class, 'details'])
+    ->name('schools.{slug}');
+
+require __DIR__ . '/settings.php';
 
 require __DIR__ . '/settings.php';

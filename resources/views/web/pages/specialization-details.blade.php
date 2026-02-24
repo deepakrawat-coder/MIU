@@ -873,47 +873,7 @@
                         </div>
                     @endforeach
 
-                    {{-- <div class="col-md-4 mb-4">
-                        <div class="career-card">
-                            <div class="career-icon">
-                                <i class="fa fa-cogs"></i>
-                            </div>
-                            <h5>Machine Learning Engineer</h5>
-                            <p class="text-primary mb-3">
-                                <i class="fa fa-inr mr-1"></i> 10–22 LPA
-                            </p>
-                            <p class="text-muted small mb-4">
-                                Design, build, and deploy machine learning models and systems for production environments.
-                            </p>
-                            <div class="skills">
-                                <span class="badge">TensorFlow</span>
-                                <span class="badge">PyTorch</span>
-                                <span class="badge">Cloud</span>
-                                <span class="badge">MLOps</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 mb-4">
-                        <div class="career-card">
-                            <div class="career-icon">
-                                <i class="fa fa-search"></i>
-                            </div>
-                            <h5>AI Research Scientist</h5>
-                            <p class="text-primary mb-3">
-                                <i class="fa fa-inr mr-1"></i> 15–30 LPA
-                            </p>
-                            <p class="text-muted small mb-4">
-                                Conduct cutting-edge research to advance AI capabilities and develop novel algorithms.
-                            </p>
-                            <div class="skills">
-                                <span class="badge">Research</span>
-                                <span class="badge">Algorithms</span>
-                                <span class="badge">Publications</span>
-                                <span class="badge">Math</span>
-                            </div>
-                        </div>
-                    </div> --}}
+                
 
                 </div>
             @endif
@@ -927,52 +887,12 @@
                             <div class="swiper partnerSwiper">
                                 <div class="swiper-wrapper">
 
-                                    <!-- Logo 1 -->
-                                    {{-- <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/google.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Google">
-                                    </div> --}}
-
-                                    <!-- Logo 2 -->
                                     @foreach ($recruiter as $recruiters)
                                         <div class="swiper-slide text-center">
                                             <img src="{{$recruiters->image ? asset($recruiters->image) : asset('/assets/images/partners/logo1.png')   }}"
                                                 class="img-fluid rounded" style="max-height:100px;" alt="Microsoft">
                                         </div>
-                                    @endforeach
-                                    {{-- <!-- Logo 3 -->
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/amazon.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Amazon">
-                                    </div>
-
-                                    <!-- Logo 4 -->
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/tcs.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="TCS">
-                                    </div>
-
-                                    <!-- Logo 5 -->
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/infosys.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Infosys">
-                                    </div>
-
-                                    <!-- Dummy -->
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/logo1.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Partner">
-                                    </div>
-
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/logo2.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Partner">
-                                    </div>
-
-                                    <div class="swiper-slide text-center">
-                                        <img src="{{ asset('/assets/images/partners/logo3.png') }}" class="img-fluid"
-                                            style="max-height:40px;" alt="Partner">
-                                    </div> --}}
+                                    @endforeach                                 
 
                                 </div>
                             </div>

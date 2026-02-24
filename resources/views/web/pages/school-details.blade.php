@@ -148,92 +148,68 @@
             </div>
 
             <div class="row">
-                <!-- Computer Science -->
-                @foreach ($programs as $program)
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="dept-card">
-                            <div class="dept-header">
-                                <span class="dept-icon flaticon-mouse"></span>
-                                <h3>{{ $program->name }}</h3>
+
+                {{-- Show Programs --}}
+                @if (!empty($programs) && $programs->count())
+
+                    @foreach ($programs as $program)
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="dept-card">
+                                <div class="dept-header">
+                                    <span class="dept-icon flaticon-mouse"></span>
+                                    <h3>{{ $program->name }}</h3>
+                                </div>
+
+                                <div class="dept-body">
+                                    @if ($program->courses && $program->courses->count())
+                                        @foreach ($program->courses as $course)
+                                            <span class="tag">{{ $course->name }}</span>
+                                        @endforeach
+                                    @else
+                                        <span class="text-muted">No courses available</span>
+                                    @endif
+                                </div>
                             </div>
-                            <div class="dept-body">
-                                @foreach ($program->courses as $course)
-                                    <span class="tag">{{ $course->name }}</span>
-                                @endforeach
+                        </div>
+                    @endforeach
+
+
+                    {{-- Show Courses Directly --}}
+                @elseif(!empty($coursesInfo) && $coursesInfo->count())
+                    @foreach ($coursesInfo as $course)
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="dept-card">
+                                <div class="dept-header">
+                                    <span class="dept-icon flaticon-mouse"></span>
+                                    <h3>{{ $course->name }}</h3>
+                                </div>
+
+                                <div class="dept-body">
+                                    @if ($course->duration)
+                                        <span class="tag">
+                                            <strong>Duration:</strong> {{ $course->duration }}
+                                        </span>
+                                    @endif
+
+                                    @if ($course->eligibility)
+                                        <span class="tag">
+                                            <strong>Eligibility:</strong> {{ $course->eligibility }}
+                                        </span>
+                                    @endif
+                                </div>
                             </div>
-                            {{-- <div class="dept-body">
-                            <span class="tag">B.Tech CSE</span>
-                            <span class="tag">M.Tech CSE</span>
-                            <span class="tag">Ph.D CSE</span>
-                            <span class="tag">BCA</span>
-                            <span class="tag">MCA</span>
-                            <span class="tag">Integrated BCA–MCA</span>
-                            <span class="tag">AI & ML (Diploma)</span>
-                            <span class="tag">Cyber & Forensics</span>
-                        </div> --}}
                         </div>
-                    </div>
-                @endforeach
-                <!-- Electrical -->
-                {{-- <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="dept-card">
-                        <div class="dept-header">
-                            <span class="dept-icon flaticon-virus"></span>
-                            <h3>Electrical Engineering</h3>
-                        </div>
-                        <div class="dept-body">
-                            <span class="tag">B.Tech EE</span>
-                            <span class="tag">B.Tech EEE</span>
-                            <span class="tag">M.Tech EE</span>
-                            <span class="tag">M.Tech EEE</span>
-                            <span class="tag">Diploma EE</span>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
 
-                <!-- Mechanical -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="dept-card">
-                        <div class="dept-header">
-                            <span class="dept-icon flaticon-businessman"></span>
-                            <h3>Mechanical Engineering</h3>
-                        </div>
-                        <div class="dept-body">
-                            <span class="tag">B.Tech Mechanical</span>
-                            <span class="tag">M.Tech Mechanical</span>
-                            <span class="tag">Ph.D Mechanical</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Civil -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="dept-card">
-                        <div class="dept-header">
-                            <span class="dept-icon flaticon-mask"></span>
-                            <h3>Civil Engineering</h3>
-                        </div>
-                        <div class="dept-body">
-                            <span class="tag">B.Tech Civil</span>
-                            <span class="tag">M.Tech Civil</span>
-                            <span class="tag">Ph.D Civil</span>
-                        </div>
+                    {{-- No Data --}}
+                @else
+                    <div class="col-12">
+                        <p class="text-center text-white">
+                            No programs available for this school at the moment.
+                        </p>
                     </div>
-                </div>
-
-                <!-- ECE -->
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="dept-card">
-                        <div class="dept-header">
-                            <span class="dept-icon flaticon-mortar"></span>
-                            <h3>Electronics & Communication</h3>
-                        </div>
-                        <div class="dept-body">
-                            <span class="tag">B.Tech ECE</span>
-                            <span class="tag">M.Tech ECE</span>
-                        </div>
-                    </div>
-                </div> --}}
+                @endif
 
             </div>
         </div>
@@ -428,52 +404,48 @@
             </div>
         </div>
     </section> --}}
-@foreach($school->courses as $course)
+    @foreach ($school->courses as $course)
+        @foreach ($course->programs as $program)
+            <section class="cse-specialization-section">
+                <div class="container">
 
-    @foreach($course->programs as $program)
+                    <!-- TITLE -->
+                    <div class="row mb-5">
+                        <div class="col-12 text-center">
+                            <h2 class="section-title">
+                                {{ $course->name }} in {{ $program->name }}
+                            </h2>
 
-        <section class="cse-specialization-section">
-            <div class="container">
+                            <p class="section-subtitle">
+                                Industry-oriented Specializations at Manipur International University
+                            </p>
+                        </div>
+                    </div>
 
-                <!-- TITLE -->
-                <div class="row mb-5">
-                    <div class="col-12 text-center">
-                        <h2 class="section-title">
-                            {{ $course->name }} in {{ $program->name }}
-                        </h2>
+                    <!-- SPECIALIZATION CARDS -->
+                    <div class="row">
 
-                        <p class="section-subtitle">
-                            Industry-oriented Specializations at Manipur International University
-                        </p>
+                        @foreach ($specializations as $specialization)
+                            <div class="col-lg-3 col-md-6 mb-4">
+                                <a
+                                    href="/{{ Str::slug($course->name) }}/{{ Str::slug($program->name) }}/{{ $specialization->slug }}">
+                                    <div class="spec-card image-card">
+                                        <div class="spec-img">
+                                            <img src="{{ asset($specialization->image) }}"
+                                                alt="{{ $specialization->title }}">
+                                        </div>
+                                        <h4>{{ $specialization->title }}</h4>
+                                        {{-- <p>{{ $specialization->short_description }}</p> --}}
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
+
                     </div>
                 </div>
-
-                <!-- SPECIALIZATION CARDS -->
-                <div class="row">
-
-                    @foreach($specializations as $specialization)
-
-                        <div class="col-lg-3 col-md-6 mb-4">
-                            <a href="/{{ Str::slug($course->name) }}/{{ Str::slug($program->name) }}/{{ $specialization->slug}}">
-                                <div class="spec-card image-card">
-                                    <div class="spec-img">
-                                        <img src="{{ asset($specialization->image) }}" 
-                                             alt="{{ $specialization->title }}">
-                                    </div>
-                                    <h4>{{ $specialization->title }}</h4>
-                                    {{-- <p>{{ $specialization->short_description }}</p> --}}
-                                </div>
-                            </a>
-                        </div>
-                    @endforeach                     
-
-                </div>
-            </div>
-        </section>
-
+            </section>
+        @endforeach
     @endforeach
-
-@endforeach
 
     <!-- TESTIMONIALS -->
     {{-- <section id="testimonials" style=" background: #17345a;" class="testimonial-style1-area">
@@ -529,29 +501,30 @@ alt="Alumni">
 </div>
 </div>
 </section> --}}
-    <section id="testimonials" class="testimonial-style1-area" style=" background: #17345a;">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1__title">
-                        <div class="sec-title">
-                            <h2 class="text-white">Voices of MIU Alumni</h2>
-                            <div class="sub-title">
-                                <p class="text-white">
-                                    Hear from our alumni as they share their experiences and success stories at Manipur
-                                    International University
-                                </p>
+    @if (!$testimonials->isEmpty())
+        <section id="testimonials" class="testimonial-style1-area" style=" background: #17345a;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2 class="text-white">Feedback of {{ $school->name }}</h2>
+                                <div class="sub-title">
+                                    <p class="text-white">
+                                        Hear from our alumni as they share their experiences and success stories at Manipur
+                                        International University
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1-content">
-                        <div class="theme_carousel testimonial-carousel owl-theme owl-carousel owl-loaded owl-drag"
-                            data-options="{
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1-content">
+                            <div class="theme_carousel testimonial-carousel owl-theme owl-carousel owl-loaded owl-drag"
+                                data-options="{
                                     &quot;loop&quot;: true,
                                     &quot;margin&quot;: 30,
                                     &quot;autoheight&quot;:true,
@@ -571,838 +544,102 @@ alt="Alumni">
                                     &quot;1200&quot;:{ &quot;items&quot; : &quot;3&quot; }
                                 }
                             }">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-2800px, 0px, 0px); transition: 0.5s; width: 4800px;">
+                                        @foreach ($testimonials as $testimonial)
+                                            <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                                                <div class="single-testimonial-style1">
+                                                    <div class="border-box"></div>
+                                                    <div class="top-box">
+                                                        <div class="quote-iocn-box">
+                                                            <span class="icon-quote"></span>
+                                                        </div>
+                                                        <div class="inner">
+                                                            <div class="img-box">
+                                                                <img src="{{ asset($testimonial->image) }}"
+                                                                    alt="">
+                                                            </div>
+                                                            <div class="rating-box">
+                                                                <ul>
+                                                                    @php
+                                                                        for ($i = 0; $i < $testimonial->rating; $i++) {
+                                                                            echo '<li><span class="icon-favourite"><span class="path1"></span><span class="path2"></span></span></li>';
+                                                                        }
 
-                            <!--Start Single Testimonial Style1-->
+                                                                    @endphp
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text">
+                                                            <p>{{ $testimonial->message }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="client-name">
+                                                        <h3>{{ $testimonial->name }}</h3>
+                                                        <span>{{ $testimonial->subtitle }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
 
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-
-                            <!--End Single Testimonial Style1-->
-
-                            <!--Start Single Testimonial Style1-->
-
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-
-                            <!--End Single Testimonial Style1-->
-
-                            <div class="owl-stage-outer">
-                                <div class="owl-stage"
-                                    style="transform: translate3d(-2800px, 0px, 0px); transition: 0.5s; width: 4800px;">
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>My journey at Manipur International University was filled with
-                                                        learning opportunities, research exposure, and holistic development.
-                                                        MIU truly prepares students for real-world challenges.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Amit Kumar</h3>
-                                                <span>MBA | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>MIU’s academic structure and career support system helped me
-                                                        transition smoothly from student life to a professional role.
-                                                        I am proud to be an MIU alumnus.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Neha Verma</h3>
-                                                <span>M.Sc | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Being part of MIU allowed me to explore my potential through
-                                                        innovative learning and practical exposure. The university
-                                                        continues to inspire me even after graduation.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Rahul Meitei</h3>
-                                                <span>B.Tech (Mechanical Engineering) | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Studying at Manipur International University was a life-changing
-                                                        experience.
-                                                        The academic environment, supportive faculty, and practical learning
-                                                        helped
-                                                        me build a strong foundation for my professional career.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Ananya Sharma</h3>
-                                                <span>B.Tech (Computer Science) | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>MIU provided me exposure to diverse cultures, modern infrastructure,
-                                                        and industry-oriented education. The mentorship I received shaped
-                                                        my confidence and professional growth.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Rohit Singh</h3>
-                                                <span>BBA | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>The faculty at MIU are highly knowledgeable and approachable.
-                                                        Their guidance and encouragement helped me develop analytical
-                                                        and leadership skills essential for my career.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Priya Devi</h3>
-                                                <span>B.Tech (Civil Engineering) | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>My journey at Manipur International University was filled with
-                                                        learning opportunities, research exposure, and holistic development.
-                                                        MIU truly prepares students for real-world challenges.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Amit Kumar</h3>
-                                                <span>MBA | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>MIU’s academic structure and career support system helped me
-                                                        transition smoothly from student life to a professional role.
-                                                        I am proud to be an MIU alumnus.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Neha Verma</h3>
-                                                <span>M.Sc | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Being part of MIU allowed me to explore my potential through
-                                                        innovative learning and practical exposure. The university
-                                                        continues to inspire me even after graduation.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Rahul Meitei</h3>
-                                                <span>B.Tech (Mechanical Engineering) | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned active" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-1.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Studying at Manipur International University was a life-changing
-                                                        experience.
-                                                        The academic environment, supportive faculty, and practical learning
-                                                        helped
-                                                        me build a strong foundation for my professional career.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Ananya Sharma</h3>
-                                                <span>B.Tech (Computer Science) | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-2.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>MIU provided me exposure to diverse cultures, modern infrastructure,
-                                                        and industry-oriented education. The mentorship I received shaped
-                                                        my confidence and professional growth.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Rohit Singh</h3>
-                                                <span>BBA | MIU Alumni</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
-                                        <div class="single-testimonial-style1">
-                                            <div class="border-box"></div>
-                                            <div class="top-box">
-                                                <div class="quote-iocn-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                                <div class="inner">
-                                                    <div class="img-box">
-                                                        <img src="http://127.0.0.1:8000/assets/images/testimonial/testimonial-v1-3.jpg"
-                                                            alt="">
-                                                    </div>
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-favourite">
-                                                                    <span class="path1"></span><span
-                                                                        class="path2"></span>
-                                                                </span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="text">
-                                                    <p>The faculty at MIU are highly knowledgeable and approachable.
-                                                        Their guidance and encouragement helped me develop analytical
-                                                        and leadership skills essential for my career.</p>
-                                                </div>
-                                            </div>
-                                            <div class="client-name">
-                                                <h3>Priya Devi</h3>
-                                                <span>B.Tech (Civil Engineering) | MIU Alumni</span>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
+                                <div class="owl-nav disabled"><button type="button" role="presentation"
+                                        class="owl-prev"><span class="left icon-next"></span></button><button
+                                        type="button" role="presentation" class="owl-next"><span
+                                            class="right icon-next"></span></button>
+                                </div>
+                                <div class="owl-dots disabled"></div>
                             </div>
-                            <div class="owl-nav disabled"><button type="button" role="presentation"
-                                    class="owl-prev"><span class="left icon-next"></span></button><button type="button"
-                                    role="presentation" class="owl-next"><span class="right icon-next"></span></button>
-                            </div>
-                            <div class="owl-dots disabled"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
     <!-- FAQs -->
-    <section id="faq" class="course-curriculum-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="course-curriculum-content-box">
-                        <div class="course-layout-content-box">
-                            <div class="inner-title">
-                                <h4>FAQs</h4>
-                                <p>Need Help?</p>
+    @if (!empty($faq))
+        <section id="faq" class="course-curriculum-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="course-curriculum-content-box">
+                            <div class="course-layout-content-box">
+                                <div class="inner-title">
+                                    <h4>FAQs</h4>
+                                    <p>Need Help?</p>
+                                </div>
+                                <ul class="accordion-box">
+                                    @foreach ($faq as $item)
+                                        <li class="accordion block active-block">
+                                            <div class="acc-btn active">
+                                                <div class="course-layout-title-box">
+                                                    <h4>{{ $item['question'] }}</h4>
+                                                    <div class="icon-outer">
+                                                        <i class="icon-plus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-content current">
+                                                <div class="course-layout-content-box-inner">
+                                                    <p class="p-3">
+                                                        {{ $item['answer'] }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             </div>
-                            <ul class="accordion-box">
-                                <li class="accordion block active-block">
-                                    <div class="acc-btn active">
-                                        <div class="course-layout-title-box">
-                                            <h4>What programs are offered in the School of Technology?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content current">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                The School of Technology offers undergraduate, postgraduate, and doctoral
-                                                programs in Computer Science, Mechanical Engineering, Civil Engineering,
-                                                Artificial Intelligence, Data Science, Cyber Security, and related
-                                                specializations.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>What are the admission requirements?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Admission requirements vary by program. Generally, UG programs require 10+2
-                                                with PCM/PCB, PG programs require relevant bachelor's degree, and PhD
-                                                programs require master's degree with minimum marks. Entrance exams may
-                                                apply.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="course-layout-title-box">
-                                            <h4>Are there placement opportunities?</h4>
-                                            <div class="icon-outer">
-                                                <i class="icon-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="acc-content">
-                                        <div class="course-layout-content-box-inner">
-                                            <p class="p-3">
-                                                Yes, MIU has an active placement cell with connections to leading tech
-                                                companies. Regular campus drives, internships, and industry projects are
-                                                organized to ensure students get excellent career opportunities.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    @endif
     <!-- RECRUITERS -->
-    <section id="partner" class="course-curriculum-area">
+    {{-- <section id="partner" class="course-curriculum-area">
         <div class="container" style="overflow: hidden;">
             <div class="auto-container">
                 <div class="sec-title text-center mb-4">
@@ -1427,7 +664,7 @@ alt="Alumni">
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 @endsection
 

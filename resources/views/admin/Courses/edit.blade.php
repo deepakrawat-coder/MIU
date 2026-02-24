@@ -33,7 +33,18 @@
                 class="form-control"
                 value="{{ $course->name }}" required>
         </div>
-
+         <div class="mb-3">
+            <label class="form-label">Eligibility</label>
+            <input type="text" name="eligibility"
+                class="form-control"
+                value="{{ $course->eligibility }}" >
+        </div>
+          <div class="mb-3">
+            <label class="form-label">Duration</label>
+            <input type="text" name="duration"
+                class="form-control"
+                value="{{ $course->duration }}" >
+        </div>
         <!-- Short Description -->
         <div class="mb-3">
             <label class="form-label">Short Description</label>

@@ -51,6 +51,8 @@ class CourseController extends Controller
             'school_id'        => 'required|exists:schools,id',
             'name'             => 'required|string|max:255',
             'short_description' => 'nullable|string',
+            'duration'         => 'nullable|string|max:255',
+            'eligibility'      => 'nullable|string',
             'meta_title'       => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
             'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
@@ -69,6 +71,8 @@ class CourseController extends Controller
 
             $course->school_id        = $request->school_id;
             $course->name             = $request->name;
+            $course->duration         = $request->duration;
+            $course->eligibility      = $request->eligibility;
             $course->short_description = $request->short_description;
             $course->meta_title       = $request->meta_title;
             $course->meta_description = $request->meta_description;
@@ -142,6 +146,8 @@ class CourseController extends Controller
             'short_description' => 'nullable|string',
             'meta_title'       => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
+            'duration'         => 'nullable|string|max:255',
+            'eligibility'      => 'nullable|string|max:255',
             'image'            => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
 
@@ -157,6 +163,8 @@ class CourseController extends Controller
             // ✅ Update Fields
             $course->school_id         = $request->school_id;
             $course->name              = $request->name;
+            $course->duration          = $request->duration;
+            $course->eligibility       = $request->eligibility;
             $course->short_description = $request->short_description;
             $course->meta_title        = $request->meta_title;
             $course->meta_description  = $request->meta_description;

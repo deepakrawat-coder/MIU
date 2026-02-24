@@ -106,6 +106,16 @@
                             Specialization
                         </a>
                     </li>
+                    <li class="slide {{ Route::is('testimonials.index') ? 'active' : '' }}">
+                        <a href="{{ route('testimonials.index') }}" class="side-menu__item" role="menuitem">
+                            Testimonials
+                        </a>
+                    </li>
+                    <li class="slide {{ Route::is('faqs.index') ? 'active' : '' }}">
+                        <a href="{{ route('faqs.index') }}" class="side-menu__item" role="menuitem">
+                            Faqs
+                        </a>
+                    </li>
                 </ul>
             </li>
 

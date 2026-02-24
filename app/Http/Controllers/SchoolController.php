@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use App\Models\Faq;
 use App\Models\School;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Support\Facades\Validator;
 use Exception;
 use Illuminate\Support\Str;
+use PHPUnit\Util\Test;
 
 class SchoolController extends Controller
 {
@@ -21,22 +24,11 @@ class SchoolController extends Controller
         $schools = School::where('status', 1)
             ->orderBy('order', 'asc')
             ->get();
-
-        return view('web.pages.deparments-programs', compact('schools'));
+        $testimonials = Testimonial::where('page_type', 'school')->get();
+        return view('web.pages.deparments-programs', compact('schools', 'testimonials'));
     }
 
-    // public function details($slug)
-    // {
-    //     $school = School::with('courses', 'courses.programs', 'courses.programs.specializations')
-    //         ->where('slug', $slug)
-    //         ->where('status', 1)
-    //         ->firstOrFail();
-    //     $course = $school->courses->toArray();
-    //     $programs = $course->programs;
-    //     $specizations = $programs->specializations;
-    //     dd($specizations);
-    //     return view('web.pages.school-details', compact('school', 'specialPrograms'));
-    // }
+
     public function details($slug)
     {
         $school = School::with('courses.programs.specializations')
@@ -57,10 +49,22 @@ class SchoolController extends Controller
             ->flatten()
             ->unique('id')
             ->values();
-
-        // dd($specializations);
-
-        return view('web.pages.school-details', compact('school', 'specializations', 'programs'));
+        $coursesInfo = $school->courses()->where('status', 1)->get();
+        $testimonials = Testimonial::where('school_id', $school->id)->where('status', 1)->get();
+        $faqencode = Faq::where('school_id', $school->id)
+            ->where('status', 1)
+            ->first();
+        if (!empty($faqencode)) {
+            $faq = collect(json_decode(base64_decode($faqencode->faqs_json), true))
+                ->where('status', 1)
+                ->sortBy('order')
+                ->values()
+                ->toArray();
+        } else {
+            $faq = [];
+        }
+        // dd($faq);
+        return view('web.pages.school-details', compact('school', 'specializations', 'programs', 'coursesInfo', 'testimonials', 'faq'));
     }
 
 
@@ -71,7 +75,7 @@ class SchoolController extends Controller
     {
         if ($request->ajax()) {
             $schools = School::latest()->get();
-            return datatables()->of($schools)
+            return DataTables::of($schools)
                 ->addIndexColumn()
                 ->addColumn('status', function ($row) {
                     return $row->status;
