@@ -685,3 +685,6 @@
     border-radius: 50px;
     font-weight: 600;
 }
+.single-categories-box .text h3 a {
+            font-size: 18px !important;
+        }

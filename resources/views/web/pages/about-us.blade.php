@@ -2,13 +2,22 @@
 @section('title', '| About Us')
 @section('description', 'About')
 
-@section('styles')    
+@section('styles')
+<style>
+    .justify {
+        text-align: justify;
+    }
+    .course-layout-content-box-inner p {
+        color: black;
+    }
+</style>
 @endsection
 @section('content')
 
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
-        <div class="breadcrumb-area-bg custom-image" style="background-image: url({{asset('/assets/images/about/about.jpg')}});">
+        <div class="breadcrumb-area-bg custom-image"
+            style="background-image: url({{ asset('/assets/images/about/about.jpg') }});">
         </div>
         <div class="container">
             <div class="row">
@@ -34,50 +43,51 @@
     <!--Start About Style1 Area-->
     <section class="about-style1-area pb-5">
         <div class="container">
-            <div class="sec-title text-center">
-                <h2> Manipur International University </h2>
-                <h4 class="mt-3">माणिपुर अंतर्राष्ट्रीय विश्वविद्यालय</h4>
-                <div class="sub-title">
-                    <p>Excellence • Innovation • Transformation</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="about-style1__inner p-5">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="about-style1-content">
-                                    <p>
-                                        Manipur International University (MIU)of Imphal, established in 2018 under the
-                                        Manipur International University Ordinance, 2018 (Ordinance No.1 of 2018),
-                                        promulgated by Her Excellency the Governor of Manipur is a State Private University.
-                                        It holds the prestigious recognition from the University Grants Commission (UGC),
-                                        Ministry of Education, Government of India under Section 2(f) and Section 22 of the
-                                        UGC Act, 1956 as a State Private University.
-                                    </p>
 
-                                    <p>
-                                        We ensure our learners receive internationally recognized qualifications, enhance
-                                        quality education and innovative research works. The University represents a
-                                        transformative vision in higher education, seamlessly blending traditional wisdom
-                                        with modern pedagogical approaches.
-                                    </p>
-
-                                    <p>
-                                        Manipur International University (MIU) is an Autonomous Public International
-                                        University of State Importance and Excellence. It is institutionally established and
-                                        recognized by the State Government of Manipur and recognized and listed by the
-                                        University Grants Commission (UGC), Ministry of Education, Government of India under
-                                        Section 2(f) and Section 22 of the UGC Act, 1956 of the UGC Act, 1956 as a State
-                                        Private University. It is empowered to award degrees under. It has been declared as
-                                        an "International Institution of Excellence" and an "Institution of State
-                                        Importance," as incorporated in the Manipur State Gazette Notification vide no. 458
-                                        dated February 14, 2019 by the Government of Manipur.
-                                    </p>
-                                </div>
-                            </div>
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="sec-title text-start">
+                        <h2> Manipur International University </h2>
+                        <h4 class="mt-3">माणिपुर अंतर्राष्ट्रीय विश्वविद्यालय</h4>
+                        <div class="sub-title">
+                            <p class="text-info">Excellence • Innovation • Transformation</p>
                         </div>
                     </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="about-style1-content pr-2">
+                        <p class="justify">
+                            Manipur International University (MIU)of Imphal, established in 2018 under the
+                            Manipur International University Ordinance, 2018 (Ordinance No.1 of 2018),
+                            promulgated by Her Excellency the Governor of Manipur is a State Private University.
+                            It holds the prestigious recognition from the University Grants Commission (UGC),
+                            Ministry of Education, Government of India under Section 2(f) and Section 22 of the
+                            UGC Act, 1956 as a State Private University.
+                        </p>
+
+                        <p class="justify">
+                            We ensure our learners receive internationally recognized qualifications, enhance
+                            quality education and innovative research works. The University represents a
+                            transformative vision in higher education, seamlessly blending traditional wisdom
+                            with modern pedagogical approaches.
+                        </p>
+
+                        <p class="justify">
+                            Manipur International University (MIU) is an Autonomous Public International
+                            University of State Importance and Excellence. It is institutionally established and
+                            recognized by the State Government of Manipur and recognized and listed by the
+                            University Grants Commission (UGC), Ministry of Education, Government of India under
+                            Section 2(f) and Section 22 of the UGC Act, 1956 of the UGC Act, 1956 as a State
+                            Private University. It is empowered to award degrees under. It has been declared as
+                            an "International Institution of Excellence" and an "Institution of State
+                            Importance," as incorporated in the Manipur State Gazette Notification vide no. 458
+                            dated February 14, 2019 by the Government of Manipur.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="{{ asset('/assets/images/about/about.jpg') }}" class="img-fluid mb-3" alt="image">
+                    <img src="{{ asset('/assets/images/web-image/y4.jpeg') }}" class="img-fluid mb-3" alt="image">
                 </div>
             </div>
         </div>
@@ -95,6 +105,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb1.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 International Institution of Excellence
                             </h3>
@@ -109,6 +120,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb2.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Institution of State Importance
                             </h3>
@@ -122,6 +134,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb3.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 State Research Institute
                             </h3>
@@ -318,6 +331,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb4.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Research Excellence
                             </h3>
@@ -331,6 +345,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb5.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Global Perspective
                             </h3>
@@ -344,6 +359,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb6.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Innovation Hub
                             </h3>
@@ -357,6 +373,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb7.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Cultural Heritage
                             </h3>
@@ -370,6 +387,7 @@
                 <div class="col-xl-4 col-lg-4 d-flex align-item-stretch">
                     <div class="single-blog-style4">
                         <div class="single-blog-style4__inner">
+                            <img src="{{ asset('/assets/images/web-image/abb8.png') }}" class="img-fluid" width="80" height="80" alt="image">
                             <h3 class="blog-title">
                                 Sustainable Development
                             </h3>
