@@ -265,12 +265,12 @@
                                 <div class="text-holder">
                                     <h3>
                                         <a href="{{ route('post.details', $post->slug) }}">
-                                            {{ $post->title }}
+                                            {{ substr($post->title, 0, 25) }}{{ strlen($post->title) > 25 ? '...' : '' }}
                                         </a>
 
                                     </h3>
                                     <div class="text pt-0">
-                                        <p>{{ Str::limit($post->short_description, 120) }}</p>
+                                        <p>{{ substr($post->short_description ?? $post->description, 0, 70) }}{{ strlen($post->short_description ?? $post->description) > 70 ? '...' : '' }}</p>
                                     </div>
                                     <div class="bottom-box">
                                         <div class="btn-box">
@@ -282,7 +282,7 @@
                                             <ul>
                                                 <li>
                                                     <span class="icon-calendar"></span>
-                                                    {{ $post->publish_date?->format('d F Y') }}
+                                                    {{ $post->publish_date?->format('d m Y') }}
                                                 </li>
                                             </ul>
                                         </div>
@@ -447,14 +447,14 @@
                             {{-- Title --}}
                             <h3 class="mt-2">
                                 <a href="{{ route('post.details', $post->slug) }}">
-                                    {{ Str::limit($post->title, 50) }}
+                                    {{ substr($post->title, 0, 40) }}{{ strlen($post->title) > 40 ? '...' : '' }}
                                 </a>
                             </h3>
 
                             {{-- Description --}}
                             <div class="text">
                                 <p>
-                                    {{ Str::limit($post->short_description ?? $post->description, 120) }}
+                                    {{ substr($post->short_description ?? $post->description, 0, 70) }}{{ strlen($post->short_description ?? $post->description) > 80 ? '...' : '' }}
                                 </p>
                             </div>
 
