@@ -58,7 +58,7 @@
     </section>
     <!--End breadcrumb area-->
 
-
+     @if(!empty($blogs))
     <section class="blog-page-two">
         <div class="container">
             <div class="row">
@@ -66,11 +66,12 @@
                 <div class="col-lg-12">
                     <div class="blog-page-two__content">
                         <div class="row">
+                            @foreach ($blogs as $blog)
                             <div class="col-lg-12">
-                                <div class="single-blog-style2">
-                                    <div class="single-blog-style2__img-holder">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
+                                <div class="single-blog-style2 ">
+                                    <div class="single-blog-style2__img-holder  h-100 border-none shadow-none bg-white">
+                                        <div class="inner h-100 border-none shadow-none bg-white">
+                                            <img src="{{ asset($blog->image) }}" class="img-fluid h-100"
                                                 alt="image">
                                         </div>
                                     </div>
@@ -83,19 +84,17 @@
                                         </div>
                                         <h3 class="blog-title">
                                             <a
-                                                href="/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india">
-                                                Why Manipur International University is Emerging...
+                                                href="/blog/{{ $blog->slug }}">
+                                              {{ $blog->title }}
                                             </a>
                                         </h3>
                                         <div class="text">
-                                            <p>Choosing the right university is one of the most important decisions in a
-                                                student’s life. With
-                                                increasing competition and rapidly changin...</p>
+                                            <p>{{ $blog->short_description }}</p>
                                         </div>
                                         <div class="bottom-box">
                                             <div class="btn-box">
                                                 <a
-                                                    href="/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india">
+                                                    href="/blog/{{ $blog->slug }}">
                                                     <span class="icon-right-arrow-1"></span>Read More
                                                 </a>
                                             </div>
@@ -104,187 +103,22 @@
                                                     <li>
                                                         <span class="icon-calendar"></span>
                                                         <a
-                                                            href="/why-manipur-international-university-is-emerging-as-a-top-choice-for-higher-education-in-northeast-india">Feb
-                                                            14, 2026</a>
+                                                            href="/blog/{{ $blog->slug }}">{{ $blog->created_at->format('M d, Y') }}</a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="single-blog-style2">
-                                    <div class="single-blog-style2__img-holder">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="single-blog-style2__text-holder">
-                                        <div class="top">
-                                            <div class="category-box">
-                                                <div class="dot-box"></div>
-                                                <p>Manipur International University</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="blog-title">
-                                            <a href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
-                                                Top Career-Oriented Programs at Manip...
-                                            </a>
-                                        </h3>
-                                        <div class="text">
-                                            <p>In today’s fast-changing job market, students are increasingly choosing programs that combine academic knowledge with prac...</p>
-                                        </div>
-                                        <div class="bottom-box">
-                                            <div class="btn-box">
-                                                <a href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">
-                                                    <span class="icon-right-arrow-1"></span>Read More
-                                                </a>
-                                            </div>
-                                            <div class="meta-info">
-                                                <ul>
-                                                    <li>
-                                                        <span class="icon-calendar"></span>
-                                                        <a href="/top-career-oriented-programs-at-manipur-international-university-forfuture-ready-students">Feb 13, 2026</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="single-blog-style2">
-                                    <div class="single-blog-style2__img-holder">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="single-blog-style2__text-holder">
-                                        <div class="top">
-                                            <div class="category-box">
-                                                <div class="dot-box"></div>
-                                                <p>Manipur International University</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="blog-title">
-                                            <a href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
-                                                GC Recognition and NEP-Aligned Education at...
-                                            </a>
-                                        </h3>
-                                        <div class="text">
-                                            <p>In today’s competitive academic environment, students and parents are increasingly careful about choosing the right...</p>
-                                        </div>
-                                        <div class="bottom-box">
-                                            <div class="btn-box">
-                                                <a href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">
-                                                    <span class="icon-right-arrow-1"></span>Read More
-                                                </a>
-                                            </div>
-                                            <div class="meta-info">
-                                                <ul>
-                                                    <li>
-                                                        <span class="icon-calendar"></span>
-                                                        <a href="/ugc-recognition-and-nep-aligned-education-at-manipur-international-university-what-students-should-know">Feb 12, 2026</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12">
-                                <div class="single-blog-style2">
-                                    <div class="single-blog-style2__img-holder">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="single-blog-style2__text-holder">
-                                        <div class="top">
-                                            <div class="category-box">
-                                                <div class="dot-box"></div>
-                                                <p>Manipur International University</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="blog-title">
-                                            <a href="/campus-life-and-student-development-at-manipur-international-university">
-                                                Campus Life and Student Development at...
-                                            </a>
-                                        </h3>
-                                        <div class="text">
-                                            <p>Campus life plays a crucial role in shaping a student’s personality, skills, and career path. At Manipur International...</p>
-                                        </div>
-                                        <div class="bottom-box">
-                                            <div class="btn-box">
-                                                <a href="/campus-life-and-student-development-at-manipur-international-university">
-                                                    <span class="icon-right-arrow-1"></span>Read More
-                                                </a>
-                                            </div>
-                                            <div class="meta-info">
-                                                <ul>
-                                                    <li>
-                                                        <span class="icon-calendar"></span>
-                                                        <a href="/campus-life-and-student-development-at-manipur-international-university">Feb 11, 2026</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="single-blog-style2">
-                                    <div class="single-blog-style2__img-holder">
-                                        <div class="inner">
-                                            <img src="{{ asset('assets/images/about/about.jpg') }}" class="img-fluid"
-                                                alt="image">
-                                        </div>
-                                    </div>
-                                    <div class="single-blog-style2__text-holder">
-                                        <div class="top">
-                                            <div class="category-box">
-                                                <div class="dot-box"></div>
-                                                <p>Manipur International University</p>
-                                            </div>
-                                        </div>
-                                        <h3 class="blog-title">
-                                            <a href="/admission-guide-2026-how-to-apply-to-manipur-international-university">
-                                                Admission Guide 2026: How to Apply to Manipur...
-                                            </a>
-                                        </h3>
-                                        <div class="text">
-                                            <p>Choosing the right university is the first step toward a successful career. If you are planning to apply for...</p>
-                                        </div>
-                                        <div class="bottom-box">
-                                            <div class="btn-box">
-                                                <a href="/admission-guide-2026-how-to-apply-to-manipur-international-university">
-                                                    <span class="icon-right-arrow-1"></span>Read More
-                                                </a>
-                                            </div>
-                                            <div class="meta-info">
-                                                <ul>
-                                                    <li>
-                                                        <span class="icon-calendar"></span>
-                                                        <a href="/admission-guide-2026-how-to-apply-to-manipur-international-university">Feb 10, 2026</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> 
+                            @endforeach                       
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+     @endif
 
 @endsection
 @section('scripts')

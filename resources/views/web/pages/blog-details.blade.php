@@ -22,8 +22,6 @@
     </style>
 @endsection
 @section('content')
-
-
     <!--Start breadcrumb area paroller-->
     <section class="breadcrumb-area">
         <div class="breadcrumb-area-bg custom-image" style="background-image: url(/assets/images/about/about.jpg);">
@@ -33,7 +31,7 @@
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2> Title: Blogs Details </h2>
+                            <h3 class="text-white"> Title: {{ $blog->title }} </h3>
                         </div>
                         <div class="breadcrumb-menu" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                             <ul>
@@ -57,12 +55,15 @@
                 <div class="col-xl-9">
                     <div class="blog-details-page__content">
                         <div class="blog-details-page__content__inner">
-                            <div class="blog-details-page__img-box">
-                                <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid" alt="image">
+                            @if(!empty($blog->image))
+                               <div class="blog-details-page__img-box">
+                                <img src="{{ asset($blog->image) }}" class="img-fluid" alt="image">
                             </div>
+                            @endif
+                           
                             <div class="my-4">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda doloribus
-                                    reprehenderit architecto vitae natus soluta facere culpa! Sapiente, ipsam!</p>
+                                <h2>{{ $blog->title }}</h2>
+                                <p>{!! $blog->content !!}</p>
                             </div>
                         </div>
                     </div>
@@ -70,6 +71,7 @@
 
                 <!--Start Thm Sidebar Box-->
                 <div class="col-xl-3 col-lg-5">
+                    @if(!empty($otherBlogs) && count($otherBlogs) > 0)
                     <div class="thm-sidebar-box">
                         <div class="single-sidebar-box">
                             <div class="sidebar-title">
@@ -78,79 +80,36 @@
                             </div>
                             <div class="sidebar-blog-post">
                                 <ul class="blog-post">
+                                    @foreach($otherBlogs as $otherBlog)
                                     <li>
                                         <div class="inner">
-                                            <div class="img-box">
-                                                <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
+                                            <div class="img-box ">
+                                                <img src="{{ asset($otherBlog->image) }}" class="img-fluid h-100"
                                                     alt="image">
                                                 <div class="overlay-content">
-                                                    <a href="/blog-details">
+                                                    <a href="/blog/{{ $otherBlog->slug }}" class="link">
                                                         <i class="fa fa-link" aria-hidden="true"></i>
                                                     </a>
                                                 </div>
                                             </div>
                                             <div class="title-box">
                                                 <div class="post-date">
-                                                    <span class="icon-date"></span> Nov 25, 2022
+                                                    <span class="icon-date"></span> {{ date('M d, Y', strtotime($otherBlog->created_at)) }}
                                                 </div>
                                                 <h4>
-                                                    <a href="/blog-details">
-                                                        University of Educamb Award 4 ...
+                                                    <a href="/blog/{{ $otherBlog->slug }}">
+                                                        {{ substr($otherBlog->title,0,30) }}
                                                     </a>
                                                 </h4>
                                             </div>
                                         </div>
                                     </li>
-                                    <li>
-                                        <div class="inner">
-                                            <div class="img-box">
-                                                <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
-                                                    alt="image">
-                                                <div class="overlay-content">
-                                                    <a href="/blog-details">
-                                                        <i class="fa fa-link" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="title-box">
-                                                <div class="post-date">
-                                                    <span class="icon-date"></span> Nov 14, 2022
-                                                </div>
-                                                <h4>
-                                                    <a href="/blog-details">
-                                                        A Core Commitment to Liberal Arts ...
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="inner">
-                                            <div class="img-box">
-                                                <img src="{{ asset('assets/images/blog/blog-v3-1.jpg') }}" class="img-fluid"
-                                                    alt="image">
-                                                <div class="overlay-content">
-                                                    <a href="/blog-details">
-                                                        <i class="fa fa-link" aria-hidden="true"></i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="title-box">
-                                                <div class="post-date">
-                                                    <span class="icon-date"></span> Sep 10, 2022
-                                                </div>
-                                                <h4>
-                                                    <a href="/blog-details">
-                                                        Top 10 Educamb Accomblishments ...
-                                                    </a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </li>
+                                     @endforeach
                                 </ul>
                             </div>
                         </div>
                     </div>
+                    @endif
                 </div>
                 <!--End Thm Sidebar Box-->
 

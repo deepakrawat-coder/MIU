@@ -190,6 +190,9 @@
             </div>
         </div>
     </section>
+
+
+
     <section class="involment-activities-area involment-activities-area--style2">
         <div class="container">
             <div class="sec-title text-center">
@@ -201,316 +204,79 @@
                     </p>
                 </div>
             </div>
-            {{-- <div class="row">
-                <!-- School 1 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-1.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Engineering & Technology</h3>
-                                    <p>
-                                        Focused on cutting-edge engineering education, technology,
-                                        innovation, and practical skill development.
-                                    </p>
-                                    <ul>
-                                        <li>Engineering & Technology Programs</li>
-                                        <li>Industry-Oriented Curriculum</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- School 2 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{asset('/assets/images/resources/involment-activities-2.jpg')}}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Arts & Humanities</h3>
-                                    <p>
-                                        Promoting creativity, critical thinking, culture,
-                                        communication, and social sciences.
-                                    </p>
-                                    <ul>
-                                        <li>Arts & Humanities</li>
-                                        <li>Interdisciplinary Learning</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- School 3 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-3.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Management & Commerce</h3>
-                                    <p>
-                                        Developing future leaders with strong foundations in
-                                        business management, finance, and entrepreneurship.
-                                    </p>
-                                    <ul>
-                                        <li>Management & Commerce</li>
-                                        <li>Entrepreneurship Focus</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- School 4 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-4.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Science</h3>
-                                    <p>
-                                        Emphasizing scientific research, innovation, and analytical
-                                        skills across core science disciplines.
-                                    </p>
-                                    <ul>
-                                        <li>Basic & Applied Sciences</li>
-                                        <li>Research-Oriented Programs</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- School 5 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-5.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Health Sciences</h3>
-                                    <p>
-                                        Dedicated to healthcare education, wellness, and professional
-                                        competence in health-related fields.
-                                    </p>
-                                    <ul>
-                                        <li>Health & Allied Sciences</li>
-                                        <li>Practical Clinical Exposure</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- School 6 -->
-                <div class="col-xl-4 col-lg-4 mb-4">
-                    <a href="/school-details">
-                        <div class="single-involment-activities-box">
-                            <div class="img-box">
-                                <div class="inner">
-                                    <img src="{{ asset('/assets/images/resources/involment-activities-6.jpg') }}" alt="">
-                                </div>
-                                <div class="text-holder">
-                                    <h3>School of Research & Innovation</h3>
-                                    <p>
-                                        Encouraging multidisciplinary research, innovation,
-                                        and real-world problem-solving initiatives.
-                                    </p>
-                                    <ul>
-                                        <li>Research & Innovation</li>
-                                        <li>Industry & Academic Collaboration</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div> --}}
-            <?php
-            // $schools = [
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Arts & Humanities',
-            //         'description' => 'The School of Arts and Humanities at Manipur International University (MIU) ...',
-            //         'features' => [
-            //             'Engineering & Technology Programs',
-            //             'Industry-Oriented Curriculum'
-            //         ]
-            //     ],
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Engineering & Technology',
-            //         'description' => 'The School of Technology at Manipur International University (MIU) offers a comprehensive...',
-            //         'features' => [
-            //             'Arts & Humanities',
-            //             'Interdisciplinary Learning'
-            //         ]
-            //     ],
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Science',
-            //         'description' => 'The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...',
-            //         'features' => [
-            //             'Management & Commerce',
-            //             'Entrepreneurship Focus'
-            //         ]
-            //     ],
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Yoga Science',
-            //         'description' => 'The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs...',
-            //         'features' => [
-            //             'Basic & Applied Sciences',
-            //             'Research-Oriented Programs'
-            //         ]
-            //     ],
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Library & Information Science',
-            //         'description' => 'The School of Library and Information Science at Manipur International University (MIU) offers B.L.I.S. and M.L.I.S. ...',
-            //         'features' => [
-            //             'Health & Allied Sciences',
-            //             'Practical Clinical Exposure'
-            //         ]
-            //     ],
-            //     [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Computer Science & Information Technology',
-            //         'description' => 'The School of Computer Science and Information Technology at Manipur International University (MIU) ...',
-            //         'features' => [
-            //             'Research & Innovation',
-            //             'Industry & Academic Collaboration'
-            //         ]
-            //     ]
-            //       [
-            //         'image' => 'involment-activities-6.jpg',
-            //         'title' => 'School of Animation',
-            //         'description' => 'The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs designed  ...',
-            //         'features' => [
-            //             'Research & Innovation',
-            //             'Industry & Academic Collaboration'
-            //         ]
-            //     ]
-            
-            // ];
-            
-            $schools = [
-                [
-                    'link' => '/school-of-arts-humanities',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Arts & Humanities',
-                    'description' => 'The School of Arts and Humanities at Manipur International University (MIU) ...',
-                    'features' => ['Creative Writing & Literature', 'Cultural & Historical Studies'],
-                ],
-                [
-                    'link' => '/school-of-business-management-commerce',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Business, Management & Commerce',
-                    'description' => 'The School of Business, Management & Commerce at Manipur International University (MIU) offers B.Com and M.Com programs...',
-                    'features' => ['Business Administration', 'Financial Management'],
-                ],
-                [
-                    'link' => '/school-of-engineering-technology',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Engineering & Technology',
-                    'description' => 'The School of Technology at Manipur International University (MIU) offers a comprehensive...',
-                    'features' => ['B.Tech & M.Tech Programs', 'Research & Development Labs'],
-                ],
-                [
-                    'link' => '/school-of-science',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Science',
-                    'description' => 'The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...',
-                    'features' => ['Physics & Chemistry Labs', 'Biotechnology Research'],
-                ],
-                [
-                    'link' => '/school-of-yoga-science',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Yoga Science',
-                    'description' => 'The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs...',
-                    'features' => ['Practical Yoga Training', 'Meditation & Wellness'],
-                ],
-                [
-                    'link' => '/school-of-mass-communication-and-journalism',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Mass Communication and Journalism',
-                    'description' => 'The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C. ...',
-                    'features' => ['Practical Journalism Training', 'Media Production & Editing'],
-                ],
-                [
-                    'link' => '/school-of-library-information-science',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Library & Information Science',
-                    'description' => 'The School of Library and Information Science at Manipur International University (MIU) offers B.L.I.S. and M.L.I.S. ...',
-                    'features' => ['Digital Library Management', 'Information Architecture'],
-                ],
-                [
-                    'link' => '/school-of-computer-science-information-technology',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Computer Science & Information Technology',
-                    'description' => 'The School of Computer Science and Information Technology at Manipur International University (MIU) ...',
-                    'features' => ['Software Development', 'Data Science & AI'],
-                ],
-                [
-                    'link' => '/school-of-animation',
-                    'image' => 'involment-activities-6.jpg',
-                    'title' => 'School of Animation',
-                    'description' => 'The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs designed  ...',
-                    'features' => ['2D & 3D Animation', 'Visual Effects (VFX)'],
-                ],
-            ];
-            
-            ?>
 
             <div class="row">
                 @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4 mb-4">
-                        <a href="/school-details{{ $school['link'] ?? '/school-details' }}">
+                        <a href="{{ '/schools/' . $school->slug }}" class="text-dark">
                             <div class="single-involment-activities-box">
                                 <div class="img-box">
                                     <div class="inner">
-                                        <img src="{{ asset('/assets/images/resources/' . $school['image']) }}"
-                                            alt="{{ $school['title'] }}">
+                                        <img src="{{ asset($school->image) }}" alt="{{ $school->name }}"
+                                            style="min-height:400px;">
                                     </div>
-                                    <div class="text-holder">
-                                        <h3>{{ $school['title'] }}</h3>
-                                        <p>{{ $school['description'] }}</p>
-                                        <ul>
-                                            @foreach ($school['features'] as $feature)
-                                                <li>{{ $feature }}</li>
-                                            @endforeach
-                                        </ul>
+
+                                    <div class="text-holder wtext-holder">
+                                        <h3>{{ substr($school->name, 0, 40) }}</h3>
+
+                                        <p>
+                                            {!! substr($school->short_description, 0, 50) !!}...
+                                        </p>
+
+                                        {{-- Features --}}
+                                        @if ($school->features_comma)
+                                            <ul>
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
+                                                    <li>{{ $feature }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
                                     </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 @endforeach
+                {{-- @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4 mb-4">
+                        <a href="{{ '/schools/' . $school->slug }}">
+                            <div class="single-involment-activities-box">
+                                <div class="img-box">
+                                    <div class="inner">
+                                        <img src="{{ asset($school->image) }}" alt="{{ $school->name }}"
+                                            style="min-height:400px;">
+                                    </div>
+
+                                    <div class="text-holder">
+                                        <h3>{{ $school->name }}</h3>
+
+                                        <p>
+                                            {!! \Illuminate\Support\Str::limit($school->short_description, 120) !!}
+                                        </p>
+
+                                       
+                                         @if ($school->features_comma)
+                                            <ul>
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
+                                                    <li>{{ $feature }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach --}}
+                {{-- <div class="col-12 mt-3">
+                    {{ $schools->links('pagination::bootstrap-5') }}
+                </div> --}}
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area bg-white">
+    {{-- <section class="testimonial-style1-area bg-white">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -533,22 +299,22 @@
                     <div class="testimonial-style1-content">
                         <div class="theme_carousel testimonial-carousel owl-theme owl-carousel owl-loaded owl-drag"
                             data-options="{
-                                    &quot;loop&quot;: true, 
-                                    &quot;margin&quot;: 30, 
-                                    &quot;autoheight&quot;:true, 
-                                    &quot;lazyload&quot;:true, 
-                                    &quot;nav&quot;: false, 
-                                    &quot;dots&quot;: false, 
-                                    &quot;autoplay&quot;: true, 
-                                    &quot;autoplayTimeout&quot;: 5000, 
-                                    &quot;smartSpeed&quot;: 500, 
+                                    &quot;loop&quot;: true,
+                                    &quot;margin&quot;: 30,
+                                    &quot;autoheight&quot;:true,
+                                    &quot;lazyload&quot;:true,
+                                    &quot;nav&quot;: false,
+                                    &quot;dots&quot;: false,
+                                    &quot;autoplay&quot;: true,
+                                    &quot;autoplayTimeout&quot;: 5000,
+                                    &quot;smartSpeed&quot;: 500,
                                     &quot;navText&quot;: [&quot;&lt;span class=\&quot;left icon-next\&quot;&gt;&lt;/span&gt;&quot;,
-                                    &quot;&lt;span class=\&quot;right icon-next\&quot;&gt;&lt;/span&gt;&quot;], 
-                                    &quot;responsive&quot;:{ 
-                                    &quot;0&quot; :{ &quot;items&quot;: &quot;1&quot; }, 
-                                    &quot;600&quot; :{ &quot;items&quot; : &quot;1&quot; }, 
-                                    &quot;768&quot; :{ &quot;items&quot; : &quot;1&quot; }, 
-                                    &quot;992&quot;:{ &quot;items&quot; : &quot;2&quot; }, 
+                                    &quot;&lt;span class=\&quot;right icon-next\&quot;&gt;&lt;/span&gt;&quot;],
+                                    &quot;responsive&quot;:{
+                                    &quot;0&quot; :{ &quot;items&quot;: &quot;1&quot; },
+                                    &quot;600&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;768&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;992&quot;:{ &quot;items&quot; : &quot;2&quot; },
                                     &quot;1200&quot;:{ &quot;items&quot; : &quot;3&quot; }
                                 }
                             }">
@@ -1295,8 +1061,102 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
+    @if (!$testimonials->isEmpty())
+        <section id="testimonials" class="testimonial-style1-area" style=" background: #17345a;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2 class="text-white">Feedback of {{ $school->name }}</h2>
+                                <div class="sub-title">
+                                    <p class="text-white">
+                                        Hear from our alumni as they share their experiences and success stories at Manipur
+                                        International University
+                                    </p>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1-content">
+                            <div class="theme_carousel testimonial-carousel owl-theme owl-carousel owl-loaded owl-drag"
+                                data-options="{
+                                    &quot;loop&quot;: true,
+                                    &quot;margin&quot;: 30,
+                                    &quot;autoheight&quot;:true,
+                                    &quot;lazyload&quot;:true,
+                                    &quot;nav&quot;: false,
+                                    &quot;dots&quot;: false,
+                                    &quot;autoplay&quot;: true,
+                                    &quot;autoplayTimeout&quot;: 5000,
+                                    &quot;smartSpeed&quot;: 500,
+                                    &quot;navText&quot;: [&quot;&lt;span class=\&quot;left icon-next\&quot;&gt;&lt;/span&gt;&quot;,
+                                    &quot;&lt;span class=\&quot;right icon-next\&quot;&gt;&lt;/span&gt;&quot;],
+                                    &quot;responsive&quot;:{
+                                    &quot;0&quot; :{ &quot;items&quot;: &quot;1&quot; },
+                                    &quot;600&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;768&quot; :{ &quot;items&quot; : &quot;1&quot; },
+                                    &quot;992&quot;:{ &quot;items&quot; : &quot;2&quot; },
+                                    &quot;1200&quot;:{ &quot;items&quot; : &quot;3&quot; }
+                                }
+                            }">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-2800px, 0px, 0px); transition: 0.5s; width: 4800px;">
+                                        @foreach ($testimonials as $testimonial)
+                                            <div class="owl-item cloned" style="width: 370px; margin-right: 30px;">
+                                                <div class="single-testimonial-style1">
+                                                    <div class="border-box"></div>
+                                                    <div class="top-box">
+                                                        <div class="quote-iocn-box">
+                                                            <span class="icon-quote"></span>
+                                                        </div>
+                                                        <div class="inner">
+                                                            <div class="img-box">
+                                                                <img src="{{ asset($testimonial->image) }}" alt="">
+                                                            </div>
+                                                            <div class="rating-box">
+                                                                <ul>
+                                                                    @php
+                                                                        for ($i = 0; $i < $testimonial->rating; $i++) {
+                                                                            echo '<li><span class="icon-favourite"><span class="path1"></span><span class="path2"></span></span></li>';
+                                                                        }
+
+                                                                    @endphp
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text">
+                                                            <p>{{ $testimonial->message }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="client-name">
+                                                        <h3>{{ $testimonial->name }}</h3>
+                                                        <span>{{ $testimonial->subtitle }}</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+
+                                    </div>
+                                </div>
+                                <div class="owl-nav disabled"><button type="button" role="presentation"
+                                        class="owl-prev"><span class="left icon-next"></span></button><button type="button"
+                                        role="presentation" class="owl-next"><span class="right icon-next"></span></button>
+                                </div>
+                                <div class="owl-dots disabled"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
 @endsection
 
 @section('scripts')

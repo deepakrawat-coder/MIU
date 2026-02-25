@@ -15,7 +15,8 @@
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner1.jpg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner1.jpg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -26,36 +27,37 @@
                                 <p>Empowering minds, shaping futures through excellence in education and research</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="campus-life.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Campus Life
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
-                                {{-- <a class="video-popup" title="Video Gallery"
+                            {{-- <div class="video-gallery-btns-box">
+                                <a class="video-popup" title="Video Gallery"
                                             href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                             <span class="icon-play"></span>
-                                        </a> --}}
+                                        </a>
                                 <p>
                                     <a class="video-popup" title="Video Gallery"
                                         href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner2.jpeg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner2.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content middle text-center">
@@ -67,18 +69,18 @@
                                     Manipur’ at Grand Vijay Diwas Celebrations in New Delhi</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="#">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Download
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -89,14 +91,15 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide -->
                 <div class="slide">
-                    <div class="image-layer" style="background-image:url({{ asset('/assets/images/web-image/banner3.jpeg') }})">
+                    <div class="image-layer"
+                        style="background-image:url({{ asset('/assets/images/web-image/banner3.jpeg') }})">
                     </div>
                     <div class="auto-container">
                         <div class="content">
@@ -107,18 +110,18 @@
                                 <p>Discover innovative programs designed for the leaders of tomorrow</p>
                             </div>
                             <div class="btns-box">
-                                <a class="btn-one" href="about.html">
+                                <a class="btn-one" href="/about-us">
                                     <span class="txt">
                                         Read More
                                     </span>
                                 </a>
-                                <a class="btn-one style2" href="departments.html">
+                                <a class="btn-one style2" href="/schools-and-departments">
                                     <span class="txt">
-                                        Departments
+                                        Schools & Departments
                                     </span>
                                 </a>
                             </div>
-                            <div class="video-gallery-btns-box">
+                            {{-- <div class="video-gallery-btns-box">
                                 <a class="video-popup" title="Video Gallery"
                                     href="https://www.youtube.com/watch?v=bO4RoQL9H8I">
                                     <span class="icon-play"></span>
@@ -129,7 +132,7 @@
                                         360<span style="font-size: 20px;">&#176;</span> Campus Tour
                                     </a>
                                 </p>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -195,7 +198,7 @@
                             </li>
                         </ul> --}}
                         <div class="btns-box">
-                            <a class="btn-one" href="about.html">
+                            <a class="btn-one" href="/about-us">
                                 <span class="txt">Read More</span>
                             </a>
                         </div>
@@ -205,7 +208,7 @@
                 <div class="col-xl-6">
                     <div class="teaching-img-box">
                         <div class="teaching-img-box__bg"
-                            style="background-image: url({{asset('/assets/images/web-image/about--image.jpg')}});"></div>
+                            style="background-image: url({{ asset('/assets/images/web-image/about--image.jpg') }});"></div>
                         <div class="teaching-img-box__content-bg"></div>
                         <div class="teaching-img-box__content aos-init aos-animate" data-aos="fade-left">
                             <div class="border-line"></div>
@@ -236,6 +239,104 @@
                 </div>
             </div>
             <div class="row">
+
+                {{-- @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4">
+
+                        <div class="single-departments-box single-department-box-style2">
+                            <div class="single-department-box-style2__inner text-center">
+                                <div class="static-content">
+                                    <div class="icon">
+                                        @if (!empty($school['image']))
+                                            <img src="{{ $school['image'] }}" alt="{{ $school['title'] }}"
+                                                style="width: 100px; height: 100px; object-fit: cover; border-radius: 12px;">
+                                        @else
+                                            <span class="icon-budget"></span>
+                                            <div class="round-box"></div>
+                                        @endif
+                                    </div>
+                                    <div class="text-holder">
+                                        <a href="/school-details{{ $school['link'] }}"
+                                            style="line-height: normal; padding: 12px;">
+                                            {{ $school['title'] }}
+                                        </a>
+                                        <div class="text">
+                                            <p>
+                                                {!! Str::words($school['description'], 10) !!}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="/school-details{{ $school['link'] }}">
+                                    <div class="overlay-box"style="background-image: url({{ $school['image'] }});">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="single-department-box-style2__ovarlay-content">
+                                <div class="inner">
+                                    <h5>Undergraduate</h5>
+                                    <h3>{{ $school['title'] }}</h3>
+                                    <p>
+                                        {!! Str::words($school['description'], 10) !!}
+                                    </p>
+
+                                    <ul>
+                                        @foreach ($school['features'] as $feature)
+                                            <li>
+                                                <div class="dot-box"></div>
+                                                <div class="inner-text">
+                                                    <h4>{{ $feature }}</h4>
+                                                    
+                                                </div>
+                                            </li>
+                                        @endforeach
+                                    </ul>
+
+                                    <div class="btn-box">
+                                        <a class="btn-one btn-one--style2" href="/school-details{{ $school['link'] }}">
+                                            <span class="txt">Read More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach --}}
+                @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4 mb-4">
+                        <a href="{{ '/schools/' . $school->slug }}" class="text-dark">
+                            <div class="single-involment-activities-box">
+                                <div class="img-box">
+                                    <div class="inner">
+                                        <img src="{{ asset($school->image) }}" alt="{{ $school->name }}"
+                                            style="min-height:400px;">
+                                    </div>
+
+                                    <div class="text-holder wtext-holder">
+                                        <h3>{{ substr($school->name, 0, 40) }}</h3>
+
+                                        <p>
+                                            {!! substr($school->short_description, 0, 50) !!}...
+                                        </p>
+
+                                        {{-- Features --}}
+                                        @if ($school->features_comma)
+                                            <ul>
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
+                                                    <li>{{ $feature }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+            {{-- <div class="row">
                 <div class="col-xl-4 col-lg-3">
                     <!--Start Single Departments Box-->
                     <div class="single-departments-box marginbottom text-center wow fadeInLeft" data-wow-duration="1s"
@@ -344,11 +445,11 @@
                         <a href="departments.html">View All Departments</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>
-    <section class="explore-future-area">
+    {{-- <section class="explore-future-area">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Top Academic Programs at Manipur International University</h2>
@@ -931,14 +1032,14 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
     <section class="fact-counter-area">
         <div class="container">
             <div class="sec-title text-center">
-                <h2>Manipur International University at a Glance<< /h2>
-                        <div class="sub-title">
-                            <p>Key milestones, academic strength, and infrastructure that define MIU’s excellence</p>
-                        </div>
+                <h2>Manipur International University at a Glance </h2>
+                <div class="sub-title">
+                    <p>Key milestones, academic strength, and infrastructure that define MIU’s excellence</p>
+                </div>
             </div>
 
             <div class="row">
@@ -954,14 +1055,13 @@
                             </div>
                             <div class="icon-holder">
                                 <span class="icon-online"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span
-                                        class="path5"></span><span class="path6"></span><span
-                                        class="path7"></span><span class="path8"></span><span
-                                        class="path9"></span><span class="path10"></span><span
-                                        class="path11"></span><span class="path12"></span><span
-                                        class="path13"></span><span class="path14"></span><span
-                                        class="path15"></span><span class="path16"></span><span
-                                        class="path17"></span></span>
+                                        class="path3"></span><span class="path4"></span><span class="path5"></span><span
+                                        class="path6"></span><span class="path7"></span><span
+                                        class="path8"></span><span class="path9"></span><span
+                                        class="path10"></span><span class="path11"></span><span
+                                        class="path12"></span><span class="path13"></span><span
+                                        class="path14"></span><span class="path15"></span><span
+                                        class="path16"></span><span class="path17"></span></span>
                             </div>
                         </li>
                         <!--End Single Fact Counter-->
@@ -1071,33 +1171,34 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1__title">
-                        <div class="sec-title">
-                            <h2>Voices of MIU Alumni</h2>
-                            <div class="sub-title">
-                                <p>
-                                    Hear from our alumni as they share their experiences and success stories at Manipur
-                                    International University
-                                </p>
+    @if (!empty($Testimonials))
+        <section class="testimonial-style1-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2>Voices of MIU Alumni</h2>
+                                <div class="sub-title">
+                                    <p>
+                                        Hear from our alumni as they share their experiences and success stories at Manipur
+                                        International University
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        {{-- <div class="btns-box">
+                            {{-- <div class="btns-box">
                             <a class="btn-one" href="#">
                                 <span class="txt">More Reviews</span>
                             </a>
                         </div> --}}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1-content">
-                        <div class="theme_carousel testimonial-carousel owl-theme owl-carousel"
-                            data-options='{
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1-content">
+                            <div class="theme_carousel testimonial-carousel owl-theme owl-carousel"
+                                data-options='{
                                     "loop": true, 
                                     "margin": 30, 
                                     "autoheight":true, 
@@ -1118,8 +1219,46 @@
                                 }
                             }'>
 
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
+                                <!--Start Single Testimonial Style1-->
+                                @foreach ($Testimonials as $testimonial)
+                                    <div class="single-testimonial-style1">
+                                        <div class="border-box"></div>
+                                        <div class="top-box">
+                                            <div class="quote-iocn-box">
+                                                <span class="icon-quote"></span>
+                                            </div>
+                                            <div class="inner">
+                                                @if (!empty($testimonial->image))
+                                                    <div class="img-box">
+                                                        <img src="{{ asset($testimonial->image) }}" alt="">
+                                                    </div>
+                                                @endif
+                                                <div class="rating-box">
+                                                    <ul>
+
+                                                        @php
+                                                            for ($i = 0; $i < $testimonial->rating; $i++) {
+                                                                echo '<li><span class="icon-favourite"><span class="path1"></span><span class="path2"></span></span></li>';
+                                                            }
+
+                                                        @endphp
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="text">
+                                                <p>{!! substr($testimonial->message, 0, 130) !!}...</p>
+                                            </div>
+                                        </div>
+                                        <div class="client-name">
+                                            <h3>{{ $testimonial->name }}</h3>
+                                            <span>{{ substr($testimonial->subtitle, 0, 30) }}</span>
+                                        </div>
+                                    </div>
+                                @endforeach
+                                <!--End Single Testimonial Style1-->
+                                <!--Start Single Testimonial Style1-->
+                                {{-- <div class="single-testimonial-style1">
                                 <div class="border-box"></div>
                                 <div class="top-box">
                                     <div class="quote-iocn-box">
@@ -1127,60 +1266,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
-                                        </div>
-                                        <div class="rating-box">
-                                            <ul>
-                                                <li>
-                                                    <span class="icon-favourite">
-                                                        <span class="path1"></span><span class="path2"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="icon-favourite">
-                                                        <span class="path1"></span><span class="path2"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="icon-favourite">
-                                                        <span class="path1"></span><span class="path2"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="icon-favourite">
-                                                        <span class="path1"></span><span class="path2"></span>
-                                                    </span>
-                                                </li>
-                                                <li>
-                                                    <span class="icon-favourite">
-                                                        <span class="path1"></span><span class="path2"></span>
-                                                    </span>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text">
-                                        <p>Studying at Manipur International University was a life-changing experience.
-                                            The academic environment, supportive faculty, and practical learning helped
-                                            me build a strong foundation for my professional career.</p>
-                                    </div>
-                                </div>
-                                <div class="client-name">
-                                    <h3>Ananya Sharma</h3>
-                                    <span>B.Tech (Computer Science) | MIU Alumni</span>
-                                </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
-                            <!--Start Single Testimonial Style1-->
-                            <div class="single-testimonial-style1">
-                                <div class="border-box"></div>
-                                <div class="top-box">
-                                    <div class="quote-iocn-box">
-                                        <span class="icon-quote"></span>
-                                    </div>
-                                    <div class="inner">
-                                        <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1233,7 +1320,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1287,7 +1375,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-1.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-1.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1340,7 +1429,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-2.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-2.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1393,7 +1483,8 @@
                                     </div>
                                     <div class="inner">
                                         <div class="img-box">
-                                            <img src="{{asset('/assets/images/testimonial/testimonial-v1-3.jpg')}}" alt="">
+                                            <img src="{{ asset('/assets/images/testimonial/testimonial-v1-3.jpg') }}"
+                                                alt="">
                                         </div>
                                         <div class="rating-box">
                                             <ul>
@@ -1435,330 +1526,203 @@
                                     <h3>Rahul Meitei</h3>
                                     <span>B.Tech (Mechanical Engineering) | MIU Alumni</span>
                                 </div>
-                            </div>
-                            <!--End Single Testimonial Style1-->
+                            </div> --}}
+                                <!--End Single Testimonial Style1-->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonial-style1-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1__title">
-                        <div class="sec-title">
-                            <h2>MIU News & Updates</h2>
-                            <div class="sub-title">
-                                <p>
-                                    Stay informed with the latest news, announcements, achievements,
-                                    and academic updates from Manipur International University
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-1.jpg')}}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Alumni Achievement</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    MIU Alumni Recognized for Excellence in Research
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    Our alumni continue to make a mark globally through innovation,
-                                    leadership, and impactful research across industries.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                    </a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-2.jpg')}}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Career Growth</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    From Campus to Corporate: MIU Alumni Career Journeys
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    Discover how MIU alumni transitioned from academic life to
-                                    successful professional careers in top organizations.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                    </a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Dec 08, 2023</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{asset('/assets/images/blog/blog-v2-3.jpg')}}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Alumni Network</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    Strengthening the MIU Alumni Community Worldwide
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    MIU’s growing alumni network fosters lifelong connections,
-                                    mentorship opportunities, and professional collaboration.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                        < /a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Nov 20, 2023</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-            </div>
-        </div>
-    </section>
-    <section class="testimonial-style1-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1__title">
-                        <div class="sec-title">
-                            <h2>Events at Manipur International University</h2>
-                            <div class="sub-title">
-                                <p>
-                                    Stay updated with academic, cultural, sports, and professional events
-                                    happening at Manipur International University
-                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+    @endif
+    @if (!empty($blogs))
+        <section class="testimonial-style1-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2>MIU Blogs</h2>
+                                <div class="sub-title">
+                                    <p>
+                                        Stay informed with the latest news, announcements, achievements,
+                                        and academic updates from Manipur International University
+                                    </p>
+                                </div>
 
-            <div class="row">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <!--Start Single Event-->
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="single-event-three">
-                        <div class="single-event-three__inner">
-                            <div class="static-content">
-                                <div class="top-box">
-                                    <div class="date-box">
-                                        <h2>01</h2>
-                                        <h4>Dec, 2024</h4>
-                                    </div>
-                                    <div class="price-box">
+                <div class="row">
+                    @foreach ($blogs as $blog)
+                        <a href="/blog/{{ $blog->slug }}">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="single-blog-style1">
+                                    <div class="img-holder">
                                         <div class="inner">
-                                            <h3>Free</h3>
+                                            <img src="{{ asset($blog->image) }}" alt="">
+                                        </div>
+                                        <div class="category-box">
+                                            {{-- <div class="dot-box"></div> --}}
+                                            <p><span class="icon-calendar mr-2 text-white"></span><a href="#"
+                                                    class="text-white">{{ date('M d, Y', strtotime($blog->created_at)) }}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                {{ substr($blog->title, 0, 50) }}{{ strlen($blog->title) > 50 ? '...' : '' }}
+                                            </a>
+                                        </h3>
+                                        <div class="text">
+                                            <p>
+                                                {{ substr($blog->short_description, 0, 70) }}{{ strlen($blog->short_description) > 70 ? '...' : '' }}
+                                            </p>
+                                        </div>
+                                        <div class="bottom-box">
+                                            <div class="btn-box">
+                                                <a href="/blog/{{ $blog->slug }}">
+                                                    <span class="icon-right-arrow-1"></span>Read More
+                                                </a>
+                                            </div>
+                                            {{-- <div class="meta-info">
+                                            <ul>
+                                                <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a>
+                                                </li>
+                                            </ul>
+                                        </div> --}}
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-holder">
-                                    <h3>
-                                        <a href="events-details.html">
-                                            MIU Annual Cultural Fest
-                                        </a>
-                                    </h3>
-                                    <div class="text">
-                                        <p>
-                                            A vibrant celebration of culture, talent, music, and diversity
-                                            featuring students from all departments.
-                                        </p>
-                                    </div>
-                                    <ul>
-                                        <li><span class="icon-time"></span> 10:00 am – 05:00 pm</li>
-                                        <li><span class="icon-location-1"></span> MIU Main Campus Ground</li>
-                                    </ul>
-                                </div>
                             </div>
-                            <div class="overlay-content">
-                                <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-1.jpg')}});"></div>
-                                <div class="button-box">
-                                    <a class="btn-one" href="events-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        </a>
+                    @endforeach
                 </div>
-                <!--End Single Event-->
-
-                <!--Start Single Event-->
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="single-event-three">
-                        <div class="single-event-three__inner">
-                            <div class="static-content">
-                                <div class="top-box">
-                                    <div class="date-box">
-                                        <h2>15</h2>
-                                        <h4>Dec, 2024</h4>
-                                    </div>
-                                    <div class="price-box">
-                                        <div class="inner">
-                                            <h3>Free</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <h3>
-                                        <a href="events-details.html">
-                                            National Seminar on Emerging Technologies
-                                        </a>
-                                    </h3>
-                                    <div class="text">
-                                        <p>
-                                            An academic seminar focusing on innovation, research trends,
-                                            and future technologies.
-                                        </p>
-                                    </div>
-                                    <ul>
-                                        <li><span class="icon-time"></span> 11:00 am – 03:00 pm</li>
-                                        <li><span class="icon-location-1"></span> MIU Seminar Hall</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-2.jpg')}});"></div>
-                                <div class="button-box">
-                                    <a class="btn-one" href="events-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Event-->
-
-                <!--Start Single Event-->
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="single-event-three">
-                        <div class="single-event-three__inner">
-                            <div class="static-content">
-                                <div class="top-box">
-                                    <div class="date-box">
-                                        <h2>05</h2>
-                                        <h4>Jan, 2025</h4>
-                                    </div>
-                                    <div class="price-box">
-                                        <div class="inner">
-                                            <h3>Free</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-holder">
-                                    <h3>
-                                        <a href="events-details.html">
-                                            MIU Sports Meet & Athletics Championship
-                                        </a>
-                                    </h3>
-                                    <div class="text">
-                                        <p>
-                                            Annual sports event promoting fitness, teamwork,
-                                            and competitive spirit of students.
-                                        </p>
-                                    </div>
-                                    <ul>
-                                        <li><span class="icon-time"></span> 09:00 am – 04:00 pm</li>
-                                        <li><span class="icon-location-1"></span> MIU Sports Complex</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="overlay-content">
-                                <div class="img-bg"
-                                    style="background-image: url({{asset('/assets/images/events/event-three-3.jpg')}});"></div>
-                                <div class="button-box">
-                                    <a class="btn-one" href="events-details.html">
-                                        <span class="txt">Read More</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Event-->
-
             </div>
-        </div>
-    </section>
+        </section>
+    @endif
+    @if (!empty($events))
+        <section class="testimonial-style1-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2>Events at Manipur International University</h2>
+                                <div class="sub-title">
+                                    <p>
+                                        Stay updated with academic, cultural, sports, and professional events
+                                        happening at Manipur International University
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    {{-- @foreach ($events as $event)
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <div class="single-event-three">
+                                <div class="single-event-three__inner">
+                                    <div class="static-content">
+                                        <div class="top-box">
+                                            <div class="date-box">
+                                                <h2>01</h2>
+                                                <h4>Dec, 2024</h4>
+                                            </div>                                            
+                                        </div>
+                                        <div class="text-holder">
+                                            <h3>
+                                                <a href="events-details.html">
+                                                    MIU Annual Cultural Fest
+                                                </a>
+                                            </h3>
+                                            <div class="text">
+                                                <p>
+                                                    A vibrant celebration of culture, talent, music, and diversity
+                                                    featuring students from all departments.
+                                                </p>
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                    <div class="overlay-content">
+                                        <div class="img-bg"
+                                            style="background-image: url({{ asset('/assets/images/events/event-three-1.jpg') }});">
+                                        </div>
+                                        <div class="button-box">
+                                            <a class="btn-one" href="events-details.html">
+                                                <span class="txt">Read More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach --}}
+                    @foreach ($events as $event)
+                        <div class="col-xl-4 col-lg-6 col-md-6">
+                            <a href="{{ route('post.details', $event->slug) }}">
+                                <div class="single-event-three">
+                                    <div class="single-event-three__inner">
+                                        <div class="static-content">
+                                            <div class="top-box">
+                                                <div class="date-box">
+                                                    <h2>{{ \Carbon\Carbon::parse($event->publish_date)->format('d') }}</h2>
+                                                    <h4>{{ \Carbon\Carbon::parse($event->publish_date)->format('M, Y') }}
+                                                    </h4>
+                                                </div>
+                                            </div>
+
+                                            <div class="text-holder">
+                                                <h3>
+                                                    <a href="{{ route('post.details', $event->slug) }}">
+                                                        {{ substr($event->title, 0, 20) }}
+                                                    </a>
+                                                </h3>
+
+                                                <div class="text">
+                                                    <p>
+                                                        {{ substr($event->short_description, 0, 96) }}
+                                                    </p>
+                                                    @if (empty($event->image))
+                                                        <a href="{{ route('post.details', $event->slug) }}"
+                                                            class="text-black">
+                                                            <span class="txt">Read More</span>
+                                                        </a>
+                                                    @endif
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @if (!empty($event->image))
+                                            <div class="overlay-content">
+                                                <div class="img-bg"
+                                                    style="background-image: url({{ $event->image ? asset($event->image) : asset('/assets/images/events/default.jpg') }});">
+                                                </div>
+                                                <div class="button-box">
+                                                    <a href="{{ route('post.details', $event->slug) }}">
+                                                        <span class="txt">Read More</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        @endif
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
     <section class="subscribe-style6-area">
         <div class="subscribe-style6-area-bg"
-            style="background-image: url({{asset('/assets/images/web-image/cta-img.jpg')}});"></div>
+            style="background-image: url({{ asset('/assets/images/web-image/connect1.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -1786,7 +1750,8 @@
                             </div>
                             <div class="input-box">
                                 <div class="input-label">Message</div>
-                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea" placeholder="Write your query or message here"></textarea>
+                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea"
+                                    placeholder="Write your query or message here"></textarea>
                             </div>
                             <button class="btn-one style2" type="submit">
                                 <span class="txt">
@@ -1800,7 +1765,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area">
+    <section class="testimonial-style1-area bg-white">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Our Esteemed Industry Partners</h2>
@@ -1817,28 +1782,35 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-1.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/asian_paints-logo_brandlogos.net_sieab.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-2.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/genpact1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-3.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Hero_MotoCorp_Logo.svg') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-4.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Infosys_logo.svg.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
@@ -1846,34 +1818,41 @@
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-5.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/noida-tech-mahindra-logo-business-brand-technology-firm1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-6.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/Tata-Motors-800x600.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-7.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img src="{{ asset('/assets/images/web-image/placement-logo/tcs.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
                 <!--Start Single Partner Logo Box-->
                 <div class="col-xl-3 col-lg-3 col-md-6">
                     <div class="single-partner-logo-box">
-                        <a href="#"><img src="{{asset('/assets/images/brand/brand-logo-8.png')}}" alt="Awesome Image"></a>
+                        <a href="#"><img
+                                src="{{ asset('/assets/images/web-image/placement-logo/tvs-vector-logo-free-download-11574023530akrlm14a2x1.png') }}"
+                                alt="Awesome Image"></a>
                     </div>
                 </div>
                 <!--End Single Partner Logo Box-->
             </div>
 
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-xl-12 text-center">
                     <div class="btns-box">
                         <a class="btn-one" href="about.html">
@@ -1881,7 +1860,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
     </section>

@@ -982,3 +982,8 @@
     padding-top: 100px;
     padding-bottom: 50px;
 }
+@media (min-width: 1200px) {
+    .wtext-holder {
+        min-height: 279px;
+    }
+}

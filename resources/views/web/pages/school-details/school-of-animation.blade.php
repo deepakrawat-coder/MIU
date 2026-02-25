@@ -1,6 +1,16 @@
     @extends('web.layouts.main')
-    @section('title', '| Departments')
-    @section('description', 'Manipur International University – Departments & Programs')
+    @section('title', '| School of Animation')
+    @section('description',
+        '
+        The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and
+        M.F.A. programs designed to nurture creativity, artistic expression, and
+        professional
+        skills in the visual and performing arts. These programs provide a balanced
+        combination
+        of traditional art techniques and contemporary creative practices, enabling students
+        to
+        explore their artistic potential while building strong technical and conceptual
+        foundations.')
 
     @section('styles')
         <style>
@@ -1418,13 +1428,13 @@
                             <div class="course-layout-content-box">
                                 <div class="inner-title">
                                     <h4>FAQs</h4>
-                                    <p>Need Help?</p>
+                                    <p>School of Animation & Fine Arts</p>
                                 </div>
                                 <ul class="accordion-box">
                                     <li class="accordion block active-block">
                                         <div class="acc-btn active">
                                             <div class="course-layout-title-box">
-                                                <h4>What programs are offered in the School of Technology?</h4>
+                                                <h4>What fine arts programs are offered at MIU?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1433,11 +1443,11 @@
                                         <div class="acc-content current">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    The School of Technology offers undergraduate, postgraduate, and
-                                                    doctoral
-                                                    programs in Computer Science, Mechanical Engineering, Civil Engineering,
-                                                    Artificial Intelligence, Data Science, Cyber Security, and related
-                                                    specializations.
+                                                    The School offers Bachelor of Fine Arts (BFA) of 8 Semesters and Master
+                                                    of Fine Arts (MFA) of 4 Semesters. These programs cover drawing,
+                                                    painting, sculpture, printmaking, applied arts, art history, and visual
+                                                    communication, combining traditional techniques with contemporary
+                                                    creative practices.
                                                 </p>
                                             </div>
                                         </div>
@@ -1446,7 +1456,7 @@
                                     <li class="accordion block">
                                         <div class="acc-btn">
                                             <div class="course-layout-title-box">
-                                                <h4>What are the admission requirements?</h4>
+                                                <h4>What is the eligibility for BFA?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1455,11 +1465,9 @@
                                         <div class="acc-content">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    Admission requirements vary by program. Generally, UG programs require
-                                                    10+2
-                                                    with PCM/PCB, PG programs require relevant bachelor's degree, and PhD
-                                                    programs require master's degree with minimum marks. Entrance exams may
-                                                    apply.
+                                                    For BFA (Bachelor of Fine Arts), candidates must have completed 10+2
+                                                    from any recognized board. Creative aptitude and interest in arts are
+                                                    preferred.
                                                 </p>
                                             </div>
                                         </div>
@@ -1468,7 +1476,7 @@
                                     <li class="accordion block">
                                         <div class="acc-btn">
                                             <div class="course-layout-title-box">
-                                                <h4>Are there placement opportunities?</h4>
+                                                <h4>What is the eligibility for MFA?</h4>
                                                 <div class="icon-outer">
                                                     <i class="icon-plus"></i>
                                                 </div>
@@ -1477,9 +1485,51 @@
                                         <div class="acc-content">
                                             <div class="course-layout-content-box-inner">
                                                 <p class="p-3">
-                                                    Yes, MIU has an active placement cell with connections to leading tech
-                                                    companies. Regular campus drives, internships, and industry projects are
-                                                    organized to ensure students get excellent career opportunities.
+                                                    For MFA (Master of Fine Arts), candidates must have completed BFA or
+                                                    equivalent from any recognized university.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>What facilities are available for fine arts students?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    The School offers dedicated art studios and creative workspaces,
+                                                    workshops and demonstration sessions, art exhibitions and cultural
+                                                    events, interaction with artists and industry professionals, and
+                                                    opportunities for field visits and art projects.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="accordion block">
+                                        <div class="acc-btn">
+                                            <div class="course-layout-title-box">
+                                                <h4>What career opportunities are available for fine arts graduates?</h4>
+                                                <div class="icon-outer">
+                                                    <i class="icon-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="acc-content">
+                                            <div class="course-layout-content-box-inner">
+                                                <p class="p-3">
+                                                    Graduates can pursue careers as Visual Artist/Painter, Graphic
+                                                    Designer/Illustrator, Art Director, Animator/Multimedia Artist, Art
+                                                    Educator/Professor, or Curator/Gallery Manager. Opportunities exist in
+                                                    galleries, advertising, publishing, digital media, films, games, and
+                                                    creative industries.
                                                 </p>
                                             </div>
                                         </div>
