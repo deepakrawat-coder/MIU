@@ -11,6 +11,7 @@ use App\Http\Controllers\CourseController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\WebHomeController;
+use App\Http\Controllers\BlogController;
 
 Route::get('/homw', function () {
     return view('welcome');
@@ -66,9 +67,10 @@ Route::view('/iqac', 'web.pages.iqac');
 Route::view('/public-self-disclosure', 'web.pages.public-self-disclosure');
 Route::view('/exam-results', 'web.pages.exam-results');
 Route::view('/gallery', 'web.pages.gallery');
-Route::view('/blog', 'web.pages.blog');
-Route::view('/blog-details', 'web.pages.blog-details');
-
+// Route::view('/blog', 'web.pages.blog');
+// Route::view('/blog-details', 'web.pages.blog-details');
+Route::get('/blogs', [BlogController::class, 'blogListing'])->name('blogs.listing');
+Route::get('/blog/{slug}', [BlogController::class, 'blogDetails'])->name('blogs.details');
 
 Route::middleware('guest')->get('/cms', function () {
     return view('admin.index');
@@ -198,6 +200,16 @@ Route::prefix('faqs')->group(function () {
     Route::get('/status/{id}', [FaqController::class, 'status'])->name('faqs.status');
 });
 
+Route::prefix('admin-blogs')->group(function () {
+    Route::get('/', [BlogController::class, 'index'])->name('admin-blogs.index');
+    Route::get('/create', [BlogController::class, 'create'])->name('admin-blogs.create');
+    Route::post('/store', [BlogController::class, 'store'])->name('admin-blogs.store');
+    Route::get('/edit/{id}', [BlogController::class, 'edit'])->name('admin-blogs.edit');
+    Route::post('/update/{id}', [BlogController::class, 'update'])->name('admin-blogs.update');
+    Route::delete('/delete/{id}', [BlogController::class, 'destroy'])->name('admin-blogs.delete');
+    Route::get('/status/{id}', [BlogController::class, 'status'])->name('admin-blogs.status');
+});
+
 Route::prefix('specialization')->group(function () {
     Route::get('/', [SpecializationController::class, 'index'])->name('specialization.index');
     Route::get('/create', [SpecializationController::class, 'create'])->name('specialization.create');
@@ -215,6 +227,7 @@ Route::get('/test', function () {
 });
 Route::get('/schools/{slug}', [SchoolController::class, 'details'])
     ->name('schools.{slug}');
+// Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
 require __DIR__ . '/settings.php';
 

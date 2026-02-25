@@ -206,8 +206,39 @@
             </div>
 
             <div class="row">
-
                 @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4 mb-4">
+                        <a href="{{ '/schools/' . $school->slug }}" class="text-dark">
+                            <div class="single-involment-activities-box">
+                                <div class="img-box">
+                                    <div class="inner">
+                                        <img src="{{ asset($school->image) }}" alt="{{ $school->name }}"
+                                            style="min-height:400px;">
+                                    </div>
+
+                                    <div class="text-holder wtext-holder">
+                                        <h3>{{ substr($school->name, 0, 40) }}</h3>
+
+                                        <p>
+                                            {!! substr($school->short_description, 0, 50) !!}...
+                                        </p>
+
+                                        {{-- Features --}}
+                                        @if ($school->features_comma)
+                                            <ul>
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
+                                                    <li>{{ $feature }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+                {{-- @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4 mb-4">
                         <a href="{{ '/schools/' . $school->slug }}">
                             <div class="single-involment-activities-box">
@@ -224,10 +255,10 @@
                                             {!! \Illuminate\Support\Str::limit($school->short_description, 120) !!}
                                         </p>
 
-                                        {{-- Features --}}
-                                        @if ($school->features)
+                                       
+                                         @if ($school->features_comma)
                                             <ul>
-                                                @foreach (json_decode($school->features) as $feature)
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
                                                     <li>{{ $feature }}</li>
                                                 @endforeach
                                             </ul>
@@ -238,7 +269,7 @@
                             </div>
                         </a>
                     </div>
-                @endforeach
+                @endforeach --}}
                 {{-- <div class="col-12 mt-3">
                     {{ $schools->links('pagination::bootstrap-5') }}
                 </div> --}}

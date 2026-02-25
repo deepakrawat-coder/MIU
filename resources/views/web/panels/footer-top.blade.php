@@ -154,7 +154,7 @@
                                              <span class="icon-right-arrow-2"></span>UGC Website
 
                                      </li>
-                                     <li> <a href="/blog">
+                                     <li> <a href="/blogs">
                                              <span class="icon-right-arrow-2"></span> Blogs
                                          </a></li>
                                  </ul>

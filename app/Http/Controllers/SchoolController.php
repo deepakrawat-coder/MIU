@@ -23,7 +23,12 @@ class SchoolController extends Controller
     {
         $schools = School::where('status', 1)
             ->orderBy('order', 'asc')
-            ->get();
+            ->get()
+            ->map(function ($school) {
+                $features = json_decode($school->features, true);
+                $school->features_comma = is_array($features) ? implode(', ', $features) : '';
+                return $school;
+            });
         $testimonials = Testimonial::where('page_type', 'school')->get();
         return view('web.pages.deparments-programs', compact('schools', 'testimonials'));
     }

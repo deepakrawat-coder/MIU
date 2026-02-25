@@ -79,6 +79,12 @@
                     <span class="side-menu__label">Events Post</span>
                 </a>
             </li>
+            <li class="slide {{ Route::is('blogs.index') ? 'active' : '' }}">
+                <a href="{{ route('blogs.index') }}" class="side-menu__item">
+                    <span class="side_menu_icon"><i class="ri-calendar-event-line"></i></span>
+                    <span class="side-menu__label">Blogs</span>
+                </a>
+            </li>
             <li class="slide">
                 <a href="#!" class="side-menu__item" role="menuitem">
                     <span class="side_menu_icon"><i class="ri-building-line"></i></span>

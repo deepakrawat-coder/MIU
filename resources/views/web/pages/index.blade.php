@@ -240,7 +240,7 @@
             </div>
             <div class="row">
 
-                @foreach ($schools as $school)
+                {{-- @foreach ($schools as $school)
                     <div class="col-xl-4 col-lg-4">
 
                         <div class="single-departments-box single-department-box-style2">
@@ -287,9 +287,7 @@
                                                 <div class="dot-box"></div>
                                                 <div class="inner-text">
                                                     <h4>{{ $feature }}</h4>
-                                                    {{-- <a href="#">
-                                                        <span class="fa fa-file-pdf-o"></span> Syllabus.pdf
-                                                    </a> --}}
+                                                    
                                                 </div>
                                             </li>
                                         @endforeach
@@ -304,8 +302,39 @@
                             </div>
                         </div>
                     </div>
-                @endforeach
+                @endforeach --}}
+                @foreach ($schools as $school)
+                    <div class="col-xl-4 col-lg-4 mb-4">
+                        <a href="{{ '/schools/' . $school->slug }}" class="text-dark">
+                            <div class="single-involment-activities-box">
+                                <div class="img-box">
+                                    <div class="inner">
+                                        <img src="{{ asset($school->image) }}" alt="{{ $school->name }}"
+                                            style="min-height:400px;">
+                                    </div>
 
+                                    <div class="text-holder wtext-holder">
+                                        <h3>{{ substr($school->name, 0, 40) }}</h3>
+
+                                        <p>
+                                            {!! substr($school->short_description, 0, 50) !!}...
+                                        </p>
+
+                                        {{-- Features --}}
+                                        @if ($school->features_comma)
+                                            <ul>
+                                                @foreach (explode(', ', $school->features_comma) as $feature)
+                                                    <li>{{ $feature }}</li>
+                                                @endforeach
+                                            </ul>
+                                        @endif
+
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
             </div>
             {{-- <div class="row">
                 <div class="col-xl-4 col-lg-3">
@@ -1009,14 +1038,13 @@
                             </div>
                             <div class="icon-holder">
                                 <span class="icon-online"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span
-                                        class="path5"></span><span class="path6"></span><span
-                                        class="path7"></span><span class="path8"></span><span
-                                        class="path9"></span><span class="path10"></span><span
-                                        class="path11"></span><span class="path12"></span><span
-                                        class="path13"></span><span class="path14"></span><span
-                                        class="path15"></span><span class="path16"></span><span
-                                        class="path17"></span></span>
+                                        class="path3"></span><span class="path4"></span><span class="path5"></span><span
+                                        class="path6"></span><span class="path7"></span><span
+                                        class="path8"></span><span class="path9"></span><span
+                                        class="path10"></span><span class="path11"></span><span
+                                        class="path12"></span><span class="path13"></span><span
+                                        class="path14"></span><span class="path15"></span><span
+                                        class="path16"></span><span class="path17"></span></span>
                             </div>
                         </li>
                         <!--End Single Fact Counter-->
@@ -1202,12 +1230,12 @@
                                                 </div>
                                             </div>
                                             <div class="text">
-                                                <p>{!! $testimonial->message !!}</p>
+                                                <p>{!! substr($testimonial->message, 0, 130) !!}...</p>
                                             </div>
                                         </div>
                                         <div class="client-name">
                                             <h3>{{ $testimonial->name }}</h3>
-                                            <span>{{ $testimonial->designation }}</span>
+                                            <span>{{ substr($testimonial->subtitle, 0, 30) }}</span>
                                         </div>
                                     </div>
                                 @endforeach
@@ -1491,151 +1519,75 @@
             </div>
         </section>
     @endif
-    <section class="testimonial-style1-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="testimonial-style1__title">
-                        <div class="sec-title">
-                            <h2>MIU News & Updates</h2>
-                            <div class="sub-title">
-                                <p>
-                                    Stay informed with the latest news, announcements, achievements,
-                                    and academic updates from Manipur International University
-                                </p>
-                            </div>
+    @if (!empty($blogs))
+        <section class="testimonial-style1-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testimonial-style1__title">
+                            <div class="sec-title">
+                                <h2>MIU Blogs</h2>
+                                <div class="sub-title">
+                                    <p>
+                                        Stay informed with the latest news, announcements, achievements,
+                                        and academic updates from Manipur International University
+                                    </p>
+                                </div>
 
+                            </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="row">
+                    @foreach ($blogs as $blog)
+                        <a href="/blog/{{ $blog->slug }}">
+                            <div class="col-xl-4 col-lg-4">
+                                <div class="single-blog-style1">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="{{ asset($blog->image) }}" alt="">
+                                        </div>
+                                        <div class="category-box">
+                                            {{-- <div class="dot-box"></div> --}}
+                                            <p><span class="icon-calendar mr-2 text-white"></span><a href="#"
+                                                    class="text-white">{{ date('M d, Y', strtotime($blog->created_at)) }}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                {{ substr($blog->title, 0, 50) }}{{ strlen($blog->title) > 50 ? '...' : '' }}
+                                            </a>
+                                        </h3>
+                                        <div class="text">
+                                            <p>
+                                                {{ substr($blog->short_description, 0, 70) }}{{ strlen($blog->short_description) > 70 ? '...' : '' }}
+                                            </p>
+                                        </div>
+                                        <div class="bottom-box">
+                                            <div class="btn-box">
+                                                <a href="/blog/{{ $blog->slug }}">
+                                                    <span class="icon-right-arrow-1"></span>Read More
+                                                </a>
+                                            </div>
+                                            {{-- <div class="meta-info">
+                                            <ul>
+                                                <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a>
+                                                </li>
+                                            </ul>
+                                        </div> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    @endforeach
                 </div>
             </div>
-
-            <div class="row">
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{ asset('/assets/images/blog/blog-v2-1.jpg') }}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Alumni Achievement</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    MIU Alumni Recognized for Excellence in Research
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    Our alumni continue to make a mark globally through innovation,
-                                    leadership, and impactful research across industries.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                    </a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{ asset('/assets/images/blog/blog-v2-2.jpg') }}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Career Growth</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    From Campus to Corporate: MIU Alumni Career Journeys
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    Discover how MIU alumni transitioned from academic life to
-                                    successful professional careers in top organizations.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                    </a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Dec 08, 2023</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-
-                <!--Start Single Blog Style1-->
-                <div class="col-xl-4 col-lg-4">
-                    <div class="single-blog-style1">
-                        <div class="img-holder">
-                            <div class="inner">
-                                <img src="{{ asset('/assets/images/blog/blog-v2-3.jpg') }}" alt="">
-                            </div>
-                            <div class="category-box">
-                                <div class="dot-box"></div>
-                                <p>Alumni Network</p>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <h3>
-                                <a href="blog-single.html">
-                                    Strengthening the MIU Alumni Community Worldwide
-                                </a>
-                            </h3>
-                            <div class="text">
-                                <p>
-                                    MIU’s growing alumni network fosters lifelong connections,
-                                    mentorship opportunities, and professional collaboration.
-                                </p>
-                            </div>
-                            <div class="bottom-box">
-                                <div class="btn-box">
-                                    <a href="blog-single.html">
-                                        <span class="icon-right-arrow-1"></span>Read More
-                                        < /a>
-                                </div>
-                                <div class="meta-info">
-                                    <ul>
-                                        <li><span class="icon-calendar"></span><a href="#">Nov 20, 2023</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--End Single Blog Style1-->
-            </div>
-        </div>
-    </section>
+        </section>
+    @endif
     @if (!empty($events))
         <section class="testimonial-style1-area">
             <div class="container">
@@ -1713,13 +1665,13 @@
                                             <div class="text-holder">
                                                 <h3>
                                                     <a href="{{ route('post.details', $event->slug) }}">
-                                                        {{ $event->title }}
+                                                        {{ substr($event->title, 0, 20) }}
                                                     </a>
                                                 </h3>
 
                                                 <div class="text">
                                                     <p>
-                                                        {{ \Illuminate\Support\Str::words($event->short_description, 15, '...') }}
+                                                        {{ substr($event->short_description, 0, 96) }}
                                                     </p>
                                                     @if (empty($event->image))
                                                         <a href="{{ route('post.details', $event->slug) }}"
