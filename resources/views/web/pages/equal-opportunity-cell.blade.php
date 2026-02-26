@@ -253,6 +253,29 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
         }
+
+        /* RESET ONLY HERE */
+        .admission-wrapper {
+            counter-reset: admission !important;
+        }
+
+        /* Increment */
+        .single-admission-process-box {
+            counter-increment: admission !important;
+            position: relative;
+        }
+
+        /* Number */
+        .counting-box .inner::before {
+            content: counter(admission, decimal-leading-zero) !important;
+            position: absolute;
+            top: -50px;
+            left: -80px;
+
+            font-size: 42px;
+            font-weight: 700;
+            color: #d9dee4;
+        }
     </style>
 @endsection
 @section('content')
@@ -368,12 +391,12 @@
                 </div>
             </div>
             <!-- First Row: 3 Cards -->
-            <div class="row mb-4">
+            <div class="row mb-4 admission-wrapper" >
                 <!-- Card 1 -->
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single-admission-process-box">
                         <div class="counting-box">
-                            <div class="inner">1</div>
+                            <div class="inner"></div>
                         </div>
                         <div class="text-box">
                             <div class="icon">
@@ -393,7 +416,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single-admission-process-box single-admission-process-box--style2">
                         <div class="counting-box">
-                            <div class="inner">2</div>
+                            <div class="inner"></div>
                         </div>
                         <div class="text-box">
                             <div class="icon">
@@ -413,7 +436,7 @@
                 <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="single-admission-process-box single-admission-process-box--style3">
                         <div class="counting-box">
-                            <div class="inner">3</div>
+                            <div class="inner"></div>
                         </div>
                         <div class="text-box">
                             <div class="icon">
@@ -430,46 +453,49 @@
                 <!--End Card 3-->
             </div>
             <!-- Second Row: 2 Cards (Centered) -->
-            <div class="row justify-content-center">
-                <!-- Card 4 -->
-                <div class="col-xl-5 col-lg-5 col-md-5">
-                    <div class="single-admission-process-box single-admission-process-box--style4">
-                        <div class="counting-box">
-                            <div class="inner">4</div>
-                        </div>
-                        <div class="text-box">
-                            <div class="icon">
-                                <span class="icon-handshake"></span>
+            <div class="">
+                <div class="row justify-content-center single-admission-process ">
+                    <!-- Card 4 -->
+                    <div class="col-xl-5 col-lg-5 col-md-5 ">
+                        <div class="single-admission-process-box single-admission-process-box--style4">
+                            <div class="counting-box">
+                                <div class="inner"></div>
                             </div>
-                            <h3><a href="#">Accessibility Support</a></h3>
-                            <div class="text">
-                                <p>Providing accessible infrastructure, assistive technologies, personalized accommodations,
-                                    and dedicated support for differently-abled students.</p>
+                            <div class="text-box">
+                                <div class="icon">
+                                    <span class="icon-handshake"></span>
+                                </div>
+                                <h3><a href="#">Accessibility Support</a></h3>
+                                <div class="text">
+                                    <p>Providing accessible infrastructure, assistive technologies, personalized
+                                        accommodations,
+                                        and dedicated support for differently-abled students.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!--End Card 4-->
+                    <!--End Card 4-->
 
-                <!-- Card 5 -->
-                <div class="col-xl-5 col-lg-5 col-md-5">
-                    <div class="single-admission-process-box single-admission-process-box--style5">
-                        <div class="counting-box">
-                            <div class="inner">5</div>
-                        </div>
-                        <div class="text-box">
-                            <div class="icon">
-                                <span class="icon-shield"></span>
+                    <!-- Card 5 -->
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+                        <div class="single-admission-process-box single-admission-process-box--style5">
+                            <div class="counting-box">
+                                <div class="inner"></div>
                             </div>
-                            <h3><a href="#">Safe Campus Environment</a></h3>
-                            <div class="text">
-                                <p>Creating a secure environment through confidential grievance redressal mechanisms,
-                                    awareness campaigns on anti-harassment policies, and collaboration.</p>
+                            <div class="text-box">
+                                <div class="icon">
+                                    <span class="icon-shield"></span>
+                                </div>
+                                <h3><a href="#">Safe Campus Environment</a></h3>
+                                <div class="text">
+                                    <p>Creating a secure environment through confidential grievance redressal mechanisms,
+                                        awareness campaigns on anti-harassment policies, and collaboration.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!--End Card 5-->
                 </div>
-                <!--End Card 5-->
             </div>
         </div>
     </section>
@@ -479,9 +505,9 @@
                 <div class="sub-title">
                     {{-- <h5>Equal Opportunity</h5> --}}
                 </div>
-              
-                    <h2>Policies & Initiatives</h2>
-               
+
+                <h2>Policies & Initiatives</h2>
+
             </div>
 
             <!-- First Row: Scholarships & Financial Assistance -->
