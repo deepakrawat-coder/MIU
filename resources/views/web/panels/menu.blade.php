@@ -5,7 +5,7 @@
          <div class="auto-container">
              <div class="outer-box">
                  <div class="header-top-left">
-                     <div class="info-box">
+                     {{-- <div class="info-box">
                          <span class="icon-info"></span>
                          <p>Info for</p>
                      </div>
@@ -21,7 +21,7 @@
                              <span class="icon-email"></span>
                          </div>
                          <a href="#">Subscribe Us</a>
-                     </div>
+                     </div> --}}
                      <div class="social-link-box-style1">
                          <div class="icon">
                              <span class="icon-share"></span>
@@ -46,13 +46,13 @@
 
                  <div class="header-top-right">
                      <div class="quick-link-box">
-                         <div class="inner-title">
+                         {{-- <div class="inner-title">
                              <span class="icon-launch"></span>
                              <p>Quick Links</p>
-                         </div>
+                         </div> --}}
                          <div class="link-box">
                              <ul>
-                                 <li><a href="#">Staff Login</a></li>
+                                 <li><a href="/login" target="_blank">Staff Login</a></li>
                                  <li><a href="#">Student Login</a></li>
 
                              </ul>

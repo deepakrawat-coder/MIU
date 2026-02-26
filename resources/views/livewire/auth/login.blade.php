@@ -70,24 +70,9 @@
                 <div class="col-lg-6">
                     <div class="auth-box card card-body m-0 h-100 border-0 justify-content-center">
                         <div class="mb-5 text-center">
-                            <h4 class="fw-normal">Welcome to <span class="fw-bold text-primary">Herozi</span></h4>
+                            <h4 class="fw-normal">Welcome to <span class="fw-bold text-primary" style="color: #d1143e !important;">MIU</span></h4>
                             <p class="text-muted mb-0">Please enter your information to access your account.</p>
-                        </div>
-                        {{-- <form class="form-custom mt-10"> --}}
-
-                            {{-- @if (session('status'))
-                            <div class="mb-4 font-medium text-sm text-green-600">
-                                {{ session('status') }}
-                            </div>
-                            @endif
-                            @foreach ($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                            @endforeach --}}
-
-
-
-
-
+                        </div>                    
                             <!-- Session Status -->
                             <x-auth-session-status class="text-center" :status="session('status')" />
 
@@ -128,24 +113,10 @@
                                             <label class="form-check-label" for="remember-me"
                                                 value="{{ __('Remember me') }}">Remember me</label>
                                         </div>
-                                    </div>
-                                    {{-- <a href="auth-reset-password.html" class="col-sm-6 text-end">
-                                        <span class="fs-14 text-muted">Forgot password?</span>
-                                    </a> --}}
+                                    </div>                                  
                                 </div>
-
-                                {{-- <button type="submit" class="btn btn-primary w-100 shadow-sm rounded-2">
-                                    <i class="ri-login-circle-line me-2"></i> Sign In
-                                </button> --}}
-
-                                {{-- <x-button class="btn w-100 shadow-sm rounded-2"
-                                    style="background: linear-gradient(90deg, #0062ff, #00a6fb) !important; border: none !important; color: #fff !important;">
-                                    <i class="ri-login-circle-line me-2"></i>
-                                    {{ __('Log in') }}
-                                </x-button> --}}
-
                                 <x-button type="submit" class="btn w-100 shadow-sm rounded-2" style="
-        background: linear-gradient(90deg, #0062ff, #00a6fb) !important;
+        background: #d1143e !important;
         border: none !important;
         color: #fff !important;
         /* height: 48px; */
@@ -186,7 +157,7 @@
 
 
                                 <p class="mt-4 text-muted text-center fs-12">
-                                    © 2026 Admin Panel | Authorized Access Only
+                                  © {{ date('Y') }} Manipur International University. All Rights Reserved.
                                 </p>
                             </form>
                     </div>

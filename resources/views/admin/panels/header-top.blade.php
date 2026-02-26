@@ -3,22 +3,19 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Admin Dashboard | MIU</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Herozi is the top-selling Bootstrap 5 admin dashboard template. With Dark Mode, multi-demo options, RTL support, and lifetime updates, it's perfect for web developers.">
-    <meta name="keywords"
-        content="Herozi bootstrap dashboard, bootstrap, bootstrap 5, html dashboard, web dashboard, admin themes, web design, figma, web development, fullcalendar, datatables, free templates, free admin themes, bootstrap theme, bootstrap template, bootstrap dashboard, bootstrap dark mode, bootstrap button, frontend dashboard, responsive bootstrap theme">
-    <meta content="SRBThemes" name="author">
-    <link rel="shortcut icon" href="admin/assets/images/Favicon.png">
+    <title>Manipur International University (MIU) | Top Private University in India</title>
 
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="MIU">
+    <meta name="description"
+        content="Manipur International University (MIU) offers world-class education with industry-focused programs, experienced faculty, modern infrastructure, and global exposure to shape future leaders." />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.miu.edu.in/">
+    <meta property="og:title" content="Manipur International University">
     <meta property="og:description"
-        content="Herozi is the top-selling Bootstrap 5 admin dashboard template. With Dark Mode, multi-demo options, RTL support, and lifetime updates, it's perfect for web developers.">
-    <meta property="og:url" content="https://themeforest.net/user/srbthemes/portfolio">
-    <meta property="og:site_name" content="Herozi by SRBThemes">
+        content="Explore academic programs, admissions, research initiatives, and vibrant campus life at Manipur International University.">
+
+    <meta property="og:image" content="{{ asset('/assets/images/web-image/web-log.png') }}">
     <!-- DataTables Select CSS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/select/1.6.0/css/select.dataTables.min.css">
@@ -28,7 +25,9 @@
     <script src="{{ asset('admin/assets/js/layout/layout-default.js') }}"></script>
 
     <script src="{{ asset('admin/assets/js/layout/layout.js') }}"></script>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/images/web-image/web-log.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="32x32') }}">
+    <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="16x16">
     <!-- Choice Css -->
     {{--
     <link rel="stylesheet"
@@ -71,7 +70,8 @@
 
     <!-- Select2 CSS & JS -->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2-bootstrap-5-theme.min.css"
+        rel="stylesheet" />
 
     <style>
         .buttons-copy,

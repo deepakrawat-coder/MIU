@@ -215,7 +215,7 @@
              <div class="container">
                  <div class="bottom-inner">
                      <div class="copyright">
-                         <p>© 2025 Manipur International University. All Rights Reserved.</p>
+                         <p>© {{ date('Y') }} Manipur International University. All Rights Reserved.</p>
                      </div>
                      {{-- <div class="footer-logo-style1">
                          <a href="/">

@@ -6,6 +6,36 @@
 
 @section('styles')
     <link rel="stylesheet" href="/web-assets/css/about.css?=4.0">
+    <style>
+        .subscribe-content-box,
+        .subscribe-style6-area,
+        .custom-textarea,
+        .testimonial-style1-area {
+            background-color: white;
+            background: white;
+        }
+
+        .teaching-area,
+        .main-slider,
+        .departments-area,
+        .testimonial-style1-areas {
+            background-color: #e5003211 !important;
+        }
+
+        .custom-textarea {
+            background-color: #d1143e !important;
+        }
+
+        .subscribe-content-box .subscribe-form input[type="text"],
+        .subscribe-content-box .subscribe-form input[type="email"],
+        .custom-textarea {
+            border-bottom: 2px solid white !important;
+        }
+
+        .connect-input::placeholder {
+            color: #ffffffa6 !important;
+        }
+    </style>
 @endsection
 @section('content')
     <section class="main-slider style1 nav-style2">
@@ -1038,13 +1068,14 @@
                             </div>
                             <div class="icon-holder">
                                 <span class="icon-online"><span class="path1"></span><span class="path2"></span><span
-                                        class="path3"></span><span class="path4"></span><span class="path5"></span><span
-                                        class="path6"></span><span class="path7"></span><span
-                                        class="path8"></span><span class="path9"></span><span
-                                        class="path10"></span><span class="path11"></span><span
-                                        class="path12"></span><span class="path13"></span><span
-                                        class="path14"></span><span class="path15"></span><span
-                                        class="path16"></span><span class="path17"></span></span>
+                                        class="path3"></span><span class="path4"></span><span
+                                        class="path5"></span><span class="path6"></span><span
+                                        class="path7"></span><span class="path8"></span><span
+                                        class="path9"></span><span class="path10"></span><span
+                                        class="path11"></span><span class="path12"></span><span
+                                        class="path13"></span><span class="path14"></span><span
+                                        class="path15"></span><span class="path16"></span><span
+                                        class="path17"></span></span>
                             </div>
                         </li>
                         <!--End Single Fact Counter-->
@@ -1155,7 +1186,7 @@
         </div>
     </section>
     @if (!empty($Testimonials))
-        <section class="testimonial-style1-area">
+        <section class="testimonial-style1-area testimonial-style1-areas">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -1520,15 +1551,15 @@
         </section>
     @endif
     @if (!empty($blogs))
-        <section class="testimonial-style1-area">
+        <section class="testimonial-style1-area "style="background-color: #d1143e;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="testimonial-style1__title">
                             <div class="sec-title">
-                                <h2>MIU Blogs</h2>
+                                <h2 class="text-white">MIU Blogs</h2>
                                 <div class="sub-title">
-                                    <p>
+                                    <p class="text-white">
                                         Stay informed with the latest news, announcements, achievements,
                                         and academic updates from Manipur International University
                                     </p>
@@ -1539,7 +1570,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                {{-- <div class="row">
                     @foreach ($blogs as $blog)
                         <a href="/blog/{{ $blog->slug }}">
                             <div class="col-xl-4 col-lg-4">
@@ -1549,7 +1580,7 @@
                                             <img src="{{ asset($blog->image) }}" alt="">
                                         </div>
                                         <div class="category-box">
-                                            {{-- <div class="dot-box"></div> --}}
+                                            
                                             <p><span class="icon-calendar mr-2 text-white"></span><a href="#"
                                                     class="text-white">{{ date('M d, Y', strtotime($blog->created_at)) }}</a>
                                             </p>
@@ -1572,32 +1603,67 @@
                                                     <span class="icon-right-arrow-1"></span>Read More
                                                 </a>
                                             </div>
-                                            {{-- <div class="meta-info">
-                                            <ul>
-                                                <li><span class="icon-calendar"></span><a href="#">Jan 15, 2024</a>
-                                                </li>
-                                            </ul>
-                                        </div> --}}
+                                          
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </a>
                     @endforeach
+                </div> --}}
+                <div class="owl-carousel owl-theme blog-carousel">
+                    @foreach ($blogs as $blog)
+                        <div class="item">
+                            <a href="/blog/{{ $blog->slug }}">
+                                <div class="single-blog-style1">
+                                    <div class="img-holder">
+                                        <div class="inner">
+                                            <img src="{{ asset($blog->image) }}" alt="">
+                                        </div>
+                                        <div class="category-box">
+                                            <p><span class="icon-calendar mr-2 text-white"></span>
+                                                <a href="#"
+                                                    class="text-white">{{ date('M d, Y', strtotime($blog->created_at)) }}</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3>
+                                            <a href="blog-single.html">
+                                                {{ substr($blog->title, 0, 50) }}{{ strlen($blog->title) > 50 ? '...' : '' }}
+                                            </a>
+                                        </h3>
+                                        <div class="text">
+                                            <p>
+                                                {{ substr($blog->short_description, 0, 70) }}{{ strlen($blog->short_description) > 70 ? '...' : '' }}
+                                            </p>
+                                        </div>
+                                        <div class="bottom-box">
+                                            <div class="btn-box">
+                                                <a href="/blog/{{ $blog->slug }}">
+                                                    <span class="icon-right-arrow-1"></span>Read More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </section>
     @endif
     @if (!empty($events))
-        <section class="testimonial-style1-area">
+        <section class="testimonial-style1-area testimonial-style1-areas">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="testimonial-style1__title">
                             <div class="sec-title">
-                                <h2>Events at Manipur International University</h2>
+                                <h2 class="">Events at Manipur International University</h2>
                                 <div class="sub-title">
-                                    <p>
+                                    <p class="">
                                         Stay updated with academic, cultural, sports, and professional events
                                         happening at Manipur International University
                                     </p>
@@ -1703,41 +1769,42 @@
             </div>
         </section>
     @endif
-    <section class="subscribe-style6-area">
+    <section class="subscribe-style6-area" style="background-color: #d1143e;">
         <div class="subscribe-style6-area-bg"
             style="background-image: url({{ asset('/assets/images/web-image/connect1.jpg') }});"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
 
-                    <div class="subscribe-content-box">
+                    <div class="subscribe-content-box" style="background-color: #d1143e;">
                         <div class="sec-title-style6">
                             <div class="sub-title">
-                                <p>Stay Connected</p>
+                                <p class="text-white">Stay Connected</p>
                             </div>
-                            <h2>Join the MIU Community</h2>
-                            <p>
+                            <h2 class="text-white">Join the MIU Community</h2>
+                            <p class="text-white">
                                 Get the latest updates on admissions, academic programs,
                                 events, and university news from Manipur International University.
                             </p>
                         </div>
                         <form class="subscribe-form" action="#">
                             <div class="input-box">
-                                <div class="input-label">Full Name</div>
-                                <input type="text" name="name" placeholder="Enter your full name" required="">
+                                <div class="input-label text-white">Full Name</div>
+                                <input type="text" name="name" placeholder="Enter your full name"
+                                    class="connect-input" required="">
                             </div>
                             <div class="input-box">
-                                <div class="input-label">Email Address</div>
-                                <input type="email" name="email" placeholder="Enter your email address"
-                                    required="">
+                                <div class="input-label text-white">Email Address</div>
+                                <input type="email" name="email" class="connect-input"
+                                    placeholder="Enter your email address" required="">
                             </div>
                             <div class="input-box">
-                                <div class="input-label">Message</div>
-                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea"
+                                <div class="input-label text-white">Message</div>
+                                <textarea name="message" cols="30" rows="1" class="w-100 custom-textarea connect-input"
                                     placeholder="Write your query or message here"></textarea>
                             </div>
                             <button class="btn-one style2" type="submit">
-                                <span class="txt">
+                                <span class="txt text-white">
                                     Submit Now
                                 </span>
                             </button>
@@ -1748,7 +1815,7 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area bg-white">
+    <section class="testimonial-style1-area testimonial-style1-areas">
         <div class="container">
             <div class="sec-title text-center">
                 <h2>Our Esteemed Industry Partners</h2>
@@ -1850,4 +1917,27 @@
 
 @endsection
 @section('scripts')
+    <script>
+        $(document).ready(function() {
+            $('.blog-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
 @endsection

@@ -35,7 +35,6 @@ public function noticeAndEvents()
             $q->where('slug', 'events');
         })
         ->latest('publish_date')
-        ->take(6)
         ->get();
 
     // Recent Notices

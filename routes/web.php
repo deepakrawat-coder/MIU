@@ -67,99 +67,42 @@ Route::view('/iqac', 'web.pages.iqac');
 Route::view('/public-self-disclosure', 'web.pages.public-self-disclosure');
 Route::view('/exam-results', 'web.pages.exam-results');
 Route::view('/gallery', 'web.pages.gallery');
-// Route::view('/blog', 'web.pages.blog');
-// Route::view('/blog-details', 'web.pages.blog-details');
+Route::view('/privacy-policy', 'web.pages.privacy-policy');
+Route::view('/term-condition', 'web.pages.term-condition');
+
 Route::get('/blogs', [BlogController::class, 'blogListing'])->name('blogs.listing');
 Route::get('/blog/{slug}', [BlogController::class, 'blogDetails'])->name('blogs.details');
-
-Route::middleware('guest')->get('/cms', function () {
-    return view('admin.index');
-})->name('admin.login');
-
-
-
-Route::get('/dashboard', function () {
-    return view('admin.home');
-})
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
-// route for frontend
+Route::middleware('guest')->get('/cms', function () {return view('admin.index');})->name('admin.login');
+Route::get('/dashboard', function () {return view('admin.home');})->middleware(['auth', 'verified'])->name('dashboard');// route for frontend
 Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
-
 Route::prefix('events')->group(function () {
-
-    Route::get('/', [EventsCategoryController::class, 'index'])
-        ->name('events.index');
-
-    Route::get('/create', [EventsCategoryController::class, 'create'])
-        ->name('events.create');
-
-    Route::post('/store', [EventsCategoryController::class, 'store'])
-        ->name('events.store');
-
-    Route::get('/edit/{id}', [EventsCategoryController::class, 'edit'])
-        ->name('events.edit');
-
-    Route::post('/update/{id}', [EventsCategoryController::class, 'update'])
-        ->name('events.update');
-
-    Route::delete('/delete/{id}', [EventsCategoryController::class, 'destroy'])
-        ->name('events.delete');
-
-    Route::get('/status/{id}', [EventsCategoryController::class, 'status'])
-        ->name('events.status');
+    Route::get('/', [EventsCategoryController::class, 'index'])->name('events.index');
+    Route::get('/create', [EventsCategoryController::class, 'create'])->name('events.create');
+    Route::post('/store', [EventsCategoryController::class, 'store'])->name('events.store');
+    Route::get('/edit/{id}', [EventsCategoryController::class, 'edit'])->name('events.edit');
+    Route::post('/update/{id}', [EventsCategoryController::class, 'update'])->name('events.update');
+    Route::delete('/delete/{id}', [EventsCategoryController::class, 'destroy'])->name('events.delete');
+    Route::get('/status/{id}', [EventsCategoryController::class, 'status'])->name('events.status');
 });
-Route::get('/notice-and-events', [EventsCategoryController::class, 'noticeAndEvents'])
-    ->name('notice.events');
-Route::get('/notice-and-events/{slug}', [EventsCategoryController::class, 'showPost'])
-    ->name('post.details');
+Route::get('/notice-and-events', [EventsCategoryController::class, 'noticeAndEvents'])->name('notice.events');
+Route::get('/notice-and-events/{slug}', [EventsCategoryController::class, 'showPost'])->name('post.details');
 Route::prefix('posts')->group(function () {
-
-    Route::get('/', [EventsPostController::class, 'index'])
-        ->name('posts.index');
-
-    Route::get('/create', [EventsPostController::class, 'create'])
-        ->name('posts.create');
-
-    Route::post('/store', [EventsPostController::class, 'store'])
-        ->name('posts.store');
-
-    Route::get('/edit/{id}', [EventsPostController::class, 'edit'])
-        ->name('posts.edit');
-
-    Route::post('/update/{id}', [EventsPostController::class, 'update'])
-        ->name('posts.update');
-
-    Route::delete('/delete/{id}', [EventsPostController::class, 'destroy'])
-        ->name('posts.delete');
-
-    Route::get('/status/{id}', [EventsPostController::class, 'status'])->name(
-        'posts.status'
-    );
+    Route::get('/', [EventsPostController::class, 'index'])->name('posts.index');
+    Route::get('/create', [EventsPostController::class, 'create'])->name('posts.create');
+    Route::post('/store', [EventsPostController::class, 'store'])->name('posts.store');
+    Route::get('/edit/{id}', [EventsPostController::class, 'edit'])->name('posts.edit');
+    Route::post('/update/{id}', [EventsPostController::class, 'update'])->name('posts.update');
+    Route::delete('/delete/{id}', [EventsPostController::class, 'destroy'])->name('posts.delete');
+    Route::get('/status/{id}', [EventsPostController::class, 'status'])->name('posts.status');
 });
 Route::prefix('schools')->group(function () {
-
-    Route::get('/', [SchoolController::class, 'index'])
-        ->name('schools.index');
-
-    Route::get('/create', [SchoolController::class, 'create'])
-        ->name('schools.create');
-
-    Route::post('/store', [SchoolController::class, 'store'])
-        ->name('schools.store');
-
-    Route::get('/edit/{id}', [SchoolController::class, 'edit'])
-        ->name('schools.edit');
-
-    Route::post('/update/{id}', [SchoolController::class, 'update'])
-        ->name('schools.update');
-
-    Route::delete('/delete/{id}', [SchoolController::class, 'destroy'])
-        ->name('schools.delete');
-
-    Route::get('/status/{id}', [SchoolController::class, 'status'])->name(
-        'schools.status'
-    );
+    Route::get('/', [SchoolController::class, 'index'])->name('schools.index');
+    Route::get('/create', [SchoolController::class, 'create'])->name('schools.create');
+    Route::post('/store', [SchoolController::class, 'store'])->name('schools.store');
+    Route::get('/edit/{id}', [SchoolController::class, 'edit'])->name('schools.edit');
+    Route::post('/update/{id}', [SchoolController::class, 'update'])->name('schools.update');
+    Route::delete('/delete/{id}', [SchoolController::class, 'destroy'])->name('schools.delete');
+    Route::get('/status/{id}', [SchoolController::class, 'status'])->name('schools.status');
 });
 Route::prefix('programs')->group(function () {
     Route::get('/', [ProgramController::class, 'index'])->name('programs.index');
@@ -179,7 +122,6 @@ Route::prefix('courses')->group(function () {
     Route::delete('/delete/{id}', [CourseController::class, 'destroy'])->name('courses.delete');
     Route::get('/status/{id}', [CourseController::class, 'status'])->name('courses.status');
 });
-
 Route::prefix('testimonials')->group(function () {
     Route::get('/', [TestimonialController::class, 'index'])->name('testimonials.index');
     Route::get('/create', [TestimonialController::class, 'create'])->name('testimonials.create');
@@ -189,7 +131,6 @@ Route::prefix('testimonials')->group(function () {
     Route::delete('/delete/{id}', [TestimonialController::class, 'destroy'])->name('testimonials.delete');
     Route::get('/status/{id}', [TestimonialController::class, 'status'])->name('testimonials.status');
 });
-
 Route::prefix('faqs')->group(function () {
     Route::get('/', [FaqController::class, 'index'])->name('faqs.index');
     Route::get('/create', [FaqController::class, 'create'])->name('faqs.create');
@@ -199,7 +140,6 @@ Route::prefix('faqs')->group(function () {
     Route::delete('/delete/{id}', [FaqController::class, 'destroy'])->name('faqs.delete');
     Route::get('/status/{id}', [FaqController::class, 'status'])->name('faqs.status');
 });
-
 Route::prefix('admin-blogs')->group(function () {
     Route::get('/', [BlogController::class, 'index'])->name('admin-blogs.index');
     Route::get('/create', [BlogController::class, 'create'])->name('admin-blogs.create');
@@ -209,7 +149,6 @@ Route::prefix('admin-blogs')->group(function () {
     Route::delete('/delete/{id}', [BlogController::class, 'destroy'])->name('admin-blogs.delete');
     Route::get('/status/{id}', [BlogController::class, 'status'])->name('admin-blogs.status');
 });
-
 Route::prefix('specialization')->group(function () {
     Route::get('/', [SpecializationController::class, 'index'])->name('specialization.index');
     Route::get('/create', [SpecializationController::class, 'create'])->name('specialization.create');

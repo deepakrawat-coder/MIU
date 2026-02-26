@@ -58,7 +58,7 @@
         var table = $('#blogs-table').DataTable({
             processing: true,
             serverSide: true,
-            ajax: "{{ route('blogs.index') }}",
+            ajax: "{{ route('admin-blogs.index') }}",
             columns: [{
                     data: 'DT_RowIndex',
                     name: 'DT_RowIndex',
