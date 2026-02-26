@@ -12,6 +12,7 @@ use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\WebHomeController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\GalleryController;
 
 Route::get('/homw', function () {
     return view('welcome');
@@ -72,8 +73,12 @@ Route::view('/term-condition', 'web.pages.term-condition');
 
 Route::get('/blogs', [BlogController::class, 'blogListing'])->name('blogs.listing');
 Route::get('/blog/{slug}', [BlogController::class, 'blogDetails'])->name('blogs.details');
-Route::middleware('guest')->get('/cms', function () {return view('admin.index');})->name('admin.login');
-Route::get('/dashboard', function () {return view('admin.home');})->middleware(['auth', 'verified'])->name('dashboard');// route for frontend
+Route::middleware('guest')->get('/cms', function () {
+    return view('admin.index');
+})->name('admin.login');
+Route::get('/dashboard', function () {
+    return view('admin.home');
+})->middleware(['auth', 'verified'])->name('dashboard'); // route for frontend
 Route::get('/schools-and-departments', [SchoolController::class, 'show'])->name('schools.show');
 Route::prefix('events')->group(function () {
     Route::get('/', [EventsCategoryController::class, 'index'])->name('events.index');
@@ -158,6 +163,18 @@ Route::prefix('specialization')->group(function () {
     Route::delete('/delete/{id}', [SpecializationController::class, 'destroy'])->name('specialization.delete');
     Route::get('/status/{id}', [SpecializationController::class, 'status'])->name('specialization.status');
 });
+
+Route::prefix('gallery')->group(function () {
+    Route::get('/', [GalleryController::class, 'index'])->name('gallery.index');
+    Route::get('/create', [GalleryController::class, 'create'])->name('gallery.create');
+    Route::post('/store', [GalleryController::class, 'store'])->name('gallery.store');
+    Route::get('/edit/{id}', [GalleryController::class, 'edit'])->name('gallery.edit');
+    Route::post('/update/{id}', [GalleryController::class, 'update'])->name('gallery.update');
+    Route::delete('/delete/{id}', [GalleryController::class, 'destroy'])->name('gallery.delete');
+    Route::get('/status/{id}', [GalleryController::class, 'status'])->name('gallery.status');
+    Route::get('/image-status/{id}', [GalleryController::class, 'toggleImageStatus'])->name('gallery.image-status');
+});
+Route::get('/gallery-list', [GalleryController::class, 'frontendGallery'])->name('gallery.frontend');
 
 
 

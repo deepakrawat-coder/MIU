@@ -479,7 +479,7 @@
 
         </div>
     </section>
-  
+
     <section class="fact-counter-area">
         <div class="container">
             <div class="sec-title text-center">
@@ -1249,12 +1249,53 @@
             </div>
         </div>
     </section>
-    <section class="testimonial-style1-area testimonial-style1-areas">
+    @if (!empty($faq))
+        <section id="faq" class="course-curriculum-area testimonial-style1-areas">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="course-curriculum-content-box">
+                            <div class="course-layout-content-box">
+                                <div class="inner-title">
+                                    <h2>FAQs</h2>
+                                    <div class="sub-title">
+                                        <p class="text-dark">Need Help?</p>
+                                    </div>
+                                </div>
+                                <ul class="accordion-box">
+                                    @foreach ($faq as $item)
+                                        <li class="accordion block ">
+                                            <div class="acc-btn ">
+                                                <div class="course-layout-title-box">
+                                                    <h4>{{ $item['question'] }}</h4>
+                                                    <div class="icon-outer">
+                                                        <i class="icon-plus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="acc-content ">
+                                                <div class="course-layout-content-box-inner">
+                                                    <p class="p-3">
+                                                        {{ $item['answer'] }}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
+    <section class="testimonial-style1-area" style="{{ (!empty($faq))? 'background-color: #d1143e;':' background-color: #e5003211 !important;'}}">
         <div class="container">
             <div class="sec-title text-center">
-                <h2>Our Esteemed Industry Partners</h2>
+                <h2 class=" {{ (!empty($faq))? 'text-white':' text-black'}}">Our Esteemed Industry Partners</h2>
                 <div class="sub-title">
-                    <p>
+                    <p class="{{ (!empty($faq))? 'text-white':' text-black'}}">
                         Manipur International University collaborates with leading organizations
                         and industry partners to enhance learning, research, and career opportunities
                         for our students.
@@ -1348,7 +1389,6 @@
 
         </div>
     </section>
-
 @endsection
 @section('scripts')
     <script>

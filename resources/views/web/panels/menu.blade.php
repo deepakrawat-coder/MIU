@@ -101,7 +101,7 @@
                                          <ul>
                                              <li><a href="/notice-and-events">News</a></li>
                                              <li>
-                                                 <a href="/gallery">Events Gallery</a>
+                                                 <a href="/gallery-list">Events Gallery</a>
                                              </li>
                                              
                                          </ul>

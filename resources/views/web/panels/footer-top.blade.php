@@ -224,8 +224,8 @@
                      </div> --}}
                      <div class="footer-menu">
                          <ul>
-                             <li><a href="#">Privacy Policy</a></li>
-                             <li><a href="#">Terms & Conditions</a></li>
+                             <li><a href="/privacy-policy">Privacy Policy</a></li>
+                             <li><a href="/term-condition">Terms & Conditions</a></li>
                              <li><a href="/refund-policy">Refund Policy</a></li>
                          </ul>
                      </div>

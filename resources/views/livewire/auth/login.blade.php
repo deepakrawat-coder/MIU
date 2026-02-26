@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="shortcut icon" href="admin/assets/images/Favicon.png">
-    <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="admin/assets/css/icons.min.css" rel="stylesheet">
-    <link href="admin/assets/css/app.min.css" rel="stylesheet">
-    <link href="admin/assets/css/custom.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="{{asset('/admin/assets/images/Favicon.png')}}">
+    <link href="{{asset('/admin/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/admin/assets/css/icons.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/admin/assets/css/app.min.css')}}" rel="stylesheet">
+    <link href="{{asset('/admin/assets/css/custom.min.css')}}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.js"></script>
 </head>
 
 <body>
@@ -20,13 +22,13 @@
 
     <div class="account-pages">
         {{-- <img src="admin/assets/images/auth/auth_bg.jpg" alt="auth_bg" class="auth-bg light">
-        <img src="admin/assets/images/auth/auth_bg_dark.jpg" alt="auth_bg_dark" class="auth-bg dark"> --}}
+        <img src="{{asset('/admin/assets/images/auth/auth_bg_dark.jpg')}}" alt="auth_bg_dark" class="auth-bg dark"> --}}
         <div class="container">
             <div class="justify-content-center row gy-0">
 
                 <div class="col-lg-6 auth-banners">
                     <div class="bg-login card card-body m-0 h-100 border-0">
-                        <img src="admin/assets/images/auth/bg-img-2.png" class="img-fluid auth-banner"
+                        <img src="{{asset('/admin/assets/images/auth/bg-img-2.png')}}" class="img-fluid auth-banner"
                             alt="auth-banner">
                         <div class="auth-contain">
                             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -168,7 +170,7 @@
     </div>
 
     <!-- JS -->
-    <script src="admin/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('/admin/assets/js/bootstrap.bundle.min.js')}}"></script>
 
     <script>
         document.querySelector('.toggle-password').addEventListener('click', function () {

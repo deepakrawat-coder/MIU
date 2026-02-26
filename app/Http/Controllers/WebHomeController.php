@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\EventsPost;
+use App\Models\Faq;
 use App\Models\School;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
@@ -30,7 +31,16 @@ class WebHomeController extends Controller
         $events = EventsPost::with('category')->where('category_id', 1)->where('status', 1)->orderBy('created_at', 'desc')->limit(3)->get();
         $blogs = Blog::where('status', 1)->orderBy('created_at', 'desc')->limit(3)->get();
         // dd($blogs);
-
-        return view('web.pages.index', compact('schools', 'Testimonials', 'events', 'blogs'));
+        $faqencode = Faq::where('page_type', 'home')->where('status', 1)->first();
+        if (!empty($faqencode)) {
+            $faq = collect(json_decode(base64_decode($faqencode->faqs_json), true))
+                ->where('status', 1)
+                ->sortBy('order')
+                ->values()
+                ->toArray();
+        } else {
+            $faq = [];
+        }
+        return view('web.pages.index', compact('schools', 'Testimonials', 'events', 'blogs', 'faq'));
     }
 }

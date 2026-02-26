@@ -22,44 +22,39 @@
     <link href="https://cdn.jsdelivr.net/npm/jquery-datatables-checkboxes@1.3.0/css/dataTables.checkboxes.min.css"
         rel="stylesheet">
     <!-- Layout JS -->
-    <script src="{{ asset('admin/assets/js/layout/layout-default.js') }}"></script>
+    <script src="{{ asset('/admin/assets/js/layout/layout-default.js') }}"></script>
 
-    <script src="{{ asset('admin/assets/js/layout/layout.js') }}"></script>
+    <script src="{{ asset('/admin/assets/js/layout/layout.js') }}"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/assets/images/web-image/web-log.png') }}">
     <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="32x32') }}">
     <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="16x16">
     <!-- Choice Css -->
     {{--
     <link rel="stylesheet"
-        href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
+        href="{{ asset('/admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/admin/assets/styles/choices.min.css">
 
     <!-- Simplebar Css -->
-    <link href="{{ asset('admin/assets/libs/simplebar/simplebar.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/admin/assets/libs/simplebar/simplebar.min.css') }}" rel="stylesheet">
     <!--icons css-->
-    <link href="{{ asset('admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/admin/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css">
     <!-- Sweet Alert -->
-    <link href="{{ asset('admin/assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/admin/assets/libs/sweetalert2/sweetalert2.min.css') }}" rel="stylesheet" type="text/css">
     <!-- Bootstrap Css -->
-    <link href="{{ asset('admin/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
+    <link href="{{ asset('/admin/assets/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet"
         type="text/css">
     <!-- App Css-->
-    <link href="{{ asset('admin/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/admin/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css">
 
-    <link href="{{ asset('admin/assets/css/custom.min.css') }}" id="custom-style" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/admin/assets/css/custom.min.css') }}" id="custom-style" rel="stylesheet" type="text/css">
 
-    {{--
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/jquery-datatables-checkboxes@1.3.0/css/dataTables.checkboxes.min.css"> --}}
+    {{--<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/jquery-datatables-checkboxes@1.3.0/css/dataTables.checkboxes.min.css"> --}}
 
     <!-- Toastr CSS -->
-    {{--
-    <link rel="stylesheet" href="admin/assets/libs/toastr/toastr.css"> --}}
+    {{--<link rel="stylesheet" href="admin/assets/libs/toastr/toastr.css"> --}}
 
-    <link rel="stylesheet" href="{{ asset('admin/assets/libs/toastr/toastr.css') }}">
-    {{--
-    <link rel="stylesheet"
-        href="{{ asset('admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('/admin/assets/libs/toastr/toastr.css') }}">
+    {{--<link rel="stylesheet"  href="{{ asset('/admin/assets/libs/choices.js/public/admin/assets/styles/choices.min.css') }}"> --}}
 
     {{-- C:\xampp\htdocs\erp_new\public\assets\libs\choices.js\public\assets\styles\choices.min.css --}}
 
@@ -72,7 +67,8 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2-bootstrap-5-theme.min.css"
         rel="stylesheet" />
-
+ <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.js"></script>
     <style>
         .buttons-copy,
         .buttons-csv,
