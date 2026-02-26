@@ -173,6 +173,16 @@
             box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
         }
 
+        .single-team-style2 .img-holder .title-holder {
+            height: 120px !important;
+        }
+
+        @media (max-width: 768px) {
+            .single-team-style2 .img-holder .title-holder {
+                height: auto !important;
+            }
+        }
+
         /* Responsive Adjustments */
         @media (max-width: 992px) {
             .contact-hero {
@@ -261,10 +271,11 @@
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 100ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al3.jpg') }}" class="img-fluid" alt="image">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al3.jpg') }});"></div>
                                 <h3><a href="#">Prof Charles Yuhlung</a></h3>
                                 <p>Chairman</p>
                             </div>
@@ -278,10 +289,11 @@
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al11.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al11.jpg') }});"></div>
                                 <h3><a href="#">Associate Prof. Chandibai Potsangbam</a></h3>
                                 <p>Vice Chairman</p>
                             </div>
@@ -295,10 +307,11 @@
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 300ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al15.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al15.jpg') }});"></div>
                                 <h3><a href="#">Dr. S. Anand</a></h3>
                                 <p>Coordinator / Nodal Officer</p>
                             </div>
@@ -312,10 +325,11 @@
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al13.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al13.jpg') }});"></div>
                                 <h3><a href="#">Dr. M. Bidyarani</a></h3>
                                 <p>Member</p>
                             </div>
@@ -329,10 +343,11 @@
                         style="visibility: visible; animation-duration: 1500ms; animation-delay: 500ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al14.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al14.jpg') }});"></div>
                                 <h3><a href="#">Dr. AK. Gyanendro</a></h3>
                                 <p>Member</p>
                             </div>
@@ -342,15 +357,18 @@
 
                 <!-- Member 6 -->
                 <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms"
-                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="700ms"
+                        data-wow-duration="1500ms"
+                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 700ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al17.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});"></div>
-                                <h3><a href="#">Dr. S. Gunajit Mangang</a></h3>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al17.jpg') }});">
+                                </div>
+                                <h3><a href="#">Dr. S. Debina</a></h3>
                                 <p>Member</p>
                             </div>
                         </div>
@@ -359,17 +377,16 @@
 
                 <!-- Member 7 -->
                 <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="700ms"
-                        data-wow-duration="1500ms"
-                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 700ms; animation-name: fadeInUp;">
+                    <div class="single-team-style2 wow fadeInUp animated" data-wow-delay="600ms" data-wow-duration="1500ms"
+                        style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
                         <div class="img-holder">
                             <div class="inner">
-                                <img src="{{ asset('/assets/images/team/team-v2-1.jpg') }}" alt="">
+                                <img src="{{ asset('/assets/images/web-image/al16.jpg') }}" alt="">
                             </div>
                             <div class="title-holder text-center">
-                                <div class="img-bg" style="background-image: url({{ asset('/assets/images/team/team-v2-1.jpg') }});">
-                                </div>
-                                <h3><a href="#">Dr. S. Debina</a></h3>
+                                <div class="img-bg"
+                                    style="background-image: url({{ asset('/assets/images/web-image/al16.jpg') }});"></div>
+                                <h3><a href="#">Dr. S. Gunajit Mangang</a></h3>
                                 <p>Member</p>
                             </div>
                         </div>
@@ -388,7 +405,7 @@
 
             <!-- 1 -->
             <div class="row mb-4">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-file-text"></i> UGC Regulations on Sexual Harassment, 2015
@@ -400,7 +417,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-gavel"></i> Sexual Harassment of Women at Workplace Act, 2013
@@ -412,7 +429,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-ban"></i> UGC Regulations on Ragging, 2009
@@ -424,7 +441,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-balance-scale"></i> Equal Opportunity Cell Guidelines
@@ -436,7 +453,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-wheelchair"></i> Rights of Persons with Disabilities Act, 2016
@@ -448,7 +465,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
                     <div class="warning-box">
                         <h3 class="contact-title text-black">
                             <i class="fa fa-users"></i> Student Grievance Redressal Mechanism
@@ -481,6 +498,8 @@
                 <!-- Primary Objectives -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="spec-card">
+                        <img src="{{ asset('/assets/images/web-image/abb11.png') }}" class="img-fluid mb-3"
+                            width="80" height="80" alt="image">
                         <h4>Primary Objectives</h4>
                         <p>
                             To provide a platform for addressing grievances, complaints,
@@ -492,6 +511,8 @@
                 <!-- Investigation & Inquiry -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="spec-card">
+                        <img src="{{ asset('/assets/images/web-image/abb12.png') }}" class="img-fluid mb-3"
+                            width="80" height="80" alt="image">
                         <h4>Investigation & Inquiry</h4>
                         <p>
                             Conduct fair and impartial investigations into complaints
@@ -503,6 +524,8 @@
                 <!-- Prevention & Awareness -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="spec-card">
+                        <img src="{{ asset('/assets/images/web-image/abb9.png') }}" class="img-fluid mb-3"
+                            width="80" height="80" alt="image">
                         <h4>Prevention & Awareness</h4>
                         <p>
                             Organize awareness programs, workshops, and training
@@ -514,6 +537,8 @@
                 <!-- Support & Counseling -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="spec-card">
+                        <img src="{{ asset('/assets/images/web-image/abb10.png') }}" class="img-fluid mb-3"
+                            width="80" height="80" alt="image">
                         <h4>Support & Counseling</h4>
                         <p>
                             Provide support services and counseling to complainants
@@ -536,7 +561,7 @@
                             <i class="fa fa-address-card"></i> Get in Touch
                         </span>
                     </div> --}}
-                    <h2 class="sec-title pb-3 " >
+                    <h2 class="sec-title pb-3 ">
                         <i class="fa fa-envelope-open-o"></i> Contact Information
                     </h2>
                     <div class="title-divider d-flex align-items-center justify-content-center">
@@ -717,7 +742,7 @@
                 </div>
             </div>
 
-            
+
         </div>
     </section>
 @endsection

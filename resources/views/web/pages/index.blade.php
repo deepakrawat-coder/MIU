@@ -500,11 +500,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Accounting</a>
+                                    <a href="#">Arts & Humanities</a>
                                     <div class="text">
-                                        <p>To take a trivial example which of us
-                                            ever undertakes laborious physical exercise
-                                            to obtain some advantage.</p>
+                                        <p>The School of Arts and Humanities at Manipur International University (MIU) is a dynamic academic spa...</p>
                                     </div>
                                 </div>
                             </div>
@@ -515,29 +513,43 @@
 
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Accounting Management</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Arts & Humanities</h3>
+                                <p>The School of Arts and Humanities at Manipur International University...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BA (Hons.)</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BSW</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>MA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>MSW</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -562,11 +574,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Business</a>
+                                    <a href="#">Business Management</a>
                                     <div class="text">
-                                        <p>Indignation and dislike men who
-                                            beguileds and all demoralized by that
-                                            of pleasure of the moment.</p>
+                                        <p>At MIU, developing future leaders is not only about preparing them for the corporate world but also about...</p>
                                     </div>
                                 </div>
                             </div>
@@ -577,29 +587,57 @@
 
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Business Management</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Business, Management & Commerce</h3>
+                                <p>The curriculum emphasizes entrepreneurship, strategic thinking, finance, marketing...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
                                             <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
                                             <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>MBA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>M.Com</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>BHM</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>BHMCT</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>MHM</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -624,11 +662,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Computer</a>
+                                    <a href="#">Engineering & Tech</a>
                                     <div class="text">
-                                        <p>To take a trivial example which of us
-                                            ever undertakes laborious physical exercise
-                                            to obtain some advantage.</p>
+                                        <p>All programs are developed in collaboration with industry experts to ensure that students...</p>
                                     </div>
                                 </div>
                             </div>
@@ -639,29 +675,36 @@
 
                         <div class="single-department-box-style2__ovarlay-content left">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Computer Science</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Engineering & Technology</h3>
+                                <p>All programs are developed in collaboration with industry experts to ensure that students gain relevant, industry-oriented skills...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>Diploma Engineering</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>B.Tech</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>B.Tech Lateral Entry</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>M.Tech</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -688,11 +731,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Health Sciences</a>
+                                    <a href="#">Science</a>
                                     <div class="text">
-                                        <p>Our power of choice is when
-                                            nothing prevent our being able to do
-                                            what we like best.</p>
+                                        <p>The School of Basic Sciences and Biotechnology at Manipur International University (MIU) offers...</p>
                                     </div>
                                 </div>
                             </div>
@@ -702,29 +743,22 @@
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Health Sciences</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Science</h3>
+                                <p>The School is committed to imparting knowledge in pure and applied sciences, which form the backbone of scientific innovation...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>B.Sc</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>M.Sc</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -748,11 +782,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Plant Sciences</a>
+                                    <a href="#">Yoga Science</a>
                                     <div class="text">
-                                        <p>To take a trivial example which of us
-                                            ever undertakes laborious physical exercise
-                                            to obtain some advantage.</p>
+                                        <p>The programs combine theoretical knowledge with practical training in asanas, pranayama, medi...</p>
                                     </div>
                                 </div>
                             </div>
@@ -763,29 +795,22 @@
 
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Plant Sciences</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Yoga Science </h3>
+                                <p>The School of Yoga at Manipur International University (MIU) offers B.A. (Yoga) and M.A. (Yoga) programs designed...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BA (Yoga)</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>MA (Yoga)</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -809,11 +834,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Public Safety</a>
+                                    <a href="#">Library & Information</a>
                                     <div class="text">
-                                        <p>Indignation and dislike men who
-                                            beguileds and all demoralized by that
-                                            of pleasure of the moment.</p>
+                                        <p>The School of Library and Information Science at Manipur International University (MIU) offers...</p>
                                     </div>
                                 </div>
                             </div>
@@ -823,29 +846,22 @@
                         </div>
                         <div class="single-department-box-style2__ovarlay-content left">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Public Safety</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Library & Information Science </h3>
+                                <p>The programs focus on developing competencies in information organization, cataloguing, classification, digital libraries...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>B.LIS</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>M.LIS</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -871,11 +887,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Public Safety</a>
+                                    <a href="#">Mass Communication </a>
                                     <div class="text">
-                                        <p>Indignation and dislike men who
-                                            beguileds and all demoralized by that
-                                            of pleasure of the moment.</p>
+                                        <p>With the rapid growth of digital platforms and multimedia communication, the programs...</p>
                                     </div>
                                 </div>
                             </div>
@@ -885,29 +899,22 @@
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Public Safety</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Mass Communication and Journalism</h3>
+                                <p>The School of Journalism and Mass Communication at Manipur International University (MIU) offers B.J.M.C. and M.J.M.C...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BJMC</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>MJMC</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -931,11 +938,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Health Sciences</a>
+                                    <a href="#">Computer Science </a>
                                     <div class="text">
-                                        <p>Our power of choice is when
-                                            nothing prevent our being able to do
-                                            what we like best.</p>
+                                        <p>The School focuses on emerging areas such as software development, data science...</p>
                                     </div>
                                 </div>
                             </div>
@@ -945,29 +950,50 @@
                         </div>
                         <div class="single-department-box-style2__ovarlay-content">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Health Sciences</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Computer Science & Information Technology</h3>
+                                <p>The School of Computer Science and Information Technology at Manipur International University (MIU)...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BCA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>MCA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>B.Sc. (IT/CS)</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>M.Sc. (IT/CS)</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>DCA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dot-box"></div>
+                                        <div class="inner-text">
+                                            <h4>PGDCA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>
@@ -991,11 +1017,9 @@
                                     <div class="round-box"></div>
                                 </div>
                                 <div class="text-holder">
-                                    <a href="#">Plant Sciences</a>
+                                    <a href="#">Animation</a>
                                     <div class="text">
-                                        <p>To take a trivial example which of us
-                                            ever undertakes laborious physical exercise
-                                            to obtain some advantage.</p>
+                                        <p>The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A...</p>
                                     </div>
                                 </div>
                             </div>
@@ -1006,29 +1030,22 @@
 
                         <div class="single-department-box-style2__ovarlay-content left">
                             <div class="inner">
-                                <h5>Undergraduate</h5>
-                                <h3>Plant Sciences</h3>
-                                <p>The claims of duty or the obligations business it will frequently.</p>
+                                {{-- <h5>Undergraduate</h5> --}}
+                                <h3>School of Animation</h3>
+                                <p>The School of Fine Arts at Manipur International University (MIU) offers B.F.A. and M.F.A. programs...</p>
                                 <ul>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Business Administration</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>BFA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                     <li>
                                         <div class="dot-box"></div>
                                         <div class="inner-text">
-                                            <h4>Bachelor of Commerce</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="dot-box"></div>
-                                        <div class="inner-text">
-                                            <h4>Bachelor of Commerce (Honours)</h4>
-                                            <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a>
+                                            <h4>MFA</h4>
+                                            {{-- <a href="#"><span class="fa fa-file-pdf-o"></span> Syllabus.pdf</a> --}}
                                         </div>
                                     </li>
                                 </ul>

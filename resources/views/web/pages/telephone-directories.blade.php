@@ -144,10 +144,10 @@
     <section class="blog-style4-area">
         <div class="container">
             <div class="">
-                <div class="sec-title pb-2">
+                <div class="sec-title pb-2 text-center">
                     <h2> Telephone Directory</h2>
                 </div>
-                <h3 class="section-subheading mb-3">Manipur International University</h3>
+                <h3 class="section-subheading mb-3 text-center">Manipur International University</h3>
                 <div class="table-responsive">
                     <table class="table table-bordered table-hover">
                         <thead>
