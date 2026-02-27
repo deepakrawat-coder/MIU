@@ -184,7 +184,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="add-comment-box">
+                        {{-- <div class="add-comment-box">
                             <div class="inner-title">
                                 <h2>Leave a Reply</h2>
                                 <p> Your email address will not be published. Required fields are marked <span
@@ -243,7 +243,7 @@
                                     </div>
                                 </div>
                             </form>
-                        </div>
+                        </div> --}}
                         @endif
                     </div>
                 </div>
