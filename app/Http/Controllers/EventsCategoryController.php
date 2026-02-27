@@ -54,7 +54,7 @@ public function noticeAndEvents()
         ->latest('publish_date')
         ->take(6)
         ->get();
-
+        // dd($recentNotices);
     return view('web.pages.notice-and-events', compact(
         'featuredPosts',
         'recentEvents',
@@ -88,8 +88,9 @@ public function showPost($slug)
         ->latest('publish_date')
         ->take(6)
         ->get();
-
-    return view('web.pages.notice-and-events-details', compact('post', 'similarPosts'));
+        $categoryName = $post->category ? $post->category->name : 'Unknown Category';
+    //  dd($categoryName);
+    return view('web.pages.notice-and-events-details', compact('post', 'similarPosts', 'categoryName'));
 }
 
 

@@ -242,7 +242,7 @@
                         <div class="teaching-img-box__content-bg"></div>
                         <div class="teaching-img-box__content aos-init aos-animate" data-aos="fade-left">
                             <div class="border-line"></div>
-                            <h3> “At Manipur International University, we empower
+                            <h3  style="text-align:center;"> “At Manipur International University, we empower
                                 minds through quality education, impactful research,
                                 and a vision for a better global future.”
                             </h3>
@@ -1185,7 +1185,7 @@
                                         @if (!empty($event->image))
                                             <div class="overlay-content">
                                                 <div class="img-bg"
-                                                    style="background-image: url({{ $event->image ? asset($event->image) : asset('/assets/images/events/default.jpg') }});">
+                                                    style="background-image: url('{{ asset($event->image ?: '/assets/images/events/default.jpg') }}');">
                                                 </div>
                                                 <div class="button-box">
                                                     <a href="{{ route('post.details', $event->slug) }}">

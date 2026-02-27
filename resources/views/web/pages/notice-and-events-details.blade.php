@@ -68,19 +68,7 @@
                                 </div>
                             @endif
 
-                            <div class="blog-details-page__text-3">
-                                {{-- <span class="badge badge-info"> January 27, 2026 </span>
-                            <span class="badge badge-danger mb-3">MIU Official</span>
-
-                            <h3>Patriotic Run – Veterans India</h3>
-                            <div class="inner-text">
-                                <p>
-                                    A successful Patriotic Run by Veteran India in collaboration with Manipur
-                                    International University, followed by fun-filled games with students and
-                                    faculty—celebrating unity, teamwork, and national pride!
-                                </p>
-                            </div> --}}
-
+                            <div class="blog-details-page__text-3">                               
                                 {{-- Date --}}
                                 @if ($post->publish_date)
                                     <span class="badge badge-info">
@@ -104,34 +92,8 @@
                             </div>
                         </div>
 
-                        {{-- <div class="blog-details-page__prev-next-option">
-                        <div class="single-box left">
-                            <div class="icon-box">
-                                <a href="#">
-                                    <span class="icon-right-arrow-1"></span>
-                                </a>
-                            </div>
-                            <div class="title-box">
-                                <h3>
-                                    <a href="#">A Core Commitment to Liberal<br> Arts and Sciences</a>
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="single-box right">
-                            <div class="icon-box">
-                                <a href="#">
-                                    <span class="icon-right-arrow-1"></span>
-                                </a>
-                            </div>
-                            <div class="title-box">
-                                <h3>
-                                    <a href="#">University College Appoints<br> Dean of Humanities</a>
-                                </h3>
-                            </div>
-                        </div>
-                    </div> --}}
-
-
+                      
+                        @if($categoryName !=='Notice')
                         <div class="sec-title">
                             <h2>Similar Posts</h2>
                         </div>
@@ -158,168 +120,7 @@
                                     "992":{ "items" : "3" },
                                     "1200":{ "items" : "3" }
                                     }
-                                }'>
-
-                                        <!--Start Single Testimonial Style9-->
-                                        {{-- <div class="single-testimonial-style9 p-0">
-                                        <div class="single-blog-style1">
-                                            <div class="img-holder">
-                                                <div class="inner">
-                                                    <img src="{{ asset('/assets/images/web-image/ne1.jpeg') }}"
-                                                        class="w-100 img-fluid" alt="image">
-                                                </div>
-                                                <div class="category-box">
-                                                    <div class="dot-box"></div>
-                                                    <p>MIU Official</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-holder">
-                                                <h3><a href="/notice-and-events-details">Patriotic Run – Veterans
-                                                        India</a></h3>
-                                                <div class="text pt-0">
-                                                    <p>A successful Patriotic Run by Veteran India in collaboration with
-                                                        Manipur
-                                                        International University, followed by fun-filled games with
-                                                        students and...
-                                                    </p>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="btn-box">
-                                                        <a href="/notice-and-events-details"> <span
-                                                                class="icon-right-arrow-1"></span>Read
-                                                            More... </a>
-                                                    </div>
-                                                    <div class="meta-info">
-                                                        <ul>
-                                                            <li><span class="icon-calendar"></span><a
-                                                                    href="/notice-and-events-details"> 27
-                                                                    January
-                                                                    2026 </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="single-testimonial-style9 p-0">
-                                        <div class="single-blog-style1">
-                                            <div class="img-holder">
-                                                <div class="inner">
-                                                    <img src="{{ asset('/assets/images/web-image/ne2.jpg') }}"
-                                                        class="w-100 img-fluid" alt="image">
-                                                </div>
-                                                <div class="category-box">
-                                                    <div class="dot-box"></div>
-                                                    <p>MIU Official</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-holder">
-                                                <h3><a href="/notice-and-events-details">Reception of Our Champions</a>
-                                                </h3>
-                                                <div class="text pt-0">
-                                                    <p>A proud day for MIU! Our scholar from the Department of Yoga &
-                                                        Physical
-                                                        Education has made history by winning...</p>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="btn-box">
-                                                        <a href="/notice-and-events-details"> <span
-                                                                class="icon-right-arrow-1"></span>Read
-                                                            More... </a>
-                                                    </div>
-                                                    <div class="meta-info">
-                                                        <ul>
-                                                            <li><span class="icon-calendar"></span><a
-                                                                    href="/notice-and-events-details"> 03
-                                                                    September
-                                                                    2025 </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="single-testimonial-style9 p-0">
-                                        <div class="single-blog-style1">
-                                            <div class="img-holder">
-                                                <div class="inner">
-                                                    <img src="{{ asset('/assets/images/web-image/ne3.jpg') }}"
-                                                        class="w-100 img-fluid" alt="image">
-                                                </div>
-                                                <div class="category-box">
-                                                    <div class="dot-box"></div>
-                                                    <p>MIU Official</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-holder">
-                                                <h3><a href="/notice-and-events-details">Reviving Traditional Utong
-                                                        Ngari Production</a>
-                                                </h3>
-                                                <div class="text pt-0">
-                                                    <p>A heartfelt thank you to everyone who joined the Program on
-                                                        Reviving
-                                                        Traditional Utong Ngari Production. We are deeply honoured...
-                                                    </p>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="btn-box">
-                                                        <a href="/notice-and-events-details"> <span
-                                                                class="icon-right-arrow-1"></span>Read
-                                                            More... </a>
-                                                    </div>
-                                                    <div class="meta-info">
-                                                        <ul>
-                                                            <li><span class="icon-calendar"></span><a
-                                                                    href="/notice-and-events-details"> 14
-                                                                    July
-                                                                    2025 </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="single-testimonial-style9 p-0">
-                                        <div class="single-blog-style1">
-                                            <div class="img-holder">
-                                                <div class="inner">
-                                                    <img src="{{ asset('/assets/images/web-image/ne4.jpg') }}"
-                                                        class="w-100 img-fluid" alt="image">
-                                                </div>
-                                                <div class="category-box">
-                                                    <div class="dot-box"></div>
-                                                    <p>MIU Official</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-holder">
-                                                <h3><a href="/notice-and-events-details">City Farming and Space
-                                                        Utilisation</a></h3>
-                                                <div class="text pt-0">
-                                                    <p>Congratulations to Prof. P. Kumar, (Pro- Vice Chancellor), Prof.
-                                                        Ajit Kumar
-                                                        Ng(Dean of the School of Biological Sciences)and Associate
-                                                        Professor...</p>
-                                                </div>
-                                                <div class="bottom-box">
-                                                    <div class="btn-box">
-                                                        <a href="/notice-and-events-details"> <span
-                                                                class="icon-right-arrow-1"></span>Read More... </a>
-                                                    </div>
-                                                    <div class="meta-info">
-                                                        <ul>
-                                                            <li><span class="icon-calendar"></span><a
-                                                                    href="/notice-and-events-details">
-                                                                    07 July
-                                                                    2025 </a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
+                                }'>                                      
 
                                         @forelse($similarPosts as $similar)
                                             <div class="single-testimonial-style9 p-0">
@@ -383,9 +184,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="add-comment-box">
                             <div class="inner-title">
                                 <h2>Leave a Reply</h2>
@@ -446,7 +244,7 @@
                                 </div>
                             </form>
                         </div>
-
+                        @endif
                     </div>
                 </div>
 
