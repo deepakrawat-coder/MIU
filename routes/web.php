@@ -13,6 +13,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\WebHomeController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\EnquiryController;
 
 Route::get('/homw', function () {
     return view('welcome');
@@ -175,6 +176,7 @@ Route::prefix('gallery')->group(function () {
     Route::get('/image-status/{id}', [GalleryController::class, 'toggleImageStatus'])->name('gallery.image-status');
 });
 Route::get('/gallery-list', [GalleryController::class, 'frontendGallery'])->name('gallery.frontend');
+Route::post('/enquiry/store', [EnquiryController::class, 'store'])->name('enquiry.store');
 
 
 
@@ -185,6 +187,9 @@ Route::get('/schools/{slug}', [SchoolController::class, 'details'])
     ->name('schools.{slug}');
 // Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blogs.show');
 Route::get('/{course}/{program}/{specialization}', [SpecializationController::class, 'show'])->name('specialization.show');
-require __DIR__ . '/settings.php';
+Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
+    Route::resource('enquiries', EnquiryController::class);
+    Route::post('enquiries/toggle-status/{id}', [EnquiryController::class, 'toggleStatus'])->name('enquiries.toggle-status');
+});
 
 require __DIR__ . '/settings.php';

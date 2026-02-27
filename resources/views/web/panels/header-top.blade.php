@@ -72,3 +72,4 @@
          sizes="32x32') }}">
      <link rel="icon" type="image/png" href="{{ asset('/assets/images/web-image/web-log.png') }}" sizes="16x16">
      <link rel="stylesheet" href="{{ asset('/assets/css/web-css.css?=1.4') }}">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">

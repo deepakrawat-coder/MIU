@@ -6,6 +6,7 @@ use App\Models\Blog;
 use App\Models\EventsPost;
 use App\Models\Faq;
 use App\Models\School;
+use App\Models\Specialization;
 use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Laravel\Prompts\Concerns\Events;
@@ -41,6 +42,7 @@ class WebHomeController extends Controller
         } else {
             $faq = [];
         }
-        return view('web.pages.index', compact('schools', 'Testimonials', 'events', 'blogs', 'faq'));
+        $specializations = Specialization::where('status', 1)->get(); // Added this line
+        return view('web.pages.index', compact('schools', 'Testimonials', 'events', 'blogs', 'faq', 'specializations')); // Modified this line
     }
 }

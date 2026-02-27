@@ -40,7 +40,7 @@ class SchoolController extends Controller
             ->where('slug', $slug)
             ->where('status', 1)
             ->firstOrFail();
-
+// dd($school);
         // Get all programs
         $programs = $school->courses
             ->flatMap->programs

@@ -219,21 +219,21 @@
                      </div>
                      {{-- <div class="footer-logo-style1">
                          <a href="/">
-                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}"  width="150" height="150"  alt="Awesome Logo" title="">
-                         </a>
-                     </div> --}}
-                     <div class="footer-menu">
-                         <ul>
-                             <li><a href="/privacy-policy">Privacy Policy</a></li>
-                             <li><a href="/term-condition">Terms & Conditions</a></li>
-                             <li><a href="/refund-policy">Refund Policy</a></li>
-                         </ul>
-                     </div>
+                             <img src="{{ asset('/assets/images/web-image/miu-white.png') }}" width="150" height="150" alt="Awesome Logo" title="">
+                     </a>
+                 </div> --}}
+                 <div class="footer-menu">
+                     <ul>
+                         <li><a href="/privacy-policy">Privacy Policy</a></li>
+                         <li><a href="/term-condition">Terms & Conditions</a></li>
+                         <li><a href="/refund-policy">Refund Policy</a></li>
+                     </ul>
                  </div>
              </div>
          </div>
-     </footer>
-     <!--End footer area-->
+ </div>
+ </footer>
+ <!--End footer area-->
  </div>
  <button class="scroll-top scroll-to-target" data-target="html">
      <span class="icon-top"></span>
@@ -299,3 +299,25 @@
 
  <!-- thm custom script -->
  <script src="{{ asset('/assets/js/custom.js') }}"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script>
+     @if(session('success'))
+     Swal.fire({
+         title: 'Success!',
+         text: "{{ session('success') }}",
+         icon: 'success',
+         confirmButtonText: 'OK',
+         confirmButtonColor: '#d1143e'
+     });
+     @endif
+
+     @if(session('error'))
+     Swal.fire({
+         title: 'Error!',
+         text: "{{ session('error') }}",
+         icon: 'error',
+         confirmButtonText: 'OK',
+         confirmButtonColor: '#d1143e'
+     });
+     @endif
+ </script>

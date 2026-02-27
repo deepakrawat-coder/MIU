@@ -23,4 +23,9 @@ class Specialization extends Model
     {
         return $this->belongsTo(Program::class);
     }
+
+    public function enquiries()
+    {
+        return $this->hasMany(Enquiry::class);
+    }
 }
