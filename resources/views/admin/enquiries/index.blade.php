@@ -32,7 +32,7 @@
                                     <th>Source Page</th>
                                     <th>Date</th>
                                     <th>Status</th>
-                                    <th>Action</th>
+                                    {{-- <th>Action</th> --}}
                                 </tr>
                             </thead>
                             <tbody>
@@ -51,7 +51,7 @@
                                             <label class="form-check-label">{{ $enquiry->status ? 'Contacted' : 'New' }}</label>
                                         </div>
                                     </td>
-                                    <td>
+                                    {{-- <td>
                                         <div class="hstack gap-2">
                                             <a href="{{ route('enquiries.show', $enquiry->id) }}" class="btn btn-sm btn-light-primary">
                                                 <i class="ri-eye-line"></i>
@@ -64,7 +64,7 @@
                                                 </button>
                                             </form>
                                         </div>
-                                    </td>
+                                    </td> --}}
                                 </tr>
                                 @endforeach
                             </tbody>
