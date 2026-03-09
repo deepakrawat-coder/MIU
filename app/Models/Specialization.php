@@ -28,4 +28,8 @@ class Specialization extends Model
     {
         return $this->hasMany(Enquiry::class);
     }
+    public function course()
+    {
+        return $this->belongsTo(Course::class);
+    }
 }

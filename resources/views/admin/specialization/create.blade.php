@@ -6,14 +6,26 @@
     <form id="specialization-form" action="{{ route('specialization.store') }}" method="POST"
         enctype="multipart/form-data">
         @csrf
-
-        <!-- Program -->
         <div class="mb-3">
+            <input type="radio" name="map_type" value="program" checked> Program
+            <input type="radio" name="map_type" value="course" class="ms-3"> Course
+        </div>
+        <!-- Program -->
+        <div class="mb-3 " id="program-section">
             <label>Program *</label>
-            <select name="program_id" class="form-select" required>
+            <select name="program_id" class="form-select" >
                 <option value="">Select Program</option>
                 @foreach ($programs as $program)
-                    <option value="{{ $program->id }}">{{ $program->name }}</option>
+                <option value="{{ $program->id }}">{{ $program->name }}</option>
+                @endforeach
+            </select>
+        </div>
+        <div class="mb-3" id="course-section" style="display:none;">
+            <label>Course *</label>
+            <select name="course_id" class="form-select" >
+                <option value="">Select Course</option>
+                @foreach ($courses as $course)
+                <option value="{{ $course->id }}">{{ $course->name }}</option>
                 @endforeach
             </select>
         </div>
@@ -64,7 +76,8 @@
         <!-- WHY CHOOSE SPECIALIZATION -->
         <h5>Why Choose Specialization</h5>
         <div id="why-choose-wrapper"></div>
-        <button type="button" class="btn btn-sm btn-success mb-3" onclick="addWhyChoose()">+ Add Why Choose Specialization</button>
+        <button type="button" class="btn btn-sm btn-success mb-3" onclick="addWhyChoose()">+ Add Why Choose
+            Specialization</button>
 
         <hr>
 
@@ -96,6 +109,24 @@
 
 <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 <script>
+    $('input[name="map_type"]').change(function () {
+
+    if ($(this).val() === 'program') {
+
+        $('#program-section').show();
+        $('#course-section').hide();
+
+        $('select[name="course_id"]').val('');
+
+    } else {
+
+        $('#course-section').show();
+        $('#program-section').hide();
+
+        $('select[name="program_id"]').val('');
+    }
+
+});
     // Fix for slug generation - changed from 'name' to 'title'
     document.querySelector('input[name="title"]').addEventListener('keyup', function() {
         let slug = this.value.toLowerCase()
@@ -110,7 +141,7 @@
     let successIndex = 0;
     let careerIndex = 0;
     let recruiterIndex = 0;
-    
+
     $(document).ready(function() {
         // Initialize CKEditors
         ClassicEditor.create(document.querySelector('#short_description'))
@@ -184,12 +215,12 @@
                 <div class="mb-2">
                     <label class="form-label">Title</label>
                     <input type="text" name="why_choose[${whyChooseIndex}][title]"
-                           class="form-control" placeholder="Enter title" required>
+                           class="form-control" placeholder="Enter title" >
                 </div>
                 <div class="mb-2">
                     <label class="form-label">Content</label>
                     <textarea name="why_choose[${whyChooseIndex}][content]"
-                           class="form-control" placeholder="Enter content" rows="3" required></textarea>
+                           class="form-control" placeholder="Enter content" rows="3" ></textarea>
                 </div>
                 <div>
                     <label class="form-label">Image</label>

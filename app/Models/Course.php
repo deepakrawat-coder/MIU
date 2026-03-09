@@ -15,4 +15,8 @@ class Course extends Model
     {
         return $this->belongsToMany(Program::class);
     }
+    public function specializations()
+    {
+        return $this->hasMany(Specialization::class);
+    }
 }

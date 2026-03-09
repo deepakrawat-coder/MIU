@@ -9,41 +9,86 @@
         {{-- @method('PUT') --}}
 
         <!-- Program -->
-        <div class="mb-3">
+        {{-- <div class="mb-3">
             <label>Program *</label>
             <select name="program_id" class="form-select" required>
                 @foreach ($programs as $program)
-                    <option value="{{ $program->id }}"
-                        {{ $program->id == $specialization->program_id ? 'selected' : '' }}>
-                        {{ $program->name }}
-                    </option>
+                <option value="{{ $program->id }}" {{ $program->id == $specialization->program_id ? 'selected' : '' }}>
+                    {{ $program->name }}
+                </option>
                 @endforeach
+            </select>
+        </div> --}}
+        <div class="mb-3">
+
+            <input type="radio" name="map_type" value="program" {{ $specialization->program_id ? 'checked' : '' }}>
+            Program
+
+            <input type="radio" name="map_type" value="course" {{ $specialization->course_id ? 'checked' : '' }}> Course
+
+        </div>
+
+
+        <!-- Program -->
+        <div class="mb-3" id="program-section" style="{{ $specialization->program_id ? '' : 'display:none;' }}">
+
+            <label>Program *</label>
+
+            <select name="program_id" class="form-select">
+
+                <option value="">Select Program</option>
+
+                @foreach ($programs as $program)
+                <option value="{{ $program->id }}" {{ $specialization->program_id == $program->id ? 'selected' : '' }}>
+                    {{ $program->name }}
+                </option>
+                @endforeach
+
             </select>
         </div>
 
+
+        <!-- Course -->
+        <div class="mb-3" id="course-section" style="{{ $specialization->course_id ? '' : 'display:none;' }}">
+
+            <label>Course *</label>
+
+            <select name="course_id" class="form-select">
+
+                <option value="">Select Course</option>
+
+                @foreach ($courses as $course)
+                <option value="{{ $course->id }}" {{ $specialization->course_id == $course->id ? 'selected' : '' }}>
+                    {{ $course->name }}
+                </option>
+                @endforeach
+
+            </select>
+        </div>
         <!-- Title -->
         <div class="mb-3">
             <label>Title *</label>
-            <input type="text" name="title" value="{{ $specialization->title }}" class="form-control"
-                id="title-input" required>
+            <input type="text" name="title" value="{{ $specialization->title }}" class="form-control" id="title-input"
+                required>
         </div>
 
         <!-- Slug -->
         <div class="mb-3">
             <label>Slug</label>
-            <input type="text" name="slug" value="{{ $specialization->slug }}" class="form-control"
-                id="slug-input">
+            <input type="text" name="slug" value="{{ $specialization->slug }}" class="form-control" id="slug-input">
         </div>
 
         <!-- Descriptions -->
         <div class="mb-3">
             <label>Short Description</label>
-            <textarea name="short_description" id="short_description" class="form-control">{{ $specialization->short_description }}</textarea>
+            <textarea name="short_description" id="short_description"
+                class="form-control">{{ $specialization->short_description }}</textarea>
         </div>
 
         <div class="mb-3">
             <label>Description</label>
-            <textarea name="description" id="description" class="form-control">{{ $specialization->description }}</textarea>
+            <textarea name="description" id="description"
+                class="form-control">{{ $specialization->description }}</textarea>
         </div>
 
         <div class="mb-3">
@@ -68,7 +113,7 @@
             <input type="file" name="image" class="form-control mb-2">
 
             @if ($specialization->image)
-                <img src="{{ $specialization->image }}" width="120" class="rounded border">
+            <img src="{{ $specialization->image }}" width="120" class="rounded border">
             @endif
         </div>
 
@@ -190,8 +235,8 @@
         <div class="mb-2">
             <label class="form-label">Current Image:</label>
             <img src="${data.image}" width="80" class="mb-2 border rounded d-block">
-            <input type="hidden" 
-                   name="why_choose[${whyChooseIndex}][old_image]" 
+            <input type="hidden"
+                   name="why_choose[${whyChooseIndex}][old_image]"
                    value="${data.image}">
         </div>
            `;
@@ -220,7 +265,7 @@
                 <div class="mb-2">
                     <label class="form-label">Image</label>
                     ${imageHtml}
-                    <input type="file" name="why_choose[${whyChooseIndex}][image]" 
+                    <input type="file" name="why_choose[${whyChooseIndex}][image]"
                            class="form-control" accept="image/*">
                 </div>
             </div>
@@ -270,8 +315,8 @@
         <div class="mb-2">
             <label class="form-label">Current Image:</label>
             <img src="${data.image}" width="80" class="mb-2 border rounded d-block">
-            <input type="hidden" 
-                   name="career[${careerIndex}][old_image]" 
+            <input type="hidden"
+                   name="career[${careerIndex}][old_image]"
                    value="${data.image}">
         </div>
           `;
@@ -288,7 +333,7 @@
                 <div class="mb-2">
                     <label class="form-label">Image</label>
                     ${imageHtml}
-                    <input type="file" name="career[${careerIndex}][image]" 
+                    <input type="file" name="career[${careerIndex}][image]"
                            class="form-control mb-2" accept="image/*">
                 </div>
 
@@ -325,8 +370,8 @@
         <div class="mb-2">
             <label class="form-label">Current Logo:</label>
             <img src="${data.image}" width="80" class="mb-2 border rounded d-block">
-            <input type="hidden" 
-                   name="recruiter[${recruiterIndex}][old_image]" 
+            <input type="hidden"
+                   name="recruiter[${recruiterIndex}][old_image]"
                    value="${data.image}">
         </div>
          `;
@@ -350,7 +395,7 @@
                 <div class="mb-2">
                     <label class="form-label">Logo</label>
                     ${imageHtml}
-                    <input type="file" name="recruiter[${recruiterIndex}][image]" 
+                    <input type="file" name="recruiter[${recruiterIndex}][image]"
                            class="form-control" accept="image/*">
                 </div>
             </div>
@@ -379,6 +424,37 @@
     });
 </script> --}}
 <script>
+  $(document).ready(function () {
+
+    function toggleMapType() {
+
+        let type = $('input[name="map_type"]:checked').val();
+
+        if (type === 'program') {
+
+            $('#program-section').show();
+            $('#course-section').hide();
+
+            $('select[name="course_id"]').val('');
+
+        } else if (type === 'course') {
+
+            $('#course-section').show();
+            $('#program-section').hide();
+
+            $('select[name="program_id"]').val('');
+        }
+    }
+
+    // run on page load (important for edit form)
+    toggleMapType();
+
+    // run when radio changes
+    $('input[name="map_type"]').on('change', function () {
+        toggleMapType();
+    });
+
+});
     // CKEditor instances
     let shortEditor, descEditor, contentEditor;
 
@@ -493,7 +569,7 @@
             <div class="mb-2">
                 <label class="form-label">Image</label>
                 ${imageHtml}
-                <input type="file" name="why_choose[${whyChooseIndex}][image]" 
+                <input type="file" name="why_choose[${whyChooseIndex}][image]"
                     class="form-control" accept="image/*">
             </div>
         </div>`;
@@ -556,7 +632,7 @@
             <div class="mb-2">
                 <label class="form-label">Image</label>
                 ${imageHtml}
-                <input type="file" name="career[${careerIndex}][image]" 
+                <input type="file" name="career[${careerIndex}][image]"
                     class="form-control mb-2" accept="image/*">
             </div>
 
@@ -612,7 +688,7 @@
             <div class="mb-2">
                 <label class="form-label">Logo</label>
                 ${imageHtml}
-                <input type="file" name="recruiter[${recruiterIndex}][image]" 
+                <input type="file" name="recruiter[${recruiterIndex}][image]"
                     class="form-control" accept="image/*">
             </div>
         </div>`;

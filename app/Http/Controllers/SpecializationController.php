@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\Course;
 use App\Models\Faq;
 use App\Models\Specialization;
 use App\Models\Program;
@@ -88,13 +89,15 @@ class SpecializationController extends Controller
     {
         // dd('hello');
         $programs = Program::where('status', 1)->get();
-        return view('admin.specialization.create', compact('programs'));
+        $courses = Course::where('status', 1)->get();
+        return view('admin.specialization.create', compact('programs', 'courses'));
     }
     public function store(Request $request)
     {
         // ✅ Validation
         $validator = Validator::make($request->all(), [
-            'program_id' => 'required',
+            'program_id' => 'required_if:map_type,program',
+            'course_id'  => 'required_if:map_type,course',
             'title'      => 'required|string|max:255',
             'image'      => 'required|image|mimes:jpg,jpeg,png,webp|max:2048',
         ]);
@@ -110,7 +113,14 @@ class SpecializationController extends Controller
 
             $specialization = new Specialization();
 
-            $specialization->program_id = $request->program_id;
+            // $specialization->program_id = $request->program_id;
+            if ($request->map_type == 'program') {
+                $specialization->program_id = $request->program_id;
+                $specialization->course_id  = null;
+            } else {
+                $specialization->course_id  = $request->course_id;
+                $specialization->program_id = null;
+            }
             $specialization->title = $request->title;
 
             // ✅ Custom slug OR auto slug
@@ -237,16 +247,20 @@ class SpecializationController extends Controller
             $features = json_decode($decoded, true) ?? [];
         }
         // dd($features);
+        $courses = Course::where('status', 1)->get();
         return view('admin.specialization.edit', compact(
             'specialization',
             'programs',
-            'features'
+            'features',
+            'courses'
         ));
     }
     public function update(Request $request, $id)
     {
         $request->validate([
-            'program_id' => 'required',
+            'map_type'   => 'required|in:program,course',
+            'program_id' => 'required_if:map_type,program',
+            'course_id'  => 'required_if:map_type,course',
             'title'      => 'required|string|max:255',
             'slug'       => 'required|unique:specializations,slug,' . $id,
             'image'      => 'nullable|image|mimes:jpg,jpeg,png,webp|max:2048',
@@ -261,8 +275,17 @@ class SpecializationController extends Controller
         | BASIC FIELDS
         |--------------------------------------------------------------------------
         */
+            $specialization->program_id = null;
+            $specialization->course_id  = null;
 
-            $specialization->program_id = $request->program_id;
+            if ($request->map_type === 'program') {
+                $specialization->program_id = $request->program_id;
+            }
+
+            if ($request->map_type === 'course') {
+                $specialization->course_id = $request->course_id;
+            }
+            // $specialization->program_id = $request->program_id;
             $specialization->title      = $request->title;
             $specialization->slug       = Str::slug($request->slug);
             $specialization->short_description = $request->short_description;
