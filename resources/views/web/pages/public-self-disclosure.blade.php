@@ -295,8 +295,8 @@
                             About Us - Overview
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/about/" target="_blank">
-                                https://www.miu.edu.in/about/
+                            <a href="https://miu.co.in/about-us" target="_blank">
+                                https://miu.co.in/about-us
                             </a>
                         </p>
                     </div>
@@ -311,8 +311,8 @@
                             Act and Statutes or MoA
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf" target="_blank">
-                                https://www.miu.edu.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf
+                            <a href="https://miu.co.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf" target="_blank">
+                                https://miu.co.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf
                             </a>
                         </p>
                     </div>
@@ -327,8 +327,8 @@
                             Constituent Units/ Affiliated Colleges
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/constituent-colleges/" target="_blank">
-                                https://www.miu.edu.in/constituent-colleges/
+                            <a href="https://miu.co.in/constituent-colleges/" target="_blank">
+                                https://miu.co.in/constituent-colleges/
                             </a>
                         </p>
                     </div>
@@ -357,8 +357,8 @@
                             Recognition/Approval (2(f), 12B, etc.)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf" target="_blank">
-                                https://www.miu.edu.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf
+                            <a href="https://miu.co.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf" target="_blank">
+                                https://miu.co.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf
                             </a>
                         </p>
                     </div>
@@ -426,8 +426,8 @@
                         <p class="mb-0">
                             Dr. Henkram Pahunchaka<br>
                             Email: chancellor@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/chancellor-miu/" target="_blank">
-                                https://www.miu.edu.in/chancellor-miu/
+                            <a href="https://miu.co.in/chancellor" target="_blank">
+                                https://miu.co.in/chancellor
                             </a>
                         </p>
                     </div>
@@ -452,8 +452,8 @@
                         <p class="mb-0">
                             Dr. Henkram Pahunchaka<br>
                             Email: vc@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/" target="_blank">
-                                https://www.miu.edu.in/
+                            <a href="https://miu.co.in/" target="_blank">
+                                https://miu.co.in/
                             </a>
                         </p>
                     </div>
@@ -468,8 +468,8 @@
                         <p class="mb-0">
                             Prof. K. Purna Singh<br>
                             Email: pvc@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/pro-vice-chancellor/" target="_blank">
-                                https://www.miu.edu.in/pro-vice-chancellor/
+                            <a href="https://miu.co.in/pro-vice-chancellor/" target="_blank">
+                                https://miu.co.in/pro-vice-chancellor/
                             </a>
                         </p>
                     </div>
@@ -484,8 +484,8 @@
                         <p class="mb-0">
                             Prof. T. Hangshing Dev<br>
                             Email: registrar@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/registrar/" target="_blank">
-                                https://www.miu.edu.in/registrar/
+                            <a href="https://miu.co.in/registrar/" target="_blank">
+                                https://miu.co.in/registrar/
                             </a>
                         </p>
                     </div>
@@ -510,8 +510,8 @@
                         <p class="mb-0">
                             Shasrum Kiran Singh<br>
                             Email: accounts@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/finance-officer/" target="_blank">
-                                https://www.miu.edu.in/finance-officer/
+                            <a href="https://miu.co.in/finance-officer/" target="_blank">
+                                https://miu.co.in/finance-officer/
                             </a>
                         </p>
                     </div>
@@ -526,8 +526,8 @@
                         <p class="mb-0">
                             Dr. I. Kamalabati Devi<br>
                             Email: coe@miu.edu.in<br>
-                            <a href="https://www.miu.edu.in/coe/" target="_blank">
-                                https://www.miu.edu.in/coe/
+                            <a href="https://miu.co.in/coe/" target="_blank">
+                                https://miu.co.in/coe/
                             </a>
                         </p>
                     </div>
@@ -540,8 +540,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Chief Vigilance Officer</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/chief-vigilance-officer/" target="_blank">
-                                https://www.miu.edu.in/chief-vigilance-officer/
+                            <a href="https://miu.co.in/chief-vigilance-officer/" target="_blank">
+                                https://miu.co.in/chief-vigilance-officer/
                             </a>
                         </p>
                     </div>
@@ -554,8 +554,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Ombudsperson</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/ombudsperson/" target="_blank">
-                                https://www.miu.edu.in/ombudsperson/
+                            <a href="https://miu.co.in/ombudsperson/" target="_blank">
+                                https://miu.co.in/ombudsperson/
                             </a>
                         </p>
                     </div>
@@ -568,8 +568,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Executive Council/Board of Governors</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/executive-council/" target="_blank">
-                                https://www.miu.edu.in/executive-council/
+                            <a href="https://miu.co.in/executive-council/" target="_blank">
+                                https://miu.co.in/executive-council/
                             </a>
                         </p>
                     </div>
@@ -582,8 +582,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Board of Management</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/board-of-management/" target="_blank">
-                                https://www.miu.edu.in/board-of-management/
+                            <a href="https://miu.co.in/board-of-management/" target="_blank">
+                                https://miu.co.in/board-of-management/
                             </a>
                         </p>
                     </div>
@@ -596,8 +596,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Academic Council</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/academic-council/" target="_blank">
-                                https://www.miu.edu.in/academic-council/
+                            <a href="https://miu.co.in/academic-council/" target="_blank">
+                                https://miu.co.in/academic-council/
                             </a>
                         </p>
                     </div>
@@ -610,8 +610,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Board of Studies</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/board-of-studies/" target="_blank">
-                                https://www.miu.edu.in/board-of-studies/
+                            <a href="https://miu.co.in/board-of-studies/" target="_blank">
+                                https://miu.co.in/board-of-studies/
                             </a>
                         </p>
                     </div>
@@ -624,8 +624,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Finance Committee</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/finance-committee/" target="_blank">
-                                https://www.miu.edu.in/finance-committee/
+                            <a href="https://miu.co.in/finance-committee/" target="_blank">
+                                https://miu.co.in/finance-committee/
                             </a>
                         </p>
                     </div>
@@ -638,8 +638,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Internal Complaint Committee</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/internal-complaint-committee/" target="_blank">
-                                https://www.miu.edu.in/internal-complaint-committee/
+                            <a href="https://miu.co.in/internal-complaint-committee/" target="_blank">
+                                https://miu.co.in/internal-complaint-committee/
                             </a>
                         </p>
                     </div>
@@ -652,8 +652,8 @@
                     <div class="warning-box">
                         <h3 class="contact-title text-black">Academic Leadership (Dean/HOD)</h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/academic-leadership/" target="_blank">
-                                https://www.miu.edu.in/academic-leadership/
+                            <a href="https://miu.co.in/academic-leadership/" target="_blank">
+                                https://miu.co.in/academic-leadership/
                             </a>
                         </p>
                     </div>
@@ -679,8 +679,8 @@
                             Details of Academic Programs
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/programs-and-syllabus/" target="_blank">
-                                https://www.miu.edu.in/programs-and-syllabus/
+                            <a href="https://miu.co.in/programs-and-syllabus/" target="_blank">
+                                https://miu.co.in/programs-and-syllabus/
                             </a>
                         </p>
                     </div>
@@ -695,9 +695,9 @@
                             Academic Calendar
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/wp-content/uploads/2025/10/Academic-Calender.pdf"
+                            <a href="https://miu.co.in/wp-content/uploads/2025/10/Academic-Calender.pdf"
                                 target="_blank">
-                                https://www.miu.edu.in/wp-content/uploads/2025/10/Academic-Calender.pdf
+                                https://miu.co.in/wp-content/uploads/2025/10/Academic-Calender.pdf
                             </a>
                         </p>
                     </div>
@@ -712,8 +712,8 @@
                             Statutes/Ordinances Pertaining to Academics/Examinations
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/ordinances/" target="_blank">
-                                https://www.miu.edu.in/ordinances/
+                            <a href="https://miu.co.in/ordinances/" target="_blank">
+                                https://miu.co.in/ordinances/
                             </a>
                         </p>
                     </div>
@@ -728,8 +728,8 @@
                             Schools/Departments/Centres
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/schools-and-departments/" target="_blank">
-                                https://www.miu.edu.in/schools-and-departments/
+                            <a href="https://miu.co.in/schools-and-departments/" target="_blank">
+                                https://miu.co.in/schools-and-departments/
                             </a>
                         </p>
                     </div>
@@ -744,8 +744,8 @@
                             Department/School/Centre Wise Faculty/Staff Details
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/academics-team/" target="_blank">
-                                https://www.miu.edu.in/academics-team/
+                            <a href="https://miu.co.in/academics-team/" target="_blank">
+                                https://miu.co.in/academics-team/
                             </a>
                         </p>
                     </div>
@@ -774,8 +774,8 @@
                             Internal Quality Assurance Cell (IQAC)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/iqac/" target="_blank">
-                                https://www.miu.edu.in/iqac/
+                            <a href="https://miu.co.in/iqac/" target="_blank">
+                                https://miu.co.in/iqac/
                             </a>
                         </p>
                     </div>
@@ -790,8 +790,8 @@
                             Library
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/library/" target="_blank">
-                                https://www.miu.edu.in/library/
+                            <a href="https://miu.co.in/library/" target="_blank">
+                                https://miu.co.in/library/
                             </a>
                         </p>
                     </div>
@@ -806,8 +806,8 @@
                             Academic Collaborations
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/academic-collaborations/" target="_blank">
-                                https://www.miu.edu.in/academic-collaborations/
+                            <a href="https://miu.co.in/academic-collaborations/" target="_blank">
+                                https://miu.co.in/academic-collaborations/
                             </a>
                         </p>
                     </div>
@@ -832,9 +832,9 @@
                             Prospectus (including fee structure)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf"
+                            <a href="https://miu.co.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf"
                                 target="_blank">
-                                https://www.miu.edu.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf
+                                https://miu.co.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf
                             </a>
                         </p>
                     </div>
@@ -849,8 +849,8 @@
                             Admission Process and Guidelines
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/admission_guidelines/" target="_blank">
-                                https://www.miu.edu.in/admission_guidelines/
+                            <a href="https://miu.co.in/admission_guidelines/" target="_blank">
+                                https://miu.co.in/admission_guidelines/
                             </a>
                         </p>
                     </div>
@@ -865,8 +865,8 @@
                             Fee Refund Policy
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/refund-policy/" target="_blank">
-                                https://www.miu.edu.in/refund-policy/
+                            <a href="https://miu.co.in/refund-policy/" target="_blank">
+                                https://miu.co.in/refund-policy/
                             </a>
                         </p>
                     </div>
@@ -889,8 +889,8 @@
                             Research and Development Cell
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/research-and-development-cell/" target="_blank">
-                                https://www.miu.edu.in/research-and-development-cell/
+                            <a href="https://miu.co.in/research-and-development-cell/" target="_blank">
+                                https://miu.co.in/research-and-development-cell/
                             </a>
                         </p>
                     </div>
@@ -905,8 +905,8 @@
                             Incubation Centre/Start-Ups/Entrepreneurship Cell
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/incubation-center/" target="_blank">
-                                https://www.miu.edu.in/incubation-center/
+                            <a href="https://miu.co.in/incubation-center/" target="_blank">
+                                https://miu.co.in/incubation-center/
                             </a>
                         </p>
                     </div>
@@ -1000,8 +1000,8 @@
                             Student Grievance Redressal Committee (SGRC) and Ombudsperson
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/grievance-cell/" target="_blank">
-                                https://www.miu.edu.in/grievance-cell/
+                            <a href="https://miu.co.in/grievance-cell/" target="_blank">
+                                https://miu.co.in/grievance-cell/
                             </a>
                         </p>
                     </div>
@@ -1016,8 +1016,8 @@
                             Health Facilities
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/health-facilities/" target="_blank">
-                                https://www.miu.edu.in/health-facilities/
+                            <a href="https://miu.co.in/health-facilities/" target="_blank">
+                                https://miu.co.in/health-facilities/
                             </a>
                         </p>
                     </div>
@@ -1032,8 +1032,8 @@
                             Internal Complaint Committee
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/internal-complaint-committee/" target="_blank">
-                                https://www.miu.edu.in/internal-complaint-committee/
+                            <a href="https://miu.co.in/internal-complaint-committee/" target="_blank">
+                                https://miu.co.in/internal-complaint-committee/
                             </a>
                         </p>
                     </div>
@@ -1048,8 +1048,8 @@
                             Anti-Ragging Cell
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/anti-ragging/" target="_blank">
-                                https://www.miu.edu.in/anti-ragging/
+                            <a href="https://miu.co.in/anti-ragging/" target="_blank">
+                                https://miu.co.in/anti-ragging/
                             </a>
                         </p>
                     </div>
@@ -1064,8 +1064,8 @@
                             Equal Opportunity Cell
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/equal-opportunity-cell/" target="_blank">
-                                https://www.miu.edu.in/equal-opportunity-cell/
+                            <a href="https://miu.co.in/equal-opportunity-cell/" target="_blank">
+                                https://miu.co.in/equal-opportunity-cell/
                             </a>
                         </p>
                     </div>
@@ -1080,8 +1080,8 @@
                             Socio-Economically Disadvantaged Groups Cell (SEDG)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/sedg-cell/" target="_blank">
-                                https://www.miu.edu.in/sedg-cell/
+                            <a href="https://miu.co.in/sedg-cell/" target="_blank">
+                                https://miu.co.in/sedg-cell/
                             </a>
                         </p>
                     </div>
@@ -1096,8 +1096,8 @@
                             Facilities for Differently Abled Students
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/facilities-for-differently-abled-students/" target="_blank">
-                                https://www.miu.edu.in/facilities-for-differently-abled-students/
+                            <a href="https://miu.co.in/facilities-for-differently-abled-students/" target="_blank">
+                                https://miu.co.in/facilities-for-differently-abled-students/
                             </a>
                         </p>
                     </div>
@@ -1120,8 +1120,8 @@
                             Alumni Association with Details
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/alumni/" target="_blank">
-                                https://www.miu.edu.in/alumni/
+                            <a href="https://miu.co.in/alumni/" target="_blank">
+                                https://miu.co.in/alumni/
                             </a>
                         </p>
                     </div>
@@ -1145,8 +1145,8 @@
                             RTI: Details of CPIO and Appellate Authority
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/cpio/" target="_blank">
-                                https://www.miu.edu.in/cpio/
+                            <a href="https://miu.co.in/cpio/" target="_blank">
+                                https://miu.co.in/cpio/
                             </a>
                         </p>
                     </div>
@@ -1161,8 +1161,8 @@
                             Circulars and Notices
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/notice-and-events/" target="_blank">
-                                https://www.miu.edu.in/notice-and-events/
+                            <a href="https://miu.co.in/notice-and-events/" target="_blank">
+                                https://miu.co.in/notice-and-events/
                             </a>
                         </p>
                     </div>
@@ -1177,8 +1177,8 @@
                             Announcements
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/notice-and-events/" target="_blank">
-                                https://www.miu.edu.in/notice-and-events/
+                            <a href="https://miu.co.in/notice-and-events/" target="_blank">
+                                https://miu.co.in/notice-and-events/
                             </a>
                         </p>
                     </div>
@@ -1222,8 +1222,8 @@
                             Job Openings
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/recruitments-2/" target="_blank">
-                                https://www.miu.edu.in/recruitments-2/
+                            <a href="https://miu.co.in/recruitments/" target="_blank">
+                                https://miu.co.in/recruitments/
                             </a>
                         </p>
                     </div>
@@ -1238,8 +1238,8 @@
                             Reservation Roster
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/reservation-roster/" target="_blank">
-                                https://www.miu.edu.in/reservation-roster/
+                            <a href="https://miu.co.in/reservation-roster/" target="_blank">
+                                https://miu.co.in/reservation-roster/
                             </a>
                         </p>
                     </div>
@@ -1290,8 +1290,8 @@
                             Picture Gallery
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/gallery/" target="_blank">
-                                https://www.miu.edu.in/gallery/
+                            <a href="https://miu.co.in/gallery/" target="_blank">
+                                https://miu.co.in/gallery/
                             </a>
                         </p>
                     </div>
@@ -1315,8 +1315,8 @@
                             Contact Details
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/contactus/" target="_blank">
-                                https://www.miu.edu.in/contactus/
+                            <a href="https://miu.co.in/contact-us/" target="_blank">
+                                https://miu.co.in/contact-us/
                             </a>
                         </p>
                     </div>
@@ -1331,8 +1331,8 @@
                             Telephone Directory
                         </h3>
                         <p class="mb-0">
-                            <a href="https://www.miu.edu.in/telephone-directories/" target="_blank">
-                                https://www.miu.edu.in/telephone-directories/
+                            <a href="https://miu.co.in/telephone-directories/" target="_blank">
+                                https://miu.co.in/telephone-directories/
                             </a>
                         </p>
                     </div>
