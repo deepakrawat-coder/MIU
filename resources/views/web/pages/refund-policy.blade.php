@@ -67,11 +67,11 @@
         <div class="container">
             <h3 class="mb-3 mt-5"> <span class="text-warning">Reference</span>: UGC D.O Letter No. F.2-71/2022(CPP-II)
                 (C-114546) dated 12.06.2024 </h3>
-            <div class="btns-box mb-4">
+            {{-- <div class="btns-box mb-4">
                 <a class="btn-one" href="#">
                     <span class="txt">Download Notification </span>
                 </a>
-            </div>
+            </div> --}}
             <div class="sec-title text-start pb-4">
                 <h3> Policy Overview </h3>
                 <p class="mb-4">In pursuance with the directions and guidelines contained in the UGC's D.O. letter dated
