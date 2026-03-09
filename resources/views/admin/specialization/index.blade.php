@@ -28,6 +28,7 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>Program</th>
+                                    <th>Course</th>
                                     <th>Name</th>
                                     <th>Short Description</th>
                                     <th>Status</th>
@@ -67,10 +68,14 @@
                     orderable: false,
                     searchable: false
                 },
-                {
-                    data: 'program.name',
-                    name: 'program.name'
-                },
+               {
+    data: 'program_name',
+    name: 'program_name'
+},
+{
+    data: 'course_name',
+    name: 'course_name'
+},
                 {
                     data: 'title',
                     name: 'title'

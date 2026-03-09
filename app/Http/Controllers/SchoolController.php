@@ -34,31 +34,93 @@ class SchoolController extends Controller
     }
 
 
+    // public function details($slug)
+    // {
+    //     $school = School::with('courses.programs.specializations')
+    //         ->where('slug', $slug)
+    //         ->where('status', 1)
+    //         ->firstOrFail();
+
+    //     // Get all programs
+    //     $programs = $school->courses
+    //         ->flatMap->programs
+    //         ->unique('id')
+    //         ->values();
+
+
+    //     // Get all specializations
+    //     $specializations = $programs
+    //         ->pluck('specializations')
+    //         ->flatten()
+    //         ->unique('id')
+    //         ->values();
+    //     $specializations = $school->courses
+    //         ->flatMap->specializations
+    //         ->unique('id')
+    //         ->values();
+
+    //     // dd($specializations);
+    //     $coursesInfo = $school->courses()->where('status', 1)->get();
+    //     $testimonials = Testimonial::where('school_id', $school->id)->where('status', 1)->get();
+    //     $faqencode = Faq::where('school_id', $school->id)
+    //         ->where('status', 1)
+    //         ->first();
+    //     if (!empty($faqencode)) {
+    //         $faq = collect(json_decode(base64_decode($faqencode->faqs_json), true))
+    //             ->where('status', 1)
+    //             ->sortBy('order')
+    //             ->values()
+    //             ->toArray();
+    //     } else {
+    //         $faq = [];
+    //     }
+    //     // dd($school->courses);
+    //     return view('web.pages.school-details', compact('school', 'specializations', 'programs', 'coursesInfo', 'testimonials', 'faq'));
+    // }
     public function details($slug)
     {
-        $school = School::with('courses.programs.specializations')
+        $school = School::with([
+            'courses.specializations',
+            'courses.programs.specializations'
+        ])
             ->where('slug', $slug)
             ->where('status', 1)
             ->firstOrFail();
-// dd($school);
-        // Get all programs
+
+        // All programs of the school
         $programs = $school->courses
             ->flatMap->programs
             ->unique('id')
             ->values();
 
-
-        // Get all specializations
-        $specializations = $programs
+        // Specializations coming from programs
+        $programSpecializations = $programs
             ->pluck('specializations')
-            ->flatten()
+            ->flatten();
+
+        // Specializations coming directly from courses
+        $courseSpecializations = $school->courses
+            ->pluck('specializations')
+            ->flatten();
+
+        // Merge both
+        $specializations = $programSpecializations
+            ->merge($courseSpecializations)
             ->unique('id')
             ->values();
-        $coursesInfo = $school->courses()->where('status', 1)->get();
-        $testimonials = Testimonial::where('school_id', $school->id)->where('status', 1)->get();
+// dd($specializations);
+        $coursesInfo = $school->courses()
+            ->where('status', 1)
+            ->get();
+
+        $testimonials = Testimonial::where('school_id', $school->id)
+            ->where('status', 1)
+            ->get();
+
         $faqencode = Faq::where('school_id', $school->id)
             ->where('status', 1)
             ->first();
+
         if (!empty($faqencode)) {
             $faq = collect(json_decode(base64_decode($faqencode->faqs_json), true))
                 ->where('status', 1)
@@ -68,10 +130,16 @@ class SchoolController extends Controller
         } else {
             $faq = [];
         }
-        // dd($school->courses);
-        return view('web.pages.school-details', compact('school', 'specializations', 'programs', 'coursesInfo', 'testimonials', 'faq'));
-    }
 
+        return view('web.pages.school-details', compact(
+            'school',
+            'specializations',
+            'programs',
+            'coursesInfo',
+            'testimonials',
+            'faq'
+        ));
+    }
 
     /**
      * Display a listing of the resource.

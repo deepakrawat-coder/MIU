@@ -69,12 +69,18 @@ class SpecializationController extends Controller
     {
         if ($request->ajax()) {
 
-            $data = Specialization::with('program')->latest();
-
+            $data = Specialization::with(['program', 'course'])->latest();
             return DataTables::of($data)
                 ->addIndexColumn()
                 ->addColumn('action', function ($row) {
                     return '';
+                })
+                ->addColumn('program_name', function ($row) {
+                    return $row->program->name ?? '-';
+                })
+
+                ->addColumn('course_name', function ($row) {
+                    return $row->course->name ?? '-';
                 })
                 ->addColumn('short_description', function ($row) {
                     return \Illuminate\Support\Str::limit(strip_tags($row->short_description), 80);
