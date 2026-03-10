@@ -311,8 +311,8 @@
                             Act and Statutes or MoA
                         </h3>
                         <p class="mb-0">
-                            <a href="https://miu.co.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf" target="_blank">
-                                https://miu.co.in/wp-content/uploads/2025/10/MIU-Act-2018-1.pdf
+                            <a href="{{asset('/assets/images/web-image/docs/MIU-Act-2018-1.pdf')}}" target="_blank">
+                                MIU Act 2018 1
                             </a>
                         </p>
                     </div>
@@ -357,8 +357,8 @@
                             Recognition/Approval (2(f), 12B, etc.)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://miu.co.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf" target="_blank">
-                                https://miu.co.in/wp-content/uploads/2025/10/UGC-2021-Letter.pdf
+                            <a href="{{asset('/assets/images/web-image/docs/UGC-2021-Letter.pdf')}}" target="_blank">
+                               UGC 2021 Letter
                             </a>
                         </p>
                     </div>
@@ -695,9 +695,9 @@
                             Academic Calendar
                         </h3>
                         <p class="mb-0">
-                            <a href="https://miu.co.in/wp-content/uploads/2025/10/Academic-Calender.pdf"
+                            <a href="{{asset('/assets/images/web-image/docs/Academic-Calender.pdf')}}"
                                 target="_blank">
-                                https://miu.co.in/wp-content/uploads/2025/10/Academic-Calender.pdf
+                                Academic Calender
                             </a>
                         </p>
                     </div>
@@ -832,9 +832,9 @@
                             Prospectus (including fee structure)
                         </h3>
                         <p class="mb-0">
-                            <a href="https://miu.co.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf"
+                            <a href="{{asset('/assets/images/web-image/docs/MIU-prospectus_25-26.pdf')}}"
                                 target="_blank">
-                                https://miu.co.in/wp-content/uploads/2025/10/MIU-prospectus_25-26.pdf
+                                MIU Prospectus 25-26
                             </a>
                         </p>
                     </div>
